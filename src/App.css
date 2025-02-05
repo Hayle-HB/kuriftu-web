@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Higuen Elegant Serif";
+  src: url("./fonts/HiguenSerif.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Higuen Elegant Serif";
+  src: url("./fonts/HiguenSerif.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.card,
+.card-text {
+  font-family: "Higuen Elegant Serif", serif !important;
+}
+
+
+.App {
+  text-align: center;
+  background-color: #f3eee7;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+#hero-image {
+  width: 100%;
+}
+.hero-image-container {
+  max-height: 89vh;
+}
+
+.card-grid-container {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.resort-home-accomodation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.resort-accomodation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

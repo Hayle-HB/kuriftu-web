@@ -1,0 +1,141 @@
+.quick-booking{
+    padding: 1vw;
+    border-radius: 5px;
+    background-color: @misty-rose;
+    button{
+        margin-bottom: 8.880px;
+    }
+    .accordion{
+        &-button, &-item{
+            background: none;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        &-button{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+.calendar{
+    &-wrapper{
+        padding: 3%;
+    }
+    &-switcher{
+        margin-bottom: 3px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3.125%;
+        span{
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.10rem;
+            line-height: 1.8;
+            font-weight: 500;
+            letter-spacing: 0.06rem;
+        }
+    }
+    &-button {
+        cursor: pointer;
+        color: @primary;
+        font-size: 25px;
+        border-radius: 50%;
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+            color: @primary-light;
+        }
+        &:active, &:focus{
+            background-color: rgba(0, 0, 0, 0.04);
+            color: @primary-dark;
+        }
+    }
+
+    &-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                font-family: "Montserrat", sans-serif;
+                font-weight: 400;
+                font-size: 0.9rem;
+                line-height: 1.7;
+                letter-spacing: 0.05em;
+                width: 12.5%;
+                height: 40px;
+                margin: 0 2px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        .disabled, .empty{
+            background-color: @gray-light;
+            color: @gray;
+            cursor:not-allowed;
+            &:hover{
+                background-color: @gray-light;
+                color: @gray;
+            }
+        }
+        .selected{
+            background-color: @primary-light;
+            color: @light;
+            
+        }
+        .start-date, .end-date{
+            background-color: @primary-dark;
+            color: @light;
+            &:hover{
+                background-color: @primary-dark;
+                color: @light;
+                border: 2px solid @dark;
+            }
+        }
+
+    }
+
+    &-day{
+        width: 12.5%;
+        height: auto;
+        aspect-ratio: 1;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        letter-spacing: 0.05em;
+        margin: 0 2px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+
+        &:hover{
+            background-color: @primary-light-opace;
+            color:@gray;
+        }
+    }
+
+    &-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-checkin, &-checkout{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

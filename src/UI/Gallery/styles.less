@@ -1,0 +1,107 @@
+
+
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: none;
+  &-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  &-stack{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    padding: 2rem;
+    --offset: 6vw;
+    @media screen and (max-width: @md) {
+        --offset: 0.8vw;
+      }
+  }
+  &-item{
+    border-radius: 1.5vw;
+    background-size: cover;
+    background-position: center;
+    width: 551.5px !important;
+    height: 386.1px !important;
+    z-index: 1;
+    filter: opacity(1);
+    @media screen and (max-width: @md) {
+        width: 55vw;
+        height: 65vh;
+    }
+  }
+  &-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: @floral-gold;
+    border-radius: 1.2vw;
+    color: @light;
+    padding: 40px;
+    font-size: 1.15rem;
+    padding: 5vw;
+    width: 50vw;
+    height: 35vw;
+    p {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      will-change: transform;
+      @media screen and (max-width: @md) {
+        font-size: 0.8rem;      
+      }
+    }
+
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: calc(0.1vw + 4rem);
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: italic;
+      will-change: transform;
+      @media screen and (max-width: @md) {
+        font-size: 2rem;
+      }
+    }
+    @media screen and (max-width: @md) {
+      height: 65vh;
+    }
+  }
+  &--switch{
+    
+    .gallery{
+      &-item{
+        grid-area: 1 / 1 / 2 / 2;
+        
+
+        // Apply a staggered margin based on the item's index
+        .mixin-stagger(@n, @offset) when (@n > 0) {
+          &:nth-child(@{n}) {
+            margin-left: calc(var(--offset) * @n);
+          }
+          .mixin-stagger(@n - 1, @offset);
+        }
+      
+        // Call the mixin with a maximum number of items and the desired offset
+        .mixin-stagger(10, 20px); // Adjust `10` to the max number of items you expect and `20px` to your desired offset
+      }
+      
+      &--caption{
+        opacity: 1;
+      }
+    }
+
+  } 
+
+}

@@ -1,0 +1,8 @@
+# Exclude environment files
+.env
+.env.local
+
+# Node.js specific (for frontend services)
+node_modules
+npm-debug.log
+yarn-error.log

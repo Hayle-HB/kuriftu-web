@@ -1,0 +1,776 @@
+.landing-cover {
+  text-align: left !important;
+}
+
+.landing-cover-fix{
+  min-height: 7rem;
+
+}
+
+.hero-video-container {
+  position: relative;
+  width: 100%;
+  height: 93vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 93vh; /* Set the parent height to 82% of the viewport height */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 93%; /* Make iframe take 82% of parent */
+  border: none;
+}
+
+/* font fixing */
+.card-subtitle {
+  color: #525252;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.card-text {
+    font-weight: 600;
+    letter-spacing: .07rem;
+    font-size: .7rem!important;
+    line-height: 1.5rem;
+}
+.btn-link {
+  font-family: "Neue Helvetica thin", sans-serif;
+  color: #525252 !important;
+  font-size: 1rem;
+  position: relative;
+  letter-spacing: 0.07rem;
+  display: inline-block;
+}
+.two-column-title {
+  /* font-family: "Neue Helvetica Medium", sans-serif; */
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.two-column-description {
+  /* font-family: "Neue Helvetica thin", sans-serif; */
+  /* font-weight: 300; */
+  letter-spacing: .07rem;
+  font-size: .7rem;
+  line-height: 1.5rem;
+  color:'#000'
+}
+.signup-align h5 {
+  font-family: "Neue Helvetica Medium", sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.navbar-nav a {
+  padding: 0px 11px !important;
+}
+.subtitle-txt {
+  /* font-family: "Neue Helvetica thin", sans-serif; */
+  font-weight: 600;
+  color: #525252;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.title-txt {
+  /* font-family: "Neue Helvetica Medium", sans-serif; */
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000!important;
+}
+.description-txt {
+  line-height: 27px;
+  font-size: 18px!important;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  
+}
+.listing-txt {
+  font-family: "Neue Helvetica thin", sans-serif;
+  letter-spacing: 0.07rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 3;
+}
+
+.top_nav_btn {
+  padding: 8px 20px !important;
+  font-size: 18px !important;
+  /* border: 1px solid gray !important; */
+  border: var(--bs-border-width) solid var(--bs-border-color)!important;
+
+  /* font-size: 12px;
+  padding: 3px 5px; */
+}
+.links-container a {
+  text-decoration: none;
+  color: #282529;
+}
+.power-by-link {
+  text-decoration: none;
+  color: black;
+}
+.mb-2 a {
+  color: #525252 !important;
+  text-decoration: none;
+}
+.header-navbars {
+  border-right: 1px solid lightgray;
+}
+.img-fluid {
+  height: 67vh !important;
+}
+.resort-card {
+  width: 100% !important;
+}
+.unstyled li {
+  font-family: "Neue Helvetica thin", sans-serif;
+  letter-spacing: 0.07rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  list-style: none;
+}
+.list-unstyled li {
+  font-family: "Neue Helvetica thin", sans-serif;
+  letter-spacing: 0.07rem;
+  font-size: .8rem;
+  font-weight: 400;
+  list-style: none;
+  text-align: left;
+}
+.footer-links-container a i {
+  font-size: 1.2rem;
+}
+.list-unstyled li a {
+  color: #5d5752 !important;
+  font-size: 1rem;
+}
+.email-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: left;
+}
+.email-links p {
+  margin: 0px;
+}
+.email-links p a {
+  text-decoration: none !important;
+  color: #525252 !important;
+  font-family: "Neue Helvetica thin", sans-serif;
+  letter-spacing: 0.07rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1 !important;
+}
+.advanture-sub-headers {
+  margin: 0px !important;
+}
+.py-5 {
+  padding: 1% !important;
+}
+.reservation-content {
+  margin-top: 80px;
+}
+.slick-dots-customize {
+  bottom: -40px !important;
+}
+
+.resort-cover-image {
+  width: 100%;
+  height: 40rem;
+  margin-top: 3rem;
+}
+.landing-cover {
+  text-align: start !important;
+}
+
+.video-container {
+  width: 100%;
+}
+.content-container {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  background: white;
+}
+.book-now-btn {
+  background: black !important;
+  color: white !important;
+  border-radius: 5px !important;
+  text-align: center !important;
+}
+.book-now-link {
+  color: white !important;
+  text-decoration: none !important;
+  padding: 2% !important;
+}
+.modal-dialog {
+  margin-top: -1px !important;
+}
+.two-column-description-about{
+  font-size: .8rem;
+}
+
+@media (min-width: 1500px) {
+  .card-img-top {
+    height: 740px !important;
+  }
+  .description-txt {
+    font-size: 1rem;
+  }
+  .two-column-description {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+  .card-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-heading {
+    display: none;
+  }
+
+  .header-image {
+    width: 80px;
+  }
+
+  .header-btn-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-btn-container button {
+    width: 90px;
+    font-size: 12px;
+    padding: 2px 5px;
+  }
+
+  .offcanvas {
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+
+  .side-bar-menus li button,
+  a {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .side-bar-icon {
+    width: 100px;
+  }
+
+  .home-video {
+    height: 93vh;
+    padding: 0px !important;
+  }
+
+  .home-padding-fix {
+    padding: 0px !important;
+  }
+
+  .landing-page h6,
+  button {
+    font-size: 12px !important;
+  }
+
+  .landing-page h4 {
+    font-size: 14px !important;
+  }
+
+  .card-img-top {
+    height: 250px !important;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-subtitle {
+    font-size: 12px;
+  }
+
+  .card-text {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 400 !important;
+  }
+
+  .btn-link-padding-none {
+    --bs-btn-padding-x: 0 !important;
+    --bs-btn-padding-y: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .two-column-mobile-layout {
+    flex-direction: column !important;
+  }
+
+  .two-column-title {
+    font-size: 16px;
+    padding:8px!important;
+    margin-top: 12px;
+  }
+
+  .two-column-description {
+    font-size: 14px!important;
+    line-height: 20px !important;
+
+  }
+
+  .two-column-image {
+    height: 230px !important;
+  }
+
+  .carousel-fix-btns-image {
+    height: 40vh !important;
+  }
+  .advanture-headers {
+    font-size: 16px !important;
+  }
+  .advanture-sub-headers {
+    font-size: 10px !important;
+    padding: 3%;
+  }
+  .sliderBtn {
+    display: flex;
+    /* margin-bottom: 15px !important; */
+  }
+  .advanture-description {
+    padding: 1rem !important;
+    padding-top: 0px !important;
+  }
+  .horizental-carousl {
+    margin-top: 50px !important;
+  }
+  .accomdation-detail-title {
+    font-size: 14px;
+    padding-top: 0px !important;
+  }
+  .accomdation-detail-text {
+    font-size: 12px;
+  }
+  .listing-text-sm {
+    font-size: 12px;
+  }
+  .signup-align {
+    text-align: center !important;
+  }
+  .top_nav_btn {
+    color: #756363;
+    background: white;
+    border-radius: 8px;
+    border: none;
+    padding: 6px !important;
+    margin-right: 10px;
+    font-size: 11px !important;
+  }
+
+  .top_nav_btn {
+    border-radius: 5px !important;
+  }
+  .hero-video-container {
+    height: 50vh !important;
+  }
+  .resorts-nabvar {
+    margin-top: 30px !important;
+    z-index: 10 !important;
+    padding-top: 10px !important;
+    border: none !important;
+  }
+
+  .navbar-toggle-list {
+    padding: 0px !important;
+  }
+  .reservation-resort-main {
+    margin-top: 10% !important;
+    margin: auto;
+    padding: 0px!important;
+  }
+  .reservation-resort-contant{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    margin-bottom: 20px!important;
+
+  }
+  .contact-us-img {
+    margin-top: 15% !important;
+  }
+  .booston-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .booston-img {
+    width: 100% !important;
+  }
+  .description-txt {
+    width: 100% !important;
+    font-size: 14px!important;
+    padding-right: 0px!important;
+    margin-bottom: 0px!important;
+    padding-bottom: 0px!important;
+
+  }
+  .boston-main-sec {
+    margin-top: 10% !important;
+    width: 100%!important;
+    padding: 20px!important;
+  }
+  .boston-main-sec h3{
+    font-size: 16px!important;
+  }
+  .boston-main-sec p{
+    font-size: 14px!important;
+  }
+  .py-3 {
+    padding: 0px !important;
+  }
+
+  .resort-cover-image {
+    width: 100% !important;
+    height: 50vh!important;
+  }
+  .search-bar-container {
+    display: none;
+  }
+  .reservation-content {
+    margin-top: 50px;
+  }
+  .home-welcome {
+    font-size: 12px !important;
+  }
+  .home-kuriftu-resorts {
+    font-size: 27px !important;
+  }
+  .resorts-nabvar {
+    margin-top: 40px !important;
+  }
+  .dropdown-menu {
+    position: absolute !important;
+  }
+  .py-4 {
+    padding-top: 0px !important;
+  }
+  .title-txt {
+    font-size: 1rem;
+  }
+  .listing-txt {
+    font-size: 12px;
+  }
+  .list-unstyled li a {
+    font-size: 12px;
+  }
+  .footer-links-container a i {
+    font-size: 1rem;
+  }
+  .subtitle-txt {
+    margin-top: 12%;
+  }
+  .room-card-txt{
+    font-size: 12px;
+  }
+  .room-card-label{
+    font-size: 12px;
+  }
+  .room-card-heading{
+    font-size: 14px;
+  }
+  .scards {
+    grid-template-columns: 1fr; /* Only one card per row */
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
+    grid-row-gap: 0; /* Remove row gap */
+  }
+  
+  .scard-item {
+    margin-bottom: 1rem; /* Space between cards in mobile */
+  }
+
+  .scard-item:last-child {
+    margin-bottom: 0; /* No extra space after the last card */
+  }
+  .kurifto-sm-view{
+    margin-top: 10px!important;
+    
+  }
+  
+  .landing-page-headers h5{
+    font-size: 14px!important;
+    font-weight: 600;
+    line-height:30px;
+    margin-top: 8px;
+    line-height: 30px!important;
+  }
+ 
+.sm-links{ 
+  padding-bottom: 12px!important;
+}
+.sm-card-description{
+  font-size: 14px!important;
+  padding-right: 0px!important;
+  margin-bottom: 0px!important;
+  padding-bottom: 0px!important;
+
+}
+.about-sm-container{
+  margin: 0% 1%!important; 
+}
+.about-images{
+  margin-top: 0px!important;
+  margin-bottom: 16px!important;
+  padding: 18px!important;
+}
+.about-cards{
+  padding: 0px!important;
+
+}
+.about-content{
+  margin: 0px 16px!important;
+
+}
+.abou-back{
+  height: 230px!important;
+}
+.contact-sm{
+  margin-top: 0px!important;
+  padding: 14px!important;
+}
+.contact-image{
+  margin-top: 12px;
+}
+.list-unstyled li {
+ 
+  font-size: 16px!important;
+  font-weight: 400;
+  list-style: none;
+  text-align: left;
+}
+.contact-header{
+  font-size: 16px !important;
+  font-weight: 400 !important;
+
+}
+.contact-para{
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+.event-img-sm{
+  height: 50vh!important;
+}
+.event-sm-contant{
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+
+}
+.event-sm-col{
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+  margin-bottom: 0px!important;
+  margin-top: 25px!important;
+
+
+}
+.fw-bold{
+  font-style:normal!important ;
+  font-weight:600 !important;
+  color: #000!important;
+  font-size: 16px!important;
+  line-height: 23px!important;
+}
+.fw-bold-para{
+ 
+  font-size: 14px!important;
+}
+
+ 
+}
+
+.offcanvas-header-btn-fix {
+  justify-content: space-between;
+}
+
+.offcanvas-header-btn-fix .header-close-btn {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.5rem !important;
+  padding: 0px 12px !important;
+}
+
+.offcanvas-header-btn-fix .header-close-btn:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.two-line-text {
+  line-height: 1.5em; /* Set line height */
+  max-height: 3em; /* 2 lines = 2 x line-height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: block;
+}
+.fw-bold{
+  font-style:normal!important ;
+  font-weight:600 !important;
+  color: #000!important;
+  font-size: 19px!important;
+  line-height: 23px!important;
+}
+
+.exp-description{
+     font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color:'#000';
+    /* padding: 40px 0px; */
+    padding-bottom: 2rem;
+    text-align: center;
+    max-width: 55.18rem;
+    margin: 0 auto;
+
+}
+.welness-title{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 1rem 0 1.5rem;
+}
+.welness-description{
+    font-weight: 400!important;
+    font-size: 18px;
+    line-height: 27px;
+    font-style: normal;
+    color:'#000'!important
+}
+.advanture-subtitle{
+  font-weight: 600;
+  color: #525252;
+  font-size: .6rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  margin: 1rem 0;
+}
+.advanture-title{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    color: #000;
+
+}
+.advanture-description{
+    font-weight: 500;
+    letter-spacing: .07rem;
+    font-size: .7rem;
+    line-height: 1.5rem;
+}
+
+.advanture-description-font{
+  font-family: 'Neue Helvetica thin' !important;
+
+}
+.resort-home-sub-title{
+  font-weight: 600;
+  color: #525252;
+  font-size: .6rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+.payment-platform{
+  font-size: 16px!important;
+  font-weight: 600;
+  
+}
+.payment-btn{
+  margin: 6px;
+}
+.link:after {
+  content: "";
+  position: absolute;
+  font-size: 0.8rem;
+  top: 100%; /* Adjust distance below the text */
+  left: 0;
+  height: 1px; /* Line thickness */
+  width: 100%; /* Line spans the full width of the element */
+  background: #525252; /* Line color */
+}
+.custom-link:after {
+  content: "";
+  position: absolute;
+  top: 110%; /* Adjust this value for vertical spacing below text */
+  left: 0;
+  height: 1px; /* Thickness of the line */
+  width: 100%; /* Full width of the link text */
+  background: #525252; /* Color of the underline */
+}
+.book-now{
+  background-color: #000!important;
+}
+.scards {
+  display: grid;
+  grid-column-gap: clamp(1rem, 2.6vw, 3.5rem); /* Column gap for responsiveness */
+  grid-row-gap: 0.2rem; /* Row gap for spacing */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive column layout */
+  padding-left: 1rem; /* Match px-3 for padding */
+  padding-right: 1rem; /* Match px-3 for padding */
+}
+
+.scard-item {
+  display: flex; /* Optional if you want to center or align items */
+  justify-content: center;
+}
+.contact-location span{
+  text-transform: capitalize!important;
+
+}
+.contact-image-container{
+  padding: 20px;
+}
+.about-headers{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.view-all-accomo{
+    font-weight: 400;
+    color: #525252;
+    font-size: 1rem;
+    position: relative;
+    letter-spacing: .07rem;
+}

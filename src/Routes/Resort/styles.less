@@ -1,0 +1,145 @@
+.resort{
+    &-page{
+        h2{
+            font-family: "Montserrat";
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .hero{
+            &-wrapper{
+                @media screen and (max-width: @md) {
+                    flex-wrap: wrap-reverse;
+                }
+            }
+            &-message{
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                padding: 0 3rem;
+            }
+        }
+    }
+
+    &-details{
+        .hero{
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                color: @light;
+                font-size: 3.3rem;
+                line-height: 1.1;
+            }
+            p{
+                color: @light;
+                margin-bottom: 20px;
+            }
+            a{
+                display: inline-block;
+                border-width: 1px;
+                padding-left: 3rem;
+                padding-right: 3rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                text-align: center;
+                font-family: Montserrat, sans-serif;
+                font-size: 0.9rem;
+                line-height: 1.8;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.06rem;
+                transition-property: all;
+                transition-duration: 300ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                color: @light;
+                border: solid 0.6px;
+                background-color: rgba(255, 255, 255, 0.4);
+                &:hover, &:active, &:focus{
+                    background-color: @light;
+                    border-color: @light;
+                    color:@dark;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .description{
+            &-wrapper{
+                min-height: 95vh;
+                padding: 50px;
+                align-items: center;
+            }
+            &-imageStack{
+                position: relative;
+                height: 80%;
+                &-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 80vh;
+                }
+                .top{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 100;
+                    width: 65%;
+                }
+                .bottom{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 53%;
+                }
+            }
+            &-text{
+                padding: 50px;
+            }
+        }
+        .content{
+            min-height: 66vh;
+            align-items: center;
+            &-wrapper{
+                h1 {
+                    margin-top: 60px;
+                    text-align: center;
+                }
+            }
+            &-reversed{
+                @media screen and (min-width: @md) {
+                    flex-direction: row-reverse;
+                }
+            }
+            .image{
+                padding: 12px;
+                img{
+                    width: 100%;
+                }
+            }
+            
+        }
+
+        .contact{
+            &-wrapper{
+                background-color: @secondary;
+                padding: 2rem
+            }
+            &-image{
+                img{
+                    width: 100%;
+                }
+            }
+            &-text{
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
