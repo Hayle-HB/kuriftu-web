@@ -1,6 +1,48 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the updated guest frontend repo
+
+## Configuration
+
+The public directory is not linked to this repo. all references of media files in the public directory have been replaced with an equavalent reference on S3. Moving forward, we need to replace the references to the old production env (ex: https://kurifturesorts.com/_nuxt/img/17.d92b745.jpg) with S3 references.
+
+### to upload media files to the S3 bucket
+
+1. Get S3 Access Key & Secret Key (Ask Brook for env variables)
+2. install AWS CLI
+3. Run
+
+```sh
+aws configure
+```
+
+4. Test access
+
+```sh
+aws s3 ls s3://kuriftu-public-media
+```
+
+5. Upload a single file
+
+```sh
+aws s3 cp ./public/media/[folder_name]/[file.jpg] s3://kuriftu-public-media/[folder_name]/[file.jpg]
+```
+
+6. Upload an Entire Folder
+
+```sh
+aws s3 cp ./public/media/[folder_name]/ s3://kuriftu-public-media/[folder_name]/ --recursive
+
+```
+
+7. Sync Local Files to S3
+
+```sh
+aws s3 sync ./public/media/ s3://kuriftu-public-media/
+```
+
+8. Get the Public URL of an Uploaded File
+   S3 URLs follow this pattern: https://kuriftu-public-media.s3.amazonaws.com/path/to/file.jpg
 
 ## Available Scripts
 
@@ -30,17 +72,3 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

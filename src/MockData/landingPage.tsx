@@ -98,7 +98,7 @@ export const landingData = {
       subtitle: "ADVENTURE",
       description:
         "As the seasons change, Kurifu Adventure Park Entoto invites you to embrace the thrill of discovery. Nestled amidst the breathtaking highlands of Ethiopia, this unique escape offers exhilarating rope courses, glamping under starry skies, and dining with panoramic mountain views—creating unforgettable moments for every adventurer.",
-      image: "/entoto/entoto.jpg",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/entoto.jpg",
       linkText: "Discover More",
       link: "/resorts/entoto",
     },
@@ -108,7 +108,7 @@ export const landingData = {
       subtitle: "RELAXATION",
       description:
         "As the tranquil waters of Lake Bishoftu shimmer under the African sun, Kurifu Resort and Spa Bishoftu offers a serene escape. From luxurious lakeside accommodations to rejuvenating spa treatments, every moment is designed to immerse you in unmatched serenity and the beauty of this idyllic retreat.",
-      image: "/bishoftu/bishifto1.webp",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishifto1.webp",
       linkText: "Discover More",
       link: "/resorts/bishoftu",
     },
@@ -118,7 +118,7 @@ export const landingData = {
       subtitle: "WELLNESS",
       description:
         "In the heart of Addis Ababa, Boston Day Spa redefines urban relaxation. Indulge in world-class beauty and wellness treatments, from revitalizing facials to soothing massages, all crafted to offer you an oasis of calm amidst the vibrant cityscape.",
-      image: "/boston/boston.JPG",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston.JPG",
       linkText: "Discover More",
       link: "/resorts/boston",
     },
@@ -127,7 +127,7 @@ export const landingData = {
     title: "Kuriftu African Village ",
     description:
       "Gather your loved ones and step into a world of culture and charm at Kuriftu African Village. Nestled in the heart of Ethiopia, this one-of-a-kind destination celebrates the richness of African traditions with vibrant performances, artisanal crafts, and immersive experiences all paired with warm hospitality and timeless elegance.",
-    image: "/africanvillage/1.JPG",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/1.JPG",
     linkText: "Discover More",
     link: "/resorts/africanVillage",
   },

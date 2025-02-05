@@ -17,7 +17,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Weddings",
         description:
           "Take time to not only ride, but connect with our wonderful horses at the stable, these beauties have been trained to care for our guests as much as we do! ",
-        image: "/entoto/8.JPG",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/8.JPG",
         link: "wed",
         isEnquiryForm: true,
         linkText: "Make an enquiry",

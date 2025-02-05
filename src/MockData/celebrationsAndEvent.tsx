@@ -17,7 +17,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         title: "Corporate Rate Agreement",
         description:
           "Let us take care of your teams by rejuvinating and stregthening their relations with one another to optimize their level of efficiency by becoming corporate clients - having access to our extensive list of activities, destinations and experineces within the wellness space will help companies reap the benefits. Join the Kuriftu Family by making an enquiry with our Corporate Sales Team and we will customize your membership accordingly!",
-        image: "/entoto/5.jpg",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/5.jpg",
         link: "https://kurifturesorts.com/corporate_entoto.pdf",
         isEnquiryForm: false,
         linkText: "Entoto Corporate Package",

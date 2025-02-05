@@ -1,6 +1,6 @@
 export const contactData = {
   image1: "https://kurifturesorts.com/_nuxt/img/contact.2e8edc6.jpg",
-  image2: "/images/contact.jpg", // Path relative to the public folder
+  image2: "https://kuriftu-public-media.s3.amazonaws.com/images/contact.jpg", // Path relative to the public folder
 
   phone: [
     { location: "Water Park", number: "+251933817881" },

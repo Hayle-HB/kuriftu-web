@@ -25,7 +25,7 @@ export const bostonHomeData = {
       title: "Hair Salon",
       description:
         "Enjoy a self-care experience at our Hair Salon - from high ceiling interiors, to vibrant art and natural lighting, the Boston Day Spa Hair Salon exudes luxury at its finest. Each customer is welcomed and treated with the utmost care from the start to the end of each service. As an Ethiopian brand, we know very well how to manage kinks and curls of all types and guarantee our clients walk out the door looking flawless.",
-      image: "/spa/spa2.JPG",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/spa/spa2.JPG",
     },
     {
       title: "Steam / Sauna / Jacuzzi",

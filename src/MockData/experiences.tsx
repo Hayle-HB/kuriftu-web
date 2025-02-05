@@ -23,7 +23,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
 
     items: [
       {
-        image: "/entoto/10.jpg",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/10.jpg",
         title: "Horse Riding Picnic",
         description:
           "Enjoy a unique trail riding experience in the spectacular forest with our Horse Ride and Picnic package. This includes a private trail ride with a specially prepared gourmet picnic hamper for you to enjoy with your loved ones.",
@@ -41,7 +41,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
           " Prepare to trek up the mountain on our guided hiking tour to view all activities based along the way...",
       },
       {
-        image: "/entoto/bbq.jpg",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/bbq.jpg",
         title: "BBQ",
         description:
           "Fire up the grill in either our Glamping facility or within the Presidential Cabin - feel free to bring your own materials or request for a custom pre-marinade selection to be brought to you!",
@@ -75,7 +75,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
       "Discover a world of adventure in Kuriftu Bishoftu - as the leaders of innovation in the hospitality industry in Ethiopia, we pride ourselves in curated unmatched experiences",
     carouselImages: [
       "https://kurifturesorts.com/_nuxt/img/Swimming2.c58b523.webp",
-      "/bishoftu/bishoftu.svg",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu.svg",
       "https://kurifturesorts.com/_nuxt/img/Kayaking.8a09cfa.webp",
     ],
     experiences: [
@@ -95,13 +95,13 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
           "If you think the only view is within the resort then think again! Enjoy a wonderful kayak ride with friends and be mezermized by the luscious green landscape",
       },
       {
-        image: "/bishoftu/8.JPG",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/8.JPG",
         title: "Cinema",
         description:
           "The cinema at our resort offers a comfortable experience with rows of cushions; whether it’s a date night or family fun, kick back and enjoy a night complete with popcorn, ice blasts, and delicious ice cream!",
       },
       {
-        image: "/bishoftu/3.JPG",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/3.JPG",
         title: "Table Tennis",
         description:
           "For our table tennis enthusiasts, add an exciting tournament to your itinerary Kuriftu Bishoftu",
@@ -248,7 +248,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title: "Spa",
         description:
           "Relax and unwind - Let us pamper you in our unique massage rooms overlooking the river, natural warm air infusing with our in-house mixed aroma and the soothing sound of the waterfall.",
-        image: "/spa/spa3.JPG", // No image left in the gallery
+        image: "https://kuriftu-public-media.s3.amazonaws.com/spa/spa3.JPG", // No image left in the gallery
       },
     ],
 

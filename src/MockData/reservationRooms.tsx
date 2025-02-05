@@ -10,7 +10,7 @@ export type ReservationItemModal = {
 };
 export const reservationRooms: ReservationItemModal[] = [
   {
-    image: "/africanvillage/3.JPG",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
     title: "African Village",
     subtitle: "Addis Ababa, Ethiopia",
     price: "$300",

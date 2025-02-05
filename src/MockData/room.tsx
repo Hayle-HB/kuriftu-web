@@ -137,7 +137,7 @@ export const ROOM: Record<string, ResortRoomModel> = {
 
   },
   africanVillage: {
-    coverImage: "/africanvillage/3.JPG",
+    coverImage: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
     resort: "africanvillage",
     
   }

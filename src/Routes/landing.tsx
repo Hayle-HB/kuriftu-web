@@ -16,7 +16,7 @@ export default function LandingPage(): JSX.Element {
           className="hero-video"
           width="100%"
           height="650"
-          src="/home/homeVideo.mov"
+          src="https://kuriftu-public-media.s3.amazonaws.com/home/homeVideo.mov"
           autoPlay
           loop
           muted

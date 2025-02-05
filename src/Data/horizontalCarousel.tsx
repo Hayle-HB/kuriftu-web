@@ -1,16 +1,16 @@
 export const horizontalCarousel = [
-  "/images/horizontalCarousel/1.webp",
-  "/images/horizontalCarousel/2.webp",
-  "/images/horizontalCarousel/3.webp",
-  "/images/horizontalCarousel/4.webp",
-  "/images/horizontalCarousel/5.webp",
-  "/images/horizontalCarousel/6.webp",
-  "/images/horizontalCarousel/7.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/horizontalCarousel/1.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/horizontalCarousel/2.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/horizontalCarousel/3.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/horizontalCarousel/4.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/horizontalCarousel/5.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/horizontalCarousel/6.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/horizontalCarousel/7.webp",
 ];
 
 export const experienceCarousel = [
-  "/images/experience/1.webp",
-  "/images/experience/2.webp",
-  "/images/experience/3.webp",
-  "/images/experience/4.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/experience/1.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/experience/2.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/experience/3.webp",
+  "https://kuriftu-public-media.s3.amazonaws.com/images/experience/4.webp",
 ];

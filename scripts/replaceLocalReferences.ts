@@ -8,7 +8,7 @@ const directory = "src/**/*.{js,ts,tsx,json}";
 const S3_BASE_URL = "https://kuriftu-public-media.s3.amazonaws.com";
 
 // Regex to find local media references
-const LOCAL_MEDIA_REGEX = /(["'`])\/([^"'`]+\.(jpg|jpeg|png|webp|gif|mp4|mov|MOV|MP4))\1/gi;
+const LOCAL_MEDIA_REGEX = /(["'`])\/([^"'`]+\.(jpg|jpeg|png|webp|gif|mp4|mov|MOV|MP4|ico|html|json|txt|svg))\1/gi;
 
 async function replaceLocalReferences() {
   try {

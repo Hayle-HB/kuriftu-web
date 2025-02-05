@@ -13,8 +13,8 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     location: "14.9 km from Addis Ababa Bole International Airport",
     email: "booking@kurifturesorts.com",
     rating: 5,
-    cover_image: "/entoto/entato1.webp",
-    cover_video: "/entoto/entoto.mov",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/entato1.webp",
+    cover_video: "https://kuriftu-public-media.s3.amazonaws.com/entoto/entoto.mov",
     isIframe: false,
   },
   bishoftu: {
@@ -32,7 +32,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     email: "booking@kurifturesorts.com",
     rating: 5,
     cover_image: "https://kurifturesorts.com/_nuxt/img/bishAcc.1bbca14.webp",
-    cover_video: "/bishoftu/bishoftu.mov",
+    cover_video: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu.mov",
   },
   laketana: {
     isIframe: true,
@@ -84,7 +84,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     location: "Approximately 15 km from Addis Ababa Bole International Airport",
     email: "booking@kurifturesorts.com",
     rating: 0,
-    cover_image: "/africanvillage/3.JPG",
-    cover_video: "/africanvillage/africanVillage.MOV",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
+    cover_video: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africanVillage.MOV",
   },
 };
