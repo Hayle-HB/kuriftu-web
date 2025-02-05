@@ -4,9 +4,13 @@ import { glob } from "glob";
 import { createObjectCsvWriter } from "csv-writer";
 import * as xlsx from "xlsx";
 
+// Get command-line arguments
+const args = process.argv.slice(2);
+const saveExcel = args.includes("-f"); // Check if "-f" flag is present
+
 const directory = "src/**/*.{js,ts,tsx,json}";
 
-// Regex for detecting media files
+// Regex for detecting media files (images & videos)
 const MEDIA_REGEX = /(["'`])(\/[^"'`]+\.(jpg|jpeg|png|webp|gif|mp4|mov|MOV|MP4))\1|(["'`])(https?:\/\/[^"'`]+\.(jpg|jpeg|png|webp|gif|mp4|mov|MOV|MP4))\4/gi;
 
 // Define output file names
@@ -45,11 +49,14 @@ async function analyzeMediaUsage() {
       });
     }
 
-    console.log(`Found ${mediaReferences.length} media references.`);
+    console.log(`✅ Found ${mediaReferences.length} media references.`);
     await saveToCSV(mediaReferences);
-    saveToExcel(mediaReferences);
+    
+    if (saveExcel) {
+      saveToExcel(mediaReferences);
+    }
   } catch (error) {
-    console.error("Error analyzing media usage:", error);
+    console.error("❌ Error analyzing media usage:", error);
   }
 }
 
@@ -65,16 +72,16 @@ async function saveToCSV(data: MediaReference[]) {
   });
 
   await csvWriter.writeRecords(data);
-  console.log(`Data saved to ${CSV_FILE}`);
+  console.log(`✅ Data saved to ${CSV_FILE}`);
 }
 
-// Function to save results to Excel
+// Function to save results to Excel (only if "-f" flag is present)
 function saveToExcel(data: MediaReference[]) {
   const worksheet = xlsx.utils.json_to_sheet(data);
   const workbook = xlsx.utils.book_new();
   xlsx.utils.book_append_sheet(workbook, worksheet, "Media References");
   xlsx.writeFile(workbook, EXCEL_FILE);
-  console.log(`Data saved to ${EXCEL_FILE}`);
+  console.log(`✅ Data saved to ${EXCEL_FILE}`);
 }
 
 // Run the analysis

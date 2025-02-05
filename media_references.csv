@@ -2,6 +2,7 @@ Media Link,Referencing File,Line Number
 https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp,src/components/RoomModal.tsx,37
 https://kurifturesorts.com/_nuxt/img/pai_Boston.3fabb0c.png,src/components/BuyTicketBoostonPackage.tsx,25
 https://kurifturesorts.com/_nuxt/img/NewAwards.b2869ef.jpg,src/components/AboutUsCard4.tsx,14
+/home/homeVideo.mov,src/Routes/landing.tsx,19
 https://kurifturesorts.com/_nuxt/img/4.54a7799.webp,src/MockData/wellness.tsx,10
 https://kurifturesorts.com/_nuxt/img/1.99dded0.webp,src/MockData/wellness.tsx,11
 https://kurifturesorts.com/_nuxt/img/2.6dced12.webp,src/MockData/wellness.tsx,12
@@ -700,7 +701,6 @@ https://kurifturesorts.com/_nuxt/img/21.6b04da9.jpg,src/Data/MockData.tsx,45
 https://example.com/images/kuriftu-bishoftu.jpg,src/Data/MockData.tsx,53
 https://example.com/images/kuriftu-bishoftu-1.jpg,src/Data/MockData.tsx,60
 https://example.com/images/kuriftu-bishoftu-2.jpg,src/Data/MockData.tsx,61
-/home/homeVideo.mov,src/Routes/landing.tsx,19
 https://kurifturesorts.com/_nuxt/img/slide6.a9663c6.webp,src/pages/Resort/ResortHome.tsx,354
 https://kurifturesorts.com/_nuxt/img/slide6.a9663c6.webp,src/pages/Resort/ResortHome.tsx,530
 https://kurifturesorts.com/_nuxt/img/bis_king.f903f0a.jpg,src/pages/Booking/RoomListing.tsx,20
