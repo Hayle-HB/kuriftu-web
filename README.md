@@ -44,6 +44,10 @@ aws s3 sync ./public/media/ s3://kuriftu-public-media/
 8. Get the Public URL of an Uploaded File
    S3 URLs follow this pattern: https://kuriftu-public-media.s3.amazonaws.com/path/to/file.jpg
 
+## Deployment
+
+to delploy to production server, just push to the production branch
+
 ## Available Scripts
 
 In the project directory, you can run:
