@@ -31,11 +31,6 @@ jobs:
             echo "Build directory not found! Build process may have failed.";
             exit 1;
           fi
-      - name: Debug Secrets
-        run: |
-          echo "CPANEL_HOST is set: ${{ secrets.CPANEL_HOST != '' }}"
-          echo "CPANEL_USERNAME is set: ${{ secrets.CPANEL_USERNAME != '' }}"
-          echo "CPANEL_PASSWORD is set: ${{ secrets.CPANEL_PASSWORD != '' }}"
 
       - name: Upload to Server
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
