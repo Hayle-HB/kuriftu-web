@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Row, Col, Button, InputGroup } from "react-bootstrap";
-import DateAndTimePicker from "./DateAndTimePicker";
-import { resortsAll } from "../MockData/resortsAll";
+import CustomDateRangePicker from "./DateAndTimePicker";
+import { resortsAll } from "../../MockData/resortsAll";
 import moment from "moment";
 import { useNavigate } from "react-router";
 
@@ -46,19 +46,19 @@ const AvailabilityCheck: React.FC<SearchBarProps> = () => {
       style={{
         padding: "0px 2%",
         borderRadius: "5px",
-        backgroundColor: "#f8f9fa",
       }}
     >
       <Form>
         <Row className="align-items-center">
           {/* Location Select */}
-          <Col xs={12} md={4} className="mb-3 mb-md-0">
+          <Col xs={12} md={4} className="mb-3 mb-md-0 quickbooking_left">
             <Row>
                 <InputGroup>
                   <Form.Select
                     value={destination}
                     onChange={(e) => setDestination(e.target.value)}
                     className="w-100 select-location"
+                    required
                   >
                     <option>Destination</option>
                     {resortsAll.map((item) => item.isShow && (
@@ -69,8 +69,7 @@ const AvailabilityCheck: React.FC<SearchBarProps> = () => {
             </Row>
             <Row>
               {/* Check-in and Check-out */}
-              <DateAndTimePicker isShow={false} onSelectAvailability={handleDates} />
-               
+              <CustomDateRangePicker isShow={false} onSelectAvailability={handleDates} />
             </Row>
           </Col>
           {/* Guests */}
@@ -94,7 +93,7 @@ const AvailabilityCheck: React.FC<SearchBarProps> = () => {
           </Col>
 
           {/* Search Button */}
-          <Col xs={12} md={2} className="text-center">
+          <Col xs={12} md={2} className="text-center py-2">
             {/* <Button
               onClick={handleNavigate}
               style={{ background: "#6E3163",fontSize:'10px',  fontWeight:'normal', lineHeight:'normal', padding:'12px',borderRadius:'20px' }}

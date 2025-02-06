@@ -1,0 +1,29 @@
+.quickbooking{
+    &_left{
+        padding: 12px;
+
+    }
+}
+.availability-check-wrapper {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    background: rgba(255, 77, 51, .2);
+    border: .5px solid hsla(0, 0%, 100%, .4);
+}
+.date_range_picker{
+    &_input_box{
+        width: 100% !important;
+        font-family: 'Montserrat';
+        background: @light;
+    }
+    .calendar_popup{
+        top: auto;
+        bottom: 55px;
+        font-family: 'Montserrat';
+        .day{
+            &.selected{
+                background-color: @primary;
+            }
+        }
+    }
+}
