@@ -790,7 +790,7 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .resort-details .accomidation {
-    height: 85vh;
+    height: 105vh;
   }
 }
 @media screen and (max-width: 576px) {
