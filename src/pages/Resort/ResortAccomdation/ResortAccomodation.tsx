@@ -6,7 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 const ResortAccomodation = () => {
   const { slug } = useParams<{ slug: string }>();
   const accomodation = slug && ACCOMODATIONS[slug];
-  debugger;
+  
   if (!accomodation) {
     return <div>Accomodation not found</div>;
   }

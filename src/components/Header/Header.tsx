@@ -54,7 +54,7 @@ const Header = () => {
   return (
     <>
       <nav
-        className="d-flex justify-content-between align-items-center px-3"
+        className="main-nav-bar d-flex justify-content-between align-items-center px-3"
         style={{
           position: "fixed",
           top: 0,
@@ -62,8 +62,6 @@ const Header = () => {
           width: "100%",
           zIndex: 10,
           color: "white",
-          transition: "background-color 0.3s ease",
-          backgroundColor: isScrolled ? "#f8f9fa" : "transparent",
         }}
       >
         <div className="d-flex align-items-center">
