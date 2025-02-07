@@ -9,6 +9,7 @@ import HorizontalCarousel from "../../UI/HorizontalCarousel";
 import {ACCOMODATIONS} from '../../MockData/accomdations';
 import {ITEMS} from '../../MockData/items';
 import {EXPERIENCE} from '../../MockData/experiences';
+import ScrollingAnimation from '../../UI/AnimatedTiles/ExperianceSection';
 
 const ResortDetails: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -20,7 +21,9 @@ const ResortDetails: React.FC = () => {
   const galleryImages = Gallery[slug];
   const accomidation = ACCOMODATIONS[slug];
   const resortItems = ITEMS[slug];
-  const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.experiences[0];
+
+  const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.featured;
+  const featuredExps = EXPERIENCE[slug]?.featured;
 
   console.log(slug);
   return (
@@ -82,7 +85,14 @@ const ResortDetails: React.FC = () => {
         </Row>
       )}
       {experience && (
-        <Container className="content-wrapper">
+        <ScrollingAnimation
+            featuredExps={featuredExps}
+         />
+      )}
+
+      {/**
+       * 
+       * <Container className="content-wrapper">
           <Row className={`content content-reversed`}>
             <Col className="image" md={6}>
               <img src={experience.image} />
@@ -94,9 +104,6 @@ const ResortDetails: React.FC = () => {
             </Col>
           </Row>
       </Container>
-      )}
-
-      {/**
        * <Container className="content-wrapper">
         <h1 className="title-sans">Latest Offers</h1>
         {resort.content?.map((content, index) => (
