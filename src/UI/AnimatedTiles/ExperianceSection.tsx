@@ -32,7 +32,7 @@ const ScrollingAnimation: React.FC<ScrollingAnimationProps> = ({ featuredExps })
                     start: 'center center',
                     end: '+=260%',
                     scrub: true,
-                    markers: true,
+                    markers: false,
                     pin: true,
                     anticipatePin: 1,
                 },
