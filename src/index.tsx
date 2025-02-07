@@ -16,7 +16,8 @@ import ResortLayout from "./pages/Resort/ResortLayout";
 import ResortAccomodation from "./pages/Resort/ResortAccomdation/ResortAccomodation";
 import ResortAdventure from "./pages/Resort/ResortAdventure";
 import ResortCeleberationsAndEvents from "./pages/Resort/ResortCeleberationsAndEvents";
-import ResortHome from "./pages/Resort/ResortHome";
+//import ResortHome from "./pages/Resort/ResortHome";
+import ResortLanding from "./Routes/Resort/ResortLanding";
 import ResortEvents from "./pages/Resort/ResortEvents";
 import ResortExperiences from "./pages/Resort/ResortExperiences";
 import ResortGallery from "./pages/Resort/ResortGallery";
@@ -126,7 +127,7 @@ const router = createBrowserRouter([
         children: [
           {
             path: "",
-            element: <ResortHome />,
+            element: <ResortLanding />,
           },
           {
             path: "acc",

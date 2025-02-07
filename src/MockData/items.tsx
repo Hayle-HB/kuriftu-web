@@ -24,11 +24,11 @@ export const ITEMS: Record<string, ItemModal[]> = {
     },
     {
       title: "Corporate",
-      link: "event",
+      link: "corp",
     },
     {
       title: "Celebration & Events",
-      link: "corp",
+      link: "event",
     },
     {
       title: "Gallery",
@@ -51,11 +51,11 @@ export const ITEMS: Record<string, ItemModal[]> = {
     },
     {
       title: "Corporate",
-      link: "event",
+      link: "corp",
     },
     {
       title: "Celebration & Events",
-      link: "corp",
+      link: "event",
     },
     {
       title: "Gallery",
@@ -84,11 +84,11 @@ export const ITEMS: Record<string, ItemModal[]> = {
     },
     {
       title: "Corporate",
-      link: "event",
+      link: "corp",
     },
     {
       title: "Celebration & Events",
-      link: "corp",
+      link: "event",
     },
     {
       title: "Gallery",
@@ -116,11 +116,11 @@ export const ITEMS: Record<string, ItemModal[]> = {
     },
     {
       title: "Corporate",
-      link: "event",
+      link: "corp",
     },
     {
       title: "Celebration & Events",
-      link: "corp",
+      link: "event",
     },
     {
       title: "Gallery",
@@ -129,7 +129,8 @@ export const ITEMS: Record<string, ItemModal[]> = {
    
   ],
   africanVillage: [
-    {
+    /**
+      {
       title: "Accomodation",
       link: "acc",
     },
@@ -151,12 +152,13 @@ export const ITEMS: Record<string, ItemModal[]> = {
     },
     {
       title: "Corporate",
-      link: "event",
+      link: "corp",
     },
     {
       title: "Celebration & Events",
-      link: "corp",
+      link: "event",
     },
+     */
     { title: "Gallery",
      link: "gallery" ,
     }, 
@@ -172,7 +174,8 @@ export const ITEMS: Record<string, ItemModal[]> = {
     },
   ],
   boston: [
-    {
+   /**
+    *  {
       title: "Accomodation",
       link: "acc",
     },
@@ -194,12 +197,13 @@ export const ITEMS: Record<string, ItemModal[]> = {
     },
     {
       title: "Corporate",
-      link: "event",
+      link: "corp",
     },
     {
       title: "Celebration & Events",
-      link: "corp",
+      link: "event",
     },
+    */
     { title: "Gallery",
        link: "gallery" , 
     }

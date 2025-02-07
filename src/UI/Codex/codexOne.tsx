@@ -35,7 +35,7 @@ const AnimatedCodexOneElement: React.FC<AnimatedCodexElementProps>=({classname, 
                     start: 'center bottom',
                     end: 'center center',
                     scrub: true,
-                    markers: true
+                    markers: false
                 }
             })
             .from(image, {
