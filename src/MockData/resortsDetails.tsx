@@ -103,4 +103,19 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
     cover_video: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africanVillage.MOV",
   },
+  boston: {
+    isIframe: false,
+    name: "Boston Day Spa",
+    region: "Addis Abeba, Ethiopia",
+    address: "53.7 km from Addis Ababa Bole International Airport",
+    description:"Born as the heart of the Kuriftu brand, Boston Day Spa is more than a destination—it's a masterpiece. Built by the hands of local artisans trained by our visionary CEO, this sanctuary of wellness exudes unmatched care and craftsmanship. For over 15 years, our dedicated team has redefined indulgence, offering world-class spa services tailored to your every need. Beyond relaxation, Boston Day Spa is a living gallery—immerse yourself in a space where luxury, art, and heritage unite.",
+    phone: "+251 11 662 3808, +251 11 663 6557",
+    latitude: 9.03,
+    longitude: 38.74,
+    location: "Approximately 15 km from Addis Ababa Bole International Airport",
+    email: "booking@kurifturesorts.com",
+    rating: 0,
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
+    cover_video: ""//"https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africanVillage.MOV",
+  }
 };

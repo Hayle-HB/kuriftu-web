@@ -7,6 +7,8 @@ import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "../../UI/Carousel";
 import HorizontalCarousel from "../../UI/HorizontalCarousel";
 import {ACCOMODATIONS} from '../../MockData/accomdations';
+import {ITEMS} from '../../MockData/items';
+import {EXPERIENCE} from '../../MockData/experiences';
 
 const ResortDetails: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -17,8 +19,10 @@ const ResortDetails: React.FC = () => {
   const resort = RESORTDETAILS[slug];
   const galleryImages = Gallery[slug];
   const accomidation = ACCOMODATIONS[slug];
+  const resortItems = ITEMS[slug];
+  const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.experiences[0];
 
-  console.log(resort);
+  console.log(slug);
   return (
     <div className="resort-details">
       {/* Hero Section */}
@@ -76,6 +80,20 @@ const ResortDetails: React.FC = () => {
             <Link to='acc'>Explore</Link>
           </div>
         </Row>
+      )}
+      {experience && (
+        <Container className="content-wrapper">
+          <Row className={`content content-reversed`}>
+            <Col className="image" md={6}>
+              <img src={experience.image} />
+            </Col>
+            <Col className="text" md={6}>
+              <h2 className="title-sans">{experience.title}</h2>
+              <p>{experience.description}</p>
+              <Link to='exp'>Explore more Experiences</Link>
+            </Col>
+          </Row>
+      </Container>
       )}
 
       {/**
