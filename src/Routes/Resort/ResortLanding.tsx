@@ -9,6 +9,9 @@ import HorizontalCarousel from "../../UI/HorizontalCarousel";
 import {ACCOMODATIONS} from '../../MockData/accomdations';
 import {ITEMS} from '../../MockData/items';
 import {EXPERIENCE} from '../../MockData/experiences';
+import {DINING} from '../../MockData/dining';
+import {WELLNESS} from '../../MockData/wellness';
+import {CELEBRATIONSANDEVENTS} from '../../MockData/celebrationsAndEvent';
 import ScrollingAnimation from '../../UI/AnimatedTiles/ExperianceSection';
 
 const ResortDetails: React.FC = () => {
@@ -21,11 +24,14 @@ const ResortDetails: React.FC = () => {
   const galleryImages = Gallery[slug];
   const accomidation = ACCOMODATIONS[slug];
   const resortItems = ITEMS[slug];
+  const dinning = DINING[slug];
+  const wellness = WELLNESS[slug];
+  const celebrations = CELEBRATIONSANDEVENTS[slug];
 
   const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.featured;
   const featuredExps = EXPERIENCE[slug]?.featured;
 
-  console.log(slug);
+  console.log(celebrations);
   return (
     <div className="resort-details">
       {/* Hero Section */}
@@ -89,6 +95,52 @@ const ResortDetails: React.FC = () => {
             featuredExps={featuredExps}
          />
       )}
+      {
+        dinning &&(
+          <Container fluid className="dining-tile-wrapper">
+              <Row className="dining-tile">
+                <Col className="dining-tile-text-wrapper" sm={12} md={6}>
+                    <h1>{dinning.title}</h1>
+                    <p>{dinning.description}</p>
+                </Col>
+                <Col className="dining-tile-image-wrapper" sm={12} md={6}>
+                    <img className="dining-tile-image" src={dinning.carouselImages[0]} />
+                </Col>
+              </Row>
+              <Row>
+                <Link to='dining'>Explore More</Link>
+              </Row>
+          </Container>
+        )
+      }
+      {wellness &&
+      <Container className="content-wrapper">
+          <Row className={`content`}>
+            <Col className="image" md={6}>
+              <img src={wellness.gallery[0]} />
+            </Col>
+            <Col className="text" md={6}>
+              <h2 className="title-sans">{wellness.title}</h2>
+              <p>{wellness.description}</p>
+              <Link to='well'>Learn More</Link>
+            </Col>
+          </Row>
+      </Container>
+      }
+      {celebrations && 
+        <Container className="content-wrapper">
+          <Row className={`content content-reversed`}>
+            <Col className="image" md={6}>
+              <img src={wellness.carouselImages[0]} />
+            </Col>
+            <Col className="text" md={6}>
+              <h2 className="title-sans">{celebrations.title}</h2>
+              <p>{celebrations.description}</p>
+              <Link to='event'>Learn More</Link>
+            </Col>
+          </Row>
+      </Container>
+      }
 
       {/**
        * 
