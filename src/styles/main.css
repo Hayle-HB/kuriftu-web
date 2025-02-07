@@ -1180,8 +1180,13 @@ a:hover {
 }
 @media screen and (max-width: 992px) {
   .resorts-nabvar {
-    top: 35.07px;
+    top: 50.07px;
   }
+}
+.resorts-nabvar .dropdown-menu {
+  position: absolute;
+  left: 40px;
+  width: 30vw;
 }
 .main-nav-bar {
   background-color: #fcfaf369;

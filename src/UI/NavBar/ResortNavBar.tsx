@@ -1,13 +1,12 @@
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ITEMS } from "../../MockData/items";
-import { useState } from "react";
 import {capitalizeFirstLetter} from "../../utils";
 import {  useParams } from "react-router";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import useWindowDimensions from '../../Hooks/WindowDimensions';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
@@ -25,6 +24,11 @@ const ResortNavBar: React.FC=()=>{
 
     const [activeLink, setActiveLink] = useState(location.pathname);
     const containerRef = useRef<HTMLParagraphElement | null>(null);
+
+
+    useEffect(() => {
+      setActiveLink(location.pathname);
+    }, [location.pathname]);
     useGSAP(() => {
         const container = containerRef.current; 
         const notMobile = dimention.width / dimention.height > 1;  
@@ -135,7 +139,7 @@ const ResortNavBar: React.FC=()=>{
 
           {/* Dropdown for smaller screens */}
           <Nav className="d-lg-none">
-            <NavDropdown title={slug && capitalizeFirstLetter(slug)}>
+            <NavDropdown title={slug && capitalizeFirstLetter(slug)} align="end">
               {itemsList.map((item, index) => (
                 <NavDropdown.Item
                   as={Link}
