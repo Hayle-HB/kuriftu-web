@@ -1,5 +1,6 @@
 import { ResortDetailsModal } from "../interfaces/resortDetailModal";
 
+
 export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
   entoto: {
     name: "kuriftu resort & spa Entoto",
@@ -78,6 +79,21 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     address: "New Ambo RD, Addis Ababa 1000, Ethiopia",
     description:
       "With our devotion to connecting the African nation through unique experiments in the hospitality industry, the Kuriftu brand is proud to present Kuriftu Resort & Spa Africa Village. This project highlights 54 villas that showcase the individual beauty of each African country ranging from food, art, books, cultural artifacts, fabrics, flags, and so much more! We aim to embrace the mesh of culture in this extraordinary continent and encourage others to explore.",
+    phone: "+251924949494",
+    latitude: 9.03,
+    longitude: 38.74,
+    location: "Approximately 15 km from Addis Ababa Bole International Airport",
+    email: "booking@kurifturesorts.com",
+    rating: 0,
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
+    cover_video: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africanVillage.MOV",
+  },
+  waterpark: {
+    isIframe: false,
+    name: "kuriftu Water Park",
+    region: "Bishoftu",
+    address: "53.7 km from Addis Ababa Bole International Airport",
+    description:"Looking for a splash-tastic way to spend the day with your family? Whether you're planning a weekend adventure, a birthday bash, a group outing, or a surprise for someone special, Kuriftu Water Park is the perfect place for nonstop fun! Get ready to dive into excitement, ride the waves, and make unforgettable memories—because here, the fun never runs dry! ",
     phone: "+251924949494",
     latitude: 9.03,
     longitude: 38.74,

@@ -1,9 +1,12 @@
 // src/pages/ResortDetails.tsx
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { resortDetails } from "../../Data/resort";
+import {RESORTDETAILS} from "../../MockData/resortsDetails";
+import {Gallery} from "../../MockData/gallery";
 import { Container, Col, Row } from "react-bootstrap";
 import Carousel from "../../UI/Carousel";
+import HorizontalCarousel from "../../UI/HorizontalCarousel";
+import {ACCOMODATIONS} from '../../MockData/accomdations';
 
 const ResortDetails: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -11,14 +14,33 @@ const ResortDetails: React.FC = () => {
   if (!slug) {
     return <div>Resort not found</div>;
   }
-  const resort = resortDetails[slug];
+  const resort = RESORTDETAILS[slug];
+  const galleryImages = Gallery[slug];
+  const accomidation = ACCOMODATIONS[slug];
+
+  console.log(resort);
   return (
     <div className="resort-details">
       {/* Hero Section */}
+      
       <div
         className="hero"
         style={{ backgroundImage: `url(${resort.cover_image})` }}
       >
+        <video
+          key={resort.cover_video}
+          className="hero-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ objectFit: "cover", width: "100%", height: "100vh",   
+          pointerEvents: "none", // Prevents user interaction
+          }}
+          onContextMenu={(e) => e.preventDefault()} 
+        >
+          <source src={resort.cover_video}  />
+        </video>
         <h1 className="title-sans">{resort.name}</h1>
         <p>{resort.region}</p>
         <Link to={`/reservation?resort=${slug}`}>BOOK NOW</Link>
@@ -28,37 +50,36 @@ const ResortDetails: React.FC = () => {
       <Row className="description-wrapper">
         <Col md={6} className="description-imageStack-wrapper">
           <div className="description-imageStack">
-            <img
-              className="top"
-              src={
-                resort.description?.image &&
-                Array.isArray(resort.description.image)
-                  ? resort.description.image[0]
-                  : "https://kurifturesorts.com/_nuxt/img/4.61f4fcb.jpg"
-              }
-            />
-            <img
-              className="bottom"
-              src={
-                resort.description?.image &&
-                Array.isArray(resort.description.image)
-                  ? resort.description.image[1]
-                  : "https://kurifturesorts.com/_nuxt/img/9.e53335f.jpg"
-              }
-            />
+            <div className="top" style={{backgroundImage: `url(${galleryImages.length > 0 ? galleryImages[0]:resort.cover_image})`}}>
+            </div>
+            <div className="bottom" style={{backgroundImage: `url(${galleryImages.length > 1 ? galleryImages[1]:resort.cover_image})`}}>
+            </div>
+            
           </div>
         </Col>
         <Col md={6} className="description-text">
-          <h2 className="title-sans">{resort.description?.title}</h2>
-          <p>{resort.description?.text}</p>
+          <p>{resort.description}</p>
         </Col>
       </Row>
 
       {/** Gallery Section */}
       <Row className="gallery">
-        <Carousel slides={resort.gallery}></Carousel>
+        <HorizontalCarousel items={galleryImages.slice(2)} />
       </Row>
-      <Container className="content-wrapper">
+      {accomidation && (
+        <Row className="accomidation">
+          <div className="accomidation-img" style={{backgroundImage: `url(${accomidation.accomodations[0].image})`}}></div>
+          <div className="accomidation-text">
+            <h3>Featured Accommodiation</h3>
+            <h1>{accomidation.accomodations[0].title}</h1>
+            <p>{accomidation.accomodations[0].description}</p>
+            <Link to='acc'>Explore</Link>
+          </div>
+        </Row>
+      )}
+
+      {/**
+       * <Container className="content-wrapper">
         <h1 className="title-sans">Latest Offers</h1>
         {resort.content?.map((content, index) => (
           <Row className={`content ${index % 2 != 0 && "content-reversed"}`}>
@@ -75,6 +96,7 @@ const ResortDetails: React.FC = () => {
           </Row>
         ))}
       </Container>
+       */}
       <Container className="contact-wrapper" fluid>
         <Row>
           <Col md={6}>

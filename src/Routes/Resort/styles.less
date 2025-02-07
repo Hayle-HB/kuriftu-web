@@ -35,12 +35,15 @@
                 color: @light;
                 font-size: 3.3rem;
                 line-height: 1.1;
+                z-index: 100;
             }
             p{
                 color: @light;
                 margin-bottom: 20px;
+                z-index: 100;
             }
             a{
+                z-index: 100;
                 display: inline-block;
                 border-width: 1px;
                 padding-left: 3rem;
@@ -74,34 +77,148 @@
                 min-height: 95vh;
                 padding: 50px;
                 align-items: center;
+                @media screen and (min-width: @lg) {
+                    padding-left: 8rem;
+                    padding-right: 16rem;
+                }
+                @media screen and (max-width: @sm) {
+                    padding-bottom: 8rem;
+                    padding-top: 16rem;
+                }
             }
             &-imageStack{
                 position: relative;
-                height: 80%;
+                height: 50vw;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                max-width: 500px;
+                aspect-ratio: 1;
                 &-wrapper{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     height: 80vh;
+                    @media screen and (max-width: @sm) {
+                        height: 50vh;
+                    }
                 }
                 .top{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: 100;
-                    width: 65%;
+                    grid-column: 1 / 5;
+                    grid-row: 1 / 5;
+                    z-index: 1;
+                    background-size: cover;
+                    background-position: center;
                 }
                 .bottom{
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    width: 53%;
+                    background-size: cover;
+                    background-position: center;
+                    grid-column: 4 / 6;
+                    grid-row: 4 / 6;
+                    z-index: 2;
                 }
             }
             &-text{
                 padding: 50px;
             }
         }
+
+        .accomidation{
+            display: grid;
+            height: 60vw;
+            display: grid;
+            grid-template-columns: repeat(22, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            width:100%;
+            @media screen and (max-width: @lg) {
+                height: 80vh;
+            }
+            @media screen and (max-width: @md) {
+                height: 85vh;
+            }
+            @media screen and (max-width: @sm) {
+                height: 95vh;
+            }
+            &-img{
+                grid-column: 3 / 13;
+                grid-row: 2/ 11;
+                z-index: 1;
+                background-size: cover;
+                background-position: center;
+                @media screen and (max-width: @lg) {
+                    grid-column: 3 / 15;
+                    grid-row: 3/ 11;
+                }
+            
+                @media screen and (max-width: @md) {
+                    grid-column: 2 / 18;
+                    grid-row: 3/ 9;
+                }
+            
+                @media screen and (max-width: @sm) {
+                    grid-column: 2 / 21;
+                    grid-row: 2/ 8;
+                }
+                
+            }
+            &-text{
+                grid-column: 12 / 21;
+                grid-row: 3/ 10;
+                z-index: 2;
+                background-color: @light;
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                @media screen and (max-width: @lg) {
+                    grid-column: 9 / 20;
+                    grid-row: 4/ 10;
+                }
+            
+                @media screen and (max-width: @md) {
+                    grid-column: 6 / 21;
+                    grid-row: 8/ 12;
+                }
+            
+                @media screen and (max-width: @sm) {
+                    grid-column: 3 / 22;
+                    grid-row: 7/ 12;
+                }
+                h3{
+                    color: @dark;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 0.9em;
+                    line-height: 1.8;
+                    font-weight: 300;
+                    letter-spacing: 0.06rem;
+                }
+                h1{
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 0.06rem;
+                    font-size: 2em;
+                    @media screen and (max-width: @lg) {
+                        font-size: 1.75em;
+                    }
+                    @media screen and (max-width: @md) {
+                        font-size: 1.5em;
+                    }
+                    @media screen and (max-width: @sm) {
+                        font-size: 1.25em;
+                    }
+                }
+                p{
+                    font-size: 1em;
+                    @media screen and (max-width: @lg) {
+                        font-size: 0.75em;
+                    }
+                
+                    
+                }
+            }
+        }
+
         .content{
             min-height: 66vh;
             align-items: center;

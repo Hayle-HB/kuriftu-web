@@ -19,6 +19,7 @@ import Listing from "../../components/Listing";
 import HorizontalCarouselWithLine from "../../components/HorizontalCauroselWithLine";
 // import ResortMap from "../../components/ResortMap";
 
+
 const ResortHome = () => {
   const { slug } = useParams<{ slug: string }>();
   const resort = slug && RESORTDETAILS[slug];
