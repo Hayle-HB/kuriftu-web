@@ -18,6 +18,7 @@ import ResortAdventure from "./pages/Resort/ResortAdventure";
 import ResortCeleberationsAndEvents from "./pages/Resort/ResortCeleberationsAndEvents";
 //import ResortHome from "./pages/Resort/ResortHome";
 import ResortLanding from "./Routes/Resort/ResortLanding";
+import Accomidation from "./Routes/Resort/Accomodation";
 import ResortEvents from "./pages/Resort/ResortEvents";
 import ResortExperiences from "./pages/Resort/ResortExperiences";
 import ResortGallery from "./pages/Resort/ResortGallery";
@@ -131,7 +132,7 @@ const router = createBrowserRouter([
           },
           {
             path: "acc",
-            element: <ResortAccomodation />,
+            element: <Accomidation />,
           },
           {
             path: "acc/:id",
