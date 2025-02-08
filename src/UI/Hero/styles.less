@@ -1,0 +1,49 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw 0;
+
+
+    &-text {
+        background-color: @primary;
+        padding: 3vw 10vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            color: @dark;
+        }
+    }
+    &-list{
+        background-color: none;
+        &-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8vw;
+            padding-top: 2vh;
+            align-items: center;
+
+            li{
+                text-align: left;;
+            }
+        }
+        h1{
+            text-align: center;
+            margin-top: 15vh;
+        }
+    }
+    
+}
+.light{
+    background-color: @secondary !important;
+    color: @dark !important;
+}

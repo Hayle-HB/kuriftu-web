@@ -346,6 +346,7 @@
         &-text{
             background-color: @primary;
             padding: 3vw 10vw;
+            max-height: 30vh;
             p {
                 color: @dark;
             }
@@ -355,7 +356,16 @@
             color: @light;
 
         }
-        
+        &-carousel{
+           
+            padding: 0;
+            .carousel-item div{
+                height: 100vh;
+                @media screen and (max-width: @sm) {
+                    height: 50vh;
+                }
+            }
+        }
     }
     .listing{
         padding-top: 10vh;

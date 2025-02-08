@@ -2,37 +2,34 @@ import { Container, Row, Col } from "react-bootstrap";
 import {useParams} from "react-router-dom";
 import { Link } from "react-router-dom";
 import Carousel from "../../UI/Carousel";
-import { ACCOMODATIONS } from "../../MockData/accomdations";
+import { EXPERIENCE } from "../../MockData/experiences";
 import BasicTile from "../../UI/Card/BasicTiles/BasicTile";
+import TextHero from "../../UI/Hero/TextHero";
 
 
-const Accomidation: React.FC = () => {
+const Experiences: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
 
 
     if (!slug) {
         return <div>Resort not found</div>;
     }
-    const accomidation = ACCOMODATIONS[slug];
-    console.log(accomidation)
+    const experiences = EXPERIENCE[slug];
+    console.log(experiences)
 
     return (
         <Container className="accomidation-page" fluid>
             <Row>
-                <div className="hero" style={{ backgroundImage: `url(${accomidation.accomodations[0].image})` }} >
-                    <h1>{accomidation.title}</h1>
-                </div>
+                <Carousel classNames="hero-carousel" slides={experiences.carouselImages} />
             </Row>
             <Row>
-                <div className="hero-text" >
-                    <p>{accomidation.description}</p>
-                </div>
+                <TextHero classNames="light"  text={experiences.description} />
             </Row>
             <Row className="listing" >
                 <Col>
                     {
-                    accomidation.accomodations.map((room, index) => (
-                        <BasicTile item={room} index={index+1} reveresed={false} hasLinks={true} linkText="Learn More and Book" linkURL={`${index+1}`}/>
+                    experiences.items.map((item, index) => (
+                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} />
                     ))
             }
                 </Col>
@@ -44,4 +41,4 @@ const Accomidation: React.FC = () => {
         
     )
 }
-export default Accomidation;
+export default Experiences;

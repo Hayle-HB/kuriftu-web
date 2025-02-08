@@ -13,14 +13,19 @@ import LandingPage from "./Routes/landing";
 import ErrorPage from "./Routes/error";
 
 import ResortLayout from "./pages/Resort/ResortLayout";
-import ResortAccomodation from "./pages/Resort/ResortAccomdation/ResortAccomodation";
+//import ResortAccomodation from "./pages/Resort/ResortAccomdation/ResortAccomodation";
 import ResortAdventure from "./pages/Resort/ResortAdventure";
 import ResortCeleberationsAndEvents from "./pages/Resort/ResortCeleberationsAndEvents";
 //import ResortHome from "./pages/Resort/ResortHome";
+import Experiences from "./Routes/Resort/Experiences";
 import ResortLanding from "./Routes/Resort/ResortLanding";
 import Accomidation from "./Routes/Resort/Accomodation";
+import Wellness from "./Routes/Resort/Wellness";
+import Dinnign from "./Routes/Resort/Dinning";
+import Corporate from "./Routes/Resort/Corporate";
+import Celebrate from "./Routes/Resort/Celebrate";
 import ResortEvents from "./pages/Resort/ResortEvents";
-import ResortExperiences from "./pages/Resort/ResortExperiences";
+//import ResortExperiences from "./pages/Resort/ResortExperiences";
 import ResortGallery from "./pages/Resort/ResortGallery";
 import ResortGiftVoucher from "./pages/Resort/ResortGiftVoucher";
 import ResortWellness from "./pages/Resort/ResortWellness";
@@ -144,16 +149,16 @@ const router = createBrowserRouter([
           },
           {
             path: "corp",
-            element: <ResortCeleberationsAndEvents />,
+            element: <Corporate />,
           },
 
           {
             path: "event",
-            element: <ResortEvents />,
+            element: <Celebrate />,
           },
           {
             path: "exp",
-            element: <ResortExperiences />,
+            element: <Experiences />,
           },
           {
             path: "gallery",
@@ -165,11 +170,11 @@ const router = createBrowserRouter([
           },
           {
             path: "well",
-            element: <ResortWellness />,
+            element: <Wellness />,
           },
           {
             path: "dining",
-            element: <ResortDining />,
+            element: <Dinnign />,
           },
         ],
       },

@@ -61,7 +61,8 @@ h1 {
     font-size: 1.99rem;
   }
 }
-a {
+a,
+p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.69rem;
   line-height: 1.8;
@@ -69,12 +70,14 @@ a {
   letter-spacing: 0.08rem;
 }
 @media screen and (min-width: 576px) {
-  a {
+  a,
+  p {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 992px) {
-  a {
+  a,
+  p {
     font-size: 0.99rem;
   }
 }
@@ -1030,12 +1033,24 @@ a:hover {
 .accomidation-page .hero-text {
   background-color: #5C7457;
   padding: 3vw 10vw;
+  max-height: 30vh;
 }
 .accomidation-page .hero-text p {
   color: #191E19;
 }
 .accomidation-page .hero h1 {
   color: #FCFAF3;
+}
+.accomidation-page .hero-carousel {
+  padding: 0;
+}
+.accomidation-page .hero-carousel .carousel-item div {
+  height: 100vh;
+}
+@media screen and (max-width: 576px) {
+  .accomidation-page .hero-carousel .carousel-item div {
+    height: 50vh;
+  }
 }
 .accomidation-page .listing {
   padding-top: 10vh;
@@ -1488,6 +1503,50 @@ a:hover {
 }
 .basic-tile-image img {
   width: 100%;
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vw 0;
+}
+.hero-text {
+  background-color: #5C7457;
+  padding: 3vw 10vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-text p {
+  color: #191E19;
+}
+.hero-list {
+  background-color: none;
+}
+.hero-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8vw;
+  padding-top: 2vh;
+  align-items: center;
+}
+.hero-list-wrapper li {
+  text-align: left;
+}
+.hero-list h1 {
+  text-align: center;
+  margin-top: 15vh;
+}
+.light {
+  background-color: #F5E2DF !important;
+  color: #191E19 !important;
 }
 .main-nav-bar {
   background-color: #fcfaf369;
