@@ -329,3 +329,46 @@
 
     }
 }
+
+.accomidation-page{
+    .hero{
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10vw 0;
+
+
+        &-text{
+            background-color: @primary;
+            padding: 3vw 10vw;
+            max-height: 30vh;
+            p {
+                color: @dark;
+            }
+        }
+
+        h1{
+            color: @light;
+
+        }
+        &-carousel{
+           
+            padding: 0;
+            .carousel-item div{
+                height: 100vh;
+                @media screen and (max-width: @sm) {
+                    height: 50vh;
+                }
+            }
+        }
+    }
+    .listing{
+        padding-top: 10vh;
+        padding-bottom: 12vh;
+    }
+}

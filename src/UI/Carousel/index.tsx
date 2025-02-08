@@ -7,9 +7,10 @@ gsap.registerPlugin(useGSAP);
 
 interface CarouselProps {
   slides: string[];
+  classNames: string;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ slides }) => {
+const Carousel: React.FC<CarouselProps> = ({ slides, classNames }) => {
   const slideRefs = useRef<HTMLDivElement[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,7 +51,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   });
 
   return (
-    <Container ref={containerRef} fluid>
+    <Container className={classNames} ref={containerRef} fluid>
       <BootstrapCarousel
       controls={true}slick-dots
       indicators={true}
@@ -64,7 +65,6 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
             }}
             
             style={{
-              height: "30rem",
               backgroundImage: `url(${slide})`,
               backgroundSize: "cover",
               backgroundPosition: "center",

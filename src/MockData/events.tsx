@@ -2,7 +2,7 @@ import { EventModal } from "../interfaces/eventModal";
 
 export const EVENTS: Record<string, EventModal> = {
   entoto: {
-    title: " Corporate Experience at Kuriftu Entoto Adventure Park",
+    title: "Celebrations at Kuriftu Entoto Adventure Park",
     subtitle: "Celebrations at Kuriftu Entoto Adventure Park",
     description:
       "Whether it be a special anniversary, family reunion or milestone birthday, Kuriftu Entoto Adventure Park has the ability to facilitate any celebration through our many restaurants, experiences and activities in the scenic environment of the Entoto Mountain - The Kuriftu team is dedicated to crafting extraordinay shared experineces and nights to remember",
@@ -94,7 +94,7 @@ export const EVENTS: Record<string, EventModal> = {
     ],
   },
   bishoftu: {
-    title: "Corporate At Kuriftu Resort & Spa Bishoftu ",
+    title: "Celebrations at Kuriftu Resort & Spa Bishoftu ",
     subtitle: "KURIFTU RESORT & SPA BISHOFTU WEDDING AREA",
     description:
       "Whether it be a special anniversary, family reunion or milestone birthday, Kuriftu Bishoftu has the ability to facilitate any celebration through our many restaurants, experiences and activities in this scenic environment - The Kuriftu team is dedicated to crafting extraordinay shared experiences and nights to remember",
@@ -203,7 +203,7 @@ export const EVENTS: Record<string, EventModal> = {
   },
 
   laketana: {
-    title: " Corporate At Kuriftu Resort & Spa Lake Tana",
+    title: " Celebrations at Kuriftu Resort & Spa Lake Tana",
     subtitle: "KURIFTU RESORT & SPA LAKE TANA WEDDING AREA",
     description:
       "Whether it be a special anniversary, family reunion or milestone birthday, Kuriftu Bishoftu has the ability to facilitate any celebration through our many restaurants, experiences and activities in this scenic environment - The Kuriftu team is dedicated to crafting extraordinay shared experiences and nights to remember",
@@ -292,7 +292,7 @@ export const EVENTS: Record<string, EventModal> = {
     ],
   },
   awash: {
-    title: " Corporate Experience at Kuriftu Resort & Spa Awash Falls",
+    title: "Celebrations at Kuriftu Resort & Spa Awash Falls",
     subtitle: "kuriftu resort & spa bishoftu wedding area",
     description:
       "Allow our team to tailor an exceptional occasion of your choosing",

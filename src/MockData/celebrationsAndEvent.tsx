@@ -2,8 +2,8 @@ import { CelebrationAndEventModal } from "../interfaces/celebrationAndEvent";
 
 export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
   entoto: {
-    title: "Celebrations at Kuriftu Entoto Adventure Park",
-    subtitle: "Corporate Experience at Kuriftu Entoto Adventure Parkk",
+    title: "Corporate Experience at Kuriftu Entoto Adventure Park",
+    subtitle: "Corporate Experience at Kuriftu Entoto Adventure Park",
     description:
       "Kuriftu Entoto Adventure Park is the perfect destination for our corpoate clients to take full advantage of their benefits. From nature based conferences to company wide retreats, our team places value on the needs of each individual, curating the ultimate getaway",
     carouselImages: [

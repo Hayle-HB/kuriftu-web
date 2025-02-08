@@ -23,6 +23,18 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
 
     items: [
       {
+        title: "Flora And Fauna Scavenger Hunt (Coming Soon)",
+        description:
+          "Venture out into the wild with our Kuriftu Entoto Flora and Fauna Scavenger Hunt Guide to learn about the incredible biodiversity of the area.",
+        image: "https://kurifturesorts.com/_nuxt/img/feature.7383491.webp",
+      },
+      {
+        title: "Cycling",
+        description:
+          "Cycle up and down this unforgettable landscape with greenery for days. A perfect activity to explore the natural beauty on two wheels.",
+        image: "https://kurifturesorts.com/_nuxt/img/fe2.8b9e86a.webp",
+      },
+      {
         image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/10.jpg",
         title: "Horse Riding Picnic",
         description:
@@ -36,9 +48,9 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
       },
       {
         image: "https://kurifturesorts.com/_nuxt/img/fe3.89f2a9f.webp",
-        title: "HIking",
+        title: "hiking",
         description:
-          " Prepare to trek up the mountain on our guided hiking tour to view all activities based along the way...",
+          "Prepare to trek up the mountain on our guided hiking tour to view all activities based along the way...",
       },
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/bbq.jpg",
@@ -48,24 +60,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
       },
     ],
     featured: [
-      {
-        title: "Flora And Fauna Scavenger Hunt (Coming Soon)",
-        description:
-          "Venture out into the wild with our Kuriftu Entoto Flora and Fauna Scavenger Hunt Guide to learn about the incredible biodiversity of the area.",
-        image: "https://kurifturesorts.com/_nuxt/img/feature.7383491.webp",
-      },
-      {
-        title: "Cycling",
-        description:
-          "Cycle up and down this unforgettable landscape with greenery for days. A perfect activity to explore the natural beauty on two wheels.",
-        image: "https://kurifturesorts.com/_nuxt/img/fe2.8b9e86a.webp",
-      },
-      {
-        title: "Hiking",
-        description:
-          "Prepare to trek up the mountain on our guided hiking tour to view all accessible routes and natural beauty along the way.",
-        image: "https://kurifturesorts.com/_nuxt/img/fe3.89f2a9f.webp",
-      },
+      
     ],
   },
   bishoftu: {
@@ -101,15 +96,6 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
           "The cinema at our resort offers a comfortable experience with rows of cushions; whether it’s a date night or family fun, kick back and enjoy a night complete with popcorn, ice blasts, and delicious ice cream!",
       },
       {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/3.JPG",
-        title: "Table Tennis",
-        description:
-          "For our table tennis enthusiasts, add an exciting tournament to your itinerary Kuriftu Bishoftu",
-      },
-    ],
-
-    featured: [
-      {
         image: "https://kurifturesorts.com/_nuxt/img/Lequanda.ca87f54.webp",
         title: "Lequanda",
         description:
@@ -123,12 +109,20 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
           "With an enchanting ecosystem and luxurious natural setting, Kuriftu Resorts & Spa ranks among the be...",
       },
       {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/3.JPG",
+        title: "Table Tennis",
+        description:
+          "For our table tennis enthusiasts, add an exciting tournament to your itinerary Kuriftu Bishoftu",
+      },
+      {
         image: "https://kurifturesorts.com/_nuxt/img/Hiking.ed4cbf4.webp",
         title: "Hiking",
         description:
           "Come and explore nature and wilderness with our Guided hiking and tours....",
       },
     ],
+
+    featured: [],
   },
 
   laketana: {
@@ -172,16 +166,6 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         description:
           "Enjoy a morning swim or cool down after a long day of adventure in our swimming pool and cabana area",
       },
-    ],
-
-    featured: [
-      {
-        image:
-          "https://kurifturesorts.com/_nuxt/img/MonastryVisit.5d60dd6.webp",
-        title: "Monastry Visit",
-        description:
-          "Venture out to the holy monastries that make up the core of Bahirdar, these tours are sought after b...",
-      },
       {
         image:
           "https://kurifturesorts.com/_nuxt/img/BirdWatching1.15a4456.webp",
@@ -197,6 +181,8 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
           "Come and explore nature and wilderness with our Guided hiking and tours....",
       },
     ],
+
+    featured: [],
   },
 
   awash: {
@@ -253,19 +239,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     ],
 
     featured: [
-      {
-        image: "https://kurifturesorts.com/_nuxt/img/PrivateEvent.6edee64.webp",
-        title: "Private Event",
-        description:
-          "Plan a celebration extravaganza with friends and family!...",
-      },
-      {
-        image:
-          "https://kurifturesorts.com/_nuxt/img/BreakfastInTheDesert.bcdd2cd.webp",
-        title: " Breakfast in the desert",
-        description:
-          " A little something from our breakfast menu for everyone to enjoy while taking in the early light and...",
-      },
+      
     ],
   },
 };
