@@ -6,6 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import CommonCoverCard from "../../../components/CoverCommonCard";
 import { Link } from "react-router-dom";
 
+
 const ResortAccomodationDetail = () => {
   const { slug, id } = useParams<{ slug: string; id: string }>();
 

@@ -24,7 +24,9 @@ import Wellness from "./Routes/Resort/Wellness";
 import Dinnign from "./Routes/Resort/Dinning";
 import Corporate from "./Routes/Resort/Corporate";
 import Celebrate from "./Routes/Resort/Celebrate";
+import AccomodationDetails from "./Routes/Resort/AccomodationDetails";
 import ResortEvents from "./pages/Resort/ResortEvents";
+
 //import ResortExperiences from "./pages/Resort/ResortExperiences";
 import ResortGallery from "./pages/Resort/ResortGallery";
 import ResortGiftVoucher from "./pages/Resort/ResortGiftVoucher";
@@ -141,7 +143,7 @@ const router = createBrowserRouter([
           },
           {
             path: "acc/:id",
-            element: <ResortAccomodationDetail />,
+            element: <AccomodationDetails />,
           },
           {
             path: "adv",
