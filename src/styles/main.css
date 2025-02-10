@@ -1548,6 +1548,31 @@ a:hover {
   background-color: #F5E2DF !important;
   color: #191E19 !important;
 }
+footer {
+  background-color: #FCFAF3;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+footer h6 {
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+footer a {
+  font-family: 'Montserrat';
+  font-size: 0.85rem !important;
+  color: #5C7457 !important;
+}
+footer a:hover {
+  color: #9aaf95 !important;
+  text-decoration: underline;
+}
+footer a:active,
+footer a:focus {
+  color: #3c5a37 !important;
+}
 .main-nav-bar {
   background-color: #fcfaf369;
   backdrop-filter: blur(10px);
