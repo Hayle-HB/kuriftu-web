@@ -181,7 +181,7 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
             "https://kurifturesorts.com/_nuxt/img/Presidential.f61845e.webp",
           title: "Presidential",
           description:
-            "ucked away in the depths of the forest lies a private Presidential Cabin, or what we like to call, t...",
+            "Tucked away in the depths of the forest lies a private Presidential Cabin, or what we like to call, t...",
         },
       ],
       booking: {
@@ -205,7 +205,7 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
           "https://kurifturesorts.com/_nuxt/img/long2.59933f3.webp",
         ],
         description:
-          "Tucked away in the depths of the forest lies a private Presidential Cabin, or what we like to call, the Kuriftu Oasis. A perfect couples escape or a place to have some fun with family or friends by firing up the grill and stocking the outdoor bar with beverages of your choice! Amidst a supportive and nurturing environment, high-glass cielings radiating natural daylight, starlit evenings allowing guests to create emotional connections with friends or loved ones or even solitary reflection. Kuriftu Oasis offers the chance to heal inwards.",
+          "Nestled deep in the forest, Kuriftu Oasis is your private escape—perfect for romance, adventure, or gathering with loved ones. Fire up the grill, stock the bar, and soak in starlit skies. Unwind, connect, and let the journey begin!",
       },
       amenities: [
         "KING SIZE BED / ELECTRIC BED WARMER",
@@ -234,7 +234,13 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
   },
   bishoftu: {
     1: {
-      booking: null,
+      booking: {
+        images: [
+          "https://kurifturesorts.com/_nuxt/img/long2.76bf09d.webp",
+        ],
+        description:
+          "Overlooking the stunning Kuriftu Lake, these rooms are perfect for romance, relaxation, or family bonding. With breathtaking views and exceptional service, your escape awaits!",
+      },
       title: "Lake View",
       carouselImages: [
         "https://kurifturesorts.com/_nuxt/img/1.0cc943d.webp",
@@ -314,7 +320,7 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
           "https://kurifturesorts.com/_nuxt/img/gardenLong2.a5ba8bc.webp",
         ],
         description:
-          "Place yourself in the heart of one of Bishoftu's key experiences - nature. Our Garden View rooms have grown into mini forests over the years with vines and picturesque flowers intertwining through one another. These rooms are considered a birds paradise as it's impossible to escape the songs featured by their viists throughout the day. Experience rooms in this category across the entire resort!",
+          "Immerse yourself in Bishoftu’s natural beauty with our Garden View rooms—lush mini-forests filled with vibrant flowers and birdsong. A true paradise, waiting for you to explore!",
       },
       otherAccomodation: [
         {
@@ -369,7 +375,7 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
       ],
       booking: {
         description:
-          "The Kuriftu brand is proud to showcase a new room aesthetic with the Loft Village - screed floors, contemporary design and finish, vibrant abstract art - experience our brand as we diversify our skillset and provide alternative accommodations for our guests! This room category features the Kuriftu Pool Bar located in the center of the lofted village",
+          "Discover a new side of Kuriftu with the Loft Village—sleek screed floors, contemporary design, and bold abstract art. Centered around the Kuriftu Pool Bar, this vibrant escape offers a fresh, modern stay like never before!",
         images: [
           "https://kurifturesorts.com/_nuxt/img/long1.f233b2e.webp",
           "https://kurifturesorts.com/_nuxt/img/long2.d8e3c85.webp",

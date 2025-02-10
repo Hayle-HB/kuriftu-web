@@ -29,3 +29,138 @@
     }
 
 }
+
+.featured-tile{
+    display: grid;
+    height: 60vw;
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 100%;
+
+    @media screen and (max-width: @lg) {
+        height: 90vh;
+    }
+
+    @media screen and (max-width: @md) {
+        height: 125vh;
+    }
+
+    @media screen and (max-width: @sm) {
+        height: 125vh;
+    }
+
+    &-img {
+        grid-column: 3 / 13;
+        grid-row: 2/ 11;
+        z-index: 1;
+        background-size: cover;
+        background-position: center;
+
+        @media screen and (max-width: @lg) {
+            grid-column: 3 / 15;
+            grid-row: 3/ 11;
+        }
+
+        @media screen and (max-width: @md) {
+            grid-column: 2 / 18;
+            grid-row: 3/ 9;
+        }
+
+        @media screen and (max-width: @sm) {
+            grid-column: 2 / 21;
+            grid-row: 2/ 8;
+        }
+
+    }
+
+    &-text {
+        grid-column: 12 / 21;
+        grid-row: 3/ 10;
+        z-index: 2;
+        background-color: @light;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: @lg) {
+            grid-column: 9 / 20;
+            grid-row: 4/ 10;
+        }
+
+        @media screen and (max-width: @md) {
+            grid-column: 6 / 21;
+            grid-row: 8/ 12;
+        }
+
+        @media screen and (max-width: @sm) {
+            grid-column: 3 / 22;
+            grid-row: 7/ 12;
+        }
+        h3, h1, p{
+            padding-left: 30px;
+            text-align: left;
+        }
+        a{
+            margin-top: 35px;
+            margin-bottom: 20px;
+            width: 25%;
+            color: @light;
+            background: @primary;
+            border-radius: 5px;
+            padding: 10px 10px;
+            font-size: 0.7rem;
+            text-align: center;
+            &:hover{
+                background-color: @primary-light;
+                text-decoration: none;
+            }
+            &:active, &:focus{
+                background-color: @primary-dark;
+            }
+            @media screen and (max-width: @sm) {
+                width: 40%;
+            }
+        }
+        h3 {
+            color: @dark;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.9em;
+            line-height: 1.8;
+            font-weight: 300;
+            letter-spacing: 0.06rem;
+        }
+
+        h1 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.06rem;
+            font-size: 2em;
+
+            @media screen and (max-width: @lg) {
+                font-size: 1.75em;
+            }
+
+            @media screen and (max-width: @md) {
+                font-size: 1.5em;
+            }
+
+            @media screen and (max-width: @sm) {
+                font-size: 1.25em;
+            }
+        }
+
+        p {
+            font-size: 0.75em;
+
+            @media screen and (max-width: @lg) {
+                font-size: 0.75em;
+            }
+
+
+        }
+    }
+}
