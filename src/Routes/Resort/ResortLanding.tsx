@@ -117,7 +117,7 @@ const ResortDetails: React.FC = () => {
       <Container className="content-wrapper">
           <Row className={`content`}>
             <Col className="image" md={6}>
-              <img src={wellness.gallery[0]} />
+              <img src={wellness.gallery[0]} alt={wellness.title} />
             </Col>
             <Col className="text" md={6}>
               <h2 className="title-sans">{wellness.title}</h2>
@@ -131,7 +131,7 @@ const ResortDetails: React.FC = () => {
         <Container className="content-wrapper">
           <Row className={`content content-reversed`}>
             <Col className="image" md={6}>
-              <img src={wellness.carouselImages[0]} />
+              <img src={celebrations.carouselImages[0]} alt={celebrations.title}/>
             </Col>
             <Col className="text" md={6}>
               <h2 className="title-sans">{celebrations.title}</h2>

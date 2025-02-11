@@ -13,7 +13,6 @@ const Corporate: React.FC = () => {
         return <div>Resort not found</div>;
     }
     const corporate = CELEBRATIONSANDEVENTS[slug];
-    console.log(corporate);
 
     return (
         <Container className="accomidation-page" fluid>

@@ -110,10 +110,10 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
     carouselImages: [
       // "https://kurifturesorts.com/_nuxt/img/1.f82bde1.webp",
       // "https://kurifturesorts.com/_nuxt/img/2.cba8b20.webp",
-      // "https://kurifturesorts.com/_nuxt/img/3.0cf4a1d.webp",
-       "https://kurifturesorts.com/_nuxt/img/1.a740033.webp",
-      "https://kurifturesorts.com/_nuxt/img/birthdays.cdc6403.webp",
-      "https://kurifturesorts.com/_nuxt/img/waterpark.9066e15.webp",
+       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp2.webp",
+       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp3.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp4.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp6.webp",
     ],
 
     celebrations: [
@@ -121,7 +121,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         title: "Corporate Rate Agreement",
         description:
           "Let us take care of your teams by rejuvinating and stregthening their relations with one another to optimize their level of efficiency by becoming corporate clients - having access to our extensive list of activities, destinations and experineces within the wellness space will help companies reap the benefits. Join the Kuriftu Family by making an enquiry with our Corporate Sales Team and we will customize your membership accordingly!",
-        image: "https://kurifturesorts.com/_nuxt/img/1F.2b483af.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp6.webp",
         link: "",
         isEnquiryForm: true,
 
@@ -132,7 +132,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         title: "Corporate Retreat",
         description:
           "Treat your team to a wild adventure at Kuriftu Entoto Adventure Park - our team can curate the perfect experience ranging from outdoor meetings in our Hammock Village, adventurous activities as ice breakers and orientation for new staff, rejuvinating spa services to relax the mind, and many more",
-        image: "https://kurifturesorts.com/_nuxt/img/2F.571751b.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp2.webp",
         link: "",
         linkText: "Make an enquiry",
 
@@ -143,7 +143,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         title: "Host A Meeting Or Conference",
         description:
           "Allow us to host your companies conference, meetings or events in our Mountain Peak Restaurant. Break out sessions can be facilitated in the surrounding cabanas for an alternative experience",
-        image: "https://kurifturesorts.com/_nuxt/img/3F.c2b11a7.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp1.webp",
         link: "",
         linkText: "Make an enquiry",
         isEnquiryForm: true,
@@ -153,28 +153,28 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
     venus: [
       {
         title: "Balambaras Hall",
-        image: "https://kurifturesorts.com/_nuxt/img/1.f82bde1.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp4.webp",
         description:
           "The Balambaras hall is the biggest hall in our vicinity, and it has the capacity to hold 120 people at once.",
       },
 
       {
         title: "Tiruwark Hall",
-        image: "https://kurifturesorts.com/_nuxt/img/2.cba8b20.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp1.webp",
         description:
           "Tiruwark Hall is our smallest hall, with the capacity of hollding 20 people at once.",
       },
 
       {
         title: "Meantwab Hall",
-        image: "https://kurifturesorts.com/_nuxt/img/3.0cf4a1d.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp3.webp",
         description:
           "Named after one of Ethiopia's queens, Menatwab hall has the capacity to hold 35 people.",
       },
 
       {
         title: "Girum Hall",
-        image: "https://kurifturesorts.com/_nuxt/img/4.a54c78e.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp2.webp",
         description:
           "Girum Hall is the second biggest hall, at our resort, with the capacity of serving 40 people at once.",
       },

@@ -99,19 +99,18 @@ export const EVENTS: Record<string, EventModal> = {
     description:
       "Whether it be a special anniversary, family reunion or milestone birthday, Kuriftu Bishoftu has the ability to facilitate any celebration through our many restaurants, experiences and activities in this scenic environment - The Kuriftu team is dedicated to crafting extraordinay shared experiences and nights to remember",
     carouselImages: [
-      // "https://kurifturesorts.com/_nuxt/img/1.a740033.webp",
-      // "https://kurifturesorts.com/_nuxt/img/birthdays.cdc6403.webp",
-      // "https://kurifturesorts.com/_nuxt/img/waterpark.9066e15.webp",
-      "https://kurifturesorts.com/_nuxt/img/1.f82bde1.webp",
-      "https://kurifturesorts.com/_nuxt/img/2.cba8b20.webp",
-      "https://kurifturesorts.com/_nuxt/img/3.0cf4a1d.webp",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event4.webp",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event1.jpg",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/12.JPG",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/7.JPG",
+
     ],
     events: [
       {
         title: "Weddings",
         description:
           "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones",
-        image: "https://www.kurifturesorts.com/_nuxt/img/bishCele.1e852b4.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event2.webp",
         link: "wed",
         isEnquiryForm: false,
         linkText: "Explore",
@@ -121,7 +120,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Birthdays",
         description:
           "Let us celebrate your life and future in a fun and special way with your loved ones. browse through our selection of birthday packages and more!",
-        image: "https://kurifturesorts.com/_nuxt/img/birthdays.cdc6403.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/events/birthday.jpg",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -130,7 +129,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Concerts",
         description:
           "Join us as we invite your favorite artisits, DJ's and performers for live outdoor experiences!",
-        image: "https://kurifturesorts.com/_nuxt/img/concert.e1cdbcd.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event1.jpg",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -140,7 +139,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Social Events",
         description:
           "Thinking of hosting an event? Give us a call and our team can help plan your very own get-together, anniversary, birthday party, family trip - basically anything!",
-        image: "https://kurifturesorts.com/_nuxt/img/social.c5ddebd.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event3.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -150,27 +149,27 @@ export const EVENTS: Record<string, EventModal> = {
     venus: [
       {
         title: "Wedding Venue",
-        image: "https://kurifturesorts.com/_nuxt/img/bishCele.1e852b4.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event4.webp",
         description:
           "Our exclusive venue for weddings has everything from glamorous decorations, to buffets, dancefloors, outdoor seating, unique landscape and more",
       },
 
       {
         title: "Lake Side",
-        image: "https://kurifturesorts.com/_nuxt/img/LakeSide.a740033.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/12.JPG",
         description:
           "Make your celebration even more stunning by adding a lake-side view.",
       },
 
       {
         title: "Cabana Area",
-        image: "https://kurifturesorts.com/_nuxt/img/Cabbana.911be42.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event5.webp",
         description:
           "Make a splash with your cabanas to enjoy a more private and memorable day.",
       },
       {
         title: "Waterpark",
-        image: "https://kurifturesorts.com/_nuxt/img/waterpark.9066e15.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/7.JPG",
         description:
           "Slide into the cool and fresh water and celebrate the season with our resort's coolest property.",
       },
