@@ -18,6 +18,42 @@ const ResortNavBar: React.FC=()=>{
     const { slug } = useParams<{ slug: string }>();
     // Get the items list based on the resort (slug)
     const itemsList = slug && ITEMS[slug] ? ITEMS[slug] : [];
+    console.log(itemsList);
+    const itemsOptions = [
+    {
+      title: "Accomodation",
+      link: "acc",
+    },
+    {
+      title: "Adventure",
+      link: "adv",
+    },
+    {
+      title: "Experiences",
+      link: "exp",
+    },
+    {
+      title: "Wellness",
+      link: "well",
+    },
+    {
+      title: "Dining",
+      link: "dining",
+    },
+    {
+      title: "Corporate",
+      link: "corp",
+    },
+    {
+      title: "Celebration & Events",
+      link: "event",
+    },
+    {
+      title: "Gallery",
+      link: "gallery",
+    },
+
+  ];
     const location = useLocation();
     const navigate = useNavigate();
     const dimention = useWindowDimensions();
@@ -50,23 +86,22 @@ const ResortNavBar: React.FC=()=>{
         } 
     }, 
     { scope: containerRef });
-    // Handle active tab link and navigation
-    const handleActiveLink = (path: string, link: string) => {
-    // Check if resort is 'boston' or 'africanVillage'
-    if (slug === 'boston' || slug === 'africanVillage') {
-      // If 'gallery' tab, navigate, else prevent navigation
-      if (link === "gallery") {
-        setActiveLink(path);
-        navigate(path);
-      } else {
-        setActiveLink(path); // Highlight the tab but don't navigate for non-gallery tabs
-      }
-    } else {
-      // For other resorts, navigate as usual
-      setActiveLink(path);
-      navigate(path);
-    }
-  };
+
+
+    const handleActiveLink = (path: string, link: string, disabled: boolean) => {
+        if (disabled) return;
+        if (slug === 'boston' || slug === 'africanVillage') {
+            if (link === "gallery") {
+                setActiveLink(path);
+                navigate(path);
+            } else {
+                setActiveLink(path);
+            }
+        } else {
+            setActiveLink(path);
+            navigate(path);
+        }
+    };
     return(
         <Navbar
         expand="lg"
@@ -83,78 +118,59 @@ const ResortNavBar: React.FC=()=>{
           </Navbar.Brand>
 
           <Navbar.Collapse id="resort-navbar" className="d-none d-lg-block">
-            {slug=="waterpark"?(
-               <Nav style={{paddingLeft:'7%'}}>
-               {/* Render tabs for all resorts */}
-               {itemsList.map((item, index) => (
-                 <Nav.Link
-                   as={Link}
-                   key={index}
-                   to={`/resorts/${slug}/${item.link}`}
-                   className={`px-3 ${
-                     activeLink === `/resorts/${slug}/${item.link}`
-                       && "fw-bold text-muted"
-                      
-                   }`}
-                   onClick={(e) => {
-                     e.preventDefault(); // Prevent default behavior of Link
-                     handleActiveLink(`/resorts/${slug}/${item.link}`, item.link);
-                   }}
-                 >
-                   {item.title}
-                   {activeLink === `/resorts/${slug}/${item.link}` && (
-                     <div className="active-underline mt-1"></div>
-                   )}
-                 </Nav.Link>
-               ))}
-             </Nav>
-            ):(
               <Nav className="mx-auto">
               {/* Render tabs for all resorts */}
-              {itemsList.map((item, index) => (
-                <Nav.Link
-                  as={Link}
-                  key={index}
-                  to={`/resorts/${slug}/${item.link}`}
-                  className={`px-3 ${
-                    activeLink === `/resorts/${slug}/${item.link}`
-                      ? "fw-bold text-dark"
-                      : "text-muted"
-                  }`}
-                  onClick={(e) => {
-                    e.preventDefault(); // Prevent default behavior of Link
-                    handleActiveLink(`/resorts/${slug}/${item.link}`, item.link);
-                  }}
-                >
-                  {item.title}
-                  {activeLink === `/resorts/${slug}/${item.link}` && (
-                    <div className="active-underline mt-1"></div>
-                  )}
-                </Nav.Link>
-              ))}
+              {itemsOptions.map((option, index) => {
+                    const item = itemsList.find(i => i.link === option.link);
+                    const isAvailable = !!item;
+                    return (
+                        <Nav.Link
+                            as={Link}
+                            key={index}
+                            to={`/resorts/${slug}/${option.link}`}
+                            className={`px-3 ${
+                                activeLink === `/resorts/${slug}/${option.link}` && "fw-bold text-dark"
+                            } ${!isAvailable ? "text-muted disabled" : ""}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                handleActiveLink(`/resorts/${slug}/${option.link}`, option.link, !isAvailable);
+                            }}
+                        >
+                            {item ? capitalizeFirstLetter(item.title) : capitalizeFirstLetter(option.title)}
+                            {activeLink === `/resorts/${slug}/${option}` && <div className="active-underline mt-1"></div>}
+                        </Nav.Link>
+                    );
+                })}
             </Nav>
-            )}
            
           </Navbar.Collapse>
 
           {/* Dropdown for smaller screens */}
           <Nav className="d-lg-none">
             <NavDropdown title={slug && capitalizeFirstLetter(slug)} align="end">
-              {itemsList.map((item, index) => (
-                <NavDropdown.Item
-                  as={Link}
-                  key={index}
-                  to={`/resorts/${slug}/${item.link}`}
-                  onClick={(e) => {
-                    e.preventDefault(); // Prevent default behavior of Link
-                    handleActiveLink(`/resorts/${slug}/${item.link}`, item.link);
-                  }}
-                >
-                  {item.title}
-                </NavDropdown.Item>
-              ))}
+                {itemsOptions.map((option, index) => {
+                    const item = itemsList.find(i => i.link === option.link);
+                    const isAvailable = !!item;
+                    return (
+                        <NavDropdown.Item
+                            as={Link}
+                            key={index}
+                            to={`/resorts/${slug}/${option}`}
+                            className={!isAvailable ? "disabled" : ""}
+                            onClick={(e) => {
+                                if (!isAvailable) {
+                                    e.preventDefault();
+                                    return;
+                                }
+                                handleActiveLink(`/resorts/${slug}/${option}`, option.link, !isAvailable);
+                            }}
+                        >
+                            {item ? capitalizeFirstLetter(item.title) : capitalizeFirstLetter(option.title)}
+                        </NavDropdown.Item>
+                    );
+                })}
             </NavDropdown>
-          </Nav>
+        </Nav>
         </Container>
       </Navbar>
     )

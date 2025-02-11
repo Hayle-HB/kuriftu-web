@@ -19,7 +19,7 @@ export const Gallery: Record<string, string[]> = {
   ],
 
   bishoftu: [
-    "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/2.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/1.jpeg",
     "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/3.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/4.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/5.jpg",
@@ -29,7 +29,6 @@ export const Gallery: Record<string, string[]> = {
     "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/10.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/11.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/12.JPG",
-    "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/13.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/14.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/15.JPG",
   ],
@@ -52,9 +51,16 @@ export const Gallery: Record<string, string[]> = {
     "https://kurifturesorts.com/_nuxt/img/3.1b81bb4.webp",
   ],
   africanVillage: [
-    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/1.JPG",
-    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/2.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/1.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/5.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/4.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/10.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/6.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/7.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/8.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/9.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/2.JPG",
   ],
   waterpark: [
     "https://kurifturesorts.com/_nuxt/img/_DSC5641%20(2)-min.f32edfd.jpg",
@@ -77,9 +83,7 @@ export const Gallery: Record<string, string[]> = {
     "https://kuriftu-public-media.s3.amazonaws.com/boston/7.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/boston/8.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/boston/9.JPG",
-    "https://kurifturesorts.com/_nuxt/img/24.9dfafe2.jpg",
-    "https://kurifturesorts.com/_nuxt/img/25.458bb05.jpg",
-    "https://kurifturesorts.com/_nuxt/img/26.a81e8e3.jpg",
-    "https://kurifturesorts.com/_nuxt/img/27.cc2beb9.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/boston/10.jpg",
+
   ],
 };

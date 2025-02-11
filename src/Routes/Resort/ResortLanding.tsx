@@ -28,10 +28,10 @@ const ResortDetails: React.FC = () => {
   const wellness = WELLNESS[slug];
   const celebrations = CELEBRATIONSANDEVENTS[slug];
 
-  const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.featured;
-  const featuredExps = EXPERIENCE[slug]?.featured;
+  const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.items;
+  const featuredExps = EXPERIENCE[slug]?.items;
 
-  console.log(celebrations);
+  console.log(experience);
   return (
     <div className="resort-details">
       {/* Hero Section */}
@@ -60,7 +60,7 @@ const ResortDetails: React.FC = () => {
       </div>
 
       {/* Details Section */}
-      <Row className="description-wrapper">
+      <Row className="description-wrapper m-0">
         <Col md={6} className="description-imageStack-wrapper">
           <div className="description-imageStack">
             <div className="top" style={{backgroundImage: `url(${galleryImages.length > 0 ? galleryImages[0]:resort.cover_image})`}}>
@@ -76,7 +76,7 @@ const ResortDetails: React.FC = () => {
       </Row>
 
       {/** Gallery Section */}
-      <Row className="gallery">
+      <Row className="gallery m-0">
         <HorizontalCarousel items={galleryImages.slice(2)} />
       </Row>
       {accomidation && (
@@ -92,7 +92,7 @@ const ResortDetails: React.FC = () => {
       )}
       {experience && (
         <ScrollingAnimation
-            featuredExps={featuredExps}
+            featuredExps={featuredExps.slice(0,3)}
          />
       )}
       {
@@ -117,7 +117,7 @@ const ResortDetails: React.FC = () => {
       <Container className="content-wrapper">
           <Row className={`content`}>
             <Col className="image" md={6}>
-              <img src={wellness.gallery[0]} />
+              <img src={wellness.gallery[0]} alt={wellness.title} />
             </Col>
             <Col className="text" md={6}>
               <h2 className="title-sans">{wellness.title}</h2>
@@ -131,7 +131,7 @@ const ResortDetails: React.FC = () => {
         <Container className="content-wrapper">
           <Row className={`content content-reversed`}>
             <Col className="image" md={6}>
-              <img src={wellness.carouselImages[0]} />
+              <img src={celebrations.carouselImages[0]} alt={celebrations.title}/>
             </Col>
             <Col className="text" md={6}>
               <h2 className="title-sans">{celebrations.title}</h2>

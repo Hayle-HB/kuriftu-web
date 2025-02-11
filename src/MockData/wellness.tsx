@@ -65,8 +65,9 @@ export const WELLNESS: Record<string, WellnessModal> = {
     description:
       "Our customers' wellness experience is integral to the Kuriftu Brand. By providing outlets for guests to rest, exert energy, and feast on clean and light dishes, we empower you to accomplish more! Venture into Bishoftu's natural landscape and nourish your body with mindful experiences.",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/1.083e652.webp",
-      "https://kurifturesorts.com/_nuxt/img/2.07e7d88.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/14.JPG",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/5.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/15.JPG",
     ],
     wellness: [
       {
@@ -80,14 +81,13 @@ export const WELLNESS: Record<string, WellnessModal> = {
         description: "Give yourself a break from the stresses of everyday life - not only will a full day of wellness-related activities benefit your mental health, but your level of efficiency at work as well! It is up to each individual to care for themselves and take time to disconnect from draining lifestyles.",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/long2.f34a4ea.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/14.JPG",
         title: "Rest Easy Experience",
         description: "Our spa services stem from the genuine care we have for each individual's health and well-being - browse through our Forest Spa menu or feel free to contact one of our consultants for advice based on your own personal needs.",
       },
     ],
     gallery: [
-      
-      
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/14.JPG",
     ],
     isLink: true,
     spaMenuLink: "https://kurifturesorts.com/bishoftuSpa.pdf",
