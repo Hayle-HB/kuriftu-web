@@ -60,7 +60,7 @@ const ResortDetails: React.FC = () => {
       </div>
 
       {/* Details Section */}
-      <Row className="description-wrapper">
+      <Row className="description-wrapper m-0">
         <Col md={6} className="description-imageStack-wrapper">
           <div className="description-imageStack">
             <div className="top" style={{backgroundImage: `url(${galleryImages.length > 0 ? galleryImages[0]:resort.cover_image})`}}>
@@ -76,7 +76,7 @@ const ResortDetails: React.FC = () => {
       </Row>
 
       {/** Gallery Section */}
-      <Row className="gallery">
+      <Row className="gallery m-0">
         <HorizontalCarousel items={galleryImages.slice(2)} />
       </Row>
       {accomidation && (
