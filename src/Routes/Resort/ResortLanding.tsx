@@ -28,10 +28,10 @@ const ResortDetails: React.FC = () => {
   const wellness = WELLNESS[slug];
   const celebrations = CELEBRATIONSANDEVENTS[slug];
 
-  const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.featured;
-  const featuredExps = EXPERIENCE[slug]?.featured;
+  const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.items;
+  const featuredExps = EXPERIENCE[slug]?.items;
 
-  console.log(celebrations);
+  console.log(experience);
   return (
     <div className="resort-details">
       {/* Hero Section */}
@@ -92,7 +92,7 @@ const ResortDetails: React.FC = () => {
       )}
       {experience && (
         <ScrollingAnimation
-            featuredExps={featuredExps}
+            featuredExps={featuredExps.slice(0,3)}
          />
       )}
       {

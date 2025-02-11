@@ -53,7 +53,8 @@ const ScrollingAnimation: React.FC<ScrollingAnimationProps> = ({ featuredExps })
         </div>
         {featuredExps.map((experience, index)=>(
             <div className="scrolling-container-tile" key={index}>
-                <div className={`scrolling-container-image img-${index}`} style={{backgroundImage: `url(${experience.image})`}}>
+                <div className={`scrolling-container-image img-${index}`} >
+                    <img src={experience.image} />
                     <h3>{experience.title}</h3>
                 </div>
                 

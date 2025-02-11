@@ -26,6 +26,8 @@
             font-size: 0.75rem;
             background-color: @secondary-opace;
             backdrop-filter: blur(3px);
+            position: absolute;
+            width: inherit;
             @media screen and (min-width: @sm) {
                 font-size: 1.35rem;
             }
@@ -42,12 +44,12 @@
     &-tile{
         .img-0 , .img-2{
             margin-left: 10vw;
-            width: 70vw;
+            width: 50vw;
             aspect-ratio: 1.25;
         
             @media screen and (min-width: @lg) {
                 margin-left: 10vw;
-                width: 55vw;
+                width: 35vw;
                 aspect-ratio: 1.3;
         
             }

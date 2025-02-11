@@ -1356,6 +1356,8 @@ a:hover {
   font-size: 0.75rem;
   background-color: #f5e2df74;
   backdrop-filter: blur(3px);
+  position: absolute;
+  width: inherit;
 }
 @media screen and (min-width: 576px) {
   .scrolling-container-image h3 {
@@ -1375,14 +1377,14 @@ a:hover {
 .scrolling-container-tile .img-0,
 .scrolling-container-tile .img-2 {
   margin-left: 10vw;
-  width: 70vw;
+  width: 50vw;
   aspect-ratio: 1.25;
 }
 @media screen and (min-width: 992px) {
   .scrolling-container-tile .img-0,
   .scrolling-container-tile .img-2 {
     margin-left: 10vw;
-    width: 55vw;
+    width: 35vw;
     aspect-ratio: 1.3;
   }
 }

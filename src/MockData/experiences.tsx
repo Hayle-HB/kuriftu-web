@@ -192,8 +192,9 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
       "Kuriftu Resort Awash Falls provides a limited number of nature based activities that compliment the national park",
     carouselImages: [
       "https://kurifturesorts.com/_nuxt/img/Experience.0da9d1f.webp",
-      "https://kurifturesorts.com/_nuxt/img/pre2.7f3adf1.webp",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/awash1.jpg",
       "https://kurifturesorts.com/_nuxt/img/awash-cover.8aba739.webp",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/awash2.jpeg",
     ],
     experiences: [
       {
@@ -209,7 +210,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title: "Wildlife Viewing",
         description:
           "Crocodiles and Monitor Lizards are commonly seen at the base of the waterfall or on the rocky surrounding structures. Follow the path down to get a better look but be sure to keep your distance from any wild animals out of respect for the environment. Keep an eye out for the vast number of bird species located around the park and see if you can spot a Lesser / Greater Kudu while trekking!",
-        image: "https://kurifturesorts.com/_nuxt/img/CamelRide.3ed74a1.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/awash1.jpg",
       },
       {
         title: "Hiking",
