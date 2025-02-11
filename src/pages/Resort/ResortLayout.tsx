@@ -1,7 +1,7 @@
 import { Outlet, useParams } from "react-router";
 
 import Header from "../../components/Header/Header";
-import AvailabilityCheck from "../../components/AvailabilityCheck";
+import AvailabilityCheck from "../../UI/AvailabilityCheck/AvailabilityCheck";
 import ResortNavBar from "../../UI/NavBar/ResortNavBar";
 
 
