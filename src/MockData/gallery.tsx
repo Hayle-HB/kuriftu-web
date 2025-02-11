@@ -77,9 +77,7 @@ export const Gallery: Record<string, string[]> = {
     "https://kuriftu-public-media.s3.amazonaws.com/boston/7.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/boston/8.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/boston/9.JPG",
-    "https://kurifturesorts.com/_nuxt/img/24.9dfafe2.jpg",
-    "https://kurifturesorts.com/_nuxt/img/25.458bb05.jpg",
-    "https://kurifturesorts.com/_nuxt/img/26.a81e8e3.jpg",
-    "https://kurifturesorts.com/_nuxt/img/27.cc2beb9.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/boston/10.jpg",
+
   ],
 };

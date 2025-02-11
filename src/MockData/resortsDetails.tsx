@@ -70,7 +70,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     cover_image:
       "https://kurifturesorts.com/_nuxt/img/Accomodation1.c444805.webp",
     cover_video:
-      "https://player.vimeo.com/video/722179226?api=1&autoplay=1&controls=0&sidedock=0&loop=1&title=0&byline=0&portrait=0&muted=1&background=1",
+      "https://kuriftu-public-media.s3.amazonaws.com/awash/awash_720P.mp4",
   },
   africanVillage: {
     isIframe: false,
@@ -116,6 +116,6 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     email: "booking@kurifturesorts.com",
     rating: 0,
     cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
-    cover_video: ""//"https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africanVillage.MOV",
+    cover_video: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/boston/Boston+Day+Spa+720p.mp4",
   }
 };
