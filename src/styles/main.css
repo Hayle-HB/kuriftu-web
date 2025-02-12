@@ -1793,6 +1793,37 @@ a:hover {
     font-size: 0.75em;
   }
 }
+.basic-icon-tile {
+  padding: 30px;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .basic-icon-tile {
+    flex-direction: row;
+  }
+}
+.basic-icon-tile-wrapper {
+  margin-bottom: 35px;
+  background-color: #FCFAF3;
+  min-height: 350px;
+  padding-top: 50px;
+}
+.basic-icon-tile-wrapper h1 {
+  margin-top: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .basic-icon-tile-reversed {
+    flex-direction: row-reverse;
+  }
+}
+.basic-icon-tile-image {
+  padding: 12px;
+}
+.basic-icon-tile-image svg {
+  width: 40px;
+  height: 40px;
+}
 .hero {
   width: 100vw;
   height: 100vh;

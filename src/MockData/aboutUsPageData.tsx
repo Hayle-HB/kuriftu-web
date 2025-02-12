@@ -15,17 +15,17 @@ export const aboutUSPageData = {
         {
             title: "Vision",
             description: "To lead African hospitality and redefine its story with authenticity and excellence.",
-            image: ""
+            image: "svg/Icons/EyeIcon"
         },
         {
             title: "Mission",
             description: "To craft a distinctive hospitality model that celebrates African talent, design, and cultural innovation.",
-            image: ""
+            image: "svg/Icons/TargetIcon"
         },
         {
             title: "Values",
             description: "Cultural integrity, innovation, customer focus, empowerment, and resilience.",
-            image: ""
+            image: "svg/Icons/HeartIcon"
         }
     ],
     card1: {
