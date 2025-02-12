@@ -1,13 +1,33 @@
 import { Description } from "@mui/icons-material";
 
 export const aboutUSPageData = {
-    hero: {},
-    about: {
-        image1: "https://kuriftu-public-media.s3.amazonaws.com/landing2.jpg",
-        image2: "https://kuriftu-public-media.s3.amazonaws.com/landing1.jpg",
-        title: "Who We Are",
-        description: "Boston Partners PLC, the parent company of Kuriftu Resort & Spa, was established in 2002 to drive the future of Ethiopian hospitality. For over 20 years, we have led the way in innovation, continually shaping and elevating the industry. Our mission is to further develop Ethiopia’s unique destinations through creative design, exceptional marketing, and an unwavering passion for service.ur latest initiative is to launch a promotional campaign aimed at advancing Inter-African tourism, fostering a fresh perspective within the travel market, and inspiring greater connectivity across the continent."
+    hero: {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/landing3.jpg",
+        title: "About Kuriftu"
     },
+    about: {
+        image1: "https://kuriftu-public-media.s3.amazonaws.com/landing1.jpg",
+        image2: "https://kuriftu-public-media.s3.amazonaws.com/landing2.png",
+        title: "Who We Are",
+        description: "Boston Partners PLC, the visionary force behind Kuriftu Resort & Spa, has been redefining Ethiopian hospitality since 2002. With two decades of innovation, we craft unforgettable experiences, blending creative design, strategic marketing, and a deep passion for service. Our latest campaign champions Inter-African tourism, inviting travelers to rediscover Ethiopia—where heritage, beauty, and connection come alive."
+    },
+    mission:[
+        {
+            title: "Vision",
+            description: "To lead African hospitality and redefine its story with authenticity and excellence.",
+            image: ""
+        },
+        {
+            title: "Mission",
+            description: "To craft a distinctive hospitality model that celebrates African talent, design, and cultural innovation.",
+            image: ""
+        },
+        {
+            title: "Values",
+            description: "Cultural integrity, innovation, customer focus, empowerment, and resilience.",
+            image: ""
+        }
+    ],
     card1: {
         title: "",
         description: "",

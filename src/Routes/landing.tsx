@@ -13,7 +13,7 @@ export default function LandingPage(): JSX.Element {
   console.log("landing page loaded")
   return (
     <>
-      <Header />
+      
       <div className="hero-video-container" style={{ position: "relative" }}>
         {/* Video with Default Browser Controls */}
         <video

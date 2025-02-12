@@ -13,11 +13,13 @@ type BasicTileProps = {
     hasLinks: boolean;
     linkText?: string;
     linkURL?: string;
+    half?: boolean;
+    third?: boolean;
 }
 
-const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL}) => {
+const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third}) => {
     return (
-        <Container className="basic-tile-wrapper">
+        <Container className={`basic-tile-wrapper ${half ? 'basic-tile-half' : ''} ${third ? 'basic-tile-third' : ''}`}>
             <Row className={`basic-tile ${reveresed && 'basic-tile-reversed'}`}>
                 <Col className="basic-tile-image" md={6}>
                     <img src={item.image} alt={item.title} />

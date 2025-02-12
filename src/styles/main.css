@@ -1086,6 +1086,142 @@ a:hover {
 .error-page img {
   width: 10vw;
 }
+.about-page {
+  margin: 0;
+  padding: 0;
+}
+.about-page-hero {
+  margin: 0;
+  height: 69vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-page-hero h1 {
+  z-index: 10;
+  width: fit-content;
+  color: white;
+  font-size: 3.6rem;
+  font-family: 'Montserrat';
+  font-weight: 800;
+}
+.about-page .accomidation {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(22, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .about-page .accomidation {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-page .accomidation {
+    height: 105vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-page .accomidation {
+    height: 95vh;
+  }
+}
+.about-page .accomidation-img {
+  grid-column: 3 / 13;
+  grid-row: 2/11;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 992px) {
+  .about-page .accomidation-img {
+    grid-column: 3 / 15;
+    grid-row: 3/11;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-page .accomidation-img {
+    grid-column: 2 / 18;
+    grid-row: 3/9;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-page .accomidation-img {
+    grid-column: 2 / 21;
+    grid-row: 2/8;
+  }
+}
+.about-page .accomidation-text {
+  grid-column: 12 / 22;
+  grid-row: 3/10;
+  z-index: 2;
+  background-color: #FCFAF3;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .about-page .accomidation-text {
+    grid-column: 9 / 20;
+    grid-row: 4/10;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-page .accomidation-text {
+    grid-column: 6 / 21;
+    grid-row: 8/12;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-page .accomidation-text {
+    grid-column: 3 / 22;
+    grid-row: 7/12;
+  }
+}
+.about-page .accomidation-text h3 {
+  color: #191E19;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  line-height: 1.8;
+  font-weight: 300;
+  letter-spacing: 0.06rem;
+}
+.about-page .accomidation-text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  font-size: 2em;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .about-page .accomidation-text h1 {
+    font-size: 1.75em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-page .accomidation-text h1 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-page .accomidation-text h1 {
+    font-size: 1.25em;
+  }
+}
+.about-page .accomidation-text p {
+  font-size: 0.85rem;
+}
+@media screen and (max-width: 992px) {
+  .about-page .accomidation-text p {
+    font-size: 0.65em;
+  }
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -1498,6 +1634,9 @@ a:hover {
 .basic-tile-wrapper h1 {
   margin-top: 60px;
   text-align: center;
+}
+.basic-tile-third {
+  width: 33vw;
 }
 @media screen and (min-width: 768px) {
   .basic-tile-reversed {
