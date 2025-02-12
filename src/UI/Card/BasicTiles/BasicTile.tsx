@@ -18,14 +18,15 @@ type BasicTileProps = {
 }
 
 const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third}) => {
+    const sizeDown = half || third;
     return (
         <Container className={`basic-tile-wrapper ${half ? 'basic-tile-half' : ''} ${third ? 'basic-tile-third' : ''}`}>
             <Row className={`basic-tile ${reveresed && 'basic-tile-reversed'}`}>
-                <Col className="basic-tile-image" md={6}>
+                <Col className="basic-tile-image" md={sizeDown ? 12 : 6}>
                     <img src={item.image} alt={item.title} />
                 </Col>
 
-                <Col className="basic-tile-text" md={6}>
+                <Col className="basic-tile-text" md={sizeDown ? 12 : 6}>
                     <h2 className="title-sans">{item.title}</h2>
                     <p>{item.description}</p>
                     {hasLinks && <Link to={`${linkURL}`}>{linkText}</Link>}

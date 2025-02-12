@@ -169,3 +169,47 @@
         }
     }
 }
+
+.basic-icon-tile {
+    
+    padding: 30px;
+    align-items: center;
+    
+
+    @media screen and (min-width: @md) {
+        flex-direction: row;
+    }
+
+    &-wrapper {
+        margin-bottom: 35px;
+        background-color: @light;
+        min-height: 350px;
+        padding-top: 50px;
+        h1 {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+    }
+
+    &-third {
+        
+    }
+
+    &-reversed {
+        @media screen and (min-width: @md) {
+            flex-direction: row-reverse;
+        }
+    }
+
+
+    &-image {
+        padding: 12px;
+
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+}

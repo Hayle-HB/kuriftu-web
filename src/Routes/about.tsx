@@ -1,9 +1,11 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { aboutUSPageData } from "../MockData/aboutUsPageData";
 import ImageHero from "../UI/Hero/ImageHero";
-import BasicTile from "../UI/Card/BasicTiles/BasicTile";
+import BasicIconTile from "../UI/Card/BasicTiles/BasicIconTile";
+import {EyeIcon, TargetIcon, HeartIcon} from '../svg/Icons';
 export default function AboutPage(): JSX.Element {
-  console.log("landing page loaded")
+  console.log("about page loaded")
+  let icons = [EyeIcon, TargetIcon, HeartIcon] ;
   return (
     <Container className="about-page" fluid>
         <ImageHero classNames="about-page-hero" title={aboutUSPageData.hero.title} image={aboutUSPageData.hero.image} />
@@ -19,10 +21,10 @@ export default function AboutPage(): JSX.Element {
         <Row>
             {
                 aboutUSPageData.mission.map((item, index)=>(
-                    <BasicTile
+                    <BasicIconTile
                         key={index}
                         item={item}
-                        index={index}
+                        icon={icons[index]}
                         reveresed={false}
                         hasLinks={false}
                         third={true}
