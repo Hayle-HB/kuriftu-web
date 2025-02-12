@@ -1,7 +1,16 @@
+import { Description } from "@mui/icons-material";
+
 export const aboutUSPageData = {
-    card1: {
+    hero: {},
+    about: {
+        image1: "https://kuriftu-public-media.s3.amazonaws.com/landing2.jpg",
+        image2: "https://kuriftu-public-media.s3.amazonaws.com/landing1.jpg",
         title: "Who We Are",
-        description: "Boston Partners PLC, the parent company of Kuriftu Resort & Spa, was established in 2002 to drive the future of Ethiopian hospitality. For over 20 years, we have led the way in innovation, continually shaping and elevating the industry. Our mission is to further develop Ethiopia’s unique destinations through creative design, exceptional marketing, and an unwavering passion for service.ur latest initiative is to launch a promotional campaign aimed at advancing Inter-African tourism, fostering a fresh perspective within the travel market, and inspiring greater connectivity across the continent.",
+        description: "Boston Partners PLC, the parent company of Kuriftu Resort & Spa, was established in 2002 to drive the future of Ethiopian hospitality. For over 20 years, we have led the way in innovation, continually shaping and elevating the industry. Our mission is to further develop Ethiopia’s unique destinations through creative design, exceptional marketing, and an unwavering passion for service.ur latest initiative is to launch a promotional campaign aimed at advancing Inter-African tourism, fostering a fresh perspective within the travel market, and inspiring greater connectivity across the continent."
+    },
+    card1: {
+        title: "",
+        description: "",
         image: "https://kurifturesorts.com/_nuxt/img/IMG-20210910-WA0004.5ca1b87.jpg",
         link:"https://kurifturesorts.com/companyprofile_2024.pdf"
         //  // Replace with the actual image URL
