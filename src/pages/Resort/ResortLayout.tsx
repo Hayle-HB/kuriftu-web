@@ -13,7 +13,6 @@ const ResortLayout = () => {
 
   return (
     <div>
-      <Header />
       <ResortNavBar />
       <Outlet />
       <AvailabilityCheck />

@@ -17,6 +17,8 @@ import ResortLayout from "./pages/Resort/ResortLayout";
 import ResortAdventure from "./pages/Resort/ResortAdventure";
 import ResortCeleberationsAndEvents from "./pages/Resort/ResortCeleberationsAndEvents";
 //import ResortHome from "./pages/Resort/ResortHome";
+
+
 import Experiences from "./Routes/Resort/Experiences";
 import ResortLanding from "./Routes/Resort/ResortLanding";
 import Accomidation from "./Routes/Resort/Accomodation";
@@ -25,6 +27,9 @@ import Dinnign from "./Routes/Resort/Dinning";
 import Corporate from "./Routes/Resort/Corporate";
 import Celebrate from "./Routes/Resort/Celebrate";
 import AccomodationDetails from "./Routes/Resort/AccomodationDetails";
+import AboutPage from "./Routes/about";
+
+
 import ResortEvents from "./pages/Resort/ResortEvents";
 
 //import ResortExperiences from "./pages/Resort/ResortExperiences";
@@ -186,7 +191,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <AboutUs />,
+        element: <AboutPage />,
       },
       {
         path: "/contact",
