@@ -14,7 +14,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     location: "14.9 km from Addis Ababa Bole International Airport",
     email: "booking@kurifturesorts.com",
     rating: 5,
-    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/entato1.webp",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/entoto_cover.jpg",
     cover_video: "https://kuriftu-public-media.s3.amazonaws.com/entoto/Entoto+720p.mp4",
     isIframe: false,
   },
@@ -32,7 +32,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
       "53.7 km from Addis Ababa Bole International Airport Lake Bishoftu Ethiopia",
     email: "booking@kurifturesorts.com",
     rating: 5,
-    cover_image: "https://kurifturesorts.com/_nuxt/img/bishAcc.1bbca14.webp",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/1.jpg",
     cover_video: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu720.mp4",
   },
   laketana: {

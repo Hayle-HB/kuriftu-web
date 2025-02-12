@@ -1896,6 +1896,51 @@ footer a:active,
 footer a:focus {
   color: #3c5a37 !important;
 }
+.card-res-body {
+  justify-content: space-around;
+}
+.card-res-body p {
+  margin-bottom: 0;
+  text-align: right;
+}
+.card-res-body h5 {
+  text-align: right;
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+.card-res-body button {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.hero-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  padding: 91px 30px;
+}
+.hero-title h1 {
+  color: #FCFAF3;
+  padding: 20px 15px;
+  backdrop-filter: blur(12px);
+  border: 0.8px solid #eee;
+  border-radius: 11.1px;
+  /** filter: invert(1);*/
+  mix-blend-mode: difference;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.hero-text p {
+  color: #FCFAF3;
+  padding: 25px 10px;
+  backdrop-filter: blur(12px);
+  border: 0.8px solid #eee;
+  border-radius: 11.1px;
+}
 .main-nav-bar {
   background-color: #fcfaf369;
   backdrop-filter: blur(10px);

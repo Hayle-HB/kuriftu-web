@@ -11,7 +11,7 @@ export type ReservationItemModal = {
 export const reservationRooms: ReservationItemModal[] = [
   {
     image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
-    title: "African Village",
+    title: "Kuriftu Resort & Spa African Village",
     subtitle: "Addis Ababa, Ethiopia",
     price: "$300",
     perNight: "Per Night",
@@ -20,7 +20,7 @@ export const reservationRooms: ReservationItemModal[] = [
     slug: "africanVillage",
   },
   {
-    image: "https://kurifturesorts.com/_nuxt/img/2.46e7606.webp",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/1.jpg",
     title: "Kuriftu Resort & Spa Bishoftu",
     subtitle: "Bishoftu, Ethiopia",
     price: "$173",
@@ -30,7 +30,7 @@ export const reservationRooms: ReservationItemModal[] = [
     slug: "bishoftu",
   },
   {
-    image: "https://kurifturesorts.com/_nuxt/img/Glamping.75aadd4.webp",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/entoto_cover.jpg",
     title: "Kuriftu Resort & Spa Entoto",
     subtitle: "Addis Ababa, Ethiopia",
     price: "$135",
