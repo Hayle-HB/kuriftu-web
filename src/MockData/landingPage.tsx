@@ -127,7 +127,7 @@ export const landingData = {
     title: "Kuriftu African Village ",
     description:
       "Gather your loved ones and step into a world of culture and charm at Kuriftu African Village. Nestled in the heart of Ethiopia, this one-of-a-kind destination celebrates the richness of African traditions with vibrant performances, artisanal crafts, and immersive experiences all paired with warm hospitality and timeless elegance.",
-    image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/1.JPG",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/1.jpg",
     linkText: "Discover More",
     link: "/resorts/africanVillage",
   },

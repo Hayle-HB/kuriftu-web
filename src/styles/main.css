@@ -1748,3 +1748,20 @@ footer a:focus {
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 }
+.btn-link,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+.btn-link:hover,
+a:hover {
+  color: #9aaf95 !important;
+  text-decoration: underline !important;
+}
+.btn-link:active,
+a:active,
+.btn-link:focus,
+a:focus {
+  color: #3c5a37 !important;
+  font-weight: bold;
+}
