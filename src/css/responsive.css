@@ -169,7 +169,7 @@
   font-size: 1.2rem;
 }
 .list-unstyled li a {
-  color: #5d5752 !important;
+  /* color: #5d5752 !important; */
   font-size: 1rem;
 }
 .email-links {
