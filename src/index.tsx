@@ -28,7 +28,7 @@ import Corporate from "./Routes/Resort/Corporate";
 import Celebrate from "./Routes/Resort/Celebrate";
 import AccomodationDetails from "./Routes/Resort/AccomodationDetails";
 import AboutPage from "./Routes/about";
-
+import Reservation from "./Routes/reservation";
 
 import ResortEvents from "./pages/Resort/ResortEvents";
 
@@ -43,7 +43,7 @@ import { RoomProvider } from "./context/RoomContext";
 import BookingForm from "./components/BookingForm";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
-import Reservation from "./pages/Reservation";
+//import Reservation from "./pages/Reservation";
 import BostonPackage from "./pages/BostonPackage";
 import Event from "./pages/Event";
 import Payment from "./pages/Booking/Payment";
