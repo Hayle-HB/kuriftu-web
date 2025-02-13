@@ -7,9 +7,9 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     description:
       "Kuriftu Entoto Adventure Park provides one of the best nature based experiences as it is considered to be the first adventure park in the country! Catering to a vast variety of domestic and international tourists, we aim to please and excite!",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/exp3.fe1f858.webp",
-      "https://kurifturesorts.com/_nuxt/img/exp.0810993.webp",
-      "https://kurifturesorts.com/_nuxt/img/exp2.a0ae964.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto2.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto11.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto17.jpg",
     ],
     experiences: [
       {
@@ -41,16 +41,10 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
           "Enjoy a unique trail riding experience in the spectacular forest with our Horse Ride and Picnic package. This includes a private trail ride with a specially prepared gourmet picnic hamper for you to enjoy with your loved ones.",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/slide6.a9663c6.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
         title: "Forest Spa",
         description:
           "Kurfitu Entoto Forest Spa is a sanctuary dedicated to holistic wellness inspired by traditional and globally recognized wellness practices.",
-      },
-      {
-        image: "https://kurifturesorts.com/_nuxt/img/fe3.89f2a9f.webp",
-        title: "hiking",
-        description:
-          "Prepare to trek up the mountain on our guided hiking tour to view all activities based along the way...",
       },
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/bbq.jpg",
@@ -70,7 +64,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
       "Discover a world of adventure in Kuriftu Bishoftu - as the leaders of innovation in the hospitality industry in Ethiopia, we pride ourselves in curated unmatched experiences",
     carouselImages: [
       "https://kurifturesorts.com/_nuxt/img/Swimming2.c58b523.webp",
-      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu.svg",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu8.jpg",
       "https://kurifturesorts.com/_nuxt/img/Kayaking.8a09cfa.webp",
     ],
     experiences: [
@@ -109,17 +103,11 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
           "With an enchanting ecosystem and luxurious natural setting, Kuriftu Resorts & Spa ranks among the be...",
       },
       {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/3.JPG",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu10.jpg",
         title: "Table Tennis",
         description:
           "For our table tennis enthusiasts, add an exciting tournament to your itinerary Kuriftu Bishoftu",
-      },
-      {
-        image: "https://kurifturesorts.com/_nuxt/img/Hiking.ed4cbf4.webp",
-        title: "Hiking",
-        description:
-          "Come and explore nature and wilderness with our Guided hiking and tours....",
-      },
+      }
     ],
 
     featured: [],
@@ -194,7 +182,6 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
       "https://kurifturesorts.com/_nuxt/img/Experience.0da9d1f.webp",
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/awash1.jpg",
       "https://kurifturesorts.com/_nuxt/img/awash-cover.8aba739.webp",
-      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/awash2.jpeg",
     ],
     experiences: [
       {
@@ -217,7 +204,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         description:
           "Enjoy a stroll in the late afternoon or early morning, before the Awash sun is in full heat, by the side of the river or through the park. A chance to clear your mind, and get in touch with nature.",
         image:
-          "https://kurifturesorts.com/_nuxt/img/fe3.89f2a9f.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/awash/awash2.jpeg",
       },
       {
         title: "Yoga",
@@ -235,7 +222,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title: "Spa",
         description:
           "Relax and unwind - Let us pamper you in our unique massage rooms overlooking the river, natural warm air infusing with our in-house mixed aroma and the soothing sound of the waterfall.",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/spa/spa3.JPG", // No image left in the gallery
+        image: "https://kurifturesorts.com/_nuxt/img/3.1b81bb4.webp", // No image left in the gallery
       },
     ],
 

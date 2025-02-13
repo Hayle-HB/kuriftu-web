@@ -31,7 +31,7 @@ const ResortDetails: React.FC = () => {
   const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.items;
   const featuredExps = EXPERIENCE[slug]?.items;
 
-  console.log(experience);
+  console.log(galleryImages);
   return (
     <div className="resort-details">
       {/* Hero Section */}
@@ -194,7 +194,7 @@ const ResortDetails: React.FC = () => {
             </div>
           </Col>
           <Col md={6} className="contact-image">
-            <img src="https://kurifturesorts.com/_nuxt/img/17.d92b745.jpg" />
+            <img src={resort.cover_image} />
           </Col>
         </Row>
       </Container>
