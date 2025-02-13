@@ -31,7 +31,7 @@ const ResortDetails: React.FC = () => {
   const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.items;
   const featuredExps = EXPERIENCE[slug]?.items;
 
-  console.log(experience);
+  console.log(galleryImages);
   return (
     <div className="resort-details">
       {/* Hero Section */}

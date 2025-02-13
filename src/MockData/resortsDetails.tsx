@@ -14,7 +14,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     location: "14.9 km from Addis Ababa Bole International Airport",
     email: "booking@kurifturesorts.com",
     rating: 5,
-    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/entoto_cover.jpg",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto23.jpg",
     cover_video: "https://kuriftu-public-media.s3.amazonaws.com/entoto/Entoto+720p.mp4",
     isIframe: false,
   },
@@ -32,7 +32,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
       "53.7 km from Addis Ababa Bole International Airport Lake Bishoftu Ethiopia",
     email: "booking@kurifturesorts.com",
     rating: 5,
-    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/1.jpg",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu14.jpg",
     cover_video: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu720.mp4",
   },
   laketana: {
@@ -100,8 +100,8 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     location: "Approximately 15 km from Addis Ababa Bole International Airport",
     email: "booking@kurifturesorts.com",
     rating: 0,
-    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
-    cover_video: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/african_village720p.mp4",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark3.jpg",
+    cover_video: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/waterpark/water_park720.mov",
   },
   boston: {
     isIframe: false,
@@ -115,7 +115,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     location: "Approximately 15 km from Addis Ababa Bole International Airport",
     email: "booking@kurifturesorts.com",
     rating: 0,
-    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston16.jpg",
     cover_video: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/boston/Boston+Day+Spa+720p.mp4",
   }
 };
