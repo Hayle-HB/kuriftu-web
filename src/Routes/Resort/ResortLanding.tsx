@@ -194,7 +194,7 @@ const ResortDetails: React.FC = () => {
             </div>
           </Col>
           <Col md={6} className="contact-image">
-            <img src="https://kurifturesorts.com/_nuxt/img/17.d92b745.jpg" />
+            <img src={resort.cover_image} />
           </Col>
         </Row>
       </Container>
