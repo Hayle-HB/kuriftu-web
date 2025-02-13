@@ -1,5 +1,6 @@
 import { useLocation, useParams } from "react-router";
 import { ROOM } from "../../MockData/room";
+import { RESORTDETAILS } from "../../MockData/resortsDetails";
 import RoomCard from "../../components/RoomCard";
 import { useEffect, useState } from "react";
 import RoomModal from "../../components/RoomModal";
@@ -76,6 +77,7 @@ const RoomListing = () => {
   });
 
   const room = ROOM[slug || ""];
+  const resort = RESORTDETAILS[slug || ""];
 
   useEffect(() => {
     getData(dates);
@@ -158,12 +160,11 @@ const RoomListing = () => {
     return roomAllImages[acc] as string
   }
   return (
-    <>
-      <Header />
+    <div className="rooms-listing">
       <div style={{ marginTop: "80px" }}>
         <img
           style={{ width: "100%", height: "350px", objectFit: "cover" }}
-          src={room?.coverImage}
+          src={resort.cover_image}
           alt={slug + "Room"}
         />
       </div>
@@ -239,7 +240,7 @@ const RoomListing = () => {
         onClose={handleClose}
         onAddRoom={handleAddRoom}
       />
-    </>
+    </div>
   );
 };
 

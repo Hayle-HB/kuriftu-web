@@ -1983,3 +1983,33 @@ a:focus {
   color: #3c5a37 !important;
   font-weight: bold;
 }
+.rooms-listing .card-title,
+.rooms-listing .text-muted,
+.rooms-listing .text-end,
+.rooms-listing p,
+.rooms-listing h5,
+.rooms-listing button {
+  font-family: 'Montserrat' !important;
+}
+.rooms-listing .text-end h5 {
+  font-weight: 400 !important;
+  font-size: 1.4rem !important;
+}
+.rooms-listing p {
+  font-size: 0.8rem !important;
+}
+.rooms-listing .date-range-picker {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 5rem;
+  align-items: center;
+}
+.rooms-listing .date-range-picker label {
+  font-family: 'Montserrat';
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.rooms-listing .date-range-picker .input-box {
+  font-family: 'Montserrat';
+}
