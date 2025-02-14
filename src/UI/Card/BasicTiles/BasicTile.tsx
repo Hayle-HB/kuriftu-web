@@ -5,6 +5,7 @@ type ItemProps = {
     image?: string;
     title: string;
     description: string;
+    subtitle?: string;
 }
 type BasicTileProps = {
     item: ItemProps;
@@ -15,19 +16,20 @@ type BasicTileProps = {
     linkURL?: string;
     half?: boolean;
     third?: boolean;
+    fourth?: boolean;
 }
 
-const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third}) => {
+const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third, fourth}) => {
     const sizeDown = half || third;
     return (
-        <Container className={`basic-tile-wrapper ${half ? 'basic-tile-half' : ''} ${third ? 'basic-tile-third' : ''}`}>
-            <Row className={`basic-tile ${reveresed && 'basic-tile-reversed'}`}>
-                <Col className="basic-tile-image" md={sizeDown ? 12 : 6}>
-                    <img src={item.image} alt={item.title} />
+        <Container className={`basic-tile-wrapper ${half ? 'basic-tile-half' : ''} ${third ? 'basic-tile-third' : ''} ${fourth ? 'basic-tile-fourth': ''}`}>
+            <Row className={`basic-tile`}>
+                <Col className="basic-tile-image" md={sizeDown ? 12 : 6} style={{backgroundImage: `url(${item.image})`}}>
                 </Col>
 
                 <Col className="basic-tile-text" md={sizeDown ? 12 : 6}>
-                    <h2 className="title-sans">{item.title}</h2>
+                    <h5>{item.subtitle}</h5>
+                    <h3 className="title-sans">{item.title}</h3>
                     <p>{item.description}</p>
                     {hasLinks && <Link to={`${linkURL}`}>{linkText}</Link>}
                 </Col>

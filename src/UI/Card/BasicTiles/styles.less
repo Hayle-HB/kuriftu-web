@@ -1,11 +1,9 @@
 .basic-tile {
     min-height: 66vh;
     align-items: center;
-    background-color: @light;
-    @media screen and (min-width: @md) {
-        flex-direction: row;
-    }
-
+    padding: inherit;
+    
+    flex-direction: column;
     &-wrapper {
         margin-bottom: 35px;
 
@@ -16,7 +14,10 @@
         
     }
     &-third {
-        width: 33vw;
+        width: 30vw;
+        @media screen and (max-width: @md) {
+            width: 100%;
+        }
     }
 
     &-reversed {
@@ -27,9 +28,30 @@
     
 
     &-image {
-        padding: 12px;
+        //padding: 12px;
+        aspect-ratio: 0.76;
+        //width: inherit;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
         img {
             width: 100%;
+        }
+    }
+    &-text{
+        text-align: left;
+        padding: 0;
+        h3{
+            font-size: 1.4rem;
+            line-height: 1.45;
+        }
+        h5{
+            margin-top: 1rem;
+            margin-bottom: 1.1428571429rem;
+            font-size: .722rem;
+            text-transform: uppercase;
+            letter-spacing: .1428571429rem;
+            font-weight: 200;
         }
     }
 

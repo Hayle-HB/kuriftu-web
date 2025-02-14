@@ -13,7 +13,7 @@ import {DINING} from '../../MockData/dining';
 import {WELLNESS} from '../../MockData/wellness';
 import {CELEBRATIONSANDEVENTS} from '../../MockData/celebrationsAndEvent';
 import ScrollingAnimation from '../../UI/AnimatedTiles/ExperianceSection';
-
+import VideoHero from "../../UI/Hero/VideoHero";
 const ResortDetails: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
 
@@ -36,28 +36,9 @@ const ResortDetails: React.FC = () => {
     <div className="resort-details">
       {/* Hero Section */}
       
-      <div
-        className="hero"
-        style={{ backgroundImage: `url(${resort.cover_image})` }}
-      >
-        <video
-          key={resort.cover_video}
-          className="hero-video"
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{ objectFit: "cover", width: "100%", height: "100vh",   
-          pointerEvents: "none", // Prevents user interaction
-          }}
-          onContextMenu={(e) => e.preventDefault()} 
-        >
-          <source src={resort.cover_video}  />
-        </video>
-        <h1 className="title-sans">{resort.name}</h1>
-        <p>{resort.region}</p>
-        <Link to={`/reservation?resort=${slug}`}>BOOK NOW</Link>
-      </div>
+      <VideoHero videoURL={resort.cover_video} classNames="resort-details-hero" />
+      <p>{resort.region}</p>
+      <h1 className="title-sans" style={{textAlign: "center"}}>{resort.name}</h1>
 
       {/* Details Section */}
       <Row className="description-wrapper m-0">

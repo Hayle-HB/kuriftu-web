@@ -61,25 +61,28 @@ h1 {
     font-size: 1.99rem;
   }
 }
-a,
-p {
-  font-family: "Montserrat", sans-serif;
+a {
+  font-family: 'whitneybook';
+  text-decoration: underline;
   font-size: 0.69rem;
   line-height: 1.8;
   font-weight: 400;
   letter-spacing: 0.08rem;
 }
 @media screen and (min-width: 576px) {
-  a,
-  p {
+  a {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 992px) {
-  a,
-  p {
+  a {
     font-size: 0.99rem;
   }
+}
+p {
+  font-size: 0.75rem;
+  line-height: 1.45;
+  font-family: "Montserrat", sans-serif;
 }
 @font-face {
   font-family: 'Inconsolata';
@@ -632,6 +635,12 @@ SemiBold 600
     font-weight: <weight>;
     font-style: normal;
 }*/
+@font-face {
+  font-family: 'whitneybook';
+  src: url('../fonts/whitneybook.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 .section-header-font {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
@@ -1071,6 +1080,23 @@ a:hover {
   min-height: 100vh;
   object-fit: cover;
   padding: 0;
+}
+.landing-tile {
+  padding: 0;
+}
+.landing-carousel .basic-tile-image {
+  aspect-ratio: 1;
+}
+.landing-carousel .basic-tile-text p {
+  font-size: 0.7rem;
+}
+.landing-section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.landing-section h1,
+.landing-section p {
+  text-align: left;
 }
 .reservation {
   padding-top: 90px;
@@ -1624,12 +1650,8 @@ a:hover {
 .basic-tile {
   min-height: 66vh;
   align-items: center;
-  background-color: #FCFAF3;
-}
-@media screen and (min-width: 768px) {
-  .basic-tile {
-    flex-direction: row;
-  }
+  padding: inherit;
+  flex-direction: column;
 }
 .basic-tile-wrapper {
   margin-bottom: 35px;
@@ -1639,7 +1661,12 @@ a:hover {
   text-align: center;
 }
 .basic-tile-third {
-  width: 33vw;
+  width: 30vw;
+}
+@media screen and (max-width: 768px) {
+  .basic-tile-third {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .basic-tile-reversed {
@@ -1647,10 +1674,29 @@ a:hover {
   }
 }
 .basic-tile-image {
-  padding: 12px;
+  aspect-ratio: 0.76;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 .basic-tile-image img {
   width: 100%;
+}
+.basic-tile-text {
+  text-align: left;
+  padding: 0;
+}
+.basic-tile-text h3 {
+  font-size: 1.4rem;
+  line-height: 1.45;
+}
+.basic-tile-text h5 {
+  margin-top: 1rem;
+  margin-bottom: 1.14285714rem;
+  font-size: 0.722rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14285714rem;
+  font-weight: 200;
 }
 .featured-tile {
   height: 60vw;
@@ -1867,6 +1913,25 @@ a:hover {
   text-align: center;
   margin-top: 15vh;
 }
+.hero-video {
+  position: relative;
+  width: 100%;
+  height: 641.25px;
+  object-fit: cover;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px) {
+  .hero-video {
+    height: 369px;
+  }
+}
+.hero-video-wrapper {
+  position: relative;
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
+  margin-top: 178px;
+  margin-bottom: 4.64285714rem;
+}
 .light {
   background-color: #F5E2DF !important;
   color: #191E19 !important;
@@ -1941,15 +2006,87 @@ footer a:focus {
   border: 0.8px solid #eee;
   border-radius: 11.1px;
 }
+.carousel-item-custom {
+  flex: 1;
+  max-width: 80%;
+  margin: 0 auto;
+  transition: transform 0.5s ease-in-out;
+  overflow: visible;
+}
+.carousel-col {
+  flex: 1;
+  max-width: 100%;
+}
+.item-box {
+  background: lightblue;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+/* Custom Dashed Indicators */
+.custom-indicators {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+.custom-indicators li {
+  width: 20px;
+  height: 3px;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.custom-indicators li.active {
+  background-color: black;
+}
 .main-nav-bar {
-  background-color: #fcfaf369;
   backdrop-filter: blur(10px);
+  height: 88px;
+}
+.main-nav-bar .menu-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  color: black;
+  width: 100px;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+.main-nav-bar .menu-button p {
+  letter-spacing: 0.1rem;
+  margin: 0;
+  margin-left: 2rem;
+}
+.main-nav-bar .reserve-button {
+  font-family: 'whitneybook';
+  width: 140px;
+  padding: 0.71428571rem 1.07142857rem;
+  white-space: nowrap;
+  text-align: center;
+  display: flex;
+  background: #191E19;
+  color: #FCFAF3;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav-bar .reserve-button:hover {
+  background: #363b36;
+  color: #FCFAF3 !important;
+  text-decoration: none !important;
+}
+html {
+  background-color: #f3eee7;
 }
 .app {
   color: #191E19;
   font-size: 16px;
   padding: 20px;
-  background-color: #FCFAF3;
+  background-color: #f3eee7;
 }
 .glass-button {
   backdrop-filter: blur(16px);
