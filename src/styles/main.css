@@ -1485,9 +1485,19 @@ a:hover {
   margin: 0;
   z-index: 1000;
 }
+.resorts-nabvar .nav-link:hover {
+  color: #363b36 !important;
+}
+.resorts-nabvar .nav-link:active,
+.resorts-nabvar .nav-link:focus {
+  color: #191E19 !important;
+}
+.resorts-nabvar .disabled {
+  color: #b8b8bf !important;
+}
 @media screen and (max-width: 992px) {
   .resorts-nabvar {
-    top: 50.07px;
+    top: 88.07px;
   }
 }
 .resorts-nabvar .dropdown-menu {

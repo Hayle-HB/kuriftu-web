@@ -7,10 +7,6 @@ export const ITEMS: Record<string, ItemModal[]> = {
       link: "acc",
     },
     {
-      title: "Adventure",
-      link: "adv",
-    },
-    {
       title: "Experiences",
       link: "exp",
     },
@@ -27,7 +23,7 @@ export const ITEMS: Record<string, ItemModal[]> = {
       link: "corp",
     },
     {
-      title: "Celebration & Events",
+      title: "Celebration",
       link: "event",
     },
     {

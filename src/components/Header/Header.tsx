@@ -107,12 +107,14 @@ const Header = () => {
           style={{ background: "white" }}
         >
           <Offcanvas.Title>
-            <img
+            <Link to="/" onClick={()=>setShow(false)}>
+              <img
               className="side-bar-icon"
               id="logo"
               src={require("../../assessts/svg/logo.svg").default}
               alt="kuriftu logo"
             />
+            </Link>
           </Offcanvas.Title>
           {/* Custom Close Button */}
           <button
@@ -131,7 +133,8 @@ const Header = () => {
                 {navBarMenus.map((item) => (
                   <li key={item.id} className="mb-2">
                     {item.isLink ? (
-                      <Link to={`/${item.id}`}>{item.label}</Link>
+                      <Link to={`/${item.id}`} onClick={()=>setShow(false)}
+                      >{item.label}</Link>
                     ) : (
                       <Button
                         onClick={() => {
@@ -153,6 +156,9 @@ const Header = () => {
             <div className="col-4 px-3 header-navbars">
               {selectedMenu === "destinations" && (
                 <ul className="list-unstyled side-bar-menus">
+                  <li className="mb-2">
+                    <Link to={`/resorts`} onClick={()=>setShow(false)}>All Destinations</Link>
+                  </li>
                   {regions.map((item, index) => (
                     <li key={index} className="mb-2">
                       <Button

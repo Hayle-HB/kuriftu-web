@@ -25,10 +25,6 @@ const ResortNavBar: React.FC=()=>{
       link: "acc",
     },
     {
-      title: "Adventure",
-      link: "adv",
-    },
-    {
       title: "Experiences",
       link: "exp",
     },
@@ -45,7 +41,7 @@ const ResortNavBar: React.FC=()=>{
       link: "corp",
     },
     {
-      title: "Celebration & Events",
+      title: "Celebration",
       link: "event",
     },
     {
@@ -57,35 +53,8 @@ const ResortNavBar: React.FC=()=>{
     const location = useLocation();
     const navigate = useNavigate();
     const dimention = useWindowDimensions();
-
     const [activeLink, setActiveLink] = useState(location.pathname);
     const containerRef = useRef<HTMLParagraphElement | null>(null);
-
-
-    useEffect(() => {
-      setActiveLink(location.pathname);
-    }, [location.pathname]);
-    useGSAP(() => {
-        const container = containerRef.current; 
-        const notMobile = dimention.width / dimention.height > 1;  
-        if (notMobile){
-            gsap.timeline({
-            scrollTrigger: {
-                trigger: container,
-                start: 'center 100px',
-                scrub: true,
-                markers: false
-            }
-        })
-        .to(container, {
-            ease: 'none',
-            height: '=*0.85',
-            backgroundColor: 'white',
-            y: -50,
-        }, 0);
-        } 
-    }, 
-    { scope: containerRef });
 
 
     const handleActiveLink = (path: string, link: string, disabled: boolean) => {

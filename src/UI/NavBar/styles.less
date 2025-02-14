@@ -6,8 +6,20 @@
     backdrop-filter: blur(10px);
     margin: 0;
     z-index: 1000;
+    .nav-link{
+        &:hover{
+            color: @dark-light !important;
+        }
+        &:active, &:focus{
+            color: @dark !important
+        }
+
+    }
+    .disabled{
+        color: @gray-light !important;
+    }
     @media screen and (max-width: @lg) {
-        top: 50.07px;
+        top: 88.07px;
     }
 
     .dropdown-menu{
