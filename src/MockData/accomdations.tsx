@@ -11,7 +11,7 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
         image: "https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp",
         accomdationId: 1,
         subtitle: "Forest View",
-        title: "Tent Camp",
+        title: "Tented Camp",
         isLinked: true,
         description:
           "Join us and experience Addis's first glamping site in the heart of Entoto Mountain. As our brand shift towards becoming more sustainably concious by focusing on minimizing our impact in the forest, glamping provides a more sustainable approach as well as an alternative hospitality adventure!",
@@ -225,7 +225,7 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
         {
           id: 1,
           image: "https://kurifturesorts.com/_nuxt/img/1.9e6f0ca.webp",
-          title: "Tent Camp Site",
+          title: "Tented Camp Site",
           description:
             "Carefully hidden amongst the eucalyptus trees, our Kuriftu Glamping site offers guests a quiet escap...",
         },

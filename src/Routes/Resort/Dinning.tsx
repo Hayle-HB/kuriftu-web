@@ -21,7 +21,7 @@ const Dinnign: React.FC = () => {
                 <Carousel classNames="hero-carousel" slides={dining.carouselImages} />
             </Row>
             <Row>
-                <TextHero classNames="light"  text={dining.description} />
+                <TextHero classNames=""  text={dining.description} />
             </Row>
 
             <Row>

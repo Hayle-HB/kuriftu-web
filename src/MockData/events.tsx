@@ -16,7 +16,7 @@ export const EVENTS: Record<string, EventModal> = {
       {
         title: "Weddings",
         description:
-          "Take time to not only ride, but connect with our wonderful horses at the stable, these beauties have been trained to care for our guests as much as we do! ",
+          "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/8.JPG",
         link: "wed",
         isEnquiryForm: true,
@@ -48,7 +48,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Wedding Venue",
         image: "https://kurifturesorts.com/_nuxt/img/WeddingVenue.4c9426b.webp",
         description:
-          "Our exclusive venue for weddings has everything from glamorous decorations, to buffets, dancefloors, outdoor seating, unique landscape and more",
+          "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones",
       },
 
       {
@@ -109,7 +109,7 @@ export const EVENTS: Record<string, EventModal> = {
       {
         title: "Weddings",
         description:
-          "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones",
+          "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones.",
         image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event2.webp",
         link: "wed",
         isEnquiryForm: false,
@@ -151,7 +151,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Wedding Venue",
         image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event4.webp",
         description:
-          "Our exclusive venue for weddings has everything from glamorous decorations, to buffets, dancefloors, outdoor seating, unique landscape and more",
+          "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones.",
       },
 
       {
@@ -247,7 +247,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Wedding Venue",
         image: "https://kurifturesorts.com/_nuxt/img/wed.2e89f5a.webp",
         description:
-          "Our exclusive venue for weddings has everything from glamorous decorations, to buffets, dancefloors, outdoor seating, unique landscape and more",
+          "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones.",
       },
 
       {

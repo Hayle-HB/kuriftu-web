@@ -404,7 +404,6 @@
     height: 50vh !important;
   }
   .resorts-nabvar {
-    margin-top: 30px !important;
     z-index: 10 !important;
     padding-top: 10px !important;
     border: none !important;
@@ -473,9 +472,6 @@
   }
   .home-kuriftu-resorts {
     font-size: 27px !important;
-  }
-  .resorts-nabvar {
-    margin-top: 40px !important;
   }
   .dropdown-menu {
     position: absolute !important;

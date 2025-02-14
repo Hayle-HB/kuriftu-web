@@ -12,8 +12,8 @@ interface Resort {
 
 // Resort data with coordinates
 const resorts: Resort[] = [
-    { id: 1, name: 'Boston Day Spa', location: 'Addis Abeba, Ethiopia', coordinates: [8.99096223731173, 38.78364728225807] },
-    { id: 2, name: 'Kuriftu Resort & Spa Entoto', location: 'Addis Abeba, Ethiopia', coordinates: [9.084330148200227, 38.74272430451018] },
+    { id: 1, name: 'Boston Day Spa', location: 'Addis Ababa, Ethiopia', coordinates: [8.99096223731173, 38.78364728225807] },
+    { id: 2, name: 'Kuriftu Resort & Spa Entoto', location: 'Addis Ababa, Ethiopia', coordinates: [9.084330148200227, 38.74272430451018] },
     { id: 3, name: 'Kuriftu Resort & Spa Awash Falls', location: 'Awash, Ethiopia', coordinates: [8.9848, 39.9168] },
     { id: 4, name: 'Kuriftu Resort & Spa Bishoftu', location: 'Lake Kuriftu, Ethiopia', coordinates: [8.7542, 38.9785] },
     { id: 5, name: 'Kuriftu Water Park', location: 'Lake Kuriftu, Ethiopia', coordinates: [8.7542, 38.9785] },

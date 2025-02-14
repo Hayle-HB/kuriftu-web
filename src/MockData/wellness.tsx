@@ -14,12 +14,6 @@ export const WELLNESS: Record<string, WellnessModal> = {
     ],
     wellness: [
       {
-        title: "Fitness",
-        description:
-          "Plan your very own fitness experience at Kuriftu Entoto Adventure Park - this mountain is the practice grounds for many Ethiopian runners and athletes, from the crisp clean air to the high altitude taking your breath away every step of your journey, this space is ideal for nature based fitness ",
-        image: "https://kurifturesorts.com/_nuxt/img/fit.47db4b5.webp",
-      },
-      {
         image: "https://kurifturesorts.com/_nuxt/img/wide.735b796.webp",
         title: "Relax, Rebalance & Restore",
         description:

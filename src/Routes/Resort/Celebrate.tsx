@@ -21,7 +21,7 @@ const Celebrate: React.FC = () => {
                 <Carousel classNames="hero-carousel" slides={events.carouselImages} />
             </Row>
             <Row>
-                <TextHero classNames="light"  text={events.description} />
+                <TextHero classNames=""  text={events.description} />
             </Row>
 
             

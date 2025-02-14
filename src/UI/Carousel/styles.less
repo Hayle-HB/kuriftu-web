@@ -1,0 +1,41 @@
+.carousel-item-custom {
+    flex: 1;
+    max-width: 80%; // Makes each slide smaller so adjacent slides are partially visible
+    margin: 0 auto; // Center the slides
+    transition: transform 0.5s ease-in-out;
+    overflow: visible;
+}
+
+.carousel-col {
+    flex: 1;
+    max-width: 100%;
+}
+
+.item-box {
+    background: lightblue;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Custom Dashed Indicators */
+.custom-indicators {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+
+    li {
+        width: 20px;
+        height: 3px;
+        background-color: gray;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &.active {
+            background-color: black;
+        }
+    }
+}

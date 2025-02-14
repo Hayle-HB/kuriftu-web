@@ -2,7 +2,7 @@ export const landingData = {
   title: "Kuriftu Resort & Spa African Village",
   subtitle: "KURIFTU RESORT AFRICAN VILLAGE",
   video:
-    "https://player.vimeo.com/video/969906959?api=1&autoplay=1&controls=0&sidedock=0&loop=1&title=0&byline=0&portrait=0&muted=1&background=1",
+    "https://kuriftu-public-media.s3.amazonaws.com/home/homeVideo.mov",
   section1: [
     {
       category: "Adventure",
@@ -26,59 +26,45 @@ export const landingData = {
     },
   ],
   section2: [
-    {
-      category: "Wellness",
-      title: "Restore Your Energy",
-      subtitle: "CATERING",
-      description:
-        "Escape to a refuge of tranquility - nestled in the core of any of the Kuriftu locations is a center for wellness and relaxation.",
-      image: "https://kurifturesorts.com/_nuxt/img/Adventure.bb2f8d1.webp",
-      linkText: "Explore",
-      link: "#",
-    },
-    {
-      category: "Gift Voucher",
-      title: "Future Travels",
-      subtitle: "GIFT VOUCHER",
-      description:
-        "Surprise your loved ones with an extraordinary adventure! Offer memories that last a lifetime with the Kuriftu Gift Card that can be customized per destination.",
-      image: "https://kurifturesorts.com/_nuxt/img/long.e6ec880.webp",
-      linkText: "Explore",
-      link: "#",
-    },
-    {
-      category: "Kuriftu Construction",
-      title: "Immaculate Touches",
-      subtitle: "KURIFTU CONSTRUCTION",
-      description:
-        "Inspired by natural elements, our construction team has designed and developed each of our properties since the birth of the Kuriftu brand. With hands-on supervision from our CEO, Tadiwos Belete himself, each destination is the pure embodiment of his vision of innovation in Ethiopia's hospitality and tourism industry.",
-      image:
-        "https://kurifturesorts.com/_nuxt/img/Kuriftu%20Construction.56c04b5.webp",
-      linkText: "Explore",
-      link: "#",
-    },
-  ],
+  {
+    "category": "Wellness",
+    "title": "Restore Your Energy",
+    "subtitle": "Wellness",
+    "description": "Discover a sanctuary of serenity, where indulgence and rejuvenation meet in perfect harmony at Kuriftu’s exclusive wellness retreats.",
+    "image": "https://kurifturesorts.com/_nuxt/img/Adventure.bb2f8d1.webp",
+    "linkText": "Explore",
+    "link": "#"
+  },
+  {
+    "category": "Waterpark",
+    "title": "Waterpark",
+    "subtitle": "WATERPARK",
+    "description": "Experience the pinnacle of aquatic adventure at Kuriftu Water Park, where luxury and excitement blend effortlessly for an unforgettable escape.",
+    "image": "https://kurifturesorts.com/_nuxt/img/Waterpark.0b8de07.webp",
+    "linkText": "Read More",
+    "link": "#"
+  },
+  {
+    "category": "Lake Tana",
+    "title": "Lake Tana",
+    "subtitle": "LAKE TANA",
+    "description": "Immerse yourself in the timeless beauty of Lake Tana, where Kuriftu Resort & Spa offers an unrivaled blend of elegance, culture, and natural splendor.",
+    "image": "https://kurifturesorts.com/_nuxt/img/Tana.303f00c.webp",
+    "linkText": "Read More",
+    "link": "#"
+  },
+  {
+    "category": "Kuriftu Construction",
+    "title": "Immaculate Touches",
+    "subtitle": "KURIFTU CONSTRUCTION",
+    "description": "With visionary craftsmanship and an eye for perfection, Kuriftu Construction transforms luxury into reality across Ethiopia’s most prestigious destinations.",
+    "image": "https://kurifturesorts.com/_nuxt/img/Kuriftu%20Construction.56c04b5.webp",
+    "linkText": "Explore",
+    "link": "#"
+  }
+],
   section3: [
-    {
-      category: "Waterpark",
-      title: "Waterpark",
-      subtitle: "WATERPARK",
-      description:
-        "Whether you are looking to spend an afternoon of fun with family or friends, searching the perfect weekend getaway, planning a birthday or group event, or even surprising a loved one, Kuriftu Water Park is your ultimate choice for a premier entertainment...",
-      image: "https://kurifturesorts.com/_nuxt/img/Waterpark.0b8de07.webp",
-      linkText: "read more",
-      link: "#",
-    },
-    {
-      category: "Lake Tana",
-      title: "Lake Tana",
-      subtitle: "LAKE TANA",
-      description:
-        "Located in the capital of the Amhara Region, Bahirdar, Kuriftu Resort & Spa Lake Tana represents the Kuriftu brand's second resort venture. As we seek to expand across Ethiopia, Lake Tana with its historic and cultural value was the perfect choice fo...",
-      image: "https://kurifturesorts.com/_nuxt/img/Tana.303f00c.webp",
-      linkText: "read more",
-      link: "#",
-    },
+    
   ],
   section4: {
     category: "Featured Story",

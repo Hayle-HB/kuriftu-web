@@ -66,23 +66,13 @@ const Header = () => {
       >
         <div className="d-flex align-items-center">
           <div
+            className="menu-button"
             onClick={handleShow}
             style={{
-              background: "black",
-              display: "flex",
-              fontSize: "20px",
-              width: "30px",
-              height: "30px",
-              borderRadius: "100%",
-              border: "2px solid black",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "white",
-              padding: "5px",
               cursor:'pointer'
             }}
           >
-            &#9776;
+            <i className="bi bi-list"></i>{'  '}<p>MENU</p>
           </div>
         </div>
         <div className="d-flex align-items-center">
@@ -99,20 +89,9 @@ const Header = () => {
         <div className="header-btn-container">
           <Link
             to={"/reservation"}
-            style={{
-              color: "#756363",
-              background: "white",
-              borderRadius: "8px",
-              border: "none",
-              padding: "8px 25px",
-              textDecoration: "none",
-              lineHeight:'normal',
-              fontWeight:'400'
-
-            }}
-            className="top_nav_btn"
+            className="reserve-button"
           >
-            Book Now
+            Reserve
           </Link>
         </div>
       </nav>
@@ -128,12 +107,14 @@ const Header = () => {
           style={{ background: "white" }}
         >
           <Offcanvas.Title>
-            <img
+            <Link to="/" onClick={()=>setShow(false)}>
+              <img
               className="side-bar-icon"
               id="logo"
               src={require("../../assessts/svg/logo.svg").default}
               alt="kuriftu logo"
             />
+            </Link>
           </Offcanvas.Title>
           {/* Custom Close Button */}
           <button
@@ -152,7 +133,8 @@ const Header = () => {
                 {navBarMenus.map((item) => (
                   <li key={item.id} className="mb-2">
                     {item.isLink ? (
-                      <Link to={`/${item.id}`}>{item.label}</Link>
+                      <Link to={`/${item.id}`} onClick={()=>setShow(false)}
+                      >{item.label}</Link>
                     ) : (
                       <Button
                         onClick={() => {
@@ -174,6 +156,9 @@ const Header = () => {
             <div className="col-4 px-3 header-navbars">
               {selectedMenu === "destinations" && (
                 <ul className="list-unstyled side-bar-menus">
+                  <li className="mb-2">
+                    <Link to={`/resorts`} onClick={()=>setShow(false)}>All Destinations</Link>
+                  </li>
                   {regions.map((item, index) => (
                     <li key={index} className="mb-2">
                       <Button

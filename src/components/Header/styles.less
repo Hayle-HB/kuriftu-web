@@ -1,4 +1,37 @@
 .main-nav-bar{
-    background-color: @light-opace;
     backdrop-filter: blur(10px);
+    height: 88px;
+    .menu-button{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        color: black;
+        width: 100px;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        p{
+            letter-spacing: 0.1rem;
+            margin: 0;
+            margin-left: 2rem;
+        }
+    }
+    .reserve-button{
+        font-family: 'whitneybook';
+        width: 140px;
+        padding: .7142857143rem 1.0714285714rem;
+        white-space: nowrap;
+        text-align: center;
+        display: flex;
+        background: @dark;
+        color: @light;
+        height: 42px;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background: @dark-light;
+            color: @light !important;
+            text-decoration: none !important;
+        }
+    }
 }

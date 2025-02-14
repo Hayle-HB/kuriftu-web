@@ -22,12 +22,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     ],
 
     items: [
-      {
-        title: "Flora And Fauna Scavenger Hunt (Coming Soon)",
-        description:
-          "Venture out into the wild with our Kuriftu Entoto Flora and Fauna Scavenger Hunt Guide to learn about the incredible biodiversity of the area.",
-        image: "https://kurifturesorts.com/_nuxt/img/feature.7383491.webp",
-      },
+      
       {
         title: "Cycling",
         description:
@@ -46,12 +41,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         description:
           "Kurfitu Entoto Forest Spa is a sanctuary dedicated to holistic wellness inspired by traditional and globally recognized wellness practices.",
       },
-      {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/bbq.jpg",
-        title: "BBQ",
-        description:
-          "Fire up the grill in either our Glamping facility or within the Presidential Cabin - feel free to bring your own materials or request for a custom pre-marinade selection to be brought to you!",
-      },
+      
     ],
     featured: [
       
