@@ -972,11 +972,17 @@ a:hover {
   width: 100%;
 }
 .resort-details .contact-wrapper {
-  background-color: #F5E2DF;
+  background-color: #FCFAF3;
   padding: 2rem;
+}
+.resort-details .contact-wrapper h1 {
+  text-align: right;
 }
 .resort-details .contact-image img {
   width: 100%;
+}
+.resort-details .contact-text {
+  text-align: right;
 }
 .resort-details .contact-text i {
   margin-right: 10px;
@@ -1002,7 +1008,7 @@ a:hover {
   margin-top: 30px;
   margin-bottom: 35px;
   padding: 20px;
-  background-color: #191E19;
+  background-color: #FCFAF3;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -1010,7 +1016,7 @@ a:hover {
   justify-content: center;
 }
 .dining-tile-wrapper a {
-  color: #FCFAF3;
+  color: #191E19;
 }
 .dining-tile-image {
   width: 100%;
@@ -1028,7 +1034,7 @@ a:hover {
 }
 .dining-tile-text-wrapper h1,
 .dining-tile-text-wrapper p {
-  color: #FCFAF3;
+  color: #191E19;
   text-align: right;
 }
 .accomidation-page .hero {
@@ -1048,7 +1054,8 @@ a:hover {
   max-height: 30vh;
 }
 .accomidation-page .hero-text p {
-  color: #191E19;
+  color: #FCFAF3;
+  border: none;
 }
 .accomidation-page .hero h1 {
   color: #FCFAF3;
@@ -1479,7 +1486,7 @@ a:hover {
 .resorts-nabvar {
   background-color: #fcfaf369;
   position: fixed;
-  top: 107px;
+  top: 88px;
   width: 100%;
   backdrop-filter: blur(10px);
   margin: 0;
@@ -1626,7 +1633,7 @@ a:hover {
   }
 }
 .scrolling-container-text-wrapper {
-  background-color: #F5E2DF;
+  background-color: #FCFAF3;
   width: 55vw;
   align-self: start;
   padding: 25px;
@@ -1895,7 +1902,7 @@ a:hover {
   padding: 10vw 0;
 }
 .hero-text {
-  background-color: #5C7457;
+  background-color: #f3eee7 !important;
   padding: 3vw 10vw;
   height: 30vh;
   display: flex;
@@ -1903,7 +1910,7 @@ a:hover {
   justify-content: center;
 }
 .hero-text p {
-  color: #191E19;
+  color: #191E19 !important;
 }
 .hero-list {
   background-color: none;

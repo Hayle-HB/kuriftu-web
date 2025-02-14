@@ -22,7 +22,7 @@ const Wellness: React.FC = () => {
                 <Carousel classNames="hero-carousel" slides={wellness.carouselImages} />
             </Row>
             <Row>
-                <TextHero classNames="light"  text={wellness.description} />
+                <TextHero classNames=""  text={wellness.description} />
             </Row>
 
             <ListHero classNames="" list={wellness.facilities} title="Details & Facilities" />

@@ -4,7 +4,7 @@ export const resortsAll = [
     id: 1,
     name: "Boston Day Spa",
     slug: "boston",
-    location: "Addis Abeba, Ethiopia",
+    location: "Addis Ababa, Ethiopia",
     coordinates: [38.7578, 9.0301],
     image:
       "https://kuriftu-media-bucket.s3.us-east-1.amazonaws.com/object_media/resort/boston_day_spa/BOSTON%20DAY%20SPA%20_PIER%205%20STUDIOS_OCT-49.jpg",
@@ -14,7 +14,7 @@ export const resortsAll = [
     isShow: true,
     name: "Entoto",
     slug: "entoto",
-    location: "Addis Abeba, Ethiopia",
+    location: "Addis Ababa, Ethiopia",
     coordinates: [38.7636, 9.069],
     image:
       "https://kuriftu-media-bucket.s3.us-east-1.amazonaws.com/object_media/resort/entoto/_DSC7949.jpg",

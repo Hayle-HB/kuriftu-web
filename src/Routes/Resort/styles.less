@@ -267,15 +267,20 @@
 
         .contact{
             &-wrapper{
-                background-color: @secondary;
-                padding: 2rem
+                background-color: @light;
+                padding: 2rem;
+                h1 {
+                        text-align: right;
+                    }
             }
             &-image{
                 img{
                     width: 100%;
                 }
             }
+            
             &-text{
+                text-align: right;
                 i{
                     margin-right: 10px;
                 }
@@ -300,14 +305,14 @@
         margin-top: 30px;
         margin-bottom: 35px;
         padding: 20px;
-        background-color: @dark;
+        background-color: @light;
         min-height: 80vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         a{
-            color: @light;
+            color: @dark;
         }
     }
     &-image{
@@ -326,7 +331,7 @@
         justify-content: center;
 
         h1, p{
-            color: @light;
+            color: @dark;
             text-align: right;
         }
 
@@ -351,7 +356,8 @@
             padding: 3vw 10vw;
             max-height: 30vh;
             p {
-                color: @dark;
+                color: @light;
+                border: none;
             }
         }
 

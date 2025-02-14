@@ -20,7 +20,7 @@ const Corporate: React.FC = () => {
                 <Carousel classNames="hero-carousel" slides={corporate.carouselImages} />
             </Row>
             <Row>
-                <TextHero classNames="light"  text={corporate.description} />
+                <TextHero classNames=""  text={corporate.description} />
             </Row>
 
             

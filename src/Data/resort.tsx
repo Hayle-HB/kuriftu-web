@@ -1,7 +1,7 @@
 // Mock data for resort locations
 const resorts = [
-    { id: 1, name: 'Boston Day Spa', slug:'bosotn-day-spa', location: 'Addis Abeba, Ethiopia', coordinates: [38.7578, 9.0301], image: "https://kuriftu-media-bucket.s3.us-east-1.amazonaws.com/object_media/resort/boston_day_spa/BOSTON%20DAY%20SPA%20_PIER%205%20STUDIOS_OCT-49.jpg" },
-    { id: 2, name: 'Kuriftu Resort & Spa Entoto', slug:'entoto', location: 'Addis Abeba, Ethiopia', coordinates: [38.7636, 9.0690], image: "https://kuriftu-media-bucket.s3.us-east-1.amazonaws.com/object_media/resort/entoto/_DSC7949.jpg"},
+    { id: 1, name: 'Boston Day Spa', slug:'bosotn-day-spa', location: 'Addis Ababa, Ethiopia', coordinates: [38.7578, 9.0301], image: "https://kuriftu-media-bucket.s3.us-east-1.amazonaws.com/object_media/resort/boston_day_spa/BOSTON%20DAY%20SPA%20_PIER%205%20STUDIOS_OCT-49.jpg" },
+    { id: 2, name: 'Kuriftu Resort & Spa Entoto', slug:'entoto', location: 'Addis Ababa, Ethiopia', coordinates: [38.7636, 9.0690], image: "https://kuriftu-media-bucket.s3.us-east-1.amazonaws.com/object_media/resort/entoto/_DSC7949.jpg"},
     { id: 3, name: 'Kuriftu Resort & Spa Awash Falls', slug:'awash-falls', location: 'Awash, Ethiopia', coordinates: [39.9168, 8.9848], image: "https://kurifturesorts.com/_nuxt/img/barber.68d5290.webp"},
     { id: 4, name: 'Kuriftu Resort & Spa Bishoftu', slug:'bishoftu', location: 'Lake Kuriftu, Ethiopia', coordinates: [38.9785, 8.7542], image: "https://kurifturesorts.com/_nuxt/img/barber.68d5290.webp" },
     { id: 5, name: 'Kuriftu Water Park', slug:'water-park', location: 'Lake Kuriftu, Ethiopia', coordinates: [38.9785, 8.7542], image: "https://kurifturesorts.com/_nuxt/img/barber.68d5290.webp" },
@@ -41,8 +41,8 @@ export interface Resort {
 const resortDetails: Record<string, Resort> = {
     "bosotn-day-spa": {
         "name": "Boston Day Spa",
-        "region": "Addis Abeba",
-        "address": "123 Spa Street, Addis Abeba, Ethiopia",
+        "region": "Addis Ababa",
+        "address": "123 Spa Street, Addis Ababa, Ethiopia",
         "description": {
             "title": "A relaxing urban day spa with a variety of treatments.",
             "text": "Boston Day Spa, the flagship of the Kuriftu brand, embodies our core mission of community empowerment. Located in Addis Ababa, it has transformed local construction workers into skilled spa professionals, many of whom have been with us for over 15 years. Beyond exceptional spa services tailored to diverse wellness needs, Boston Day Spa doubles as an art gallery, featuring curated works from renowned Ethiopian artists like Merikokeb Berhanu. Her intricate mosaics grace our space, with her art now showcased globally, including at The New York Armory Show and Venice Biennale. Celebrating artistry and wellness, Boston Day Spa is a sanctuary where heritage and healing meet.",
@@ -97,8 +97,8 @@ const resortDetails: Record<string, Resort> = {
     },
     "entoto": {
         "name": "Kuriftu Resort & Spa Entoto",
-        "region": "Addis Abeba",
-        "address": "456 Entoto Street, Addis Abeba, Ethiopia",
+        "region": "Addis Ababa",
+        "address": "456 Entoto Street, Addis Ababa, Ethiopia",
         "description": {
             "title": "A relaxing urban day spa with a variety of treatments.",
             "text": "Boston Day Spa, the flagship of the Kuriftu brand, embodies our core mission of community empowerment. Located in Addis Ababa, it has transformed local construction workers into skilled spa professionals, many of whom have been with us for over 15 years. Beyond exceptional spa services tailored to diverse wellness needs, Boston Day Spa doubles as an art gallery, featuring curated works from renowned Ethiopian artists like Merikokeb Berhanu. Her intricate mosaics grace our space, with her art now showcased globally, including at The New York Armory Show and Venice Biennale. Celebrating artistry and wellness, Boston Day Spa is a sanctuary where heritage and healing meet.",

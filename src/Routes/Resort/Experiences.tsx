@@ -23,7 +23,7 @@ const Experiences: React.FC = () => {
                 <Carousel classNames="hero-carousel" slides={experiences.carouselImages} />
             </Row>
             <Row>
-                <TextHero classNames="light"  text={experiences.description} />
+                <TextHero classNames=""  text={experiences.description} />
             </Row>
             <Row className="listing" >
                 <Col>
