@@ -59,12 +59,12 @@ const MultiItemCarousel: React.FC<MultiItemCarouselProps> = ({
     ],
   };
   return (
-      <Slider className={`${classNames}`} dotsClass="slick-dots slick-dots-customize mt-4"  {...settings}>
+      <Slider className={`${classNames} carousel-multi-item`} dotsClass="slick-dots slick-dots-customize mt-4"  {...settings}>
         {items.map((item, idx) => (
           <div key={idx} className="carousel-item-custom">
             <Row className="d-flex justify-content-center">
               <Col className="carousel-col">
-                <BasicTile item={item} index={idx} reveresed={false} hasLinks={false} half={true} />
+                <BasicTile item={item} index={idx} reveresed={false} hasLinks={false} third={true} />
               </Col>
             </Row>
           </div>

@@ -14,6 +14,8 @@ import {WELLNESS} from '../../MockData/wellness';
 import {CELEBRATIONSANDEVENTS} from '../../MockData/celebrationsAndEvent';
 import ScrollingAnimation from '../../UI/AnimatedTiles/ExperianceSection';
 import VideoHero from "../../UI/Hero/VideoHero";
+import TextHero from "../../UI/Hero/TextHero";
+import BasicTile from "../../UI/Card/BasicTiles/BasicTile";
 const ResortDetails: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
 
@@ -41,40 +43,53 @@ const ResortDetails: React.FC = () => {
       <h1 className="title-sans" style={{textAlign: "center"}}>{resort.name}</h1>
 
       {/* Details Section */}
-      <Row className="description-wrapper m-0">
-        <Col md={6} className="description-imageStack-wrapper">
-          <div className="description-imageStack">
-            <div className="top" style={{backgroundImage: `url(${galleryImages.length > 0 ? galleryImages[0]:resort.cover_image})`}}>
-            </div>
-            <div className="bottom" style={{backgroundImage: `url(${galleryImages.length > 1 ? galleryImages[1]:resort.cover_image})`}}>
-            </div>
-            
-          </div>
-        </Col>
-        <Col md={6} className="description-text">
-          <p>{resort.description}</p>
-        </Col>
-      </Row>
+      <TextHero classNames="resort-details-text-hero" text={resort.description}/>
 
       {/** Gallery Section */}
       <Row className="gallery m-0">
         <HorizontalCarousel items={galleryImages.slice(2)} />
       </Row>
+
       {accomidation && (
         <Row className="accomidation">
-          <div className="accomidation-img" style={{backgroundImage: `url(${accomidation.accomodations[0].image})`}}></div>
-          <div className="accomidation-text">
-            <h3>Featured Accommodiation</h3>
-            <h1>{accomidation.accomodations[0].title}</h1>
-            <p>{accomidation.accomodations[0].description}</p>
-            <Link to='acc'>Explore</Link>
-          </div>
+          {
+            accomidation.accomodations.map((item, index)=>(
+              <BasicTile 
+                item={item} 
+                index={index} 
+                hasLinks={true}
+                reveresed={false}
+                linkText="Explore"
+                linkURL={`acc/${index + 1}`}
+                half={true}
+              />
+            ))
+          }
+         
         </Row>
       )}
       {experience && (
-        <ScrollingAnimation
-            featuredExps={featuredExps.slice(0,3)}
-         />
+        <section>
+          <h1 style={{textAlign: "center", marginBottom: "55px", marginTop:"68px"}}>Featured Experiences</h1>
+          <Row>
+            {
+            featuredExps.map((item, index) => (
+              <Col sm={12} md={4}>
+                <BasicTile
+                item={item} 
+                index={index} 
+                hasLinks={true}
+                reveresed={false}
+                linkText="Explore"
+                linkURL="exp"
+                third={true}
+              />
+              </Col>
+            ))
+
+          }
+          </Row>
+        </section>
       )}
       {
         dinning &&(

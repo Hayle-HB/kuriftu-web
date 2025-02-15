@@ -142,21 +142,11 @@
         }
 
         .accomidation{
-            display: grid;
-            height: 60vw;
-            display: grid;
-            grid-template-columns: repeat(22, 1fr);
-            grid-template-rows: repeat(12, 1fr);
-            width:100%;
-            @media screen and (max-width: @lg) {
-                height: 80vh;
-            }
-            @media screen and (max-width: @md) {
-                height: 105vh;
-            }
-            @media screen and (max-width: @sm) {
-                height: 95vh;
-            }
+           
+            //width:100%;
+            padding: 12px;
+            margin-top: 250px;
+            height: fit-content;
             &-img{
                 grid-column: 3 / 13;
                 grid-row: 2/ 11;
@@ -233,6 +223,13 @@
                     }
                 
                     
+                }
+            }
+            .basic-tile{
+                min-height: auto;
+                margin-bottom: 33.5px;
+                &-image{
+                    aspect-ratio: auto;
                 }
             }
         }

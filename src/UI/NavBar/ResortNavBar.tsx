@@ -124,7 +124,7 @@ const ResortNavBar: React.FC=()=>{
                         <NavDropdown.Item
                             as={Link}
                             key={index}
-                            to={`/resorts/${slug}/${option}`}
+                            to={`/resorts/${slug}/${option.link}`}
                             className={!isAvailable ? "disabled" : ""}
                             onClick={(e) => {
                                 if (!isAvailable) {
