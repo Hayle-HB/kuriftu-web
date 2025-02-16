@@ -178,3 +178,100 @@
             }
         }
 }
+.boston{
+
+    .row-container{
+        margin-bottom: 80px;;
+    }
+    &-services{
+        .basic-tile{
+            min-height: auto;
+        }
+        &-heading{
+            h1{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.product{
+    max-width: 900px;
+    &-wrapper{
+        margin-top: 120px;
+    }
+    &-image{
+        
+        margin-bottom: 22px;
+        .carousel-item div{
+            
+            width: 100%;
+            height: 500px;
+        }
+    }
+    h1{
+        text-align: center;
+    }
+    &-price{
+        margin-right: 20px;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        h5{
+            text-align: right;
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+        p{
+            text-align: right;
+            font-size: 2rem;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            line-height: 1.2;
+        }
+        @media screen and (max-width: @md) {
+            margin-right: 0;
+            p{
+                font-size: 1.2rem;
+            }
+            h5{
+                font-size: 0.82rem;
+            }
+        }
+    }
+    &-description{
+        text-align: left;
+        ul{
+            padding-left: 50px;
+        }
+    }
+    &-button{
+        justify-content: flex-end;
+        margin-bottom: 38px;
+        @media screen and (min-width: @md) {
+            justify-content: center;
+        }
+        a{
+            font-family: 'whitneybook';
+            max-width: 340px;
+            padding: 0.71428571rem 1.07142857rem;
+            white-space: nowrap;
+            text-align: center;
+            display: flex;
+            background: @dark;
+            color: @light;
+            text-decoration: none;
+            height: 42px;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                text-decoration: none !important;
+                color: @light !important;
+                background-color: @dark-light;
+            }
+            @media screen and (max-width: @md) {
+                max-width: 100%;
+            }
+        }
+    }
+}

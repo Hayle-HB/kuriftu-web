@@ -1,14 +1,20 @@
-.carousel-item-custom {
-    flex: 1;
-    max-width: 80%; // Makes each slide smaller so adjacent slides are partially visible
-    margin: 0 auto; // Center the slides
-    transition: transform 0.5s ease-in-out;
-    overflow: visible;
-}
-
-.carousel-col {
-    flex: 1;
-    max-width: 100%;
+.carousel{
+    &-item-custom {
+        flex: 1;
+        max-width: 80%; // Makes each slide smaller so adjacent slides are partially visible
+        margin: 0 auto; // Center the slides
+        transition: transform 0.5s ease-in-out;
+        overflow: visible;
+    }
+    &-col {
+        flex: 1;
+        max-width: 100%;
+    }
+    &-multi-item{
+        .basic-tile-third {
+            width: 100%;
+        }
+    }
 }
 
 .item-box {

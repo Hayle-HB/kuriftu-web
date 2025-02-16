@@ -19,6 +19,24 @@
             width: 100%;
         }
     }
+    &-half {
+        margin-bottom: 35px;
+        width: 45vw;
+        @media screen and (max-width: @md) {
+            width: 100%;
+        }
+    }
+    &-square{
+        aspect-ratio: 1;
+        /* object-fit: cover; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: unset !important;
+            height: 100%;
+        }
+    }
 
     &-reversed {
         @media screen and (min-width: @md) {
@@ -29,7 +47,8 @@
 
     &-image {
         //padding: 12px;
-        aspect-ratio: 0.76;
+        padding: 0;
+       //aspect-ratio: 0.76;
         //width: inherit;
         background-size: cover;
         background-position: center;

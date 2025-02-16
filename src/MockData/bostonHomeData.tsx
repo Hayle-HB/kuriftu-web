@@ -22,75 +22,71 @@ export const bostonHomeData = {
  
   items: [
     {
-      title: "Hair Salon",
-      description:
-        "Enjoy a self-care experience at our Hair Salon - from high ceiling interiors, to vibrant art and natural lighting, the Boston Day Spa Hair Salon exudes luxury at its finest. Each customer is welcomed and treated with the utmost care from the start to the end of each service. As an Ethiopian brand, we know very well how to manage kinks and curls of all types and guarantee our clients walk out the door looking flawless.",
-      image: "https://kuriftu-public-media.s3.amazonaws.com/spa/spa2.JPG",
-    },
-    {
-      title: "Steam / Sauna / Jacuzzi",
-      description:
-        "Treat yourself to our private Steam and Sauna facility with mosaic designs by Merikokeb Berhanu embedded in the walls or each room. Whether it be a girls spa day or a couples wellness night, take time to rejuvenate in this blissful setting and let your eyes wonder in this carefully curated artistic wellness experience.",
-      image: "https://kurifturesorts.com/_nuxt/img/SteamSaunaJaccuzi.644ea57.webp",
-    },
-    {
-      title: "Massage Cave",
-      description:
-        "Immerse yourself in our Massage Cave - Inspired by natural textures and local materials, this facility is mystified by its unique aesthetic, warm colors and signature aromatic smells that relax the mind and body. Through years of innovation and trainings from international coaches, our masseuses have refined their skills to perfection. The selection of treatments are found no where else as we continue to create new techniques and develop new mixtures that create a more personalized approach to each clients needs.",
-      image: "https://kurifturesorts.com/_nuxt/img/Massage.ce5f64d.webp",
-    },
+    "title": "Hair Salon",
+    "description": "Step into a world of elegance at Boston Day Spa’s Hair Salon, where expert care meets luxurious ambiance for a flawless transformation.",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/boston/boston20.jpg"
+  },
+  {
+    "title": "Steam / Sauna / Jacuzzi",
+    "description": "Rejuvenate in our exquisitely designed Steam, Sauna, and Jacuzzi sanctuary, where art, wellness, and indulgence create the ultimate relaxation experience.",
+    "image": "https://kurifturesorts.com/_nuxt/img/SteamSaunaJaccuzi.644ea57.webp"
+  },
+  {
+    "title": "Massage Cave",
+    "description": "Escape into the tranquility of our Massage Cave, where expert techniques, aromatic blends, and a captivating ambiance redefine relaxation.",
+    "image": "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/boston/boston27.jpg"
+  }
   ],
   facilities: [
-    "Hair Style",
-    "Manicure",
-    "Pedicure",
-    "Massage",
-    "Facial",
-    "Wax",
-    "Spa",
-    "Barber",
+    "Professional hair styling and barber studio.",
+    "Dedicated manicure lounge providing expert nail care.",
+    "Relaxing pedicure space designed for comfort.",
+    "Serene massage room with a tranquil ambiance.",
+    "Luxury facial suite equipped with advanced skincare treatments.",
+    "Waxing studio ensuring smooth, precise, and gentle hair removal.",
+    "Full-service spa offering a range of holistic wellness and beauty treatments.",
   ],
   experiences: [
     {
       title: "Facial",
-      image: "https://kurifturesorts.com/_nuxt/img/Facial.2854687.webp",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston14.jpg",
       description:
-        "With state-of-the-art machinery, products, and skillset, our facial experience provides clients the opportunity to rejuvenate their skin.",
+        "",
     },
     {
       title: "Wax",
-      image: "https://kurifturesorts.com/_nuxt/img/WaxLong.cb4bf93.webp",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston5.jpg",
       description:
-        "Relieve your body from unwanted hair by scheduling a time with one of our hair removal specialists.",
+        "",
     },
     {
       title: "Mani / Pedi",
-      image: "https://kurifturesorts.com/_nuxt/img/ManiPediLong.e819bca.webp",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston37.jpg",
       description:
-        "Stay up-to-date on trending colors and new designs for nail art at our Mani/Pedi Studio overlooking the serene surroundings.",
+        "",
     },
     {
       title: "Spa",
-      image: "https://kurifturesorts.com/_nuxt/img/Spa.2632ed8.webp ",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston22.jpg",
       description:
-        "Experience tranquility and relaxation in our state-of-the-art spa facilities.",
+        "",
     },
     {
       title: "Massage",
-      image: "https://kurifturesorts.com/_nuxt/img/Massage.ce5f64d.webp",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston35.jpg",
       description:
-        "Rejuvenate your body and mind with our premium massage therapies tailored to your needs.",
+        "",
     },
     {
       title: "Hair Salon",
-      image: "https://kurifturesorts.com/_nuxt/img/hair.96d890e.webp",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston19.jpg",
       description:
-        "Transform your look with our professional hair styling services.",
+        "",
     },
     {
       title: "Barber",
-      image: "https://kurifturesorts.com/_nuxt/img/Barber.4bc1f30.webp",
-      description: "...",
+      image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston17.jpg",
+      description: "",
     },
   ],
 };

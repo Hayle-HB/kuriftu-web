@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Offcanvas, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import {
   experiencesNavBar,
   regions,
@@ -15,13 +15,16 @@ const navBarMenus = [
   { id: "experiences", label: "Experiences", isLink: false },
   { id: "wellness", label: "Wellness", isLink: false },
   { id: "event", label: "Celebration & Events", isLink: true },
-  { id: "bostonPackage", label: "Boston Day Spa Reservations", isLink: true },
+  { id: "boston", label: "Boston Day Spa", isLink: true },
   { id: "reservation", label: "Reservation", isLink: true },
   { id: "about", label: "About Us", isLink: true },
   { id: "contact", label: "Contact Us", isLink: true },
 ];
 
 const Header = () => {
+  const location = useLocation();
+  const currentPath = location.pathname;
+  console.log('path: ', currentPath);
   const [show, setShow] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState("");
   const [selectedDestination, setSelectedDestination] = useState("");
@@ -88,7 +91,7 @@ const Header = () => {
         </div>
         <div className="header-btn-container">
           <Link
-            to={"/reservation"}
+            to={currentPath === "/boston" ? "/boston/Package": "/reservation"}
             className="reserve-button"
           >
             Reserve
@@ -211,7 +214,7 @@ const Header = () => {
                     <li onClick={handleReset} key={resort.key}>
                       <Link
                         className="text-decoration-none p-0 text-black"
-                        to={`/resorts/${resort.key}`}
+                        to={resort.key==='boston'? '/boston' : `/resorts/${resort.key}`}
                       >
                         {resort.label}
                       </Link>

@@ -1,3 +1,5 @@
+import { Description } from "@mui/icons-material";
+
 export const resortsAll = [
   {
     isShow: false,
@@ -65,3 +67,8 @@ export const resortsAll = [
     image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/HomeAffricanVillage.svg",
   },
 ];
+
+export const destinations ={
+  title: "Where Luxury Meets Ethiopia’s Timeless Beauty",
+  description: "From the tranquil shores of Lake Tana to the rugged beauty of Ethiopia’s highlands, from the vibrant pulse of Addis Ababa to the serene escapes of Debre Zeit, Kuriftu Resorts weave together the country’s rich heritage and breathtaking landscapes. Each destination is a sanctuary of luxury and culture, where tradition meets modern indulgence, and every moment is an invitation to explore, unwind, and reconnect."
+}
