@@ -7,10 +7,8 @@ export const regions = [
 
 export const resorts = {
   "addis-ababa": [
-    { key: "boston", label: "Boston Day Spa" },
-    { key: "entoto", label: "Entoto" },
     { key: "africanVillage", label: "African Village" },
-
+    { key: "entoto", label: "Entoto" },
   ],
   awash: [{ key: "awash", label: "Awash Falls" }],
   bishoftu: [

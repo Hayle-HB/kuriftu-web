@@ -29,6 +29,7 @@ import Celebrate from "./Routes/Resort/Celebrate";
 import AccomodationDetails from "./Routes/Resort/AccomodationDetails";
 import AboutPage from "./Routes/about";
 import Reservation from "./Routes/reservation";
+import ResortsPage from "./Routes/Resort/resorts";
 
 import ResortEvents from "./pages/Resort/ResortEvents";
 
@@ -44,11 +45,13 @@ import BookingForm from "./components/BookingForm";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 //import Reservation from "./pages/Reservation";
-import BostonPackage from "./pages/BostonPackage";
+//import BostonPackage from "./pages/BostonPackage";
 import Event from "./pages/Event";
 import Payment from "./pages/Booking/Payment";
 import SuccessPage from "./pages/success";
 import SuccessPageChapa from "./pages/successPageChapa";
+import BostonLanding from "./Routes/bostonLanding";
+import BostonPackage from "./Routes/bostonPackage";
 
 // const router = createBrowserRouter([
 //   {
@@ -133,7 +136,10 @@ const router = createBrowserRouter([
           },
         ],
       },
-
+      {
+        path: "/destinations",
+        element: <ResortsPage />
+      },
       {
         path: "/resorts/:slug",
         element: <ResortLayout />,
@@ -202,7 +208,11 @@ const router = createBrowserRouter([
         element: <Reservation />,
       },
       {
-        path: "/bostonPackage",
+        path: '/boston',
+        element: <BostonLanding />
+      },
+      {
+        path: "/boston/Package",
         element: <BostonPackage />,
       },
       {

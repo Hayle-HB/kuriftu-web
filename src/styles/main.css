@@ -687,6 +687,9 @@ a:hover {
   color: #5C7457;
   text-decoration: underline;
 }
+.resort-page {
+  margin-top: 200px;
+}
 .resort-page h2 {
   font-family: "Montserrat";
 }
@@ -703,6 +706,9 @@ a:hover {
   display: flex;
   justify-content: center;
   padding: 0 3rem;
+}
+.resort-page .basic-tile-wrapper {
+  margin-bottom: 200px;
 }
 .resort-details .hero {
   width: 100vw;
@@ -1248,6 +1254,99 @@ a:hover {
     font-size: 0.65em;
   }
 }
+.boston .row-container {
+  margin-bottom: 80px;
+}
+.boston-services .basic-tile {
+  min-height: auto;
+}
+.boston-services-heading h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.product {
+  max-width: 900px;
+}
+.product-wrapper {
+  margin-top: 120px;
+}
+.product-image {
+  margin-bottom: 22px;
+}
+.product-image .carousel-item div {
+  width: 100%;
+  height: 500px;
+}
+.product h1 {
+  text-align: center;
+}
+.product-price {
+  margin-right: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+.product-price h5 {
+  text-align: right;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.product-price p {
+  text-align: right;
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .product-price {
+    margin-right: 0;
+  }
+  .product-price p {
+    font-size: 1.2rem;
+  }
+  .product-price h5 {
+    font-size: 0.82rem;
+  }
+}
+.product-description {
+  text-align: left;
+}
+.product-description ul {
+  padding-left: 50px;
+}
+.product-button {
+  justify-content: flex-end;
+  margin-bottom: 38px;
+}
+@media screen and (min-width: 768px) {
+  .product-button {
+    justify-content: center;
+  }
+}
+.product-button a {
+  font-family: 'whitneybook';
+  max-width: 340px;
+  padding: 0.71428571rem 1.07142857rem;
+  white-space: nowrap;
+  text-align: center;
+  display: flex;
+  background: #191E19;
+  color: #FCFAF3;
+  text-decoration: none;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+}
+.product-button a:hover {
+  text-decoration: none !important;
+  color: #FCFAF3 !important;
+  background-color: #363b36;
+}
+@media screen and (max-width: 768px) {
+  .product-button a {
+    max-width: 100%;
+  }
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -1684,6 +1783,17 @@ a:hover {
     width: 100%;
   }
 }
+.basic-tile-square {
+  aspect-ratio: 1;
+  /* object-fit: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.basic-tile-square img {
+  width: unset !important;
+  height: 100%;
+}
 @media screen and (min-width: 768px) {
   .basic-tile-reversed {
     flex-direction: row-reverse;
@@ -1903,7 +2013,7 @@ a:hover {
 .hero-text {
   background-color: #f3eee7 !important;
   padding: 3vw 10vw;
-  height: 30vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1994,33 +2104,6 @@ footer a:focus {
   font-family: 'Montserrat';
   text-transform: uppercase;
   font-weight: 600;
-}
-.hero-container {
-  width: 100vw;
-  min-height: 100vh;
-  background-size: cover;
-  padding: 91px 30px;
-}
-.hero-title h1 {
-  color: #FCFAF3;
-  padding: 20px 15px;
-  backdrop-filter: blur(12px);
-  border: 0.8px solid #eee;
-  border-radius: 11.1px;
-  /** filter: invert(1);*/
-  mix-blend-mode: difference;
-}
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.hero-text p {
-  color: #FCFAF3;
-  padding: 25px 10px;
-  backdrop-filter: blur(12px);
-  border: 0.8px solid #eee;
-  border-radius: 11.1px;
 }
 .carousel-item-custom {
   flex: 1;

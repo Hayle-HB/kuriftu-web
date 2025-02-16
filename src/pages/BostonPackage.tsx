@@ -4,7 +4,6 @@ import Header from "../components/Header/Header";
 const BostonPackage = () => {
   return (
     <div>
-      <Header /> 
       <div className="boston-main-sec" style={{width:'50%', margin:'auto', marginTop:'5%', fontFamily:"Neue Helvetica Medium"}}>
         <h3 className="title-txt pt-4" style={{fontFamily:'Neue Helvetica Medium',}}>Buy Boston Day Spa Packages
         </h3>
