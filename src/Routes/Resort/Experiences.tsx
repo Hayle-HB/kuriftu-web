@@ -26,13 +26,11 @@ const Experiences: React.FC = () => {
                 <TextHero classNames=""  text={experiences.description} />
             </Row>
             <Row className="listing" >
-                <Col>
                     {
                     experiences.items.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} />
+                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true} />
                     ))
             }
-                </Col>
             </Row>
             
             

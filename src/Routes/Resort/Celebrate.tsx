@@ -26,14 +26,13 @@ const Celebrate: React.FC = () => {
 
             
             <Row className="listing" >
-                <Col>
                     
                     {
                     events.events.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} />
+                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} third={true} />
                     ))
             }
-                </Col>
+               
             </Row>
             <Row>
                 <Col>
@@ -41,13 +40,11 @@ const Celebrate: React.FC = () => {
                 </Col>
             </Row>
             <Row className="listing" >
-                <Col>
                     {
                     events.venus.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} />
+                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  />
                     ))
             }
-                </Col>
             </Row>
             
         </Container>

@@ -30,28 +30,12 @@ const Dinnign: React.FC = () => {
                 </Col>
             </Row>
             <Row className="listing" >
-                <Col>
-                    
                     {
                     dining.diningOptions.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={true} linkText="Explore Menu" linkURL={item.menuLink} />
+                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={true} linkText="Explore Menu" linkURL={item.menuLink} third={true} />
                     ))
             }
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <h1 className="text-center pt-5 fs-1">Dining Experience</h1>
-                </Col>
-            </Row>
-            <Row className="listing" >
-                <Col>
-                    {
-                    dining.diningExperiences.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} />
-                    ))
-            }
-                </Col>
+                
             </Row>
             
         </Container>

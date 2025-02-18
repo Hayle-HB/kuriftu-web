@@ -29,13 +29,11 @@ const Accomidation: React.FC = () => {
                 </div>
             </Row>
             <Row className="listing" >
-                <Col>
                     {
                     accomidation.accomodations.map((room, index) => (
-                        <BasicTile item={room} index={index+1} reveresed={false} hasLinks={true} linkText="Learn More and Book" linkURL={`${index+1}`}/>
+                        <BasicTile item={room} index={index+1} reveresed={false} hasLinks={true} linkText="Learn More and Book" linkURL={`${index+1}`} half={true} />
                     ))
             }
-                </Col>
             </Row>
             
             

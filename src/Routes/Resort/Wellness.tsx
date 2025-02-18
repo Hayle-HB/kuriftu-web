@@ -28,13 +28,11 @@ const Wellness: React.FC = () => {
             <ListHero classNames="" list={wellness.facilities} title="Details & Facilities" />
             
             <Row className="listing" >
-                <Col>
                     {
                     wellness.wellness.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} />
+                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  />
                     ))
             }
-                </Col>
             </Row>
             
         </Container>
