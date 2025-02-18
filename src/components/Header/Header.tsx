@@ -160,7 +160,7 @@ const Header = () => {
               {selectedMenu === "destinations" && (
                 <ul className="list-unstyled side-bar-menus">
                   <li className="mb-2">
-                    <Link to={`/resorts`} onClick={()=>setShow(false)}>All Destinations</Link>
+                    <Link to={`/destinations`} onClick={()=>setShow(false)}>All Destinations</Link>
                   </li>
                   {regions.map((item, index) => (
                     <li key={index} className="mb-2">

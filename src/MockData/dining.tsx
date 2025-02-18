@@ -54,21 +54,7 @@ export const DINING: Record<string, DiningModal> = {
         menuLink: "https://kurifturesorts.com/PitStopMenu2024.pdf",
       },
     ],
-    diningExperiences: [
-      {
-        title: "Family Dining",
-        description:
-          "Enjoy a large family-style dish at any of our restaurant locations—the more, the merrier!",
-        image: "https://kurifturesorts.com/_nuxt/img/FamilyDining.7a275ef.webp",
-      },
-      {
-        title: "Archery Challenge",
-        description:
-          "Think you can hit the target? Bet on it with a friend; the loser buys lunch!",
-        image:
-          "https://kurifturesorts.com/_nuxt/img/ArcheryCallenge.4956286.webp",
-      },
-    ],
+    diningExperiences: [],
   },
   bishoftu: {
     title: "Dining at Kuriftu Resort & Spa Bishoftu",
