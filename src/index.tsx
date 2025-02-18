@@ -31,6 +31,7 @@ import AboutPage from "./Routes/about";
 import Reservation from "./Routes/reservation";
 import ResortsPage from "./Routes/Resort/resorts";
 import ResortGallery from "./Routes/Resort/ResortGallery";
+import Event from "./Routes/events";
 
 import ResortEvents from "./pages/Resort/ResortEvents";
 
@@ -47,7 +48,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 //import Reservation from "./pages/Reservation";
 //import BostonPackage from "./pages/BostonPackage";
-import Event from "./pages/Event";
+//import Event from "./pages/Event";
 import Payment from "./pages/Booking/Payment";
 import SuccessPage from "./pages/success";
 import SuccessPageChapa from "./pages/successPageChapa";
