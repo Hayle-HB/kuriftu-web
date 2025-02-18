@@ -8,7 +8,7 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
       "With a backdrop of the distinct wild and lush Entoto Forest, our Kuriftu Entoto Adventure Park offers an alternative hospitality experience. With locally sourced materials used to construct and furnish our Presidential Cabin and the interior of our Glamping facilties, guests are placed in a natural setting to simply relax and savour the peace and quiet.",
     accomodations: [
       {
-        image: "https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto27.jpg",
         accomdationId: 1,
         subtitle: "Forest View",
         title: "Tented Camp",
@@ -157,8 +157,8 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
     1: {
       title: "Glamping Tents",
       carouselImages: [
-        "https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp",
-        "https://kurifturesorts.com/_nuxt/img/5.1d56014.webp",
+        "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto27.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto28.jpg",
       ],
       amenities: [
         "DOUBLE TWIN OR QUEEN SIZE BED / ELECTRIC BED WARMER",
@@ -186,8 +186,8 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
       ],
       booking: {
         images: [
-          "https://kurifturesorts.com/_nuxt/img/slide6.a9663c6.webp",
-          "https://kurifturesorts.com/_nuxt/img/slide2.2.33da435.webp",
+           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto27.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto28.jpg",
         ],
         description:
           "Carefully hidden amongst the eucalyptus trees, our Kuriftu Glamping site offers guests a quiet escape from reality with nothing but the natural world surrounding. With hammocks suspended over the room decks, outdoor grilling stations and mountain bikes provided per room, guests can relax in pure nature.",
