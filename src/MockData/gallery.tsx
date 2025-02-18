@@ -2,7 +2,6 @@ export const Gallery: Record<string, string[]> = {
   entoto: [
     "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto24.jpg",
     "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto4.jpg",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/3.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/entoto/4.jpg",
     "https://kuriftu-public-media.s3.amazonaws.com/entoto/5.jpg",
     "https://kuriftu-public-media.s3.amazonaws.com/entoto/6.jpg",
@@ -14,8 +13,8 @@ export const Gallery: Record<string, string[]> = {
     "https://kuriftu-public-media.s3.amazonaws.com/entoto/12.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/entoto/13.JPG",
     "https://kuriftu-public-media.s3.amazonaws.com/entoto/14.JPG",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/15.JPG",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/16.JPG",
+   //"https://kuriftu-public-media.s3.amazonaws.com/entoto/15.JPG",
+   // "https://kuriftu-public-media.s3.amazonaws.com/entoto/16.JPG",
   ],
 
   bishoftu: [
@@ -34,12 +33,12 @@ export const Gallery: Record<string, string[]> = {
   ],
 
   laketana: [
-    "https://kurifturesorts.com/_nuxt/img/soci.76a5a73.webp",
-    "https://kurifturesorts.com/_nuxt/img/bd.654e148.webp",
-    "https://kurifturesorts.com/_nuxt/img/1.6d55bab.webp",
-    "https://kurifturesorts.com/_nuxt/img/BirdWatching.75afd69.webp",
-    "https://kurifturesorts.com/_nuxt/img/ConferenceHall.f84c697.webp ",
-    "https://kurifturesorts.com/_nuxt/img/LakeSide.01bf8ea.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/tana/1.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/tana/2.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/tana/3.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/tana/4.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/tana/5.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/tana/6.webp",
   ],
   awash: [
     "https://kurifturesorts.com/_nuxt/img/1.cba30ab.webp",

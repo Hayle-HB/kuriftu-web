@@ -18,7 +18,7 @@ const Accomidation: React.FC = () => {
 
     return (
         <Container className="accomidation-page" fluid>
-            <Row>
+            <Row className="resorts-subpage-hero">
                 <div className="hero" style={{ backgroundImage: `url(${accomidation.accomodations[0].image})` }} >
                     <h1>{accomidation.title}</h1>
                 </div>

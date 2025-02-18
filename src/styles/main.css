@@ -937,9 +937,6 @@ a:hover {
   min-height: auto;
   margin-bottom: 33.5px;
 }
-.resort-details .accomidation .basic-tile-image {
-  aspect-ratio: auto;
-}
 .resort-details .content {
   min-height: 66vh;
   align-items: center;
@@ -982,6 +979,23 @@ a:hover {
 }
 .resort-details .contact-text i {
   margin-right: 10px;
+}
+.resort-gallery {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.resort-gallery-wrapper {
+  margin-top: 180px;
+}
+.resort-gallery-hero {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resort-gallery-hero h1 {
+  text-align: center;
 }
 .dining-tile {
   padding-left: 15vw;
@@ -1074,6 +1088,12 @@ a:hover {
 .accomidation-page .listing h1 {
   text-align: center;
   margin-bottom: 25px;
+}
+.resorts-subpage-hero {
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
+  margin-top: 178px;
+  margin-bottom: 4.64285714rem;
 }
 .landing {
   padding: 0;
@@ -1784,7 +1804,7 @@ a:hover {
   }
 }
 .basic-tile-square {
-  aspect-ratio: 1;
+  aspect-ratio: 1.21 !important;
   /* object-fit: cover; */
   display: flex;
   justify-content: center;
@@ -1801,12 +1821,13 @@ a:hover {
 }
 .basic-tile-image {
   padding: 0;
+  aspect-ratio: 0.76;
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 .basic-tile-image img {
-  width: 100%;
+  height: 100%;
 }
 .basic-tile-text {
   text-align: left;

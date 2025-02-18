@@ -19,7 +19,7 @@ const Experiences: React.FC = () => {
 
     return (
         <Container className="accomidation-page" fluid>
-            <Row>
+            <Row className="resorts-subpage-hero">
                 <Carousel classNames="hero-carousel" slides={experiences.carouselImages} />
             </Row>
             <Row>

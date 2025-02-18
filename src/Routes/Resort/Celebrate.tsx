@@ -17,7 +17,7 @@ const Celebrate: React.FC = () => {
 
     return (
         <Container className="accomidation-page" fluid>
-            <Row>
+            <Row className="resorts-subpage-hero">
                 <Carousel classNames="hero-carousel" slides={events.carouselImages} />
             </Row>
             <Row>
@@ -29,7 +29,7 @@ const Celebrate: React.FC = () => {
                     
                     {
                     events.events.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} third={true} />
+                        <BasicTile key={index} item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} third={true} />
                     ))
             }
                
@@ -42,7 +42,7 @@ const Celebrate: React.FC = () => {
             <Row className="listing" >
                     {
                     events.venus.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  />
+                        <BasicTile  key={index} item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  />
                     ))
             }
             </Row>

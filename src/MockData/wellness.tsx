@@ -7,26 +7,26 @@ export const WELLNESS: Record<string, WellnessModal> = {
     description:
       "Kurfitu Entoto Forest Spa presents a variety of hollistic wellness practices. The Kuriftu brand's expertise in the wellness world has been present for nearly 20 years and has maintained a standard in the Ethiopian culture. Our hiring and training program focused on local communities capacity development in this sector allows us to transfer skills in the most impactful way. We aim to incorporate natural treatments, carefully curated massage experiences and many more opportunities for our team to showcase their enhanced skillset!",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/4.54a7799.webp",
-      "https://kurifturesorts.com/_nuxt/img/1.99dded0.webp",
-      "https://kurifturesorts.com/_nuxt/img/2.6dced12.webp",
-      "https://kurifturesorts.com/_nuxt/img/3.9d46069.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto16.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto19.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto17.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto25.webp",
     ],
     wellness: [
       {
-        image: "https://kurifturesorts.com/_nuxt/img/wide.735b796.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
         title: "Relax, Rebalance & Restore",
         description:
           "Aromatic scents familiar to our surroundings, such as fresh Eucalyptus and house blends, place our guests in a trance while promoting a deep sense of relaxation. One of our Forest Spa's signature treatments is the Hot Oil Full Body Massage - beginning with feet dipped in an in-house ginger remedy, each session promotes tension release from the feet up. After a long day of trekking through the forest, treat yourself to this blissful experience.",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/long.578008f.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto17.jpg",
         title: "Full Day Treatments",
         description:
           "Give yourself a break from the stresses of everyday life - not only will a full day of wellness-related activities benefit your mental health, but your level of efficiency at work as well! It is up to each individual to care for themselves and take time to disconnect from draining lifestyles.",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/long2.5f86ac3.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto23.jpg",
         title: "Rest Easy Experience",
         description:
           "Our spa services stem from the genuine care we have for each individual's health and well-being - browse through our Forest Spa menu or feel free to contact one of our consultants for advice based on your own personal needs.",

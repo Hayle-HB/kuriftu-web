@@ -7,17 +7,16 @@ export const EVENTS: Record<string, EventModal> = {
     description:
       "Whether it be a special anniversary, family reunion or milestone birthday, Kuriftu Entoto Adventure Park has the ability to facilitate any celebration through our many restaurants, experiences and activities in the scenic environment of the Entoto Mountain - The Kuriftu team is dedicated to crafting extraordinay shared experineces and nights to remember",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/s1.84eb715.webp",
-      "https://kurifturesorts.com/_nuxt/img/s2.147bc76.webp",
-      "https://kurifturesorts.com/_nuxt/img/s3.38a710c.webp",
-      "https://kurifturesorts.com/_nuxt/img/s4.1e7dc28.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto26.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/1.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/2.webp",
     ],
     events: [
       {
         title: "Weddings",
         description:
           "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones.",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/8.JPG",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto26.jpg",
         link: "wed",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -26,7 +25,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Birthdays",
         description:
           "Let us celebrate your life and future in a fun and special way with your loved ones. browse through our selection of birthday packages and more!",
-        image: "https://kurifturesorts.com/_nuxt/img/Birthday.3362d09.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/3.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -36,7 +35,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Social Events",
         description:
           "Thinking of hosting an event? Give us a call and our team can help plan your very own get-together, anniversary, birthday party, family trip - basically anything!",
-        image: "https://kurifturesorts.com/_nuxt/img/SocialEvent.f486a56.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/4.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -46,21 +45,21 @@ export const EVENTS: Record<string, EventModal> = {
     venus: [
       {
         title: "Wedding Venue",
-        image: "https://kurifturesorts.com/_nuxt/img/WeddingVenue.4c9426b.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/1.webp",
         description:
           "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones",
       },
 
       {
         title: "Open Air Spaces",
-        image: "https://kurifturesorts.com/_nuxt/img/Open%20Air.4abd236.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/5.webp",
         description:
           "With the different restaurants and activity areas located within the Entoto Park Kuriftu Resort, you can have your celebration at any of our locations",
       },
 
       {
         title: "In-Door Spaces",
-        image: "https://kurifturesorts.com/_nuxt/img/InDoor.4253f5a.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/2.webp",
         description:
           "Hosting an event in a closed space? With our restaurant spaces or our multi-purpose cabin, you can entertain guests surrounded by the beautiful landscape",
       },

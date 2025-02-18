@@ -151,7 +151,7 @@ const Footer = () => {
             <h6>Socials</h6>
             <div className="d-flex flex-wrap gap-2 footer-links-container">
               <a
-                href="https://www.instagram.com/kurifturesortspa/?hl=en"
+                href="https://www.instagram.com/kurifturesortbishoftu/"
                 className="text-dark text-decoration-none"
               >
                 <i className="fa-brands fa-instagram"></i>

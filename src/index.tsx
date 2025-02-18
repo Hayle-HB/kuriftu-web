@@ -30,11 +30,12 @@ import AccomodationDetails from "./Routes/Resort/AccomodationDetails";
 import AboutPage from "./Routes/about";
 import Reservation from "./Routes/reservation";
 import ResortsPage from "./Routes/Resort/resorts";
+import ResortGallery from "./Routes/Resort/ResortGallery";
 
 import ResortEvents from "./pages/Resort/ResortEvents";
 
 //import ResortExperiences from "./pages/Resort/ResortExperiences";
-import ResortGallery from "./pages/Resort/ResortGallery";
+//import ResortGallery from "./pages/Resort/ResortGallery";
 import ResortGiftVoucher from "./pages/Resort/ResortGiftVoucher";
 import ResortWellness from "./pages/Resort/ResortWellness";
 import ResortDining from "./pages/Resort/ResortDining";
