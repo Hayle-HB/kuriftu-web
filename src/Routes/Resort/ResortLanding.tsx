@@ -62,6 +62,7 @@ const ResortDetails: React.FC = () => {
                 linkText="Explore"
                 linkURL={`acc/${index + 1}`}
                 half={true}
+                square={true}
               />
             ))
           }

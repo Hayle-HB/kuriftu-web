@@ -27,11 +27,12 @@
         }
     }
     &-square{
-        aspect-ratio: 1;
+        aspect-ratio: 1.21 !important;
         /* object-fit: cover; */
         display: flex;
         justify-content: center;
         align-items: center;
+        
         img{
             width: unset !important;
             height: 100%;
@@ -48,13 +49,14 @@
     &-image {
         //padding: 12px;
         padding: 0;
-       //aspect-ratio: 0.76;
+        aspect-ratio: 0.76;
         //width: inherit;
         background-size: cover;
         background-position: center;
         overflow: hidden;
         img {
-            width: 100%;
+            //width: 100%;
+            height: 100%;
         }
     }
     &-text{

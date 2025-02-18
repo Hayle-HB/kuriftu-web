@@ -937,9 +937,6 @@ a:hover {
   min-height: auto;
   margin-bottom: 33.5px;
 }
-.resort-details .accomidation .basic-tile-image {
-  aspect-ratio: auto;
-}
 .resort-details .content {
   min-height: 66vh;
   align-items: center;
@@ -1784,7 +1781,7 @@ a:hover {
   }
 }
 .basic-tile-square {
-  aspect-ratio: 1;
+  aspect-ratio: 1.21 !important;
   /* object-fit: cover; */
   display: flex;
   justify-content: center;
@@ -1801,12 +1798,13 @@ a:hover {
 }
 .basic-tile-image {
   padding: 0;
+  aspect-ratio: 0.76;
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 .basic-tile-image img {
-  width: 100%;
+  height: 100%;
 }
 .basic-tile-text {
   text-align: left;
