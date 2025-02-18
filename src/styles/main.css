@@ -980,6 +980,23 @@ a:hover {
 .resort-details .contact-text i {
   margin-right: 10px;
 }
+.resort-gallery {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.resort-gallery-wrapper {
+  margin-top: 100px;
+}
+.resort-gallery-hero {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resort-gallery-hero h1 {
+  text-align: center;
+}
 .dining-tile {
   padding-left: 15vw;
   padding-right: 15vw;
