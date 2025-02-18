@@ -2,7 +2,7 @@ export const eventPageData = {
   title: "Celebration At Kuriftu Resort & Spa",
   subtitle: "",
   carouselImages: [
-    "https://kurifturesorts.com/_nuxt/img/birthdays.cdc6403.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa21.jpg",
     "https://kurifturesorts.com/_nuxt/img/LakeSide.01bf8ea.webp",
     "https://kurifturesorts.com/_nuxt/img/1.0a370e9.webp"
   ],
