@@ -43,6 +43,12 @@ const BookingForm: React.FC = () => {
 
   const handlePayment = async () => {
     if (!formValues.acknowledgement) {
+      // need to add form valudation here
+
+
+
+
+
       alert("Please agree to the booking terms and conditions.");
       return;
     }
@@ -84,6 +90,7 @@ const BookingForm: React.FC = () => {
     // }
     try {
       if(paymentMethod === "dashen"){
+        //need to include merchant id (based on resort)
         const { session }: any = await getPaymentSession({ amount });
         localStorage.setItem("form", JSON.stringify(formValues));
         navigate(`/payment/${session.id}`);

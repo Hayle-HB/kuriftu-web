@@ -43,7 +43,6 @@ const Payment = () => {
 
   return (
     <div>
-      <Header />
       <div id="embed-target"></div>
     </div>
   );
