@@ -18,7 +18,7 @@ const Wellness: React.FC = () => {
 
     return (
         <Container className="accomidation-page" fluid>
-            <Row>
+            <Row className="resorts-subpage-hero">
                 <Carousel classNames="hero-carousel" slides={wellness.carouselImages} />
             </Row>
             <Row>

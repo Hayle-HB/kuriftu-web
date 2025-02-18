@@ -16,7 +16,7 @@ const Corporate: React.FC = () => {
 
     return (
         <Container className="accomidation-page" fluid>
-            <Row>
+            <Row className="resorts-subpage-hero">
                 <Carousel classNames="hero-carousel" slides={corporate.carouselImages} />
             </Row>
             <Row>
