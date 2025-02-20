@@ -2202,6 +2202,10 @@ footer a:focus {
   color: #FCFAF3 !important;
   text-decoration: none !important;
 }
+.room-card-list li p {
+  margin: 0;
+  font-size: 0.66rem !important;
+}
 html {
   background-color: #f3eee7;
 }

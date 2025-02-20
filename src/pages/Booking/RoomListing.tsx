@@ -1,38 +1,52 @@
 import { useLocation, useParams } from "react-router";
-import { ROOM } from "../../MockData/room";
-import { RESORTDETAILS } from "../../MockData/resortsDetails";
-import RoomCard from "../../components/RoomCard";
 import { useEffect, useState } from "react";
-import RoomModal from "../../components/RoomModal";
 import { useRoomContext } from "../../context/RoomContext";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import moment from "moment";
+import { RESORTDETAILS } from "../../MockData/resortsDetails";
+
+import RoomCard from "../../components/RoomCard";
+import RoomModal from "../../components/RoomModal";
 import CartEmpty from "../../components/CartEmpty";
 import CartItem from "../../components/RoomCartItem";
-import { Link } from "react-router-dom";
 import DateAndTimePicker from "../../components/DateAndTimePicker";
 import { fetchData } from "../../services/resort";
-import { IRoom } from "../../interfaces/roomModel";
-import moment from "moment";
 import Header from "../../components/Header/Header";
 
-
 const imagesUrl: Record<string, any> = {
-  "bishoftu": {
-    "Village deluxe standard King size Bed room": "https://kurifturesorts.com/_nuxt/img/bis_king.f903f0a.jpg",
-    "Delux standard King size Bed room":"https://kurifturesorts.com/_nuxt/img/bis_king_vil.ab883eb.jpg",
-    "Village deluxe standard Twin Bed room":"https://kurifturesorts.com/_nuxt/img/bis_twins.9c2d1c7.jpg",
+  bishoftu: {
+    6:
+      "https://kurifturesorts.com/_nuxt/img/bis_king.f903f0a.jpg",
+    9:
+      "https://kurifturesorts.com/_nuxt/img/bis_king_vil.ab883eb.jpg",
+    7:
+      "https://kurifturesorts.com/_nuxt/img/bis_twins.9c2d1c7.jpg",
   },
-  "entoto": {
-    "Forest View King Size Bed": "https://kurifturesorts.com/_nuxt/img/2.3cec2b4.webp",
-    "Forest View Twin Bed":"https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp",
+  entoto: {
+    20:
+      "https://kurifturesorts.com/_nuxt/img/2.3cec2b4.webp",
+    21:
+      "https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp",
   },
-  "africanVillage" :{
-    "Deluxe Suite Families":"https://kurifturesorts.com/_nuxt/img/bis_king_vil.ab883eb.jpg",
-    "Deluxe Suite King":"https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp"
+  africanVillage: {
+    23:
+      "https://kurifturesorts.com/_nuxt/img/bis_king_vil.ab883eb.jpg",
+    22:
+      "https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp",
   },
+};
 
-
-
+// Interfaces
+interface RoomListingProps {
+  available_count: number;
+  bed_type: string;
+  complementary_services: string;
+  id: number;
+  location: string;
+  max_occupancy: number;
+  room_price: number;
+  room_type: string;
 }
 
 interface GuestCounts {
@@ -46,76 +60,62 @@ interface Dates {
   checkOut: Date | null;
 }
 
+// Format Date
 const formatDate = (date: Date | null): string => {
-  return moment(date).format("YYYY-MM-DD");
+  return date ? moment(date).format("YYYY-MM-DD") : "";
 };
 
 const RoomListing = () => {
   const { slug } = useParams<{ slug: string }>();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [roomId, setRoomId] = useState<null | number>(null);
-  const { onAddRoom, roomsCart } = useRoomContext();
-  const [roomListing, setRoomListing] = useState<IRoom[]>([]);
-
-  const location = useLocation(); // Get the location object
+  const location = useLocation();
 
   // Parse query parameters
   const searchParams = new URLSearchParams(location.search);
   const checkin = searchParams.get("checkin");
   const checkout = searchParams.get("checkout");
 
-  // Initialize dates state
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [roomId, setRoomId] = useState<null | number>(null);
+  const { onAddRoom, roomsCart } = useRoomContext();
+  const [roomListing, setRoomListing] = useState<RoomListingProps[]>([]);
+
+  // Initialize dates
   const [dates, setDates] = useState<Dates>({
     checkIn: checkin ? new Date(checkin) : new Date(),
     checkOut: checkout
       ? new Date(checkout)
       : (() => {
-        const nextDay = new Date();
-        nextDay.setDate(nextDay.getDate() + 1);
-        return nextDay;
-      })(),
+          const nextDay = new Date();
+          nextDay.setDate(nextDay.getDate() + 1);
+          return nextDay;
+        })(),
   });
-
-  const room = ROOM[slug || ""];
-  const resort = RESORTDETAILS[slug || ""];
 
   useEffect(() => {
     getData(dates);
-  }, []);
+  }, [dates]);
 
   const getData = async (data: Dates) => {
-    // setLoading(true);
+    console.log("📡 Fetching rooms with params:", {
+      location: slug,
+      checkin: formatDate(data.checkIn),
+      checkout: formatDate(data.checkOut),
+    });
+
     try {
       const result = await fetchData({
         location: slug,
-        checkin: checkin || formatDate(data.checkIn),
-        checkout: checkout || formatDate(data.checkOut),
+        checkin: formatDate(data.checkIn),
+        checkout: formatDate(data.checkOut),
       });
 
-      if (result.data) {
-        const mergedRooms = result.data.reduce((acc: any[], room: any) => {
-          const existingRoom = acc.find((r) => r.room_acc === room.room_acc);
+      console.log("✅ API Response:", result);
 
-          if (existingRoom) {
-            if (room.room_status !== "booked") {
-              existingRoom.count = (existingRoom.count || 0) + 1;
-            }
-          } else {
-            acc.push({
-              ...room,
-              count: room.room_status !== "booked" ? 1 : 0,
-            });
-          }
-
-          return acc;
-        }, []);
-
-        setRoomListing(mergedRooms);
+      if (result?.data) {
+        setRoomListing(result.data);
       }
-
     } catch (error) {
-      console.error(error);
-    } finally {
+      console.error("❌ Fetch Error:", error);
     }
   };
 
@@ -135,7 +135,9 @@ const RoomListing = () => {
   };
 
   const handleAddRoom = (guests: GuestCounts) => {
-    const selectedRoom = roomListing.find((item) => item.room_id === roomId);
+    const selectedRoom = roomListing.find((item) => item.id === roomId);
+    console.log("🛏 Selected room:", selectedRoom);
+
     if (selectedRoom && roomId) {
       const checkIn = dates.checkIn?.toLocaleDateString();
       const checkOut = dates.checkOut?.toLocaleDateString();
@@ -145,49 +147,53 @@ const RoomListing = () => {
         checkIn,
         checkOut,
         room_price: selectedRoom.room_price,
-        room_acc: selectedRoom.room_acc,
-        room_id: selectedRoom.room_id,
-        room_number: selectedRoom.room_number,
+        room_acc: selectedRoom.room_type,
+        room_id: selectedRoom.id,
+        room_number: "N/A", // No room number needed in frontend
         room_location: slug || "",
       });
     }
     handleClose();
   };
 
-
-  const getRoomImage = (acc: string) => {
+  const getRoomImage = (roomType: string) => {
     const roomAllImages = slug && imagesUrl[slug];
-    return roomAllImages[acc] as string
-  }
+    return roomAllImages ? roomAllImages[roomType] : "";
+  };
+
   return (
     <div className="rooms-listing">
       <div style={{ marginTop: "80px" }}>
         <img
           style={{ width: "100%", height: "350px", objectFit: "cover" }}
-          src={resort.cover_image}
+          src={RESORTDETAILS[slug || ""]?.cover_image || ""}
           alt={slug + "Room"}
         />
       </div>
 
-
-      <Container >
+      <Container>
         <DateAndTimePicker isShow={true} onSelectAvailability={handleDates} />
-
+        
         <Row className="g-4 p-4">
           {roomListing.length > 0 ? (
             <Col xs={12} sm={12} md={8}>
-              {roomListing.map((item, index) => (
+              {roomListing.map((item, index) => {
+                console.log(imagesUrl[item.location][item.id]);
+                return (
+                  (
                 <RoomCard
                   key={index}
-                  description={item.room_desc}
-                  image={getRoomImage(item.room_acc)}
-                  price={item.room_price}
-                  location={item.room_location}
-                  availability={`${item.count || 0} left`}
-                  title={item.room_acc}
-                  onSelect={() => handleSelect(item.room_id)}
+                  description={item.complementary_services || "No details available"}
+                  image={imagesUrl[item.location][item.id]}
+                  price={item.room_price || 0}
+                  location={item.bed_type}
+                  availability={`${item.available_count || 0} left`}
+                  title={item.room_type}
+                  onSelect={() => handleSelect(item.id)}
                 />
-              ))}
+              )
+                )
+              })}
             </Col>
           ) : (
             <Col xs={12} sm={12} md={4}>
@@ -212,21 +218,12 @@ const RoomListing = () => {
                 ))}
 
                 <div className="d-flex justify-content-between align-items-center">
-                  <Link className="btn btn-secondary book-now" to="/booking-form"
-                    style={{ fontFamily: "Neue Helvetica Medium", }}
-
-                  >
+                  <Link className="btn btn-secondary book-now" to="/booking-form">
                     Book Now
                   </Link>
                   <div>
-                    <p>
-                      Total: $
-                      {roomsCart.reduce(
-                        (total, item) => total + item.room_price,
-                        0
-                      )}
-                    </p>
-                    <p>Rooms :{roomsCart.length}</p>
+                    <p>Total: ${roomsCart.reduce((total, item) => total + +item.room_price, 0)}</p>
+                    <p>Rooms: {roomsCart.length}</p>
                   </div>
                 </div>
               </div>
@@ -235,11 +232,7 @@ const RoomListing = () => {
         </Row>
       </Container>
 
-      <RoomModal
-        show={isModalOpen}
-        onClose={handleClose}
-        onAddRoom={handleAddRoom}
-      />
+      <RoomModal show={isModalOpen} onClose={handleClose} onAddRoom={handleAddRoom} />
     </div>
   );
 };

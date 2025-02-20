@@ -14,13 +14,14 @@ interface GuestCounts {
 
 interface Room {
   room_id: number;
-  room_number: number;
+  room_number: string;
   guests: GuestCounts;
   checkIn?: string | null;
   checkOut?: string | null;
   room_price: number;
   room_acc: string;
   room_location: string | "";
+  resort?: string;
 }
 
 interface RoomContextType {

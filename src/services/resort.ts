@@ -18,7 +18,7 @@ export interface PostResponse {
 // GET API
 export const fetchData = async (params: any): Promise<GetResponse> => {
   try {
-    const response = await api.get<GetResponse>("/filterRoom", { params });
+    const response = await api.get<GetResponse>("/rooms/filteredRooms", { params });
     return response.data;
   } catch (error) {
     console.error("Error fetching data:", error);

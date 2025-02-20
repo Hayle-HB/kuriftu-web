@@ -28,7 +28,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
 }) => {
   return (
     <Card
-      className="mb-4 shadow-sm"
+      className="mb-4 shadow-sm room-card"
       style={{ border: "none", textAlign: "left" }}
     >
       <Row>
@@ -36,6 +36,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
         <Card.Img
           src={image}
           alt={title}
+          className="room-card-image"
           style={{
             top: '0',
             left: '0',
@@ -49,16 +50,22 @@ const RoomCard: React.FC<RoomCardProps> = ({
           <Card.Body>
             <Row>
               <Col>
-                <Card.Title className="fw-bold section-header-font" style={{fontFamily: "Neue Helvetica Medium",}}>
+                <Card.Title className="fw-bold section-header-font">
                   {title}
                 </Card.Title>
                 <Card.Subtitle className="text-muted mb-2">
                   {location}
                 </Card.Subtitle>
               </Col>
-              <Col className="text-end text-danger fw-bold" style={{fontFamily: "Neue Helvetica Medium",}}>{availability}</Col>
+              <Col className="text-end text-danger fw-bold" >{availability}</Col>
             </Row>
-            <p className={`mb-4 welness-description ${descriptionClass}`} style={{fontFamily: "Neue Helvetica thin ",fontSize:'11px'}}>{description}</p>
+            <ul className={`mb-4 welness-description ${descriptionClass} room-card-list`}>
+              {
+                JSON.parse(description).map((item: string, index: number)=>(
+                  <li><p>{item}</p></li>
+                ))
+              }
+            </ul>
             <Row className="align-items-center">
               <Col className="text-end">
                 <h5 className="fw-bold" style={{fontFamily: "Neue Helvetica Medium",}}>
