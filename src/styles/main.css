@@ -1107,6 +1107,12 @@ a:hover {
 .landing-tile {
   padding: 0;
 }
+.landing-carousel .slick-list {
+  padding: 0px 10% 0 0 !important;
+}
+.landing-carousel .slick-list h1 {
+  font-size: 1rem;
+}
 .landing-carousel .basic-tile-image {
   aspect-ratio: 1;
 }
@@ -1120,6 +1126,9 @@ a:hover {
 .landing-section h1,
 .landing-section p {
   text-align: left;
+}
+.landing-section h1 {
+  font-size: 1.5rem;
 }
 .reservation {
   padding-top: 90px;
