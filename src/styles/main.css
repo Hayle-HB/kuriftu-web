@@ -1596,6 +1596,7 @@ a:hover {
   background-color: #fcfaf369;
   position: fixed;
   top: 88px;
+  left: 0px;
   width: 100%;
   backdrop-filter: blur(10px);
   margin: 0;
@@ -1787,25 +1788,21 @@ a:hover {
   text-align: center;
 }
 .basic-tile-third {
-  background-color: red;
   width: 100%;
 }
 @media screen and (min-width: 576px) {
   .basic-tile-third {
     width: 25vw;
-    background-color: blue;
   }
 }
 @media screen and (min-width: 768px) {
   .basic-tile-third {
     width: 20vw;
-    background-color: green;
   }
 }
 @media screen and (min-width: 2000px) {
   .basic-tile-third {
     width: 15vw;
-    background-color: yellow;
   }
 }
 .basic-tile-half {
