@@ -76,8 +76,11 @@ const RoomListing = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [roomId, setRoomId] = useState<null | number>(null);
-  const { onAddRoom, roomsCart } = useRoomContext();
   const [roomListing, setRoomListing] = useState<RoomListingProps[]>([]);
+  const [maxOccupancy, setMaxOccupancy] = useState<number | null>(null);
+  const { onAddRoom, roomsCart, setGlobalDates } = useRoomContext(); // ✅ Get setGlobalDates
+
+
 
   // Initialize dates
   const [dates, setDates] = useState<Dates>({
@@ -125,12 +128,15 @@ const RoomListing = () => {
   };
 
   const handleSelect = (roomId: number) => {
+    let selectedRoom = roomListing.find((item) => item.id === roomId);
     setIsModalOpen(true);
     setRoomId(roomId);
+    setMaxOccupancy(selectedRoom?.max_occupancy || 2);
   };
 
   const handleDates = (data: Dates) => {
     setDates(data);
+    setGlobalDates(formatDate(data.checkIn), formatDate(data.checkOut)); // ✅ Update global context
     getData(data);
   };
 
@@ -218,7 +224,7 @@ const RoomListing = () => {
                 ))}
 
                 <div className="d-flex justify-content-between align-items-center">
-                  <Link className="btn btn-secondary book-now" to="/booking-form">
+                  <Link className="btn btn-secondary book-now" to={`/booking-form?${slug}`}>
                     Book Now
                   </Link>
                   <div>
@@ -232,7 +238,7 @@ const RoomListing = () => {
         </Row>
       </Container>
 
-      <RoomModal show={isModalOpen} onClose={handleClose} onAddRoom={handleAddRoom} />
+      <RoomModal show={isModalOpen} onClose={handleClose} onAddRoom={handleAddRoom} maxOccupancy={maxOccupancy || 2} />
     </div>
   );
 };
