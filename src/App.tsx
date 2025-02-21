@@ -2,6 +2,7 @@ import {useLocation, Outlet } from "react-router";
 import { useLayoutEffect } from "react";
 import Header from "./components/Header/Header";
 import Footer from "./UI/Footer/Footer";
+import { Container } from "react-bootstrap";
 
 
 function App() {
@@ -11,9 +12,11 @@ function App() {
     window.scrollTo(0, 0);
   }, [location.pathname]);
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <Outlet />
+      <Container className="App">
+        <Outlet />
+      </Container>
       <Footer />
     </div>
   );

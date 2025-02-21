@@ -1002,13 +1002,13 @@ a:hover {
   padding-right: 15vw;
   margin-bottom: 45px;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2000px) {
   .dining-tile {
     padding-left: 10vw;
     padding-right: 10vw;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .dining-tile {
     padding-left: 60px;
     padding-right: 60px;
@@ -1787,11 +1787,25 @@ a:hover {
   text-align: center;
 }
 .basic-tile-third {
-  width: 30vw;
+  background-color: red;
+  width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   .basic-tile-third {
-    width: 100%;
+    width: 25vw;
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 768px) {
+  .basic-tile-third {
+    width: 20vw;
+    background-color: green;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .basic-tile-third {
+    width: 15vw;
+    background-color: yellow;
   }
 }
 .basic-tile-half {
@@ -1821,7 +1835,7 @@ a:hover {
 }
 .basic-tile-image {
   padding: 0;
-  aspect-ratio: 0.76;
+  aspect-ratio: 0.7;
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -2074,8 +2088,6 @@ a:hover {
 }
 .hero-video-wrapper {
   position: relative;
-  padding-right: 1.75rem;
-  padding-left: 1.75rem;
   margin-top: 178px;
   margin-bottom: 4.64285714rem;
 }
@@ -2206,14 +2218,17 @@ footer a:focus {
   margin: 0;
   font-size: 0.66rem !important;
 }
-html {
+html,
+.app,
+.App {
   background-color: #f3eee7;
 }
-.app {
+.App {
   color: #191E19;
   font-size: 16px;
   padding: 20px;
-  background-color: #f3eee7;
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
 }
 .glass-button {
   backdrop-filter: blur(16px);

@@ -14,9 +14,20 @@
         
     }
     &-third {
-        width: 30vw;
-        @media screen and (max-width: @md) {
-            width: 100%;
+        
+        background-color: red;
+        width: 100%;
+        @media screen and (min-width: @sm) {
+            width: 25vw;
+            background-color: blue;
+        }
+        @media screen and (min-width: @md) {
+            width: 20vw;
+            background-color: green;
+        }
+        @media screen and (min-width: @xxl){
+            width: 15vw;
+            background-color: yellow;
         }
     }
     &-half {
@@ -49,7 +60,7 @@
     &-image {
         //padding: 12px;
         padding: 0;
-        aspect-ratio: 0.76;
+        aspect-ratio: 0.7;
         //width: inherit;
         background-size: cover;
         background-position: center;

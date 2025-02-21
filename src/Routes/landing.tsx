@@ -15,7 +15,7 @@ import HorizontalCarousel from "../UI/HorizontalCarousel";
 export default function LandingPage(): JSX.Element {
   console.log("landing page loaded")
   return (
-    <Container fluid>
+    < >
         <VideoHero classNames="landing-hero" videoURL={landingData.video} />
         <Row>
           
@@ -48,6 +48,6 @@ export default function LandingPage(): JSX.Element {
           </Row>
         </section>
         
-    </Container>
+    </>
   );
 }
