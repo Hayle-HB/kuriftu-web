@@ -68,7 +68,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     email: "booking@kurifturesorts.com",
     rating: 5,
     cover_image:
-      "https://kurifturesorts.com/_nuxt/img/Accomodation1.c444805.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/awash/awash3.webp",
     cover_video:
       "https://kuriftu-public-media.s3.amazonaws.com/awash/awash_720P.mp4",
   },

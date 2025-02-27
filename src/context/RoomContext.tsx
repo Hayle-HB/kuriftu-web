@@ -14,17 +14,21 @@ interface GuestCounts {
 
 interface Room {
   room_id: number;
-  room_number: number;
+  room_number: string;
   guests: GuestCounts;
   checkIn?: string | null;
   checkOut?: string | null;
   room_price: number;
   room_acc: string;
   room_location: string | "";
+  resort?: string;
 }
 
 interface RoomContextType {
   roomsCart: Room[];
+  globalCheckIn: string | null;
+  globalCheckOut: string | null;
+  setGlobalDates: (checkIn: string, checkOut: string) => void;
   onAddRoom: (room: Room) => void;
   onClear: () => void;
   onDelete: (roomId: number) => void;
@@ -38,6 +42,8 @@ interface RoomProviderProps {
 
 export const RoomProvider: React.FC<RoomProviderProps> = ({ children }) => {
   const [roomsCart, setRoomsCart] = useState<Room[]>([]);
+  const [globalCheckIn, setGlobalCheckIn] = useState<string | null>(null);
+  const [globalCheckOut, setGlobalCheckOut] = useState<string | null>(null);
 
   useEffect(() => {
     const value = localStorage.getItem("roomsCart");
@@ -47,14 +53,32 @@ export const RoomProvider: React.FC<RoomProviderProps> = ({ children }) => {
     }
   }, []);
 
+  // Function to set global check-in/check-out dates
+  const setGlobalDates = (checkIn: string, checkOut: string) => {
+    setGlobalCheckIn(checkIn);
+    setGlobalCheckOut(checkOut);
+  };
+
   const handleAddRoom = (room: Room) => {
+    if (!globalCheckIn || !globalCheckOut) {
+      alert("Please select check-in and check-out dates first.");
+      return;
+    }
+
     const index = roomsCart.findIndex((item) => item.room_id === room.room_id);
     const updatedRooms = [...roomsCart];
 
+    // Enforce the global check-in and check-out for every room
+    const updatedRoom = {
+      ...room,
+      checkIn: globalCheckIn,
+      checkOut: globalCheckOut,
+    };
+
     if (index > -1) {
-      updatedRooms[index] = { ...room };
+      updatedRooms[index] = updatedRoom;
     } else {
-      updatedRooms.push(room);
+      updatedRooms.push(updatedRoom);
     }
 
     setRoomsCart(updatedRooms);
@@ -74,6 +98,9 @@ export const RoomProvider: React.FC<RoomProviderProps> = ({ children }) => {
 
   const value: RoomContextType = {
     roomsCart,
+    globalCheckIn,
+    globalCheckOut,
+    setGlobalDates,
     onAddRoom: handleAddRoom,
     onClear: handleClear,
     onDelete: handleDelete,

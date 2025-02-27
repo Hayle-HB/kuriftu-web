@@ -32,6 +32,8 @@ import Reservation from "./Routes/reservation";
 import ResortsPage from "./Routes/Resort/resorts";
 import ResortGallery from "./Routes/Resort/ResortGallery";
 import Event from "./Routes/events";
+import BookingForm from "./Routes/Booking/BookingForm";
+
 
 import ResortEvents from "./pages/Resort/ResortEvents";
 
@@ -43,7 +45,6 @@ import ResortDining from "./pages/Resort/ResortDining";
 import ResortAccomodationDetail from "./pages/Resort/ResortAccomdation/ResortAccomodationDetail";
 import RoomListing from "./pages/Booking/RoomListing";
 import { RoomProvider } from "./context/RoomContext";
-import BookingForm from "./components/BookingForm";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 //import Reservation from "./pages/Reservation";

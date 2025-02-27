@@ -12,18 +12,20 @@ import VideoHero from "../UI/Hero/VideoHero";
 import BasicTile from "../UI/Card/BasicTiles/BasicTile";
 import MultiItemCarousel from "../UI/Carousel/MultiItemCarousel";
 import HorizontalCarousel from "../UI/HorizontalCarousel";
+import LinkTile from "../UI/Card/BasicTiles/LinkTile";
+
 export default function LandingPage(): JSX.Element {
   console.log("landing page loaded")
   return (
-    <Container fluid>
+    < >
         <VideoHero classNames="landing-hero" videoURL={landingData.video} />
-        <Row>
+        <Row className="landing-section1">
           
             {
-              landingData.resorts.map((item, index)=>{
+              landingData.section1.map((item, index)=>{
                 console.log(item);
                 return (
-                    <BasicTile 
+                      <LinkTile 
                       item={item}
                       index={index}
                       reveresed={false}
@@ -32,6 +34,7 @@ export default function LandingPage(): JSX.Element {
                       linkURL={item.link}
                       third={true}
                      />
+
                 )
               })
             }
@@ -48,6 +51,6 @@ export default function LandingPage(): JSX.Element {
           </Row>
         </section>
         
-    </Container>
+    </>
   );
 }

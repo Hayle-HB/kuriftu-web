@@ -12,7 +12,7 @@ interface GuestCounts {
 
 interface Room {
   room_id: number;
-  room_number: number;
+  room_number: string;
   guests: GuestCounts;
   checkIn?: string | null;
   checkOut?: string | null;
@@ -46,7 +46,7 @@ const SuccessPage = () => {
         setStoredRoomsCart(JSON.parse(storedCart) as Room[]);
       } else {
         console.warn("No cart found, redirecting...");
-        navigate("/");
+        navigate("/reservation");
       }
     } else {
       setStoredRoomsCart(roomsCart);

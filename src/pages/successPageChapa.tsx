@@ -1,120 +1,40 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useRoomContext } from "../context/RoomContext";
-import moment from "moment";
-import { postReservation } from "../services/resort";
-interface GuestCounts {
-  adults: number;
-  teens: number;
-  kids: number;
-}
-
-interface Room {
-  room_id: number;
-  room_number: number;
-  guests: GuestCounts;
-  checkIn?: string | null;
-  checkOut?: string | null;
-  room_price: number;
-  room_acc: string;
-  room_location: string | "";
-}
-
-type Form = {
-  [key: string]: any;
-};
-
-const formatDate = (date: string): string => {
-  return moment(date).format("YYYY-MM-DD");
-};
+import { updateReservation } from "../services/resort";
 
 const SuccessPageChapa = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isUpdated, setIsUpdated] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const { roomsCart, onClear } = useRoomContext();
-  const [storedRoomsCart, setStoredRoomsCart] = useState<Room[]>([]);
-  const reservationCalled = useRef(false); // Flag to ensure reservation is called only once
-
-  useEffect(() => {
-    if (roomsCart.length === 0) {
-      const storedCart = localStorage.getItem("roomsCart");
-      if (storedCart) {
-        setStoredRoomsCart(JSON.parse(storedCart) as Room[]);
-      } else {
-        console.warn("No cart found, redirecting...");
-        navigate("/");
-      }
-    } else {
-      setStoredRoomsCart(roomsCart);
-    }
-  }, [roomsCart, navigate]);
+  // ✅ Extract reservationId from URL parameters
+  const searchParams = new URLSearchParams(location.search);
+  const reservationID = searchParams.get("reservationID");
 
   useEffect(() => {
-    if (
-      storedRoomsCart.length > 0 &&
-      !reservationCalled.current
-    ) {
-      reservationCalled.current = true; // Set flag to true
-      createReservation();
-    }
-  }, [ storedRoomsCart]);
-
-  const createReservation = async () => {
-    if (storedRoomsCart.length === 0) {
-      console.warn("Rooms Cart is empty, skipping reservation.");
+    if (!reservationID) {
+      setErrorMessage("No reservation ID found.");
+      console.error("No reservation ID found in the URL.");
       return;
     }
 
-    const checkIn = storedRoomsCart[0]?.checkIn;
-    const checkOut = storedRoomsCart[0]?.checkOut;
-
-    if (!checkIn || !checkOut) {
-      console.error("Check-in or Check-out date is missing, cannot proceed.");
-      return;
-    }
-
-    const formValue = localStorage.getItem("form");
-    let form: Form | undefined;
-    if (formValue) {
+    const updatePaymentStatus = async () => {
       try {
-        form = JSON.parse(formValue);
+        console.log("🔄 Updating payment status for reservation:", reservationID);
+        await updateReservation({ reservationID, paymentStatus: "paid" });
+
+        setIsUpdated(true);
+        console.log("✅ Payment status updated successfully.");
       } catch (error) {
-        console.error("Failed to parse form value:", error);
+        setErrorMessage("Failed to update reservation payment status.");
+        console.error("❌ Error updating reservation:", error);
       }
-    }
-
-    const finalRooms = storedRoomsCart.map(
-      ({ guests, checkIn, checkOut, ...rest }) => ({
-        ...rest,
-        ...guests,
-      })
-    );
-
-    const payload = {
-      rooms: finalRooms,
-      checkin: formatDate(checkIn),
-      checkout: formatDate(checkOut),
-      Form: {
-        ...form,
-        res_paymentMethod: "bank_transfer",
-        res_groupName: "Family Vacation",
-        res_extraBed: "0",
-        res_remark: "Late check-in requested",
-        res_paymentStatus: "paid",
-      },
     };
 
-    try {
-      await postReservation(payload);
-      onClear();
-      localStorage.clear();
-      sessionStorage.clear();
-    } catch (error) {
-      console.error("Failed to create reservation:", error);
-    }
-  };
+    updatePaymentStatus();
+  }, [reservationID]);
 
   return (
     <Container
@@ -124,10 +44,22 @@ const SuccessPageChapa = () => {
     >
       <Row className="text-center">
         <Col xs={12} md={8} lg={6} className="mx-auto">
-          <h1 className="text-success">Booking Confirmed!</h1>
-          <p className="lead mb-4">
-            Thank you for choosing us. Your resort room booking is successful.
-          </p>
+          {isUpdated ? (
+            <>
+              <h1 className="text-success">Payment Successful!</h1>
+              <p className="lead mb-4">
+                Your reservation has been confirmed and the payment has been processed.
+              </p>
+            </>
+          ) : (
+            <>
+              <h1 className="text-warning">Processing Payment...</h1>
+              <p className="lead mb-4">
+                {errorMessage || "Please wait while we update your reservation."}
+              </p>
+            </>
+          )}
+
           <Button as={Link as any} variant="outline-secondary" to="/">
             Return to Home
           </Button>

@@ -4,63 +4,69 @@ export const landingData = {
   video:
     "https://kuriftu-public-media.s3.amazonaws.com/home/homeVideo.mov",
   section1: [
-    {
-      category: "Adventure",
-      title: "Discover Extraordinary Destinations",
-      subtitle: "ADVENTURE",
-      description:
-        "Absorb the unique beauty of Ethiopia's natural landscapes and prominent cultural heritage.",
-      image: "https://kurifturesorts.com/_nuxt/img/Adventure.bb2f8d1.webp",
-      linkText: "Explore",
-      link: "#",
-    },
-    {
-      category: "Catering",
-      title: "The Commitment To Good Service",
-      subtitle: "CATERING",
-      description:
-        "From culinary experiences to accommodations inspired by tradition as well as international standards of luxury, indulge yourself in an adventure of architectural design and unique dishes highlighting innovation across Ethiopia.",
-      image: "https://kurifturesorts.com/_nuxt/img/Catering.8818461.webp",
-      linkText: "Explore",
-      link: "#",
-    },
-  ],
+  {
+    "title": "Extraordinary Destinations",
+    "subtitle": "RESORTS",
+    "description": "Immerse yourself in the breathtaking beauty of Ethiopia’s landscapes, where nature’s splendor meets the elegance of world-class hospitality. Experience the rich cultural heritage and tranquil retreats that redefine luxury.",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu14.jpg",
+    "linkText": "Explore Destinations",
+    "link": "/destinations"
+  },
+  {
+    "title": "Unforgettable Experiences",
+    "subtitle": "EXPERIENCES",
+    "description": "Indulge in an exquisite collection of curated experiences designed to awaken your senses. From thrilling outdoor adventures to serene wellness retreats, every moment is tailored for sophistication and delight.",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto2.jpg",
+    "linkText": "Explore Experiences",
+    "link": "/resorts/entoto/exp"
+  },
+  {
+    "title": "Celebrations at Kuriftu",
+    "subtitle": "EVENTS",
+    "description": "Celebrate life's most cherished moments in unparalleled luxury. From grand weddings to intimate gatherings, our exquisite venues and impeccable service ensure every occasion is nothing short of extraordinary.",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa21.jpg",
+    "linkText": "Explore Events",
+    "link": "/resorts/entoto/exp"
+  }
+]
+,
   section2: [
   {
-    "category": "Wellness",
-    "title": "Restore Your Energy",
-    "subtitle": "Wellness",
-    "description": "Discover a sanctuary of serenity, where indulgence and rejuvenation meet in perfect harmony at Kuriftu’s exclusive wellness retreats.",
-    "image": "https://kurifturesorts.com/_nuxt/img/Adventure.bb2f8d1.webp",
+
+    "category": "Bishoftu",
+    "title": "Kuriftu Resort & Spa Bishoftu",
+    "subtitle": "Bishoftu",
+    "description": "",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu14.jpg",
     "linkText": "Explore",
-    "link": "#"
+    "link": "/resorts/bishoftu"
   },
   {
     "category": "Waterpark",
     "title": "Waterpark",
     "subtitle": "WATERPARK",
-    "description": "Experience the pinnacle of aquatic adventure at Kuriftu Water Park, where luxury and excitement blend effortlessly for an unforgettable escape.",
-    "image": "https://kurifturesorts.com/_nuxt/img/Waterpark.0b8de07.webp",
-    "linkText": "Read More",
-    "link": "#"
-  },
-  {
-    "category": "Lake Tana",
-    "title": "Lake Tana",
-    "subtitle": "LAKE TANA",
-    "description": "Immerse yourself in the timeless beauty of Lake Tana, where Kuriftu Resort & Spa offers an unrivaled blend of elegance, culture, and natural splendor.",
-    "image": "https://kurifturesorts.com/_nuxt/img/Tana.303f00c.webp",
-    "linkText": "Read More",
-    "link": "#"
-  },
-  {
-    "category": "Kuriftu Construction",
-    "title": "Immaculate Touches",
-    "subtitle": "KURIFTU CONSTRUCTION",
-    "description": "With visionary craftsmanship and an eye for perfection, Kuriftu Construction transforms luxury into reality across Ethiopia’s most prestigious destinations.",
-    "image": "https://kurifturesorts.com/_nuxt/img/Kuriftu%20Construction.56c04b5.webp",
+    "description": "",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark3.jpg",
     "linkText": "Explore",
-    "link": "#"
+    "link": "/resorts/waterpark"
+  },
+  {
+    "category": "ENTOTO PARK, ADDIS ABABA",
+    "title": "kuriftu Resort & Spa Entoto",
+    "subtitle": "ENTOTO PARK, ADDIS ABABA",
+    "description": "",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto23.jpg",
+    "linkText": "Explore",
+    "link": "/resorts/entoto"
+  },
+  {
+    "category": "AWASH NATIONAL PARK",
+    "title": "Kuriftu Resort & Spa Awash Falls",
+    "subtitle": "AWASH NATIONAL PARK",
+    "description": "",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/awash/awash3.webp",
+    "linkText": "Explore",
+    "link": "/resorts/awash"
   }
 ],
   section3: [

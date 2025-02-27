@@ -11,15 +11,13 @@ interface RoomModalProps {
   show: boolean;
   onClose: () => void;
   onAddRoom: (guests: GuestCounts) => void;
+  maxOccupancy: number; // Pass max occupancy from the selected room
 }
 
-const RoomModal: React.FC<RoomModalProps> = ({ show, onClose, onAddRoom }) => {
+const RoomModal: React.FC<RoomModalProps> = ({ show, onClose, onAddRoom, maxOccupancy }) => {
   const [guests, setGuests] = useState({ adults: 0, teens: 0, kids: 0 });
 
-  const handleGuestChange = (
-    e: React.ChangeEvent<HTMLSelectElement>,
-    type: string
-  ) => {
+  const handleGuestChange = (e: React.ChangeEvent<HTMLSelectElement>, type: string) => {
     setGuests({ ...guests, [type]: Number(e.target.value) });
   };
 
@@ -36,11 +34,11 @@ const RoomModal: React.FC<RoomModalProps> = ({ show, onClose, onAddRoom }) => {
         <img
           src="https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp"
           alt="Room"
-          style={{width:"100%", height:"100%"}}
+          style={{ width: "100%", height: "100%" }}
           className="mb-3"
         />
         <p className="text-center fw-bold room-card-txt">
-          In order to reserve a room, make sure to choose at least one.
+          In order to reserve a room, make sure to choose at least one guest.
         </p>
         <hr />
         <Form>
@@ -52,7 +50,7 @@ const RoomModal: React.FC<RoomModalProps> = ({ show, onClose, onAddRoom }) => {
                   value={guests.adults}
                   onChange={(e) => handleGuestChange(e, "adults")}
                 >
-                  {[...Array(2)].map((_, i) => (
+                  {[...Array(maxOccupancy + 1)].map((_, i) => (
                     <option key={i} value={i}>
                       {i}
                     </option>
@@ -63,12 +61,8 @@ const RoomModal: React.FC<RoomModalProps> = ({ show, onClose, onAddRoom }) => {
             <Col>
               <Form.Group>
                 <Form.Label className="room-card-label">Teens (12-17)</Form.Label>
-                <Form.Select
-                  disabled
-                  value={guests.teens}
-                  onChange={(e) => handleGuestChange(e, "teens")}
-                >
-                  {[...Array(10)].map((_, i) => (
+                <Form.Select value={guests.teens} onChange={(e) => handleGuestChange(e, "teens")}>
+                  {[...Array(3)].map((_, i) => (
                     <option key={i} value={i}>
                       {i}
                     </option>
@@ -79,12 +73,8 @@ const RoomModal: React.FC<RoomModalProps> = ({ show, onClose, onAddRoom }) => {
             <Col>
               <Form.Group>
                 <Form.Label className="room-card-label">Kids</Form.Label>
-                <Form.Select
-                  disabled
-                  value={guests.kids}
-                  onChange={(e) => handleGuestChange(e, "kids")}
-                >
-                  {[...Array(10)].map((_, i) => (
+                <Form.Select value={guests.kids} onChange={(e) => handleGuestChange(e, "kids")}>
+                  {[...Array(3)].map((_, i) => (
                     <option key={i} value={i}>
                       {i}
                     </option>

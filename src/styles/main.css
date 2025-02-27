@@ -1002,13 +1002,13 @@ a:hover {
   padding-right: 15vw;
   margin-bottom: 45px;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2000px) {
   .dining-tile {
     padding-left: 10vw;
     padding-right: 10vw;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .dining-tile {
     padding-left: 60px;
     padding-right: 60px;
@@ -1107,6 +1107,12 @@ a:hover {
 .landing-tile {
   padding: 0;
 }
+.landing-carousel .slick-list {
+  padding: 0px 10% 0 0 !important;
+}
+.landing-carousel .slick-list h1 {
+  font-size: 1rem;
+}
 .landing-carousel .basic-tile-image {
   aspect-ratio: 1;
 }
@@ -1120,6 +1126,27 @@ a:hover {
 .landing-section h1,
 .landing-section p {
   text-align: left;
+}
+.landing-section h1 {
+  font-size: 1.5rem;
+}
+.landing-section1 {
+  margin-bottom: 30vh;
+  margin-top: 20vh;
+  justify-content: center;
+}
+.landing-section1 .basic-tile-third {
+  margin: 0px 10px;
+  width: 25vw;
+}
+@media screen and (max-width: 768px) {
+  .landing-section1 .basic-tile-third {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+}
+.landing-section1 .basic-tile-text p {
+  font-size: 0.7rem;
 }
 .reservation {
   padding-top: 90px;
@@ -1596,6 +1623,7 @@ a:hover {
   background-color: #fcfaf369;
   position: fixed;
   top: 88px;
+  left: 0px;
   width: 100%;
   backdrop-filter: blur(10px);
   margin: 0;
@@ -1787,11 +1815,21 @@ a:hover {
   text-align: center;
 }
 .basic-tile-third {
-  width: 30vw;
+  width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   .basic-tile-third {
-    width: 100%;
+    width: 25vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .basic-tile-third {
+    width: 20vw;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .basic-tile-third {
+    width: 15vw;
   }
 }
 .basic-tile-half {
@@ -1821,7 +1859,7 @@ a:hover {
 }
 .basic-tile-image {
   padding: 0;
-  aspect-ratio: 0.76;
+  aspect-ratio: 0.7;
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -1844,6 +1882,42 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.14285714rem;
   font-weight: 200;
+}
+.basic-tile-text a {
+  text-align: center;
+  display: block;
+}
+.basic-tile-link {
+  text-decoration: none;
+}
+.basic-tile-link:hover {
+  opacity: 0.76;
+  text-decoration: none !important;
+  color: #191E19 !important;
+}
+.basic-tile-link:hover h1,
+.basic-tile-link:hover h2,
+.basic-tile-link:hover h3,
+.basic-tile-link:hover p {
+  text-decoration: none;
+}
+.basic-tile-link:hover h1:hover,
+.basic-tile-link:hover h2:hover,
+.basic-tile-link:hover h3:hover,
+.basic-tile-link:hover p:hover {
+  text-decoration: none;
+}
+.basic-tile-link h1,
+.basic-tile-link h2,
+.basic-tile-link h3,
+.basic-tile-link p {
+  text-decoration: none;
+}
+.basic-tile-link h1:hover,
+.basic-tile-link h2:hover,
+.basic-tile-link h3:hover,
+.basic-tile-link p:hover {
+  text-decoration: none;
 }
 .featured-tile {
   height: 60vw;
@@ -2074,8 +2148,6 @@ a:hover {
 }
 .hero-video-wrapper {
   position: relative;
-  padding-right: 1.75rem;
-  padding-left: 1.75rem;
   margin-top: 178px;
   margin-bottom: 4.64285714rem;
 }
@@ -2092,7 +2164,6 @@ footer {
 footer h6 {
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
-  font-style: italic;
   font-size: 1.2rem;
 }
 footer a {
@@ -2185,6 +2256,7 @@ footer a:focus {
   margin-left: 2rem;
 }
 .main-nav-bar .reserve-button {
+  text-decoration: none;
   font-family: 'whitneybook';
   width: 140px;
   padding: 0.71428571rem 1.07142857rem;
@@ -2202,14 +2274,21 @@ footer a:focus {
   color: #FCFAF3 !important;
   text-decoration: none !important;
 }
-html {
+.room-card-list li p {
+  margin: 0;
+  font-size: 0.66rem !important;
+}
+html,
+.app,
+.App {
   background-color: #f3eee7;
 }
-.app {
+.App {
   color: #191E19;
   font-size: 16px;
   padding: 20px;
-  background-color: #f3eee7;
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
 }
 .glass-button {
   backdrop-filter: blur(16px);

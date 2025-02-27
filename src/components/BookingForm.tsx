@@ -122,7 +122,6 @@ const BookingForm: React.FC = () => {
 
   return (
     <>
-      <Header />
       <Container
         className="g-4 p-4"
         style={{ textAlign: "left", marginTop: "80px" }}
@@ -199,21 +198,20 @@ const BookingForm: React.FC = () => {
                     </Form.Group>
 
                     <Form.Group as={Col} md={6} controlId="formAddress">
-                      <Form.Label style={{fontFamily:' Neue Helvetica thin' }}>Address</Form.Label>
+                      <Form.Label >Address</Form.Label>
                       <Form.Control
                         type="text"
                         name="address"
                         value={formValues.address}
                         onChange={handleInputChange}
                         placeholder="Enter your address"
-                        style={{fontFamily:' Neue Helvetica thin' }}
                       />
                     </Form.Group>
                   </Row>
 
                   <Row className="mb-3">
                     <Form.Group as={Col} md={6} controlId="formres_promo">
-                      <Form.Label style={{fontFamily:' Neue Helvetica thin' }}>Promo Code</Form.Label>
+                      <Form.Label>Promo Code</Form.Label>
                       <Row>
                         <Col xs={8}>
                           <Form.Control
@@ -222,11 +220,10 @@ const BookingForm: React.FC = () => {
                             value={formValues.res_promo}
                             onChange={handleInputChange}
                             placeholder="Enter promo code"
-                            style={{fontFamily:' Neue Helvetica thin' }}
                           />
                         </Col>
                         <Col xs={4} className="d-flex align-items-center">
-                          <Button variant="warning" className="w-100" style={{fontFamily:' Neue Helvetica thin' }}>
+                          <Button variant="warning" className="w-100">
                             Apply Promo
                           </Button>
                         </Col>
@@ -234,14 +231,13 @@ const BookingForm: React.FC = () => {
                     </Form.Group>
 
                     <Form.Group as={Col} md={6} controlId="formCity">
-                      <Form.Label style={{fontFamily:' Neue Helvetica thin' }}>City</Form.Label>
+                      <Form.Label>City</Form.Label>
                       <Form.Control
                         type="text"
                         name="city"
                         value={formValues.city}
                         onChange={handleInputChange}
                         placeholder="Enter your city"
-                        style={{fontFamily:' Neue Helvetica thin' }}
                       />
                     </Form.Group>
                   </Row>
@@ -260,7 +256,6 @@ const BookingForm: React.FC = () => {
                         onChange={handleInputChange}
                         placeholder="Enter your special request"
                         rows={3}
-                        style={{fontFamily:' Neue Helvetica thin' }}
                       />
                     </Form.Group>
 
@@ -272,7 +267,6 @@ const BookingForm: React.FC = () => {
                         value={formValues.postalCode}
                         onChange={handleInputChange}
                         placeholder="Enter your zip/postal code"
-                        style={{fontFamily:' Neue Helvetica thin' }}
                       />
                     </Form.Group>
                   </Row>
@@ -283,17 +277,11 @@ const BookingForm: React.FC = () => {
                         <Form.Check
                           name="acknowledgement"
                           type="checkbox"
-                          style={{fontFamily:' Neue Helvetica thin' }}
                           label={
                             <p>
                               I agree with
                               <span
                                 onClick={() => setShowModal(true)}
-                                style={{
-                                  fontWeight: "bold",
-                                  color: "#a98137",
-                                  marginLeft: "2px",
-                                }}
                               >
                                 Booking Terms and Conditions
                               </span>
@@ -314,8 +302,6 @@ const BookingForm: React.FC = () => {
                         onClick={()=>setPaymentMethod("dashen")}     
                         variant="primary" className="payment-btn" 
                         disabled={paymentMethod === "dashen"} 
-                        style={{fontFamily:' Neue Helvetica thin' }} 
-                        
                         >
                           
                         Dashen
@@ -323,8 +309,7 @@ const BookingForm: React.FC = () => {
                       <Button
                         onClick={()=>setPaymentMethod("chapa")}       
                         variant="primary"  className="payment-btn"
-                        disabled={paymentMethod === "chapa"} 
-                        style={{fontFamily:' Neue Helvetica thin' }}>
+                        disabled={paymentMethod === "chapa"}>
                         Chappa
                       </Button>
                     </Col>

@@ -2,19 +2,17 @@ export const Gallery: Record<string, string[]> = {
   entoto: [
     "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto24.jpg",
     "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto4.jpg",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/4.jpg",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/5.jpg",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/6.jpg",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/7.JPG",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/8.JPG",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/9.jpg",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/10.jpg",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/11.JPG",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/12.JPG",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/13.JPG",
-    "https://kuriftu-public-media.s3.amazonaws.com/entoto/14.JPG",
-   //"https://kuriftu-public-media.s3.amazonaws.com/entoto/15.JPG",
-   // "https://kuriftu-public-media.s3.amazonaws.com/entoto/16.JPG",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto27.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto28.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto3.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto4.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto9.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto11.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto17.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto16.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto15.jpg",
+
+    
   ],
 
   bishoftu: [
