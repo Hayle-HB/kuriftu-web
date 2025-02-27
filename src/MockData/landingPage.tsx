@@ -26,7 +26,7 @@ export const landingData = {
     "description": "Celebrate life's most cherished moments in unparalleled luxury. From grand weddings to intimate gatherings, our exquisite venues and impeccable service ensure every occasion is nothing short of extraordinary.",
     "image": "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa21.jpg",
     "linkText": "Explore Events",
-    "link": "/resorts/entoto/exp"
+    "link": "/event"
   }
 ]
 ,
@@ -51,15 +51,6 @@ export const landingData = {
     "link": "/resorts/entoto"
   },
   {
-    "category": "AWASH NATIONAL PARK",
-    "title": "Kuriftu Resort & Spa Awash Falls",
-    "subtitle": "AWASH NATIONAL PARK",
-    "description": "",
-    "image": "https://kuriftu-public-media.s3.amazonaws.com/awash/awash3.webp",
-    "linkText": "Explore",
-    "link": "/resorts/awash"
-  },
-  {
     "category": "Waterpark",
     "title": "Waterpark",
     "subtitle": "WATERPARK",
@@ -68,6 +59,16 @@ export const landingData = {
     "linkText": "Explore",
     "link": "/resorts/waterpark"
   },
+  {
+    "category": "AWASH NATIONAL PARK",
+    "title": "Kuriftu Resort & Spa Awash Falls",
+    "subtitle": "AWASH NATIONAL PARK",
+    "description": "",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/awash/awash3.webp",
+    "linkText": "Explore",
+    "link": "/resorts/awash"
+  },
+  
   {
 
     "category": "Bishoftu",
