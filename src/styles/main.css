@@ -1138,7 +1138,7 @@ a:hover {
 }
 .landing-section1 .basic-tile-third {
   margin: 0px 10px;
-  width: 25vw;
+  width: 20vw;
 }
 @media screen and (max-width: 768px) {
   .landing-section1 .basic-tile-third {
@@ -1146,8 +1146,16 @@ a:hover {
     margin-bottom: 150px;
   }
 }
+.landing-section1 .basic-tile-text h3 {
+  font-size: 1rem;
+}
 .landing-section1 .basic-tile-text p {
   font-size: 0.7rem;
+}
+@media screen and (min-width: 1400px) {
+  .landing-section1 {
+    flex-wrap: nowrap;
+  }
 }
 .reservation {
   padding-top: 90px;

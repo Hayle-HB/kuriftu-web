@@ -42,17 +42,23 @@
             .basic-tile{
                 &-third {
                     margin: 0px 10px;
-                    width: 25vw;
+                    width: 20vw;
                     @media screen and (max-width: @md) {
                         width: 100%;
                         margin-bottom: 150px;
                     }
                 }
                 &-text{
+                    h3{
+                        font-size: 1rem;
+                    }
                     p{
                         font-size: 0.7rem;
                     }
                 }
+            }
+            @media screen and (min-width: @xl) {
+                flex-wrap: nowrap;
             }
             
         }
