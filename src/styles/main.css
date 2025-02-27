@@ -1069,6 +1069,7 @@ a:hover {
 }
 .accomidation-page .hero h1 {
   color: #FCFAF3;
+  text-align: center;
 }
 .accomidation-page .hero-carousel {
   padding: 0;
@@ -1834,7 +1835,7 @@ a:hover {
 }
 .basic-tile-half {
   margin-bottom: 35px;
-  width: 45vw;
+  width: 25vw;
 }
 @media screen and (max-width: 768px) {
   .basic-tile-half {
