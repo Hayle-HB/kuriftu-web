@@ -31,24 +31,15 @@ export const landingData = {
 ]
 ,
   section2: [
-  {
+    {
 
-    "category": "Bishoftu",
-    "title": "Kuriftu Resort & Spa Bishoftu",
-    "subtitle": "Bishoftu",
+    "category": "ADDIS ABABA",
+    "title": "Kuriftu Resort & Spa African Village",
+    "subtitle": "ADDIS ABABA",
     "description": "",
-    "image": "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu14.jpg",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
     "linkText": "Explore",
-    "link": "/resorts/bishoftu"
-  },
-  {
-    "category": "Waterpark",
-    "title": "Waterpark",
-    "subtitle": "WATERPARK",
-    "description": "",
-    "image": "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark3.jpg",
-    "linkText": "Explore",
-    "link": "/resorts/waterpark"
+    "link": "/resorts/africaVillage"
   },
   {
     "category": "ENTOTO PARK, ADDIS ABABA",
@@ -67,7 +58,26 @@ export const landingData = {
     "image": "https://kuriftu-public-media.s3.amazonaws.com/awash/awash3.webp",
     "linkText": "Explore",
     "link": "/resorts/awash"
-  }
+  },
+  {
+    "category": "Waterpark",
+    "title": "Waterpark",
+    "subtitle": "WATERPARK",
+    "description": "",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark3.jpg",
+    "linkText": "Explore",
+    "link": "/resorts/waterpark"
+  },
+  {
+
+    "category": "Bishoftu",
+    "title": "Kuriftu Resort & Spa Bishoftu",
+    "subtitle": "Bishoftu",
+    "description": "",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu14.jpg",
+    "linkText": "Explore",
+    "link": "/resorts/bishoftu"
+  },
 ],
   section3: [
     

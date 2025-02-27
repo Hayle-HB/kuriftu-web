@@ -103,11 +103,11 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     ],
     items: [
       {
-        image: "https://kurifturesorts.com/_nuxt/img/Kayaking.8a09cfa.webp",
-        title: "Kayakiing",
-        description:
-          "If you think the only view is within the resort then think again! Enjoy a wonderful kayak ride with friends and be mezermized by the luscious green landscape",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark2.jpg",
+        title:"Water Park",
+        description:"Make a splash at our exciting water park! Enjoy thrilling water slides, lazy rivers, and splash zones for all ages. Whether you're seeking adventure or relaxation, the water park offers the perfect escape under the sun."
       },
+      
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/8.JPG",
         title: "Cinema",
@@ -115,14 +115,26 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
           "The cinema at our resort offers a comfortable experience with rows of cushions; whether it’s a date night or family fun, kick back and enjoy a night complete with popcorn, ice blasts, and delicious ice cream!",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/Lequanda.ca87f54.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu15.jpg",
+        title: "Swimming Pool",
+        description: "Take a refreshing dip in our crystal-clear swimming pool. Whether you're swimming laps, lounging by the water, or enjoying a poolside drink, our pool offers the perfect setting for relaxation and fun."
+      },
+      /**
+       * {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu21.webp",
+        title: "Kayakiing",
+        description:
+          "If you think the only view is within the resort then think again! Enjoy a wonderful kayak ride with friends and be mezermized by the luscious green landscape",
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu22.webp",
         title: "Lequanda",
         description:
           "Explore fresh cuts of meat for your palate, every day / all day at Kuriftu Lequanda...",
       },
       {
         image:
-          "https://kurifturesorts.com/_nuxt/img/BirdWatching1.9746917.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu23.webp",
         title: "Bird watching",
         description:
           "With an enchanting ecosystem and luxurious natural setting, Kuriftu Resorts & Spa ranks among the be...",
@@ -133,6 +145,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         description:
           "For our table tennis enthusiasts, add an exciting tournament to your itinerary Kuriftu Bishoftu",
       }
+       */
     ],
 
     featured: [],
