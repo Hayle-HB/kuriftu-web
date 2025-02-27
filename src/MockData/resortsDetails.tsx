@@ -101,7 +101,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     email: "booking@kurifturesorts.com",
     rating: 0,
     cover_image: "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark3.jpg",
-    cover_video: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/waterpark/water_park720.mov",
+    cover_video: "https://kuriftu-public-media.s3.amazonaws.com/waterpark/water_park720.mov",
   },
   boston: {
     isIframe: false,

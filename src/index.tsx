@@ -55,6 +55,7 @@ import SuccessPage from "./pages/success";
 import SuccessPageChapa from "./pages/successPageChapa";
 import BostonLanding from "./Routes/bostonLanding";
 import BostonPackage from "./Routes/bostonPackage";
+import Experience from "./Routes/experiences";
 
 // const router = createBrowserRouter([
 //   {
@@ -222,6 +223,10 @@ const router = createBrowserRouter([
         path: "/event",
         element: <Event />,
       },
+      {
+        path: '/experience',
+        element: <Experience />
+      }
     ],
   },
 ]);

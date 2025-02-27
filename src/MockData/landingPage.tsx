@@ -18,7 +18,7 @@ export const landingData = {
     "description": "Indulge in an exquisite collection of curated experiences designed to awaken your senses. From thrilling outdoor adventures to serene wellness retreats, every moment is tailored for sophistication and delight.",
     "image": "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto2.jpg",
     "linkText": "Explore Experiences",
-    "link": "/resorts/entoto/exp"
+    "link": "/experience"
   },
   {
     "title": "Celebrations at Kuriftu",

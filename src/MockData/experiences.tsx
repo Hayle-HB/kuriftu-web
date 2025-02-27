@@ -1,3 +1,4 @@
+import { Description } from "@mui/icons-material";
 import { ExperienceModal } from "../interfaces/experiencModal";
 
 export const EXPERIENCE: Record<string, ExperienceModal> = {
@@ -269,3 +270,38 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     ],
   },
 };
+
+export const ExperiencePage = {
+  items: [
+  {
+    title: "Experience at Kuriftu Entoto Adventure Park",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto23.jpg",
+    linkText: "Explore",
+    linkURL: "/entoto/exp",
+    description: "Kuriftu Entoto Adventure Park provides one of the best nature based experiences as it is considered to be the first adventure park in the country! Catering to a vast variety of domestic and international tourists, we aim to please and excite!"
+  },
+  {
+    title: "Experience at Kuriftu Water Park",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark3.jpg",
+    linkText: "Explore",
+    linkURL: "/entoto/exp",
+    description: "Make a splash as you slide into the freshwater surrounding the Kuriftu Waterpark! As the biggest waterpark in East Africa, we offer a range of activities from a variety of slides to a wave pool that fits up to 300 rafts at once!"
+  },
+  {
+    title: "Experience at Boston Day Spa",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston16.jpg",
+    linkText: "Explore",
+    linkURL: "/boston",
+    description: "Experience ultimate relaxation at Boston Day Spa, where luxury meets craftsmanship. For over 15 years, our expert team has redefined indulgence, offering world-class spa treatments in a serene, art-inspired sanctuary."
+  }
+
+],
+  carouselImages: [
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto2.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto11.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark1.jpg",
+    "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/boston/boston27.jpg"
+  ],
+  title: "Experiences at Kuriftu Resort and Spa",
+  subtitle: "Experiences at Kuriftu Resort and Spa",
+}
