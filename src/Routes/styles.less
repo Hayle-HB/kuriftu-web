@@ -35,6 +35,27 @@
         h1{
             font-size: 1.5rem;
         }
+        &1{
+            margin-bottom: 30vh;
+            margin-top: 20vh;
+            justify-content: center;
+            .basic-tile{
+                &-third {
+                    margin: 0px 10px;
+                    width: 25vw;
+                    @media screen and (max-width: @md) {
+                        width: 100%;
+                        margin-bottom: 150px;
+                    }
+                }
+                &-text{
+                    p{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+            
+        }
     }
 }
 .reservation{

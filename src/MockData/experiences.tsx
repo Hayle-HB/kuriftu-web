@@ -24,24 +24,59 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     items: [
       
       {
-        title: "Cycling",
-        description:
-          "Cycle up and down this unforgettable landscape with greenery for days. A perfect activity to explore the natural beauty on two wheels.",
-        image: "https://kurifturesorts.com/_nuxt/img/fe2.8b9e86a.webp",
-      },
-      {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/10.jpg",
-        title: "Horse Riding Picnic",
-        description:
-          "Enjoy a unique trail riding experience in the spectacular forest with our Horse Ride and Picnic package. This includes a private trail ride with a specially prepared gourmet picnic hamper for you to enjoy with your loved ones.",
-      },
-      {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
-        title: "Forest Spa",
-        description:
-          "Kurfitu Entoto Forest Spa is a sanctuary dedicated to holistic wellness inspired by traditional and globally recognized wellness practices.",
-      },
-      
+    title: "Adventure Park",
+    description:
+      "Experience the thrill of high-flying adventures with our rope course, zipline, and rock climbing. Challenge yourself and enjoy breathtaking views as you climb, balance, and soar through the air.",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto6.jpg",
+  },
+  {
+    title: "Horse Riding",
+    description:
+      "Enjoy a scenic horseback ride along our dedicated trails. Whether you're a beginner or experienced rider, our guided horse riding experience offers a fun and relaxing way to explore the resort.",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto3.jpg",
+  },
+  {
+    title: "Go-Kart Racing",
+    description:
+      "Get your adrenaline pumping with an exciting go-kart race! Compete with friends and family on our professional go-kart track and feel the rush of speed.",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto5.jpg",
+  },
+  /**{
+    title: "Pedal Kart Rides",
+    description:
+      "Enjoy a fun and eco-friendly ride around the resort with our pedal karts. Choose from single, double, or family-sized pedal karts for a relaxing adventure.",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto4.jpg",
+  }, */
+  {
+    title: "Cycling",
+    description:
+      "Cycle up and down the beautiful landscape, surrounded by lush greenery. A perfect activity to explore the resort at your own pace.",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto29.webp",
+  },
+  /**{
+    title: "Archery & Dart Games",
+    description:
+      "Test your aim and precision with our archery range and dart games. Challenge yourself and compete with friends for the highest score.",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/adventure/archery.jpg",
+  },
+  {
+    title: "Paintball Shooting",
+    description:
+      "Enjoy the thrill of paintball shooting with target practice or group battles. Whether you're a beginner or an experienced player, our paintball activities offer endless fun.",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/adventure/paintball.jpg",
+  }, */
+  {
+    title: "Trampoline Fun",
+    description:
+      "Jump, flip, and bounce on our large trampoline! A fun and energetic activity for both kids and adults looking to enjoy some air-time.",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto9.jpg",
+  },
+  /**{
+    title: "Kids Playground",
+    description:
+      "A dedicated space for children to run, play, and explore in a safe and fun environment. Let the little ones enjoy slides, swings, and more!",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/adventure/kids-playground.jpg",
+  }, */
     ],
     featured: [
       

@@ -81,8 +81,41 @@
             letter-spacing: .1428571429rem;
             font-weight: 200;
         }
+        a{
+            text-align: center;
+            display: block;
+        }
     }
 
+    &-link{
+        text-decoration: none;
+        &:hover{
+            opacity: 0.76;
+            text-decoration: none !important;
+            color: @dark !important;
+            h1,
+                h2,
+                h3,
+                p {
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+
+        }
+        h1,
+        h2,
+        h3,
+        p {
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .featured-tile{

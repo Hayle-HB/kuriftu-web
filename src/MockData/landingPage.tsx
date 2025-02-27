@@ -4,33 +4,38 @@ export const landingData = {
   video:
     "https://kuriftu-public-media.s3.amazonaws.com/home/homeVideo.mov",
   section1: [
-    {
-      category: "Adventure",
-      title: "Discover Extraordinary Destinations",
-      subtitle: "ADVENTURE",
-      description:
-        "Absorb the unique beauty of Ethiopia's natural landscapes and prominent cultural heritage.",
-      image: "https://kurifturesorts.com/_nuxt/img/Adventure.bb2f8d1.webp",
-      linkText: "Explore",
-      link: "#",
-    },
-    {
-      category: "Catering",
-      title: "The Commitment To Good Service",
-      subtitle: "CATERING",
-      description:
-        "From culinary experiences to accommodations inspired by tradition as well as international standards of luxury, indulge yourself in an adventure of architectural design and unique dishes highlighting innovation across Ethiopia.",
-      image: "https://kurifturesorts.com/_nuxt/img/Catering.8818461.webp",
-      linkText: "Explore",
-      link: "#",
-    },
-  ],
+  {
+    "title": "Extraordinary Destinations",
+    "subtitle": "RESORTS",
+    "description": "Immerse yourself in the breathtaking beauty of Ethiopia’s landscapes, where nature’s splendor meets the elegance of world-class hospitality. Experience the rich cultural heritage and tranquil retreats that redefine luxury.",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu14.jpg",
+    "linkText": "Explore Destinations",
+    "link": "/destinations"
+  },
+  {
+    "title": "Unforgettable Experiences",
+    "subtitle": "EXPERIENCES",
+    "description": "Indulge in an exquisite collection of curated experiences designed to awaken your senses. From thrilling outdoor adventures to serene wellness retreats, every moment is tailored for sophistication and delight.",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto2.jpg",
+    "linkText": "Explore Experiences",
+    "link": "/resorts/entoto/exp"
+  },
+  {
+    "title": "Celebrations at Kuriftu",
+    "subtitle": "EVENTS",
+    "description": "Celebrate life's most cherished moments in unparalleled luxury. From grand weddings to intimate gatherings, our exquisite venues and impeccable service ensure every occasion is nothing short of extraordinary.",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa21.jpg",
+    "linkText": "Explore Events",
+    "link": "/resorts/entoto/exp"
+  }
+]
+,
   section2: [
   {
 
     "category": "Bishoftu",
     "title": "Kuriftu Resort & Spa Bishoftu",
-    "subtitle": "Wellness",
+    "subtitle": "Bishoftu",
     "description": "",
     "image": "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu14.jpg",
     "linkText": "Explore",
