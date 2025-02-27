@@ -50,6 +50,7 @@ export const landingData = {
     "linkText": "Explore",
     "link": "/resorts/entoto"
   },
+  
   {
     "category": "Waterpark",
     "title": "Waterpark",
