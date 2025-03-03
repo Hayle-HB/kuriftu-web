@@ -1,8 +1,24 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+
+const socialLinks: Record<string,string> = {
+  default: "https://www.instagram.com/kurifturesortbishoftu/",
+  bishoftu: "https://www.instagram.com/kurifturesortbishoftu/",
+  entoto: "https://www.instagram.com/kurifturesortentoto/",
+  africanVillage: "https://www.instagram.com/kuriftuafricanvillage/",
+  boston: "https://www.instagram.com/bostondayspa/",
+  aWASH: "https://www.instagram.com/kuriftuawashfalls/"
+
+}
 
 const Footer = () => {
+
+  const { slug } = useParams<{ slug: string }>();
+  let socialLink = socialLinks.default;
+  if (slug && socialLinks[slug] != null){
+    socialLink = socialLinks[slug];
+  }
   const styles = {
     
     
@@ -151,7 +167,7 @@ const Footer = () => {
             <h6>Socials</h6>
             <div className="d-flex flex-wrap gap-2 footer-links-container">
               <a
-                href="https://www.instagram.com/kurifturesortbishoftu/"
+                href={socialLink}
                 className="text-dark text-decoration-none"
               >
                 <i className="fa-brands fa-instagram"></i>
@@ -188,7 +204,7 @@ const Footer = () => {
           <Col className="text-center">
             
               <p >
-                All Copyright © 2024 Kuriftu Resort and Spa.
+                All Copyright © 2025 Kuriftu Resort and Spa.
               </p>
               <p>
                 Powered by <a className="power-by-link" target="blank" href="https://www.pier5studios.com/ ">PIER 5

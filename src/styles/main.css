@@ -2209,13 +2209,27 @@ footer {
   font-size: 14px;
   margin-top: 12px;
 }
+footer .list-unstyled a {
+  color: #5d5752 !important;
+  font-size: 0.925rem;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  line-height: 1.45;
+}
+footer .list-unstyled a:hover {
+  color: #5d5752 !important;
+}
 footer h6 {
-  margin-bottom: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.722rem;
+  color: #313131;
+  margin-bottom: 0.755rem;
+  font-family: 'LyonDisplay-Light-Web' !important;
+  letter-spacing: 0.03571429rem;
+  font-weight: 400;
 }
 footer a {
-  font-family: 'Montserrat';
   font-size: 0.85rem !important;
   color: #5C7457 !important;
 }
