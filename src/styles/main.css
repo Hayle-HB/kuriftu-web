@@ -1675,6 +1675,8 @@ a:hover {
   top: 88px;
   left: 0px;
   width: 100%;
+  border-top: 1px solid #dad9d7;
+  border-bottom: 1px solid #dad9d7;
   margin: 0;
   z-index: 1000;
 }
