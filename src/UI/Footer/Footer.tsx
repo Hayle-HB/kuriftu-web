@@ -8,7 +8,8 @@ const socialLinks: Record<string,string> = {
   entoto: "https://www.instagram.com/kurifturesortentoto/",
   africanVillage: "https://www.instagram.com/kuriftuafricanvillage/",
   boston: "https://www.instagram.com/bostondayspa/",
-  aWASH: "https://www.instagram.com/kuriftuawashfalls/"
+  awash: "https://www.instagram.com/kuriftuawashfalls/",
+  waterpark: "https://www.instagram.com/kuriftuwaterpark/",
 
 }
 
