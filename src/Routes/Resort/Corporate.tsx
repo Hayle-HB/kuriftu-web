@@ -24,11 +24,11 @@ const Corporate: React.FC = () => {
             </Row>
 
             
-            <Row className="listing" >
+            <Row className="listing gx-2" >
                     
                     {
                     corporate.celebrations.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} third={true} />
+                        <Col md={4} sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} third={true} /></Col>
                     ))
             }
             </Row>
@@ -37,10 +37,10 @@ const Corporate: React.FC = () => {
                     <h1 className="text-center pt-5 fs-1">Our Venues</h1>
                 </Col>
             </Row>
-            <Row className="listing" >
+            <Row className="listing gx-2" >
                     {
                     corporate.venus.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  />
+                        <Col md={4} sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  /></Col> 
                     ))
             }
             </Row>

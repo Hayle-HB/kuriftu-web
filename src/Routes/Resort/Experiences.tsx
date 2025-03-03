@@ -25,10 +25,10 @@ const Experiences: React.FC = () => {
             <Row>
                 <TextHero classNames=""  text={experiences.description} />
             </Row>
-            <Row className="listing" >
+            <Row className="listing gx-2" >
                     {
                     experiences.items.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true} />
+                        <Col md={4} sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={false} hasLinks={false} third={true} /></Col>
                     ))
             }
             </Row>

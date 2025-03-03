@@ -51,19 +51,21 @@ const ResortDetails: React.FC = () => {
       </Row>
 
       {accomidation && (
-        <Row className="accomidation">
+        <Row className="accomidation gx-2">
           {
             accomidation.accomodations.map((item, index)=>(
-              <BasicTile 
-                item={item} 
-                index={index} 
-                hasLinks={true}
-                reveresed={false}
-                linkText="Explore"
-                linkURL={`acc/${index + 1}`}
-                half={true}
-                square={true}
-              />
+              <Col md={6} sm={12} >
+                <BasicTile 
+                  item={item} 
+                  index={index} 
+                  hasLinks={true}
+                  reveresed={false}
+                  linkText="Explore"
+                  linkURL={`acc/${index + 1}`}
+                  half={true}
+                  square={true}
+                />
+              </Col>
             ))
           }
          

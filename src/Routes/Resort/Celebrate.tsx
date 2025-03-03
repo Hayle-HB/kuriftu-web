@@ -25,11 +25,11 @@ const Celebrate: React.FC = () => {
             </Row>
 
             
-            <Row className="listing" >
+            <Row className="listing gx-2" >
                     
                     {
                     events.events.map((item, index) => (
-                        <BasicTile key={index} item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} third={true} />
+                        <Col md={4} sm={12} key={index}><BasicTile key={index} item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} third={true} /></Col>
                     ))
             }
                
@@ -39,10 +39,10 @@ const Celebrate: React.FC = () => {
                     <h1 className="text-center pt-5 fs-1">Our Venues</h1>
                 </Col>
             </Row>
-            <Row className="listing" >
+            <Row className="listing gx-2" >
                     {
                     events.venus.map((item, index) => (
-                        <BasicTile  key={index} item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  />
+                        <Col md={4} sm={12} key={index}><BasicTile  key={index} item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  /></Col>
                     ))
             }
             </Row>

@@ -29,10 +29,10 @@ const Dinnign: React.FC = () => {
                     <h1 className="text-center pt-5 fs-1">Dining Options</h1>
                 </Col>
             </Row>
-            <Row className="listing" >
+            <Row className="listing gx-2" >
                     {
                     dining.diningOptions.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={true} linkText="Explore Menu" linkURL={item.menuLink} third={true} />
+                        <Col md={6} sm={12} key={index} ><BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={true} linkText="Explore Menu" linkURL={item.menuLink} third={true} /></Col>
                     ))
             }
                 
