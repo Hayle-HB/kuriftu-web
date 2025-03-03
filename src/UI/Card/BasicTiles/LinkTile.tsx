@@ -18,9 +18,10 @@ type LinkTileProps = {
     third?: boolean;
     fourth?: boolean;
     square?: boolean;
+    textLimit?:number;
 }
 
-const LinkTile: React.FC<LinkTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third, fourth, square}) => {
+const LinkTile: React.FC<LinkTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third, fourth, square, textLimit}) => {
     const sizeDown = half || third;
     return (
         <a 
@@ -35,7 +36,7 @@ const LinkTile: React.FC<LinkTileProps> = ({item, index, reveresed, hasLinks, li
                 <Col className="basic-tile-text">
                     <h5>{item.subtitle}</h5>
                     <h3 className="title-sans">{item.title}</h3>
-                    <p>{item.description}</p>
+                    <p>{textLimit ? item.description.slice(0,textLimit)+" ..." : item.description}</p>
                     {hasLinks && <Link to={`${linkURL}`}>{linkText}</Link>}
                 </Col>
             </Row>

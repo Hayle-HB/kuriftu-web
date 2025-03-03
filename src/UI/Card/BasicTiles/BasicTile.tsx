@@ -18,10 +18,11 @@ type BasicTileProps = {
     third?: boolean;
     fourth?: boolean;
     square?: boolean;
+    textLimit?:number;
 
 }
 
-const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third, fourth, square}) => {
+const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third, fourth, square, textLimit}) => {
     const sizeDown = half || third;
     return (
         <Container className={`basic-tile-wrapper `}>
@@ -32,7 +33,7 @@ const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, 
                 <div className="basic-tile-text" >
                     <h5>{item.subtitle}</h5>
                     <h3 className="title-sans">{item.title}</h3>
-                    <p>{item.description}</p>
+                    <p>{textLimit ? item.description.slice(0,textLimit)+" ..." : item.description}</p>
                     {hasLinks && <Link to={`${linkURL}`}>{linkText}</Link>}
                 </div>
             </Row>

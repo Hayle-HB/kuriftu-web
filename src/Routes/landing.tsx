@@ -19,22 +19,24 @@ export default function LandingPage(): JSX.Element {
   return (
     < >
         <VideoHero classNames="landing-hero" videoURL={landingData.video} />
-        <Row className="landing-section1">
+        <Row className="landing-section1 gx-5">
           
             {
               landingData.section1.map((item, index)=>{
                 console.log(item);
                 return (
-                      <LinkTile 
-                      item={item}
-                      index={index}
-                      reveresed={false}
-                      hasLinks={true}
-                      linkText={item.linkText}
-                      linkURL={item.link}
-                      third={true}
-                     />
-
+                      <Col key={index} md={4} sm={12}>
+                        <LinkTile 
+                        item={item}
+                        index={index}
+                        reveresed={false}
+                        hasLinks={true}
+                        linkText={item.linkText}
+                        linkURL={item.link}
+                        third={true}
+                        textLimit={130}
+                      />
+                      </Col>
                 )
               })
             }
