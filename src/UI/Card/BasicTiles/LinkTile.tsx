@@ -24,15 +24,15 @@ const LinkTile: React.FC<LinkTileProps> = ({item, index, reveresed, hasLinks, li
     const sizeDown = half || third;
     return (
         <a 
-            className={`basic-tile-link basic-tile-wrapper ${half ? 'basic-tile-half' : ''} ${third ? 'basic-tile-third' : ''} ${fourth ? 'basic-tile-fourth': ''}`} 
+            className={`basic-tile-link basic-tile-wrapper`} 
             href={linkURL}
             >
             <Row className={`basic-tile`}>
-                <Col className={`basic-tile-image ${square && 'basic-tile-square'}`} md={sizeDown ? 12 : 6} style={{backgroundImage: `url(${item.image})`}}>
+                <Col className={`basic-tile-image ${square && 'basic-tile-square'}`} style={{backgroundImage: `url(${item.image})`}}>
                     
                 </Col>
 
-                <Col className="basic-tile-text" md={sizeDown ? 12 : 6}>
+                <Col className="basic-tile-text">
                     <h5>{item.subtitle}</h5>
                     <h3 className="title-sans">{item.title}</h3>
                     <p>{item.description}</p>
