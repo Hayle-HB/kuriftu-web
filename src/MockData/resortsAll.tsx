@@ -64,7 +64,7 @@ export const resortsAll = [
     slug: "africanVillage",
     location: "Bahirdar, Ethiopia",
     coordinates: [9.0351536, 38.6786375],
-    image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/HomeAffricanVillage.svg",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa22.jpg",
   },
 ];
 

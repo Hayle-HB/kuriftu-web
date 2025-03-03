@@ -85,7 +85,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     location: "Approximately 15 km from Addis Ababa Bole International Airport",
     email: "booking@kurifturesorts.com",
     rating: 0,
-    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa22.jpg",
     cover_video: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/african_village720p.mp4",
   },
   waterpark: {

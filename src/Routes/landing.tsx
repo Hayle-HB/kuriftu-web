@@ -18,7 +18,13 @@ export default function LandingPage(): JSX.Element {
   console.log("landing page loaded")
   return (
     < >
-        <VideoHero classNames="landing-hero" videoURL={landingData.video} />
+        <section>
+          <Row>
+            <Col sm={12} style={{ paddingLeft: 0, paddingRight: 0 }}>
+              <VideoHero classNames="landing-hero" videoURL={landingData.video} />
+            </Col>
+          </Row>
+        </section>
         <Row className="landing-section1 gx-5">
           
             {
