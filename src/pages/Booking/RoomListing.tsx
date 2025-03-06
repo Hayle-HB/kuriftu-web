@@ -50,6 +50,7 @@ interface RoomListingProps {
   room_price: number;
   room_type: string;
   room_number: string;
+  room_details_id:number;
 }
 
 interface GuestCounts {
@@ -152,7 +153,8 @@ const RoomListing = () => {
           max_occupancy: parseInt(room.room_occupancy, 10),
           room_price: parseFloat(room.room_price),
           room_type: key, // Using room_acc as room_type
-          room_number: room.room_number
+          room_number: room.room_number,
+          room_details_id: room.room_details_id
         });
       }
 
@@ -254,7 +256,7 @@ const RoomListing = () => {
                 <RoomCard
                   key={index}
                   description={item.complementary_services || "No details available"}
-                  image={imagesUrl[item.location][item.id]}
+                  image={imagesUrl[item.location][item.room_details_id]}
                   price={item.room_price || 0}
                   location={item.bed_type}
                   availability={`${item.available_count || 0} left`}
