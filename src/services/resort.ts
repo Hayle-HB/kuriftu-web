@@ -188,6 +188,22 @@ export const updateReservation = async (
   }
 };
 
+export const releaseRoom = async (roomId: number): Promise<PostResponse> => {
+  try{
+
+  const response = await api.post<PostResponse>("/releaseRoom", {roomId});
+    let formatedResponse = {
+      success: true,
+      message: "room successfully released.",
+      data: response.data
+    }
+    return formatedResponse;
+    } catch (error) {
+      console.error("Error submitting reservation:", error);
+      throw error;
+    }
+}
+
 
 export const startTempReservation = async (reservationPayload: SubmitReservationPayload): Promise<PostResponse> => {
   try {
