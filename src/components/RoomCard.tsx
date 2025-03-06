@@ -53,19 +53,24 @@ const RoomCard: React.FC<RoomCardProps> = ({
                 <Card.Title className="fw-bold section-header-font">
                   {title}
                 </Card.Title>
-                <Card.Subtitle className="text-muted mb-2">
-                  {location}
-                </Card.Subtitle>
+                
               </Col>
               <Col className="text-end text-danger fw-bold" >{availability}</Col>
             </Row>
             <ul className={`mb-4 welness-description ${descriptionClass} room-card-list`}>
-              {
+              {/** 
                 JSON.parse(description).map((item: string, index: number)=>(
                   <li><p>{item}</p></li>
                 ))
-              }
+              */}
             </ul>
+            <Row>
+              <Col>
+                <Card.Subtitle className="text-muted mb-2">
+                  {description}
+                </Card.Subtitle>
+              </Col>
+            </Row>
             <Row className="align-items-center">
               <Col className="text-end">
                 <h5 className="fw-bold" style={{fontFamily: "Neue Helvetica Medium",}}>

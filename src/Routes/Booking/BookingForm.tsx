@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { Button, Col, Row, Container, Card, Alert, Form } from "react-bootstrap";
-import { useLocation, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { useRoomContext } from "../../context/RoomContext";
 import TermsAndPolicyModal from "../../components/PolicyAndTermsModal";
 import CircularProgress from "@mui/material/CircularProgress";
 import moment from "moment";
 import {
-  createReservation,
+  startTempReservation,
   processDashenPayment,
   processChapaPayment,
-  ReservationPayloadProps
+  //confirmPayment,
+  //releaseRoom,
 } from "../../services/resort";
-import FormFields from "./FormFields"; // ✅ Import FormFields
-import PaymentOptions from "./PaymentOptions"; // ✅ Import PaymentOptions
+import FormFields from "./FormFields";
+import PaymentOptions from "./PaymentOptions";
 import CartItem from "../../components/RoomCartItem";
 
 // Define form structure
@@ -32,13 +33,12 @@ interface FormValues {
 }
 
 const BookingForm: React.FC = () => {
-  const { roomsCart, globalCheckIn,  globalCheckOut } = useRoomContext();
+  const { roomsCart, globalCheckIn, globalCheckOut } = useRoomContext();
   const [showModal, setShowModal] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState("");
   const [loading, setLoading] = useState(false);
   const [validated, setValidated] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-
   const navigate = useNavigate();
 
   // Initial form values
@@ -82,59 +82,79 @@ const BookingForm: React.FC = () => {
       setErrorMessage("Please agree to the booking terms and conditions.");
       return;
     }
+    if (!paymentMethod) {
+    setErrorMessage("Please select a payment method.");
+    return;
+  }
 
     setLoading(true);
     try {
       const amount = roomsCart.reduce((total, item) => total + +item.room_price, 0);
 
       const formattedRooms = roomsCart.map((room) => ({
-      room_price: room.room_price.toString(),
-      room_acc: room.room_acc,
-      room_id: room.room_id.toString(),
-      room_number: room.room_number,
-      room_location: room.room_location,
-      adults: room.guests.adults,
-      teens: room.guests.teens,
-      kids: room.guests.kids,
-    }));
+        room_price: room.room_price.toString(),
+        room_acc: room.room_acc,
+        room_id: room.room_id.toString(),
+        room_number: room.room_number || "N/A",
+        room_location: room.room_location,
+        adults: room.guests.adults,
+        teens: room.guests.teens,
+        kids: room.guests.kids,
+      }));
 
-    // 🔹 Create reservation payload
-    const reservationPayload: ReservationPayloadProps = {
-      roomsCart: formattedRooms,
-      checkin: globalCheckIn || moment().format("YYYY-MM-DD"), // ✅ Use global dates
-      checkout: globalCheckOut || globalCheckOut || moment().add(1, "days").format("YYYY-MM-DD"),// ✅ Use global dates
-      Form: {
-        ...formValues,
-        res_paymentStatus: "Pending",
-      },
-    };
+      // 🔹 Step 1: Hold the room (Temp Reservation)
+      const reservationPayload = {
+        roomsCart: formattedRooms,
+        checkin: globalCheckIn || moment().format("YYYY-MM-DD"),
+        checkout: globalCheckOut || moment().add(1, "days").format("YYYY-MM-DD"),
+        Form: {
+          ...formValues,
+          res_paymentMethod: paymentMethod, 
+          res_paymentStatus: "Pending",
+        },
+      };
 
-    console.log("🚀 Sending reservation payload:", reservationPayload);
-      // 2️⃣ Create reservation first
-      const reservationResponse = await createReservation(reservationPayload);
-      console.log(reservationResponse);
-      if (!reservationResponse.success) {
-        throw new Error("Reservation failed. Please try again.");
+      const tempReservationResponse = await startTempReservation(reservationPayload);
+      if (!tempReservationResponse.success) {
+        throw new Error("Could not hold the room. Please try again.");
       }
-      const reservationId = reservationResponse.reservationId;
-      console.log(reservationId)
-      // 3️⃣ Process payment based on the selected method
-      //make sure to send the reservation id with the payment query
+      console.log("temp res: ", tempReservationResponse)
+      const reservationId = tempReservationResponse.data.id;
+
+      // 🔹 Step 2: Process Payment
       if (paymentMethod === "dashen") {
         const resortLocation = reservationPayload.roomsCart[0].room_location;
         const { session }: any = await processDashenPayment(amount, resortLocation, reservationId);
         navigate(`/payment/${session.id}`);
       } else {
         const chapaResponse = await processChapaPayment(formValues, amount.toString(), reservationId);
-       // console.log(chapaResponse.data);
         if (chapaResponse.data.status === "success") {
-            console.log(chapaResponse.data.data.data)
           window.open(chapaResponse.data.data.data.checkout_url, "_blank");
         }
       }
+/**
+      // 🔹 Step 3: Confirm Payment
+      const paymentConfirmation = await confirmPayment(reservationId);
+      if (!paymentConfirmation.success) {
+        throw new Error("Payment verification failed. Please contact support.");
+      }
+
+      // 🔹 Step 4: Register Final Reservation
+      const finalReservationResponse = await submitReservation(reservationPayload);
+      if (!finalReservationResponse.success) {
+        throw new Error("Finalizing reservation failed. Please contact support.");
+      }
+*/
+      console.log("✅ Reservation successfully completed!");
+      //navigate(`/confirmation/${reservationId}`);
     } catch (error) {
-      setErrorMessage("Payment failed. Please try again.");
-      console.error("Payment failed:", error);
+      setErrorMessage("Booking process failed. Please try again.");
+      console.error("Booking failed:", error);
+      /**
+      // 🔹 Step 5: Release Room if Payment Fails
+      if (reservationId) {
+        await releaseRoom(reservationId);
+      } */
     } finally {
       setLoading(false);
     }
@@ -149,7 +169,6 @@ const BookingForm: React.FC = () => {
               <Card.Body>
                 <h2 className="mb-4">Booking Form</h2>
 
-                {/* Show error message if exists */}
                 {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
 
                 <Form noValidate validated={validated} onSubmit={handlePayment}>
@@ -167,7 +186,6 @@ const BookingForm: React.FC = () => {
               </Card.Body>
             </Card>
           </Col>
-
           {/* Room Cart */}
           <Col xs={12} sm={12} md={4}>
             {roomsCart.map((item) => (

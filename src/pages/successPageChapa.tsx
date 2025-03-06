@@ -23,8 +23,8 @@ const SuccessPageChapa = () => {
     const updatePaymentStatus = async () => {
       try {
         console.log("🔄 Updating payment status for reservation:", reservationID);
-        await updateReservation({ reservationID, paymentStatus: "paid" });
-
+        const resp = await updateReservation({ reservationID, paymentStatus: "paid" });
+        console.log(resp)
         setIsUpdated(true);
         console.log("✅ Payment status updated successfully.");
       } catch (error) {
@@ -32,6 +32,7 @@ const SuccessPageChapa = () => {
         console.error("❌ Error updating reservation:", error);
       }
     };
+
 
     updatePaymentStatus();
   }, [reservationID]);

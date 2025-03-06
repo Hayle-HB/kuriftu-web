@@ -12,6 +12,7 @@ export interface PostPayload {
 export interface PostResponse {
   success: boolean;
   message: string;
+  data?: any;
   // Add other properties as per your API response
 }
 interface RoomCartItem {
@@ -67,6 +68,12 @@ interface UpdateReservationResponse {
   message: string;
 }
 
+interface SubmitReservationPayload {
+  Form: ReservationForm;
+  roomsCart: RoomCartItem[];
+  checkin: string;
+  checkout: string;
+}
 // GET API
 export const fetchData = async (params: any): Promise<GetResponse> => {
   try {
@@ -91,7 +98,7 @@ export const getPaymentSession = async (params: any): Promise<GetResponse> => {
 // POST API
 export const postReservation = async (payload: any): Promise<PostResponse> => {
   try {
-    const response = await api.post<PostResponse>("/addReservation", payload);
+    const response = await api.post<PostResponse>("/Reservation", payload);
     return response.data;
   } catch (error) {
     console.error("Error posting data:", error);
@@ -115,7 +122,7 @@ export const getPaymentChapa = async (data:any) => {
 // Fetch Available Rooms
 export const fetchAvailableRooms = async (params: any): Promise<any> => {
   try {
-    const response = await api.get("/rooms/filteredRooms", { params });
+    const response = await api.get("filterRoom", { params });
     return response.data;
   } catch (error) {
     console.error("Error fetching available rooms:", error);
@@ -179,4 +186,49 @@ export const updateReservation = async (
     console.error("Error updating reservation status:", error);
     throw error;
   }
+};
+
+
+export const startTempReservation = async (reservationPayload: SubmitReservationPayload): Promise<PostResponse> => {
+  try {
+    const { Form, roomsCart, checkin, checkout } = reservationPayload;
+
+    // Prepare the request payload
+    const formattedPayload = {
+      regesterObject: {
+        firstName: Form.res_firstname,
+        lastName: Form.res_lastname,
+        phoneNumber: Form.res_phone,
+        email: Form.res_email,
+        country: Form.country,
+        address: Form.address,
+        city: Form.city,
+        zip: Form.postalCode,
+        paymentMethod: Form.res_paymentMethod,
+        price: roomsCart.reduce((total, room) => total + parseFloat(room.room_price), 0), // Sum total price
+        specialRequest: Form.res_specialRequest || "",
+        userGID: "default", // Provide real user GID if available
+        promocode: Form.res_promo || "",
+        roomId: roomsCart.map(room => room.room_id).join(","), // Combine multiple room IDs
+        guestInfo: roomsCart.map(room => `${room.adults},${room.teens},${room.kids}`).join("|"), // Format as "adults,teens,kids"
+        roomNo: roomsCart.map(room => room.room_number).join(","), // List of room numbers
+        roomAcc: roomsCart.map(room => room.room_acc).join(","), // List of accommodation types
+        roomLocation: roomsCart.map(room => room.room_location).join(","), // List of locations
+        cincoutInfo: `${checkin},${checkout}`, // "checkin,checkout"
+        tempBoard: Form.res_extraBed || " ", // Using extra bed field as tempBoard if exists
+      },
+    };
+    
+    // Make API request
+    const response = await api.post<PostResponse>("/tempRes", formattedPayload);
+    let formatedResponse = {
+      success: true,
+      message: "room successfully on hold.",
+      data: response.data
+    }
+    return formatedResponse;
+    } catch (error) {
+      console.error("Error submitting reservation:", error);
+      throw error;
+    }
 };

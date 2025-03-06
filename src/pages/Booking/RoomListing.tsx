@@ -12,6 +12,8 @@ import CartEmpty from "../../components/CartEmpty";
 import CartItem from "../../components/RoomCartItem";
 import DateAndTimePicker from "../../components/DateAndTimePicker";
 import { fetchData } from "../../services/resort";
+
+import { fetchAvailableRooms } from "../../services/resort";
 import Header from "../../components/Header/Header";
 
 const imagesUrl: Record<string, any> = {
@@ -47,6 +49,7 @@ interface RoomListingProps {
   max_occupancy: number;
   room_price: number;
   room_type: string;
+  room_number: string;
 }
 
 interface GuestCounts {
@@ -59,6 +62,31 @@ interface Dates {
   checkIn: Date | null;
   checkOut: Date | null;
 }
+
+// Room Data Structure
+interface Room {
+  room_id: number;
+  room_occupancy: string;
+  room_acc: string;
+  room_price: string;
+  room_image: string;
+  room_number: string;
+  room_status: "booked" | "Not_booked";
+  room_location: string;
+  room_desc: string;
+  hold_start_time: string;
+  hold_expire_time: string;
+  room_details_id: number;
+}
+
+// Grouped Room Structure
+interface GroupedRooms {
+  [key: string]: {
+    rooms: Room[];
+    available: number;
+  };
+}
+
 
 // Format Date
 const formatDate = (date: Date | null): string => {
@@ -80,6 +108,9 @@ const RoomListing = () => {
   const [maxOccupancy, setMaxOccupancy] = useState<number | null>(null);
   const { onAddRoom, roomsCart, setGlobalDates } = useRoomContext(); // ✅ Get setGlobalDates
 
+  const [rooms, setRooms] = useState<Room[]>([]);
+  const [groupedRooms, setGroupedRooms] = useState<GroupedRooms>({});
+
 
 
   // Initialize dates
@@ -98,24 +129,57 @@ const RoomListing = () => {
     getData(dates);
   }, [dates]);
 
-  const getData = async (data: Dates) => {
-    console.log("📡 Fetching rooms with params:", {
-      location: slug,
-      checkin: formatDate(data.checkIn),
-      checkout: formatDate(data.checkOut),
+
+   const processRooms = (data: Room[][]) => {
+    const allRooms = data.flat(); // Flatten the array of arrays
+    const filteredRooms = allRooms.filter((room) => room.room_location === slug);
+
+    // Group by room type (`room_acc`)
+    const roomMap = new Map<string, RoomListingProps>();
+    //console.log(filteredRooms);
+
+    filteredRooms.forEach((room) => {
+      const key = room.room_acc;
+      
+      if (!roomMap.has(key)) {
+        console.log("room: ", room)
+        roomMap.set(key, {
+          available_count: 0, // To be counted
+          bed_type: key, // Using room_acc as bed_type
+          complementary_services: room.room_desc || "No details available", // Using description
+          id: room.room_id, // Unique room type identifier
+          location: room.room_location,
+          max_occupancy: parseInt(room.room_occupancy, 10),
+          room_price: parseFloat(room.room_price),
+          room_type: key, // Using room_acc as room_type
+          room_number: room.room_number
+        });
+      }
+
+      // Count available rooms
+      if (room.room_status === "Not_booked") {
+        const existingRoom = roomMap.get(key);
+        if (existingRoom) {
+          existingRoom.available_count += 1;
+        }
+      }
     });
 
+    setRoomListing(Array.from(roomMap.values()));
+  };
+  const getData = async (data: Dates) => {
+
     try {
-      const result = await fetchData({
+      const result = await fetchAvailableRooms({
         location: slug,
         checkin: formatDate(data.checkIn),
         checkout: formatDate(data.checkOut),
       });
-
       console.log("✅ API Response:", result);
 
-      if (result?.data) {
-        setRoomListing(result.data);
+      if (result) {
+        processRooms(result);
+        //console.log(rooms);
       }
     } catch (error) {
       console.error("❌ Fetch Error:", error);
@@ -155,7 +219,7 @@ const RoomListing = () => {
         room_price: selectedRoom.room_price,
         room_acc: selectedRoom.room_type,
         room_id: selectedRoom.id,
-        room_number: "N/A", // No room number needed in frontend
+        room_number: selectedRoom.room_number || "N/A", 
         room_location: slug || "",
       });
     }
