@@ -2,12 +2,15 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { updateReservation } from "../services/resort";
+import { useRoomContext } from "../context/RoomContext";
+
 
 const SuccessPageChapa = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isUpdated, setIsUpdated] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const {onClear } = useRoomContext(); 
 
   // ✅ Extract reservationId from URL parameters
   const searchParams = new URLSearchParams(location.search);
@@ -27,6 +30,9 @@ const SuccessPageChapa = () => {
         console.log(resp)
         setIsUpdated(true);
         console.log("✅ Payment status updated successfully.");
+        onClear();
+        localStorage.clear();
+        sessionStorage.clear();
       } catch (error) {
         setErrorMessage("Failed to update reservation payment status.");
         console.error("❌ Error updating reservation:", error);
