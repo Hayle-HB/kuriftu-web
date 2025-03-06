@@ -96,6 +96,9 @@ const formatDate = (date: Date | null): string => {
 
 const RoomListing = () => {
   const { slug } = useParams<{ slug: string }>();
+  if (!slug){ 
+    console.log("no slug")
+  };
   const location = useLocation();
 
   // Parse query parameters
@@ -131,19 +134,22 @@ const RoomListing = () => {
   }, [dates]);
 
 
-   const processRooms = (data: Room[][]) => {
+  const processRooms = (data: Room[][]) => {
+    //console.log(data)
     const allRooms = data.flat(); // Flatten the array of arrays
-    const filteredRooms = allRooms.filter((room) => room.room_location === slug);
-
+    const filteredRooms = allRooms;//.filter((room) => room.room_location.toLowerCase() === slug);
+    //console.log("all r", allRooms);
+    
     // Group by room type (`room_acc`)
     const roomMap = new Map<string, RoomListingProps>();
     //console.log(filteredRooms);
 
     filteredRooms.forEach((room) => {
+      //console.log(room);
       const key = room.room_acc;
       
       if (!roomMap.has(key)) {
-        console.log("room: ", room)
+        //console.log("room: ", room)
         roomMap.set(key, {
           available_count: 0, // To be counted
           bed_type: key, // Using room_acc as bed_type
@@ -160,14 +166,15 @@ const RoomListing = () => {
 
       // Count available rooms
       if (room.room_status === "Not_booked") {
-        const existingRoom = roomMap.get(key);
-        if (existingRoom) {
-          existingRoom.available_count += 1;
-        }
+      const existingRoom = roomMap.get(key);
+      if (existingRoom) {
+        existingRoom.available_count += 1;
+      }
       }
     });
 
     setRoomListing(Array.from(roomMap.values()));
+    //console.log(roomListing);
   };
   const getData = async (data: Dates) => {
 
@@ -177,11 +184,11 @@ const RoomListing = () => {
         checkin: formatDate(data.checkIn),
         checkout: formatDate(data.checkOut),
       });
-      console.log("✅ API Response:", result);
+      //console.log("✅ API Response:", result);
 
       if (result) {
         processRooms(result);
-        //console.log(rooms);
+        //console.log("rooms", result);
       }
     } catch (error) {
       console.error("❌ Fetch Error:", error);
@@ -208,7 +215,7 @@ const RoomListing = () => {
 
   const handleAddRoom = (guests: GuestCounts) => {
     const selectedRoom = roomListing.find((item) => item.id === roomId);
-    console.log("🛏 Selected room:", selectedRoom);
+    //console.log("🛏 Selected room:", selectedRoom);
 
     if (selectedRoom && roomId) {
       const checkIn = dates.checkIn?.toLocaleDateString();
@@ -250,7 +257,7 @@ const RoomListing = () => {
           {roomListing.length > 0 ? (
             <Col xs={12} sm={12} md={8}>
               {roomListing.map((item, index) => {
-                console.log(imagesUrl[item.location][item.id]);
+                console.log("Item: ",item.room_details_id);
                 return (
                   (
                 <RoomCard

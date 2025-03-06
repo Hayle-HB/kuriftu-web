@@ -43,7 +43,7 @@ const BostonLanding: React.FC = () => {
       <Row className="row-container">
         {
             bostonHomeData.items.map((item, index) => (
-                <BasicTile item={item} index={index} hasLinks={false} reveresed={false} third={true} />
+                <Col md={4} sm={12} ><BasicTile item={item} index={index} hasLinks={false} reveresed={false} third={true} /></Col>
             ))
         }
       </Row>
