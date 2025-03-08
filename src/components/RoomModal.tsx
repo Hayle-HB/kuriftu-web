@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Form, Row, Col } from "react-bootstrap";
+import { useParams } from "react-router";
+import { RESORTDETAILS } from "../MockData/resortsDetails";
 
 interface GuestCounts {
   adults: number;
@@ -16,6 +18,12 @@ interface RoomModalProps {
 
 const RoomModal: React.FC<RoomModalProps> = ({ show, onClose, onAddRoom, maxOccupancy }) => {
   const [guests, setGuests] = useState({ adults: 0, teens: 0, kids: 0 });
+  const { slug } = useParams<{ slug: string }>();
+  var modalImage = "";
+  if (slug){
+    modalImage = RESORTDETAILS[slug].cover_image;
+  }
+
 
   const handleGuestChange = (e: React.ChangeEvent<HTMLSelectElement>, type: string) => {
     setGuests({ ...guests, [type]: Number(e.target.value) });
@@ -32,7 +40,7 @@ const RoomModal: React.FC<RoomModalProps> = ({ show, onClose, onAddRoom, maxOccu
       </Modal.Header>
       <Modal.Body className="modal-custom">
         <img
-          src="https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp"
+          src={modalImage}
           alt="Room"
           style={{ width: "100%", height: "100%" }}
           className="mb-3"

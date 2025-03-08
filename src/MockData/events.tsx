@@ -206,16 +206,16 @@ export const EVENTS: Record<string, EventModal> = {
     description:
       "Whether it be a special anniversary, family reunion or milestone birthday, Kuriftu Bishoftu has the ability to facilitate any celebration through our many restaurants, experiences and activities in this scenic environment - The Kuriftu team is dedicated to crafting extraordinay shared experiences and nights to remember",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/soci.76a5a73.webp",
-      "https://kurifturesorts.com/_nuxt/img/bd.654e148.webp",
-      "https://kurifturesorts.com/_nuxt/img/Cabana.2f03513.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/tana/1.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/tana/2.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/tana/15.webp",
     ],
     events: [
       {
         title: "Weddings",
         description:
           "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones",
-        image: "https://kurifturesorts.com/_nuxt/img/wed.2e89f5a.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/16.webp",
         link: "wed",
         isEnquiryForm: false,
         linkText: "Explore",
@@ -225,7 +225,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Birthdays",
         description:
           "Let us celebrate your life and future in a fun and special way with your loved ones. browse through our selection of birthday packages and more!",
-        image: "https://kurifturesorts.com/_nuxt/img/bd.654e148.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/2.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -234,7 +234,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Social Events",
         description:
           "Thinking of hosting an event? Give us a call and our team can help plan your very own get-together, anniversary, birthday party, family trip - basically anything!",
-        image: "https://kurifturesorts.com/_nuxt/img/soci.76a5a73.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/1.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -244,21 +244,21 @@ export const EVENTS: Record<string, EventModal> = {
     venus: [
       {
         title: "Wedding Venue",
-        image: "https://kurifturesorts.com/_nuxt/img/wed.2e89f5a.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/16.webp",
         description:
           "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones.",
       },
 
       {
         title: "Lake Side",
-        image: "https://kurifturesorts.com/_nuxt/img/LakeSide.01bf8ea.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/6.webp",
         description:
           "Make your celebration even more stunning by adding a lake-side view.",
       },
 
       {
         title: "Cabana Area",
-        image: "https://kurifturesorts.com/_nuxt/img/Cabana.2f03513.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/15.webp",
         description:
           "Make a splash with your cabanas to enjoy a more private and memorable day.",
       },
@@ -294,13 +294,13 @@ export const EVENTS: Record<string, EventModal> = {
     subtitle: "kuriftu resort & spa bishoftu wedding area",
     description:
       "Allow our team to tailor an exceptional occasion of your choosing",
-    carouselImages: ["https://kurifturesorts.com/_nuxt/img/1.0a370e9.webp"],
+    carouselImages: ["https://kuriftu-public-media.s3.amazonaws.com/awash/14.webp"],
     events: [
       {
         title: "Weddings",
         description:
           "For an intimate wedding the spectacular views, isolated location, and the perfect ambiance of Awash Falls will highlight one of the biggest days of your life - Embark on this new stage in life with your partner with specialty catering, unmatched views and breathtaking backdrops for photos that will last a lifetime",
-        image: "https://kurifturesorts.com/_nuxt/img/Wedding.b762def.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/15.webp",
         link: "wed",
         isEnquiryForm: false,
         linkText: "Explore",
@@ -310,7 +310,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Birthdays",
         description:
           "Celebrate a life full of unpredictability and a future full of surprises with special people in a special setting! At Kuriftu Awash Falls, we are prepared to make each year of your life count.",
-        image: "https://kurifturesorts.com/_nuxt/img/Birthdays.cd4c5d2.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/16.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -320,7 +320,7 @@ export const EVENTS: Record<string, EventModal> = {
         title: "Social Events",
         description:
           "Get-togethers, anniversaries, family trips, or any other social gathering? Let us create a unique experience for you.",
-        image: "https://kurifturesorts.com/_nuxt/img/SocialEvents.8fadfab.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/14.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",

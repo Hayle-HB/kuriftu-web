@@ -25,13 +25,10 @@ const Event: React.FC = () => {
             <Row className="listing" >
                     {
                     eventPageData.events.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={false} hasLinks={true} linkText={item.linkText} linkURL={item.link} third={true} />
+                        <Col sm={12} md={6}><BasicTile item={item} index={index+1} reveresed={false} hasLinks={true} linkText={item.linkText} linkURL={item.link} third={true} /></Col>
                     ))
             }
             </Row>
-            
-            
-            
         </Container>
         
     )

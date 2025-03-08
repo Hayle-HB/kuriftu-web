@@ -3,8 +3,8 @@ export const eventPageData = {
   subtitle: "",
   carouselImages: [
     "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa21.jpg",
-    "https://kurifturesorts.com/_nuxt/img/LakeSide.01bf8ea.webp",
-    "https://kurifturesorts.com/_nuxt/img/1.0a370e9.webp"
+    "https://kuriftu-public-media.s3.amazonaws.com/tana/6.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/awash/17.webp"
   ],
   image:"https://kuriftu-public-media.s3.amazonaws.com/images/event.jpg",
 
@@ -22,7 +22,7 @@ export const eventPageData = {
       title: "Kuriftu Resort & Spa Awash",
       description:
         "Located on the Southern tip of Awash National Park, our one-of-a-kind boutique resort suspended over a waterfall places guests at an elevation that is unique to our property. With views of crocodiles on the river bank, the refreshing mist from the edge of the falls paired with unmatched scenery, we offer the ultimate experience to our visitors.",
-      image: "https://kurifturesorts.com/_nuxt/img/TheFallsRestaurant&Bar.69968c3.webp", // Replace with the actual image URL
+      image: "https://kuriftu-public-media.s3.amazonaws.com/awash/18.webp", // Replace with the actual image URL
       link: "/resorts/awash/event",
       // Replace with the actual link URL
       isEnquiryForm: false,

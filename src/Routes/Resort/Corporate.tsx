@@ -32,18 +32,24 @@ const Corporate: React.FC = () => {
                     ))
             }
             </Row>
-            <Row>
-                <Col>
-                    <h1 className="text-center pt-5 fs-1">Our Venues</h1>
-                </Col>
-            </Row>
-            <Row className="listing gx-2" >
-                    {
-                    corporate.venus.map((item, index) => (
-                        <Col md={4} sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  /></Col> 
-                    ))
+            {
+                corporate.venus.length > 0 &&
+                <>
+                    <Row>
+                        <Col>
+                            <h1 className="text-center pt-5 fs-1">Our Venues</h1>
+                        </Col>
+                    </Row>
+                    <Row className="listing gx-2" >
+                            {
+                            corporate.venus.map((item, index) => (
+                                <Col md={4} sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={false} third={true}  /></Col> 
+                            ))
+                    }
+                    </Row>
+                </>
             }
-            </Row>
+            
             
         </Container>
         

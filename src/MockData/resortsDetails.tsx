@@ -49,9 +49,9 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
       "491 km from Addis Ababa Bole International AirportLake Tana Ethiopia",
     email: "booking@kurifturesorts.com",
     rating: 5,
-    cover_image: "https://kurifturesorts.com/_nuxt/img/acc.21e7f6a.webp",
+    cover_image: "https://kuriftu-public-media.s3.amazonaws.com/tana/9.webp",
     cover_video:
-      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/tana720p.mp4",
+      "https://kuriftu-public-media.s3.amazonaws.com/tana/tana720p.mp4",
   },
   awash: {
     isIframe: true,
@@ -116,6 +116,6 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     email: "booking@kurifturesorts.com",
     rating: 0,
     cover_image: "https://kuriftu-public-media.s3.amazonaws.com/boston/boston16.jpg",
-    cover_video: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/boston/Boston+Day+Spa+720p.mp4",
+    cover_video: "https://kuriftu-public-media.s3.amazonaws.com/boston/Boston+Day+Spa+720p.mp4",
   }
 };

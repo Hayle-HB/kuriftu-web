@@ -90,7 +90,7 @@ export const landingData = {
     subtitle: "FEATURED STORY",
     description:
       "Located on the northern tip of Bishoftu encompassing the smallest of the four lakes lies our flagship resort, Kuriftu Resort & Spa Bishoftu. Born from Mr. Tadiwo's vision to create luxury resort destinations in neighboring cities of the capital, this resort made its mark in 2007 as the first 5-star resort in the country. With just 14 rooms and a lakefront restaurant at the time, Mr. Tadiwo made his official debut by setting the standard for luxury and exquisite service, attracting guests from around the world to this unique establishment.",
-    image: "https://kurifturesorts.com/_nuxt/img/FeaturedStory.6dcf1a8.webp",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu_cover.jpg",
     linkText: "Explore",
     link: "#",
   },

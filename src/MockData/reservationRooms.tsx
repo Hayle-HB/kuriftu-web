@@ -40,7 +40,7 @@ export const reservationRooms: ReservationItemModal[] = [
     slug: "entoto",
   },
   {
-    image: "https://kurifturesorts.com/_nuxt/img/Tana.303f00c.webp",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/tana/9.webp",
     title: "Kuriftu Resort & Spa Lake Tana",
     subtitle: "Bahirdar, Ethiopia",
     price: "$300",

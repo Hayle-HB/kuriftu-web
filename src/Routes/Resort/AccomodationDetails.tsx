@@ -42,16 +42,25 @@ const AccomodationDetails: React.FC = () => {
                 index={0}
              />
             <ListHero classNames="" list={detailAccommodation.amenities} title="Ameneties" />
-            <Row className="listing" >
-                <Col sm={12} style={{textAlign: 'center'}}><h1>Other Accommodations</h1></Col>
-                <Col>
+            {
+                detailAccommodation.otherAccomodation.length > 0 &&
+                <>
+                <Row className="listing" >
+                    <h1 style={{textAlign: 'center'}}>Other Accommodations</h1>
+                </Row>
+                <Row>
                     {
-                    detailAccommodation.otherAccomodation.map((item, index) => (
-                        <BasicTile item={item} index={item.id} reveresed={index % 2 === 0 ? true: false} hasLinks={true} linkText="Learn More and Book" linkURL={`/resorts/${slug}/acc/${item.id}`} />
-                    ))
+                        detailAccommodation.otherAccomodation.map((item, index) => (
+                            <Col sm={12} md={3}><BasicTile item={item} index={item.id} reveresed={index % 2 === 0 ? true: false} hasLinks={true} linkText="Learn More and Book" linkURL={`/resorts/${slug}/acc/${item.id}`} square={true}/> </Col>
+                        ))
+                    }
+                </Row>
+                    
+                        
+               
+                </>
             }
-                </Col>
-            </Row>
+            
             
             
             

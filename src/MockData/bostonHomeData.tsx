@@ -29,7 +29,7 @@ export const bostonHomeData = {
   {
     "title": "Steam / Sauna / Jacuzzi",
     "description": "Rejuvenate in our exquisitely designed Steam, Sauna, and Jacuzzi sanctuary, where art, wellness, and indulgence create the ultimate relaxation experience.",
-    "image": "https://kurifturesorts.com/_nuxt/img/SteamSaunaJaccuzi.644ea57.webp"
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/boston/44.webp"
   },
   {
     "title": "Massage Cave",

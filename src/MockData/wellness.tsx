@@ -39,7 +39,7 @@ export const WELLNESS: Record<string, WellnessModal> = {
     ],
 
     isLink: true,
-    spaMenuLink: "https://kurifturesorts.com/entotoSpa.pdf",
+    spaMenuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/entotoSpa.pdf",
     items: [
       
     ],
@@ -65,12 +65,12 @@ export const WELLNESS: Record<string, WellnessModal> = {
     ],
     wellness: [
       {
-        image: "https://kurifturesorts.com/_nuxt/img/mass.bb8baa5.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu24.webp",
         title: "Relax, Rebalance & Restore",
         description: "Venture to the depths of Bishoftu's natural landscape, tap into your happy place to nourish your body with mindful experiences.",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/openWindow.5839f5b.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu3.jpg",
         title: "Full-Day Retreats",
         description: "Give yourself a break from the stresses of everyday life - not only will a full day of wellness-related activities benefit your mental health, but your level of efficiency at work as well! It is up to each individual to care for themselves and take time to disconnect from draining lifestyles.",
       },
@@ -84,7 +84,7 @@ export const WELLNESS: Record<string, WellnessModal> = {
       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/14.JPG",
     ],
     isLink: true,
-    spaMenuLink: "https://kurifturesorts.com/bishoftuSpa.pdf",
+    spaMenuLink: "",
     items: [
       
     ],
@@ -106,23 +106,23 @@ export const WELLNESS: Record<string, WellnessModal> = {
     description:
       "Kuriftu Resort & Spa Lake Tana offers a serene environment where relaxation and wellness are intertwined. Guests can immerse themselves in the tranquil surroundings, enjoying a range of services designed to rejuvenate the mind, body, and soul.",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/2.975870d.webp",
-      "https://kurifturesorts.com/_nuxt/img/Wellness.bd707c7.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/tana/7.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/tana/8.webp",
 
     ],
     wellness: [
       {
-        image: "https://kurifturesorts.com/_nuxt/img/2.975870d.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/7.webp",
         title: "Relax, Rebalance & Restore",
-        description: "Venture to the depths of Bishoftu's natural landscape, tap into your happy place to nourish your body with mindful experiences.",
+        description: "Venture to the depths of Bahirdar's natural landscape, tap into your happy place to nourish your body with mindful experiences.",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/2L.91c45e9.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/7.webp",
         title: "Full-Day Retreats",
         description: "Give yourself a break from the stresses of everyday life - not only will a full day of wellness-related activities benefit your mental health, but your level of efficiency at work as well! It is up to each individual to care for themselves and take time to disconnect from draining lifestyles.",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/well.fcab3b9.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/8.webp",
         title: "Rest Easy Experience",
         description:"Our spa services stem from the genuine care we have for each individual's health and well-being - browse through our Forest Spa menu or feel free to contact one of our consultants for advice based on your own personal needs.",
       },
@@ -151,24 +151,24 @@ export const WELLNESS: Record<string, WellnessModal> = {
     description:
       "Our Spa offers unique massage rooms located on the banks of the Awash River, where guests can relax to the sound of the waterfall as their senses are awakened with natural aromas. Our focus is to have guests reconnect with nature at its core with minimal distractions.",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/3.1b81bb4.webp",
-      "https://kurifturesorts.com/_nuxt/img/1.02cca05.webp",
-      "https://kurifturesorts.com/_nuxt/img/4.33fc8c3.webp",
-      "https://kurifturesorts.com/_nuxt/img/5.f39e554.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/awash/4.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/awash/5.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/awash/6.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/awash/7.webp",
     ],
     wellness: [
       {
-        image: "https://kurifturesorts.com/_nuxt/img/well2.82034ac.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/5.webp",
         title: "Relax, Rebalance & Restore",
         description: "Our focus is to have guests reconnect with nature at its core with minimal distractions.",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/long1.9fafbdc.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/8.webp",
         title: "Full-Day Retreats",
         description: "Take the weekend to soak up the sun, join our sunrise and sunset yoga, lounge in the dipping pool, book an evening massage, and end the day with a beautiful candlelit dinner.",
       },
       {
-        image: "https://kurifturesorts.com/_nuxt/img/long2.5a8bb06.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/9.webp",
         title: "Rest Easy Experience",
         description: "Give your body what it ultimately craves - rest.",
       },
@@ -177,7 +177,7 @@ export const WELLNESS: Record<string, WellnessModal> = {
       
     ],
     isLink: true,
-    spaMenuLink: "https://kurifturesorts.com/AwashSpamenu.pdf",
+    spaMenuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/AwashSpamenu.pdf",
     items: [
       
     ],

@@ -1,8 +1,4 @@
-// {
-//     giftId: 1,
-//     title: "Featured",
-//     images: ["https://kurifturesorts.com/_nuxt/img/1.6474ed2.jpg"],
-//   },
+
 
 import { GiftVoucherModal } from "../interfaces/giftVoucherModal";
 

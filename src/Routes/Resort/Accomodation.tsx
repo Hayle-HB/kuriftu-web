@@ -20,18 +20,19 @@ const Accomidation: React.FC = () => {
         <Container className="accomidation-page" fluid>
             <Row className="resorts-subpage-hero">
                 <div className="hero" style={{ backgroundImage: `url(${accomidation.accomodations[0].image})` }} >
-                    <h1>{accomidation.title}</h1>
+                    
                 </div>
             </Row>
             <Row>
                 <div className="hero-text" >
+                    <h1 style={{textAlign: 'center', marginBottom: '2rem'}}>{accomidation.title}</h1>
                     <p>{accomidation.description}</p>
                 </div>
             </Row>
             <Row className="listing" >
                     {
                     accomidation.accomodations.map((room, index) => (
-                        <Col md={6}><BasicTile item={room} index={index+1} reveresed={false} hasLinks={true} linkText="Learn More and Book" linkURL={`${index+1}`} square={true} /></Col>
+                        <Col md={6} className="mb-5"><BasicTile item={room} index={index+1} reveresed={false} hasLinks={true} linkText="Learn More and Book" linkURL={`${index+1}`} square={true} /></Col>
                     ))
             }
             </Row>

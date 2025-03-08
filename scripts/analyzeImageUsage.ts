@@ -10,8 +10,8 @@ const saveExcel = args.includes("-f"); // Check if "-f" flag is present
 
 const directory = "src/**/*.{js,ts,tsx,json}";
 
-// Regex for detecting media files (images & videos)
-const MEDIA_REGEX = /(["'`])(\/[^"'`]+\.(jpg|jpeg|png|webp|gif|mp4|mov|MOV|MP4))\1|(["'`])(https?:\/\/[^"'`]+\.(jpg|jpeg|png|webp|gif|mp4|mov|MOV|MP4))\4/gi;
+// Regex for detecting media files (images & videos), explicitly excluding AWS S3 links
+const MEDIA_REGEX = /(["'`])((\/[^"'`]+\.(jpg|jpeg|png|webp|gif|mp4|mov|MOV|MP4))|((https?:\/\/(?!s3\.)[^"'`]+\.(jpg|jpeg|png|webp|gif|mp4|mov|MOV|MP4))))\1/gi;
 
 // Define output file names
 const CSV_FILE = "media_references.csv";
@@ -35,10 +35,11 @@ async function analyzeMediaUsage() {
       const lines = content.split("\n");
 
       lines.forEach((line, index) => {
-        let match;
-        while ((match = MEDIA_REGEX.exec(line)) !== null) {
-          const link = match[2] || match[5]; // Capture local or prod link
-          if (link) {
+        for (const match of line.matchAll(MEDIA_REGEX)) {
+          const link = match[2]; // Extract matched media link
+          
+          // Explicitly filter out S3 links
+          if (!link.includes("s3.amazonaws.com") && !/https?:\/\/[^"'`]*\.s3\./.test(link)) {
             mediaReferences.push({
               link,
               filePath: file,
@@ -49,7 +50,7 @@ async function analyzeMediaUsage() {
       });
     }
 
-    console.log(`✅ Found ${mediaReferences.length} media references.`);
+    console.log(`✅ Found ${mediaReferences.length} media references (excluding S3 links).`);
     await saveToCSV(mediaReferences);
     
     if (saveExcel) {

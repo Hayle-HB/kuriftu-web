@@ -18,7 +18,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title: "Adventure",
         description:
           "Take time to not only ride, but connect with our wonderful horses at the stable, these beauties have been trained to care for our guests as much as we do! ",
-        image: "https://kurifturesorts.com/_nuxt/img/1.8b94d4d.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/entoto30.webp",
       },
     ],
 
@@ -89,9 +89,9 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     description:
       "Discover a world of adventure in Kuriftu Bishoftu - as the leaders of innovation in the hospitality industry in Ethiopia, we pride ourselves in curated unmatched experiences",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/Swimming2.c58b523.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu25.webp",
       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu8.jpg",
-      "https://kurifturesorts.com/_nuxt/img/Kayaking.8a09cfa.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu21.webp",
     ],
     experiences: [
       {
@@ -99,7 +99,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title: "Waterpark",
         description:
           "Make a splash as you slide into the freshwater surrounding the Kuriftu Waterpark! As the biggest waterpark in East Africa, we offer a range of activities from a variety of slides to a wave pool that fits up to 300 rafts at once!",
-        image: "https://kurifturesorts.com/_nuxt/img/WaterparkF.48a36af.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu26.webp",
       },
     ],
     items: [
@@ -158,9 +158,9 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     description:
       "Discover a world of adventure in Kuriftu Tana - as the leaders of innovation in the hospitality industry in Ethiopia, we pride ourselves in curated unmatched experiences",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/TripToTheFalls.ffa9182.webp",
-      "https://kurifturesorts.com/_nuxt/img/MonastryVisit.5d60dd6.webp",
-      "https://kurifturesorts.com/_nuxt/img/CabanaDinig.3d6bf71.webp",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/10.webp",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/11.webp",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/12.webp",
     ],
     experiences: [
       {
@@ -168,41 +168,41 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title: "Boat Ride",
         description:
           "Cruise on one of our boat rides along Lake Tana with a crisp view of the sunrise or sunset, you might get lucky and see some Hippo's along the way!",
-        image: "https://kurifturesorts.com/_nuxt/img/BoatRide.9d78045.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/13.webp",
       },
     ],
     items: [
       {
         image:
-          "https://kurifturesorts.com/_nuxt/img/MonastryVisit.5d60dd6.webp",
+          "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/11.webp",
         title: "Monastry Visit",
         description:
           "Venture out to the holy monastries that make up the core of Bahirdar, these tours are sought after by those looking to learn a bit more about Ethiopian Orthodox Church and history, or for those on pilgrimages",
       },
       {
         image:
-          "https://kurifturesorts.com/_nuxt/img/CabanaDinigLong.f713425.webp",
+          "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/12.webp",
         title: "Cabana Dining",
         description:
           "Lounge along our cabanas overlooking the lake, enjoy the peace and quiet of the setting",
       },
       {
         image:
-          "https://kurifturesorts.com/_nuxt/img/SwimmingPoolLong.3075d7d.webp",
+          "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/8.web",
         title: "Swimming Pool",
         description:
           "Enjoy a morning swim or cool down after a long day of adventure in our swimming pool and cabana area",
       },
       {
         image:
-          "https://kurifturesorts.com/_nuxt/img/BirdWatching1.15a4456.webp",
+          "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/14.webp",
         title: "Bird watching",
         description:
           "With an enchanting ecosystem and luxurious natural setting, Kuriftu Resorts & Spa ranks among the be...",
       },
       {
         image:
-          "https://kurifturesorts.com/_nuxt/img/TripToTheFalls.ffa9182.webp",
+          "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/10.webp",
         title: "Trip to the Falls",
         description:
           "Come and explore nature and wilderness with our Guided hiking and tours....",
@@ -218,9 +218,9 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     description:
       "Kuriftu Resort Awash Falls provides a limited number of nature based activities that compliment the national park",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/Experience.0da9d1f.webp",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/10.webp",
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/awash1.jpg",
-      "https://kurifturesorts.com/_nuxt/img/awash-cover.8aba739.webp",
+      "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/11.webp",
     ],
     experiences: [
       {
@@ -228,7 +228,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title: "Camel Ride",
         description:
           "Venture into the depths of the national park on a relaxing camel ride tour!",
-        image: "https://kurifturesorts.com/_nuxt/img/CamelRide.3ed74a1.webp",
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/12.webpp",
       },
     ],
     items: [
@@ -236,7 +236,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title: "Wildlife Viewing",
         description:
           "Crocodiles and Monitor Lizards are commonly seen at the base of the waterfall or on the rocky surrounding structures. Follow the path down to get a better look but be sure to keep your distance from any wild animals out of respect for the environment. Keep an eye out for the vast number of bird species located around the park and see if you can spot a Lesser / Greater Kudu while trekking!",
-        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/awash1.jpg",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/awash1.jpg",
       },
       {
         title: "Hiking",
@@ -249,20 +249,8 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title: "Yoga",
         description:
           "A healing process that leads to more centeredness and less distress. Sunrise and sunset yoga are offered on weekends at Kuriftu Awash Falls, a time to perfectly harmonize the mind and body. (based on availability)",
-        image: "https://kurifturesorts.com/_nuxt/img/Yoga.3b1b821.webp",
-      },
-      {
-        title: "Mountain Biking",
-        description:
-          "Get your heart pumping and your blood circulating! Pave a trail and explore the Awash National Park - get in touch with your adventurous side.",
-        image: "https://kurifturesorts.com/_nuxt/img/long3.cd91821.webp",
-      },
-      {
-        title: "Spa",
-        description:
-          "Relax and unwind - Let us pamper you in our unique massage rooms overlooking the river, natural warm air infusing with our in-house mixed aroma and the soothing sound of the waterfall.",
-        image: "https://kurifturesorts.com/_nuxt/img/3.1b81bb4.webp", // No image left in the gallery
-      },
+        image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/awash/13.webp",
+      }
     ],
 
     featured: [

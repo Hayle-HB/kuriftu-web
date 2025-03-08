@@ -7,17 +7,19 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
     description:
       "Kuriftu Entoto Adventure Park is the perfect destination for our corpoate clients to take full advantage of their benefits. From nature based conferences to company wide retreats, our team places value on the needs of each individual, curating the ultimate getaway",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/s5.52f7de0.webp",
-      "https://kurifturesorts.com/_nuxt/img/s2.147bc76.webp",
-      "https://kurifturesorts.com/_nuxt/img/s1.84eb715.webp",
-      "https://kurifturesorts.com/_nuxt/img/s2.147bc76.webp",
+      
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto13.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/5.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/2.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
+      
     ],
     celebrations: [
       {
         title: "Corporate Rate Agreement",
         description:
           "Let us take care of your teams by rejuvinating and stregthening their relations with one another to optimize their level of efficiency by becoming corporate clients - having access to our extensive list of activities, destinations and experineces within the wellness space will help companies reap the benefits. Join the Kuriftu Family by making an enquiry with our Corporate Sales Team and we will customize your membership accordingly!",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/5.jpg",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto12.jpg",
         link: "https://kurifturesorts.com/corporate_entoto.pdf",
         isEnquiryForm: false,
         linkText: "Entoto Corporate Package",
@@ -26,7 +28,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         title: "Corporate Retreat",
         description:
           "Treat your team to a wild adventure at Kuriftu Entoto Adventure Park - our team can curate the perfect experience ranging from outdoor meetings in our Hammock Village, adventurous activities as ice breakers and orientation for new staff, rejuvinating spa services to relax the mind, and many more",
-        image: "https://kurifturesorts.com/_nuxt/img/re.0af1692.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/5.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -36,7 +38,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         title: "Host A Meeting Or Conference",
         description:
           "Allow us to host your companies conference, meetings or events in our Mountain Peak Restaurant. Break out sessions can be facilitated in the surrounding cabanas for an alternative experience",
-        image: "https://kurifturesorts.com/_nuxt/img/conf.5532829.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/7.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
@@ -47,7 +49,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
       {
         title: "Multi-purpose Cabin",
         image:
-          "https://kurifturesorts.com/_nuxt/img/MultiPurposeCabin.8dde207.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/7.webp",
         description:
           "In the middle of nature, a secluded meeting room is a perfect place for your meeting, training, or brainstorming session. With a capacity of 80 people (theatrical sitting) book your conference destination right here in the city yet away from the hustle and bustle.",
       },
@@ -55,7 +57,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
       {
         title: "Entoto Peak Restaurant",
         image:
-          "https://kurifturesorts.com/_nuxt/img/EntotoPeakRestaurant.54d7809.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
         description:
           "At the end of a long day of treking uphill lies our Mountain Peak Restaurant, a spacious dining hall with mixed cuisine and a variety of seating stations that overlook the incredible landscape.",
       },
@@ -63,7 +65,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
       {
         title: "The Riders Ranch",
         image:
-          "https://kurifturesorts.com/_nuxt/img/TheRidersRanch.2035096.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
         description:
           "Enjoy our specialty Chekla Tibs while overlooking the horse stable and its track at The Riders Ranch.",
       },
@@ -71,7 +73,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
       {
         title: "Castel Bar & Grill",
         image:
-          "https://kurifturesorts.com/_nuxt/img/CastelBar&Grill.1f72ad2.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/4.webp",
         description:
           "Nestled in the forest you'll find our open air Castel Wine Bar & Grill with the Rope Course literally overhead, this experience is like no other!",
       },
@@ -209,9 +211,9 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
     description:
       "With the tranquil atmosphere that surrounds this resort, corporate clients are able to take full advantage of their benefits. Our team places value on the needs of each individual, curating the ultimate getaway",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/ConferenceHall.f84c697.webp",
-      "https://kurifturesorts.com/_nuxt/img/CorporateMembership.027accb.webp",
-      "https://kurifturesorts.com/_nuxt/img/CorporateRetreat.3b7233d.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/tana/5.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/tana/dining/3.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/tana/17.webp",
     ],
     celebrations: [
       {
@@ -219,7 +221,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         description:
           "Let us take care of your teams by rejuvinating and stregthening their relations with one another to optimize their level of efficiency by becoming corporate clients - having access to our extensive list of activities, destinations and experineces within the wellness space will help companies reap the benefits. Join the Kuriftu Family by making an enquiry with our Corporate Sales Team and we will customize your membership accordingly!",
         image:
-          "https://kurifturesorts.com/_nuxt/img/ConferenceHall.f84c697.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/tana/5.webp",
         link: "",
         linkText: "Make an enquiry",
         isEnquiryForm: true,
@@ -230,7 +232,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         description:
           "Allow us to host your companies conference, meetings or events in our Mountain Peak Restaurant. Break out sessions can be facilitated in the surrounding cabanas for an alternative experience",
         image:
-          "https://kurifturesorts.com/_nuxt/img/CorporateMembership.027accb.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/tana/dining/3.webp",
         link: "",
         linkText: "Make an enquiry",
         isEnquiryForm: true,
@@ -241,7 +243,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         description:
           "Treat your team to a wild adventure at Kuriftu Entoto Adventure Park - our team can curate the perfect experience ranging from outdoor meetings in our Hammock Village, adventurous activities as ice breakers and orientation for new staff, rejuvinating spa services to relax the mind, and many more",
         image:
-          "https://kurifturesorts.com/_nuxt/img/CorporateRetreat.3b7233d.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/tana/17.webp",
         link: "",
         linkText: "Make an enquiry",
         isEnquiryForm: true,
@@ -251,7 +253,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
     venus: [
       {
         title: "Conference Hall",
-        image: "https://kurifturesorts.com/_nuxt/img/2.cba8b20.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/5.webp",
         description:
           "Our conference hall accommodates up to 20 people - fostering a closer bond for those participating in any scheduled experince, whether it be a retreat or meeting.",
       },
@@ -288,15 +290,16 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
     description:
       "Kuriftu Awash Falls provides corporate clients a sense of exclusivity while tucked away in the solitude of Awash National Park",
     carouselImages: [
-      "https://kurifturesorts.com/_nuxt/img/co.e67c272.webp",
-      "https://kurifturesorts.com/_nuxt/img/co2.c47cb91.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/awash/dining/2.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/awash/dining/3.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/awash/21.webp"
     ],
     celebrations: [
       {
         title: "Corporate Rate Agreement",
         description:
           "Let us take care of your teams by rejuvinating and stregthening their relations with one another to optimize their level of efficiency by becoming corporate clients - having access to our extensive list of activities, destinations and experineces within the wellness space will help companies reap the benefits. Join the Kuriftu Family by making an enquiry with our Corporate Sales Team and we will customize your membership accordingly!",
-        image: "https://kurifturesorts.com/_nuxt/img/Co3.931a172.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/dining/1.webp",
         link: "",
         linkText: "Make an enquiry",
         isEnquiryForm: true,
@@ -306,7 +309,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         title: "Corporate Retreat",
         description:
           "Show appreciation to your teams by treating them to a private getaway to escape everyday life. They deserve it don't they?",
-        image: "https://kurifturesorts.com/_nuxt/img/co2.c47cb91.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/dining/2.webp",
         link: "",
         linkText: "Make an enquiry",
         isEnquiryForm: true,
@@ -316,7 +319,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         title: "Host A Meeting Or Conference",
         description:
           "Allow us to get creative with meeting and conference spaces in this small, but luxurious destination - whether is be booking the Presidential Suite to facilitate meetings for teams indoors or on the terrace showcasing the best view of the resort, or reserving the pool deck beautifully shaded - the choice is yours!",
-        image: "https://kurifturesorts.com/_nuxt/img/co.e67c272.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/dining/3.webp",
         link: "",
         linkText: "Make an enquiry",
         isEnquiryForm: true,

@@ -39,13 +39,11 @@ export const Gallery: Record<string, string[]> = {
     "https://kuriftu-public-media.s3.amazonaws.com/tana/6.webp",
   ],
   awash: [
-    "https://kurifturesorts.com/_nuxt/img/1.cba30ab.webp",
-    "https://kurifturesorts.com/_nuxt/img/2.d4feaba.webp",
-    "https://kurifturesorts.com/_nuxt/img/TheFallsRestaurant&Bar.69968c3.webp",
-    "https://kurifturesorts.com/_nuxt/img/4.33fc8c3.webp",
-    "https://kurifturesorts.com/_nuxt/img/5.9fafbdc.webp",
-    "https://kurifturesorts.com/_nuxt/img/jun1.6e87593.webp",
-    "https://kurifturesorts.com/_nuxt/img/3.1b81bb4.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/awash/7.webpp",
+    "https://kuriftu-public-media.s3.amazonaws.com/awash/awash3.webpp",
+    "https://kuriftu-public-media.s3.amazonaws.com/awash/8.webpp",
+    "https://kuriftu-public-media.s3.amazonaws.com/awash/4.webpp",
+    "https://kuriftu-public-media.s3.amazonaws.com/awash/6.webpp",
   ],
   africanVillage: [
     "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa22.jpg",
@@ -71,13 +69,9 @@ export const Gallery: Record<string, string[]> = {
   waterpark: [
     "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark1.jpg",
     "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark2.jpg",
-    "https://kurifturesorts.com/_nuxt/img/waterpark2.7574045.jpg",
-    "https://kurifturesorts.com/_nuxt/img/kuriftu%20dec%2022-5422-min%20(1).e20e04c.jpg",
-    "https://kurifturesorts.com/_nuxt/img/dinslide2.ca27dc6.webp",
-    "https://kurifturesorts.com/_nuxt/img/KuriftuBuffet.ed0beaf.webp",
-    "https://kurifturesorts.com/_nuxt/img/_DSC5820%20(2)-min.c7b8704.jpg",
-    "https://kurifturesorts.com/_nuxt/img/TreatByThePorch.df2143d.webp",
-    "https://kurifturesorts.com/_nuxt/img/dinslide5.e0dfde1.webp",
+    "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark3.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark4.webp",
+    
   ],
   boston: [
     "https://kuriftu-public-media.s3.amazonaws.com/boston/boston14.jpg",
