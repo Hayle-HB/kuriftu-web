@@ -13,10 +13,10 @@ const PaymentOptions: React.FC<PaymentOptionsProps> = ({ paymentMethod, setPayme
       <Row>
         <Col>
           <Button variant="primary" className="payment-btn" onClick={() => setPaymentMethod("dashen")} disabled={paymentMethod === "dashen"}>
-            Dashen
+            International
           </Button>
           <Button variant="primary" className="payment-btn" onClick={() => setPaymentMethod("chapa")} disabled={paymentMethod === "chapa"}>
-            Chapa
+            Local
           </Button>
         </Col>
       </Row>

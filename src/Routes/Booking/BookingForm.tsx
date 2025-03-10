@@ -129,7 +129,8 @@ const BookingForm: React.FC = () => {
       } else {
         const chapaResponse = await processChapaPayment(formValues, amount.toString(), reservationId);
         if (chapaResponse.data.status === "success") {
-          window.open(chapaResponse.data.data.data.checkout_url, "_blank");
+           navigate(chapaResponse.data.data.data.checkout_url);
+          //window.open(chapaResponse.data.data.data.checkout_url, "_blank");
         }
       }
 /**
