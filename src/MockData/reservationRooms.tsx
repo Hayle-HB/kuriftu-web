@@ -1,3 +1,4 @@
+import { RESORTDETAILS } from "./resortsDetails";
 export type ReservationItemModal = {
   image: string;
   title: string;
@@ -8,9 +9,11 @@ export type ReservationItemModal = {
   isAvailable: boolean;
   slug: string;
 };
+
+
 export const reservationRooms: ReservationItemModal[] = [
   {
-    image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
+    image: RESORTDETAILS['africanVillage'].cover_image,//"https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
     title: "Kuriftu Resort & Spa African Village",
     subtitle: "Addis Ababa, Ethiopia",
     price: "$300",
@@ -20,7 +23,7 @@ export const reservationRooms: ReservationItemModal[] = [
     slug: "africanVillage",
   },
   {
-    image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/1.jpg",
+    image: RESORTDETAILS['bishoftu'].cover_image, //"https://kuriftu-public-media.s3.amazonaws.com/bishoftu/1.jpg",
     title: "Kuriftu Resort & Spa Bishoftu",
     subtitle: "Bishoftu, Ethiopia",
     price: "$173",
@@ -30,7 +33,7 @@ export const reservationRooms: ReservationItemModal[] = [
     slug: "bishoftu",
   },
   {
-    image: "https://kuriftu-public-media.s3.amazonaws.com/entoto/entoto_cover.jpg",
+    image: RESORTDETAILS['entoto'].cover_image,//"https://kuriftu-public-media.s3.amazonaws.com/entoto/entoto_cover.jpg",
     title: "Kuriftu Resort & Spa Entoto",
     subtitle: "Addis Ababa, Ethiopia",
     price: "$135",
@@ -40,7 +43,7 @@ export const reservationRooms: ReservationItemModal[] = [
     slug: "entoto",
   },
   {
-    image: "https://kuriftu-public-media.s3.amazonaws.com/tana/9.webp",
+    image: RESORTDETAILS['laketana'].cover_image,//"https://kuriftu-public-media.s3.amazonaws.com/tana/9.webp",
     title: "Kuriftu Resort & Spa Lake Tana",
     subtitle: "Bahirdar, Ethiopia",
     price: "$300",

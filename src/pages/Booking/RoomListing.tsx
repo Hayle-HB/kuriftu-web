@@ -19,23 +19,23 @@ import Header from "../../components/Header/Header";
 const imagesUrl: Record<string, any> = {
   bishoftu: {
     6:
-      "https://kurifturesorts.com/_nuxt/img/bis_king.f903f0a.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/3.webp",
     9:
-      "https://kurifturesorts.com/_nuxt/img/bis_king_vil.ab883eb.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/3.webp",
     7:
-      "https://kurifturesorts.com/_nuxt/img/bis_twins.9c2d1c7.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/3.webp",
   },
   entoto: {
     20:
-      "https://kurifturesorts.com/_nuxt/img/2.3cec2b4.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto27.jpg",
     21:
-      "https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto27.jpg",
   },
   africanVillage: {
     23:
-      "https://kurifturesorts.com/_nuxt/img/bis_king_vil.ab883eb.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa30.jpeg",
     22:
-      "https://kurifturesorts.com/_nuxt/img/Glamping.a03f5c8.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa30.jpeg",
   },
 };
 
@@ -257,7 +257,7 @@ const RoomListing = () => {
           {roomListing.length > 0 ? (
             <Col xs={12} sm={12} md={8}>
               {roomListing.map((item, index) => {
-                console.log("Item: ",item.room_details_id);
+                console.log("Item: ",item);
                 return (
                   (
                 <RoomCard
