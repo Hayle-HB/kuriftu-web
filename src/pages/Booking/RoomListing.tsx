@@ -7,6 +7,7 @@ import moment from "moment";
 import { RESORTDETAILS } from "../../MockData/resortsDetails";
 
 import RoomCard from "../../components/RoomCard";
+import RoomCardPH from "../../UI/PlaceHolder/RoomCardPH";
 import RoomModal from "../../components/RoomModal";
 import CartEmpty from "../../components/CartEmpty";
 import CartItem from "../../components/RoomCartItem";
@@ -114,7 +115,7 @@ const RoomListing = () => {
 
   const [rooms, setRooms] = useState<Room[]>([]);
   const [groupedRooms, setGroupedRooms] = useState<GroupedRooms>({});
-
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
 
   // Initialize dates
@@ -130,7 +131,10 @@ const RoomListing = () => {
   });
 
   useEffect(() => {
-    getData(dates);
+    setIsLoading(true)
+    setGlobalDates(formatDate(dates.checkIn), formatDate(dates.checkOut)); // ✅ Update global context
+    
+    getData(dates).finally(()=>{setIsLoading(false)});
   }, [dates]);
 
 
@@ -254,7 +258,13 @@ const RoomListing = () => {
         <DateAndTimePicker isShow={true} onSelectAvailability={handleDates} />
         
         <Row className="g-4 p-4">
-          {roomListing.length > 0 ? (
+          {
+            isLoading ? (
+              <Col  xs={12} sm={12} md={8}>
+               < RoomCardPH />
+              </Col>
+            ):(
+              roomListing.length > 0 ? (
             <Col xs={12} sm={12} md={8}>
               {roomListing.map((item, index) => {
                 console.log("Item: ",item);
@@ -278,7 +288,10 @@ const RoomListing = () => {
             <Col xs={12} sm={12} md={4}>
               <p>No Room Available</p>
             </Col>
-          )}
+          )
+            )
+          }
+          
           <Col xs={12} sm={12} md={4}>
             {roomsCart.length === 0 ? (
               <CartEmpty />
