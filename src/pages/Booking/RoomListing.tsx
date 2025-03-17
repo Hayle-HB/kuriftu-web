@@ -39,6 +39,7 @@ const imagesUrl: Record<string, any> = {
       "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa30.jpeg",
   },
 };
+const KAV_Description = "Kuriftu Resort & Spa Africa Village highlights 54 villas that showcase the individual beauty of each African country ranging from food, art, books, cultural artifacts, fabrics, flags, and so much more!";
 
 // Interfaces
 interface RoomListingProps {
@@ -139,7 +140,7 @@ const RoomListing = () => {
 
 
   const processRooms = (data: Room[][]) => {
-    //console.log(data)
+    console.log(data)
     const allRooms = data.flat(); // Flatten the array of arrays
     const filteredRooms = allRooms;//.filter((room) => room.room_location.toLowerCase() === slug);
     //console.log("all r", allRooms);
@@ -157,7 +158,7 @@ const RoomListing = () => {
         roomMap.set(key, {
           available_count: 0, // To be counted
           bed_type: key, // Using room_acc as bed_type
-          complementary_services: room.room_desc || "No details available", // Using description
+          complementary_services: slug === 'africanVillage'? KAV_Description: room.room_desc, // Using description
           id: room.room_id, // Unique room type identifier
           location: room.room_location,
           max_occupancy: parseInt(room.room_occupancy, 10),
@@ -169,12 +170,11 @@ const RoomListing = () => {
       }
 
       // Count available rooms
-      if (room.room_status === "Not_booked") {
       const existingRoom = roomMap.get(key);
       if (existingRoom) {
         existingRoom.available_count += 1;
       }
-      }
+      
     });
 
     setRoomListing(Array.from(roomMap.values()));
