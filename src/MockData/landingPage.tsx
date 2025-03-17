@@ -43,7 +43,7 @@ export const landingData = {
   },
   {
     "category": "ENTOTO PARK, ADDIS ABABA",
-    "title": "kuriftu Resort & Spa Entoto",
+    "title": "Kuriftu Resort & Spa Entoto",
     "subtitle": "ENTOTO PARK, ADDIS ABABA",
     "description": "",
     "image": "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto23.jpg",
