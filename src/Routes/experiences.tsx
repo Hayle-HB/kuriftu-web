@@ -18,7 +18,7 @@ export default function Experience(){
             <Row className="listing" >
                     {
                     ExperiencePage.items.map((item, index) => (
-                        <BasicTile item={item} index={index+1} reveresed={false} hasLinks={true} linkText={item.linkText} linkURL={item.linkURL} third={true} />
+                        <Col md={6} sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={false} hasLinks={true} linkText={item.linkText} linkURL={item.linkURL} /></Col>
                     ))
             }
             </Row>

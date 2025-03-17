@@ -3,7 +3,7 @@ import { ResortDetailsModal } from "../interfaces/resortDetailModal";
 
 export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
   entoto: {
-    name: "kuriftu resort & spa Entoto",
+    name: "Kuriftu resort & spa Entoto",
     region: "ENTOTO PARK, ADDIS ABABA",
     address: "321 Lake View Avenue, Bishoftu, Ethiopia",
     description:
