@@ -37,7 +37,7 @@ export const landingData = {
     "title": "Kuriftu Resort & Spa African Village",
     "subtitle": "ADDIS ABABA",
     "description": "",
-    "image": "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/3.JPG",
+    "image": "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa22.jpg",
     "linkText": "Explore",
     "link": "/resorts/africaVillage"
   },
