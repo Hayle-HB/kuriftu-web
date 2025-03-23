@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <Container className="App">
+      <Container className="App" fluid>
         <Outlet />
       </Container>
       <Footer />
