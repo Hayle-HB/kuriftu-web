@@ -1,0 +1,33 @@
+.horizontal-carousel{
+    .slick{
+        &-dots{
+            display: flex !important;
+            width: 100%;
+            //max-width: 42.1428571429rem;
+            margin: auto;
+            padding: 0;
+
+            li {
+                list-style: none;
+                flex-basis: 100%;
+                margin: 0.9px;
+
+                button {
+                    width: 100%;
+                    border: none;
+                    text-indent: -666666px;
+                    height: 0.8px;
+                    padding: 0;
+                    background: #dad9d7;
+                    cursor: pointer;
+                }
+
+                &.slick-active {
+                    button {
+                        background: #82847f;
+                    }
+                }
+            }
+        }
+    }
+}

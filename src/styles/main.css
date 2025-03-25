@@ -2275,6 +2275,31 @@ footer a:focus {
 .carousel-multi-item .basic-tile-third {
   width: 100%;
 }
+.carousel-multi-item .slick-dots {
+  display: flex !important;
+  width: 100%;
+  max-width: 42.14285714rem;
+  margin: 5.35714286rem auto 0.71428571rem;
+  padding: 0;
+}
+.carousel-multi-item .slick-dots li {
+  list-style: none;
+  flex-basis: 100%;
+  margin-left: 0.25px;
+  margin-right: 0.25px;
+}
+.carousel-multi-item .slick-dots li button {
+  width: 100%;
+  border: none;
+  text-indent: -666666px;
+  height: 1px;
+  padding: 0;
+  background: #dad9d7;
+  cursor: pointer;
+}
+.carousel-multi-item .slick-dots li.slick-active button {
+  background: #82847f;
+}
 .item-box {
   background: lightblue;
   padding: 20px;
@@ -2299,6 +2324,29 @@ footer a:focus {
 }
 .custom-indicators li.active {
   background-color: black;
+}
+.horizontal-carousel .slick-dots {
+  display: flex !important;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+.horizontal-carousel .slick-dots li {
+  list-style: none;
+  flex-basis: 100%;
+  margin: 0.9px;
+}
+.horizontal-carousel .slick-dots li button {
+  width: 100%;
+  border: none;
+  text-indent: -666666px;
+  height: 0.8px;
+  padding: 0;
+  background: #dad9d7;
+  cursor: pointer;
+}
+.horizontal-carousel .slick-dots li.slick-active button {
+  background: #82847f;
 }
 .main-nav-bar {
   background-color: #f3eee7;

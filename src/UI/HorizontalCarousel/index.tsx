@@ -44,7 +44,7 @@ const HorizontalCarousel: React.FC<HorizontalCarouselProps> = ({ items }) => {
   };
 
   return (
-    <div style={{ padding: "5px" }} className="mb-4 mt-4">
+    <div style={{ padding: "5px" }} className="mb-4 mt-4 horizontal-carousel">
       <Slider dotsClass="slick-dots slick-dots-customize mt-4"  {...settings}>
         {items.map((image: any, index) => (
           <div className="p-3 mt-4 mb-4" key={index}>
@@ -55,7 +55,6 @@ const HorizontalCarousel: React.FC<HorizontalCarouselProps> = ({ items }) => {
                 width: "100%",
                 height: index % 2 === 0 ? "300px" : "300px", // Smaller height for even indices
                 objectFit: "cover",
-                borderRadius: "10px",
                 transition: "all 0.3s ease",
                 display: "block",
               }}
