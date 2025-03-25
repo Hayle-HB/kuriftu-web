@@ -169,30 +169,35 @@ const Footer = () => {
             <div className="d-flex flex-wrap gap-2 footer-links-container">
               <a
                 href={socialLink}
+                target="_blank" rel="noreferrer"
                 className="text-dark text-decoration-none"
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>
               <a
                 href="https://twitter.com/kuriftus?lang=en"
+                target="_blank" rel="noreferrer"
                 className="text-dark text-decoration-none"
               >
                 <i className="fa-brands fa-twitter"></i>
               </a>
               <a
                 href="https://www.youtube.com/channel/UCI3Y6eDzcmAchDoGGVJZKgA/videos"
+                target="_blank" rel="noreferrer"
                 className="text-dark text-decoration-none"
               >
                 <i className="fa-brands fa-youtube"></i>
               </a>
               <a
                 href="https://www.facebook.com/kurifturesorts/"
+                target="_blank" rel="noreferrer"
                 className="text-dark text-decoration-none"
               >
                 <i className="fa-brands fa-facebook"></i>
               </a>
               <a
                 href="https://www.linkedin.com/company/kuriftu-resorts/posts/?feedView=all"
+                target="_blank" rel="noreferrer"
                 className="text-dark text-decoration-none"
               >
                 <i className="fa-brands fa-linkedin"></i>
@@ -208,7 +213,7 @@ const Footer = () => {
                 All Copyright © 2025 Kuriftu Resort and Spa.
               </p>
               <p>
-                Powered by <a className="power-by-link" target="blank" href="https://www.pier5studios.com/ ">PIER 5
+                Powered by <a className="power-by-link" target="_blank" rel="noreferrer" href="https://www.pier5studios.com/ ">PIER 5
                 STUDIOS</a>.
               </p>
             
