@@ -15,8 +15,6 @@ const ResortLayout = () => {
     <div>
       <ResortNavBar />
       <Outlet />
-      <AvailabilityCheck />
-
       <style>
         {`
           .active-underline {
