@@ -41,7 +41,7 @@ const MultiItemCarousel: React.FC<MultiItemCarouselProps> = ({
       {
         breakpoint: 1450,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
