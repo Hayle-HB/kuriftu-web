@@ -63,7 +63,7 @@ const Footer = () => {
           </Col>
         </Row>
         <Row style={{paddingLeft:'12px'}}>
-          <Col xs={6} sm={6} md={2} className="text-start mb-3">
+          <Col xs={12} sm={6} md={4} className="text-start mb-3">
             <h6 >More Information</h6>
             <ul className="list-unstyled">
               <li>
@@ -76,7 +76,19 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
-
+              {/** add phone and email hear */}
+              <li>
+                <p>
+                  <i className="bi bi-telephone"></i>
+                  {": "} +251911091185
+                </p>
+              </li>
+              <li>
+                <p>
+                  <i className="bi bi-envelope"></i>
+                  {": "} booking@kurifturesorts.com
+                </p>
+              </li>
             </ul>
           </Col>
           <Col xs={6} sm={6} md={2} className="text-start mb-3">
@@ -124,7 +136,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col xs={6} sm={6} md={4} className="text-start mb-3">
+          <Col xs={6} sm={6} md={3} className="text-start mb-3">
             <h6 >Adventure</h6>
             <ul className="list-unstyled">
               <li>
@@ -164,7 +176,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col xs={6} sm={6} md={3} className="text-start mb-3">
+          <Col xs={12} sm={6} md={3} className="text-start mb-3">
             <h6>Socials</h6>
             <div className="d-flex flex-wrap gap-2 footer-links-container">
               <a
