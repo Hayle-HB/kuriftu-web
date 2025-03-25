@@ -48,12 +48,14 @@ export default function LandingPage(): JSX.Element {
             }
         </Row>
         <section className="landing-section">
-            <Row >
-            <Col sm={12} md={3}>
+          <Row >
+            <Col sm={12}>
               <h1>Inspirational locations</h1>
               <p>This year, embark on grand adventures, encountering new dimensions spurred by the spirit of Kuriftu Resorts.</p>
             </Col>
-            <Col sm={12} md={9}>
+          </Row>
+          <Row>
+            <Col sm={12}>
               <MultiItemCarousel classNames="landing-carousel" items={landingData.section2}/>
             </Col>
           </Row>

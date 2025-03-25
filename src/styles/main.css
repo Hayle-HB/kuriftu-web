@@ -2263,7 +2263,6 @@ footer a:focus {
 }
 .carousel-item-custom {
   flex: 1;
-  max-width: 80%;
   margin: 0 auto;
   transition: transform 0.5s ease-in-out;
   overflow: visible;
@@ -2275,12 +2274,15 @@ footer a:focus {
 .carousel-multi-item .basic-tile-third {
   width: 100%;
 }
+.carousel-multi-item {
+  display: flex !important;
+  justify-content: center;
+}
 .carousel-multi-item .slick-dots {
   display: flex !important;
   width: 100%;
-  max-width: 42.14285714rem;
-  margin: 5.35714286rem auto 0.71428571rem;
   padding: 0;
+  max-width: 600px;
 }
 .carousel-multi-item .slick-dots li {
   list-style: none;
@@ -2299,6 +2301,9 @@ footer a:focus {
 }
 .carousel-multi-item .slick-dots li.slick-active button {
   background: #82847f;
+}
+.carousel-multi-item .basic-tile-text h3 {
+  font-size: 1.2rem;
 }
 .item-box {
   background: lightblue;

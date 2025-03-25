@@ -1,7 +1,7 @@
 .carousel{
     &-item-custom {
         flex: 1;
-        max-width: 80%; // Makes each slide smaller so adjacent slides are partially visible
+        //max-width: 80%; // Makes each slide smaller so adjacent slides are partially visible
         margin: 0 auto; // Center the slides
         transition: transform 0.5s ease-in-out;
         overflow: visible;
@@ -17,14 +17,15 @@
     }
     &-multi{
         &-item{
+            display: flex !important;
+            justify-content: center;
 
             .slick{
                 &-dots{
                     display: flex !important;
                     width: 100%;
-                    max-width: 42.1428571429rem;
-                    margin: 5.3571428571rem auto .7142857143rem;
                     padding: 0;
+                    max-width: 600px;
                     li{
                         list-style: none;
                         flex-basis: 100%;
@@ -45,6 +46,11 @@
                             }
                         }
                     }
+                }
+            }
+            .basic-tile-text{
+                h3{
+                    font-size: 1.2rem;
                 }
             }
         }
