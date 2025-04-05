@@ -747,6 +747,9 @@ a:hover {
 .resort-page .basic-tile-wrapper {
   margin-bottom: 200px;
 }
+.resort-details {
+  margin-top: 232px;
+}
 .resort-details header {
   max-width: 680px;
   margin-right: auto;
@@ -903,7 +906,7 @@ a:hover {
 }
 .resort-details .accomidation {
   padding: 12px;
-  margin-top: 250px;
+  margin-top: 50px;
   height: fit-content;
 }
 .resort-details .accomidation-img {
@@ -1702,6 +1705,55 @@ a:hover {
   border-bottom: 1px solid #dad9d7;
   margin: 0;
   z-index: 1000;
+  padding: 0;
+}
+.resorts-nabvar .navbar-toggle-list {
+  min-height: 45px;
+}
+.resorts-nabvar .navbar-brand {
+  font-size: 0.75rem !important;
+  letter-spacing: 0.19rem;
+  text-transform: uppercase;
+  line-height: 1.45 !important;
+  font-family: 'LyonDisplay-Light-Web' !important;
+  padding: 13px 0;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.21428571rem;
+}
+.resorts-nabvar .navbar-brand:hover {
+  color: #363b36 !important;
+  text-decoration: none !important;
+  border-bottom: solid 1.15px;
+}
+.resorts-nabvar .navbar-brand:after {
+  content: " ";
+  padding: 3px;
+  border-color: #82847f;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  width: 0;
+  transform: rotate(-45deg);
+}
+.resorts-nabvar .navbar-nav {
+  margin-left: 10px !important;
+  min-height: 45px;
+}
+.resorts-nabvar .navbar-nav a {
+  font-size: 0.9rem;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.resorts-nabvar .navbar-nav a:hover {
+  color: #363b36 !important;
+  text-decoration: none !important;
+  border-bottom: solid 1.15px;
+}
+.resorts-nabvar .navbar-nav a.selected {
+  border-bottom: solid 1.15px;
+  color: #313131 !important;
 }
 .resorts-nabvar .nav-link:hover {
   color: #363b36 !important;

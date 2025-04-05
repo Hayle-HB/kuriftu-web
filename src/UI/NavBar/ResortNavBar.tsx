@@ -98,7 +98,7 @@ const ResortNavBar: React.FC=()=>{
                             key={index}
                             to={`/resorts/${slug}/${option.link}`}
                             className={`px-3 ${
-                                activeLink === `/resorts/${slug}/${option.link}` && "fw-bold text-dark"
+                                activeLink === `/resorts/${slug}/${option.link}` && "selected text-dark"
                             } ${!isAvailable ? "text-muted disabled" : ""}`}
                             onClick={(e) => {
                                 e.preventDefault();

@@ -9,6 +9,58 @@
     border-bottom: 1px solid #dad9d7;
     margin: 0;
     z-index: 1000;
+    padding: 0;
+    .navbar{
+        &-toggle-list{
+            min-height: 45px;
+        }
+        &-brand{
+            font-size: .75rem !important;
+            letter-spacing: .19rem;
+            text-transform: uppercase;
+            line-height: 1.45 !important;
+            font-family: 'LyonDisplay-Light-Web' !important;
+            padding: 13px 0;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1.2142857143rem;
+            &:hover{
+                color: @dark-light !important;
+                text-decoration: none !important;
+                border-bottom: solid 1.15px;
+            }
+            &:after {
+                content: " ";
+                padding: 3px;
+                border-color: #82847f;
+                border-style: solid;
+                border-width: 0 1px 1px 0;
+                width: 0;
+                transform: rotate(-45deg);
+            }
+        }
+        &-nav{
+            margin-left: 10px !important;
+            min-height: 45px;
+            a{
+                font-size: .9rem;
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    color: @dark-light !important;
+                    text-decoration: none !important;
+                    border-bottom: solid 1.15px;
+                }
+                &.selected{
+                    border-bottom: solid 1.15px;
+                    color: @dark !important;
+                }
+            }
+
+        }
+    }
     .nav-link{
         &:hover{
             color: @dark-light !important;
