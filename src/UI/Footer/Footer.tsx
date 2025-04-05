@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
+import { RESORTDETAILS } from "../../MockData/resortsDetails";
+import ResortFooter from "./ResortLandingFooter";
 
 const socialLinks: Record<string,string> = {
   default: "https://www.instagram.com/kurifturesortbishoftu/",
@@ -20,6 +22,8 @@ const Footer = () => {
   if (slug && socialLinks[slug] != null){
     socialLink = socialLinks[slug];
   }
+  let resort;
+  slug != null ? resort = RESORTDETAILS[slug] : resort = null;
   const styles = {
     
     
@@ -53,6 +57,12 @@ const Footer = () => {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       />
+      {
+        resort && (
+            <ResortFooter resort={resort} />
+        )
+      }
+      
         <Row className=" mb-4">
           <Col xs={12} sm={12} md={4} className="mb-3 signup-align text-start">
             {/* <h5 style={styles.heading}>Become A Member</h5> */}

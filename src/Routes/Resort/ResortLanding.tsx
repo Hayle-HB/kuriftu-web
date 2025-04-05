@@ -16,6 +16,7 @@ import ScrollingAnimation from '../../UI/AnimatedTiles/ExperianceSection';
 import VideoHero from "../../UI/Hero/VideoHero";
 import TextHero from "../../UI/Hero/TextHero";
 import BasicTile from "../../UI/Card/BasicTiles/BasicTile";
+import ResortFooter from "../../UI/Footer/ResortLandingFooter";
 const ResortDetails: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
 
@@ -175,30 +176,6 @@ const ResortDetails: React.FC = () => {
         ))}
       </Container>
        */}
-      <Container className="contact-wrapper" fluid>
-        <Row>
-          <Col md={6}>
-            <h1 className="title-sans">Contact Us</h1>
-            <div className="contact-text">
-              <p>
-                <i className="bi bi-geo-alt"></i>
-                {resort.address}
-              </p>
-              <p>
-                <i className="bi bi-telephone"></i>
-                {resort.phone}
-              </p>
-              <p>
-                <i className="bi bi-envelope"></i>
-                {resort.email}
-              </p>
-            </div>
-          </Col>
-          <Col md={6} className="contact-image">
-            <img src={resort.cover_image} />
-          </Col>
-        </Row>
-      </Container>
     </div>
   );
 };

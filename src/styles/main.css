@@ -2337,6 +2337,10 @@ footer a:active,
 footer a:focus {
   color: #3c5a37 !important;
 }
+footer .footer-resort-landing {
+  margin: 25px;
+  border-bottom: solid 0.7px;
+}
 .card-res-body {
   justify-content: space-around;
 }
