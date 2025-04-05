@@ -56,7 +56,10 @@
         }
         &-wrapper{
             position: relative;
-            margin: 138px -35px 45px -35px;
+            @media screen and (max-width: @sm) {
+                margin: 0 -2.5rem 45px -2.5rem;
+            }
+            
             
         }
     }

@@ -2237,7 +2237,11 @@ a:hover {
 }
 .hero-video-wrapper {
   position: relative;
-  margin: 138px -35px 45px -35px;
+}
+@media screen and (max-width: 576px) {
+  .hero-video-wrapper {
+    margin: 0 -2.5rem 45px -2.5rem;
+  }
 }
 .light {
   background-color: #F5E2DF !important;
@@ -2441,11 +2445,14 @@ html,
 .App {
   color: #313131;
   font-size: 16px;
-  padding: 0 35px;
+  padding: 0 2.5rem;
+  max-width: none;
+  margin-top: 170px;
+  margin-bottom: 4.64285714rem;
 }
 @media screen and (max-width: 576px) {
   .App {
-    padding: 0;
+    margin-top: 108px;
   }
 }
 .glass-button {
