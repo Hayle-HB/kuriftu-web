@@ -1709,6 +1709,7 @@ a:hover {
 }
 .resorts-nabvar .navbar-toggle-list {
   min-height: 45px;
+  justify-content: center;
 }
 .resorts-nabvar .navbar-brand {
   font-size: 0.75rem !important;
@@ -1754,6 +1755,9 @@ a:hover {
 .resorts-nabvar .navbar-nav a.selected {
   border-bottom: solid 1.15px;
   color: #313131 !important;
+}
+.resorts-nabvar .navbar-collapse {
+  max-width: fit-content;
 }
 .resorts-nabvar .nav-link:hover {
   color: #363b36 !important;
@@ -2502,7 +2506,7 @@ html,
   color: #313131;
   font-size: 16px;
   padding: 0 2.5rem;
-  max-width: none;
+  max-width: 1440px;
   margin-top: 170px;
   margin-bottom: 4.64285714rem;
 }
