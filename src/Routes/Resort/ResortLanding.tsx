@@ -39,11 +39,13 @@ const ResortDetails: React.FC = () => {
       {/* Hero Section */}
       
       <VideoHero videoURL={resort.cover_video} classNames="resort-details-hero" />
-      <p>{resort.region}</p>
-      <h1 className="title-sans" style={{textAlign: "center"}}>{resort.name}</h1>
+      <header className="hgroup">
+        <p className="hero-sub_p">{resort.region}</p>
+        <h1 className="title-sans hero-sub_h3" style={{textAlign: "center"}}>{resort.name}</h1>
 
-      {/* Details Section */}
-      <TextHero classNames="resort-details-text-hero" text={resort.description}/>
+        {/* Details Section */}
+        <TextHero classNames="resort-details-text-hero" text={resort.description}/>
+      </header>
 
       {/** Gallery Section */}
       <Row className="gallery m-0">

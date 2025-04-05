@@ -13,6 +13,9 @@ html, .app, .App{
     font-size: @font-size-base;
     padding: 0 35px;
     //background-color: @background;
+    @media screen and (max-width: @sm) {
+        padding: 0;
+    }
 }
 .glass{
     
@@ -35,7 +38,7 @@ html, .app, .App{
     
 }
 h1, h2, h3{
-    font-family: 'LyonDisplay-Regular-Web' !important;
+    font-family: 'LyonDisplay-Light-Web' !important;
     line-height: 1.45;
 }
 h5{
