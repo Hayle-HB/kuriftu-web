@@ -82,6 +82,9 @@ const ResortNavBar: React.FC=()=>{
             as={Link}
             to={`/resorts/${slug}`}
             className="d-none d-lg-block fw-bold"
+            onClick={()=>{
+              setActiveLink(" ");
+            }}
           >
             {slug && capitalizeFirstLetter(slug)}
           </Navbar.Brand>
