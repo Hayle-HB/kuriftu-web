@@ -1160,7 +1160,7 @@ a:hover {
 .resorts-subpage-hero {
   padding-right: 1.75rem;
   padding-left: 1.75rem;
-  margin-top: 178px;
+  margin-top: 4.64285714rem;
   margin-bottom: 4.64285714rem;
 }
 .landing {
@@ -1737,6 +1737,18 @@ a:hover {
   width: 0;
   transform: rotate(-45deg);
 }
+.resorts-nabvar .navbar-brand-mobile {
+  font-size: 0.75rem !important;
+  letter-spacing: 0.19rem;
+  text-transform: uppercase;
+  line-height: 1.45 !important;
+  font-family: 'LyonDisplay-Light-Web' !important;
+  padding: 13px 0;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.21428571rem;
+}
 .resorts-nabvar .navbar-nav {
   margin-left: 10px !important;
   min-height: 45px;
@@ -1932,7 +1944,6 @@ a:hover {
   }
 }
 .basic-tile {
-  min-height: 66vh;
   align-items: center;
   padding: inherit;
   flex-direction: column;
@@ -2059,6 +2070,30 @@ a:hover {
 .basic-tile-link h3:hover,
 .basic-tile-link p:hover {
   text-decoration: none;
+}
+.accom-tile {
+  text-align: left;
+}
+.accom-tile-img {
+  padding: 0;
+  aspect-ratio: 0.7;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  width: 40%;
+  margin: 0 auto;
+}
+.accom-tile-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.accom-tile-text p {
+  margin: 20px auto 0;
+}
+.accom-tile-text a {
+  padding-top: 3rem;
+  border-top: 1px solid #dad9d6;
 }
 .featured-tile {
   height: 60vw;
@@ -2266,18 +2301,49 @@ a:hover {
 }
 .hero-list-wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: 8vw;
-  padding-top: 2vh;
+  padding: 4% 8.5%;
   align-items: center;
+  background-color: #FCFAF3;
+}
+.hero-list-wrapper ul {
+  column-count: 3;
+  -moz-column-gap: 110px;
+  column-gap: 110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 992px) {
+  .hero-list-wrapper ul {
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-list-wrapper ul {
+    -moz-column-count: 1;
+    column-count: 1;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    grid-template-columns: 1fr;
+  }
 }
 .hero-list-wrapper li {
   text-align: left;
+  margin-bottom: 1rem;
+  padding-left: 1.42857143rem;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  letter-spacing: 0.05714286rem;
+  overflow-wrap: break-word;
 }
 .hero-list h1 {
   text-align: center;
   margin-top: 15vh;
+  margin-bottom: 1.28571429rem;
 }
 .hero-video {
   position: relative;

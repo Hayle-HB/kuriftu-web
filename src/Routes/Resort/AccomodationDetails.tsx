@@ -6,6 +6,7 @@ import { ACCOMODATIONDETAIL } from "../../MockData/accomdations";
 import BasicTile from "../../UI/Card/BasicTiles/BasicTile";
 import ListHero from "../../UI/Hero/ListHero";
 import FeaturedTile from "../../UI/Card/BasicTiles/FeaturedTile";
+import AcctTile from "../../UI/Card/BasicTiles/AcctTile";
 
 
 const AccomodationDetails: React.FC = () => {
@@ -25,23 +26,28 @@ const AccomodationDetails: React.FC = () => {
         title:detailAccommodation.title,
         description:detailAccommodation.booking?.description,
         headerText: "",
-        image: detailAccommodation.booking?.images[0],
+        images: detailAccommodation.booking?.images,
     }
 
     return (
         <Container className="accomidation-page" fluid>
+            <Row>
+                <Col sm={12}>
+                    <h1 style={{textAlign:"center"}}>{accomidationItem.title}</h1>
+                </Col>
+            </Row>
             <Row className="resorts-subpage-hero">
                 <Carousel classNames="hero-carousel" slides={detailAccommodation.carouselImages} />
             </Row>
-            <FeaturedTile
+            <AcctTile
                 item={accomidationItem}
                 hasLinks={true}
-                linkText="BOOK NOW"
+                linkText="Check Availability"
                 linkURL={`/${slug}/rooms`}
                 reveresed={false}
                 index={0}
              />
-            <ListHero classNames="" list={detailAccommodation.amenities} title="Ameneties" />
+            <ListHero classNames="" list={detailAccommodation.amenities} title="Ameneties" column={3} />
             {
                 detailAccommodation.otherAccomodation.length > 0 &&
                 <>

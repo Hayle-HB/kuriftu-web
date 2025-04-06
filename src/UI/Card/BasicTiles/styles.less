@@ -1,5 +1,5 @@
 .basic-tile {
-    min-height: 66vh;
+    //min-height: 66vh;
     align-items: center;
     padding: inherit;
     flex-direction: column;
@@ -122,6 +122,32 @@
             &:hover{
                 text-decoration: none;
             }
+        }
+    }
+}
+
+.accom-tile{
+    text-align: left;
+    &-img{
+        padding: 0;
+        aspect-ratio: 0.7;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        width: 40%;
+        margin: 0 auto;
+        //margin: 12px;
+    }
+    &-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p{
+            margin: 20px auto 0;
+        }
+        a{
+            padding-top: 3rem;
+            border-top: 1px solid #dad9d6;
         }
     }
 }
@@ -260,6 +286,7 @@
         }
     }
 }
+
 
 .basic-icon-tile {
     

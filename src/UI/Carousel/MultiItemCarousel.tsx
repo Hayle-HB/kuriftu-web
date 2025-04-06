@@ -31,7 +31,7 @@ const MultiItemCarousel: React.FC<MultiItemCarouselProps> = ({
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
     //centerPadding: '10%',

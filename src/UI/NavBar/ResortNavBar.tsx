@@ -119,7 +119,7 @@ const ResortNavBar: React.FC=()=>{
 
           {/* Dropdown for smaller screens */}
           <Nav className="d-lg-none">
-            <NavDropdown title={slug && capitalizeFirstLetter(slug)} align="end">
+            <NavDropdown title={"Menu"} align="end" className="navbar-brand-mobile">
                 {itemsOptions.map((option, index) => {
                     const item = itemsList.find(i => i.link === option.link);
                     const isAvailable = !!item;
@@ -128,7 +128,7 @@ const ResortNavBar: React.FC=()=>{
                             as={Link}
                             key={index}
                             to={`/resorts/${slug}/${option.link}`}
-                            className={!isAvailable ? "disabled" : ""}
+                            className={`${!isAvailable ? "disabled" : ""}`}
                             onClick={(e) => {
                                 if (!isAvailable) {
                                     e.preventDefault();

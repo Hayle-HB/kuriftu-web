@@ -60,7 +60,7 @@ const BostonLanding: React.FC = () => {
         </Container>
       {/** Facilities */}
       <Row className="row-container">
-        <ListHero classNames="boston-facilities" title="Our Facilities" list={bostonHomeData.facilities} />
+        <ListHero classNames="boston-facilities" title="Our Facilities" list={bostonHomeData.facilities}column={3} />
       </Row>
 
       {/** Gallery Section */}

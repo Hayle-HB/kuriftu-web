@@ -25,7 +25,7 @@ const Wellness: React.FC = () => {
                 <TextHero classNames=""  text={wellness.description} />
             </Row>
 
-            <ListHero classNames="" list={wellness.facilities} title="Facilities" />
+            <ListHero classNames="" list={wellness.facilities} title="Facilities" column={3}/>
             
             <Row className="listing gx-2" >
                     {
