@@ -25,6 +25,13 @@ export default function LandingPage(): JSX.Element {
             </Col>
           </Row>
         </section>
+        <section>
+          <Row className="landing-hero-message" >
+            <p>A New Urban Sactuary</p>
+            <h1>Welcome to Kuriftu Resort and Spa.</h1>
+            <Link to={'/about'}>Discover Kuriftu</Link>
+          </Row>
+        </section>
         <Row className="landing-section1 gx-5">
           
             {

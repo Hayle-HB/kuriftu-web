@@ -1224,6 +1224,27 @@ a:hover {
     flex-wrap: nowrap;
   }
 }
+.landing-hero-message {
+  margin-bottom: 4.64286rem;
+  margin-top: 1.42857143rem;
+}
+.landing-hero-message p,
+.landing-hero-message h1,
+.landing-hero-message a {
+  padding-left: 0;
+}
+.landing-hero-message p {
+  margin-bottom: 0.642857rem;
+  text-align: left;
+  font-size: 0.722rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14285714rem;
+  font-weight: 200;
+  font-family: 'whitneybook' !important;
+}
+.landing-hero-message a {
+  text-align: left;
+}
 .reservation {
   padding-top: 90px;
 }
