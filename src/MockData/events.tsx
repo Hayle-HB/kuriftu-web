@@ -2,10 +2,9 @@ import { EventModal } from "../interfaces/eventModal";
 
 export const EVENTS: Record<string, EventModal> = {
   entoto: {
-    title: "Celebrations at Kuriftu Entoto Adventure Park",
+    title: "A Memorable Experience",
     subtitle: "Celebrations at Kuriftu Entoto Adventure Park",
-    description:
-      "Whether it be a special anniversary, family reunion or milestone birthday, Kuriftu Entoto Adventure Park has the ability to facilitate any celebration through our many restaurants, experiences and activities in the scenic environment of the Entoto Mountain - The Kuriftu team is dedicated to crafting extraordinay shared experineces and nights to remember",
+    description:"Moments of joy unfold gently, be it a child’s laughter in Trampoline World, a gathering in Hammock Village, or vows exchanged beneath Entoto’s open sky.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto26.jpg",
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/1.webp",
@@ -93,10 +92,9 @@ export const EVENTS: Record<string, EventModal> = {
     ],
   },
   bishoftu: {
-    title: "Celebrations at Kuriftu Resort & Spa Bishoftu ",
+    title: "Celebrations at Bishoftu ",
     subtitle: "KURIFTU RESORT & SPA BISHOFTU WEDDING AREA",
-    description:
-      "Whether it be a special anniversary, family reunion or milestone birthday, Kuriftu Bishoftu has the ability to facilitate any celebration through our many restaurants, experiences and activities in this scenic environment - The Kuriftu team is dedicated to crafting extraordinay shared experiences and nights to remember",
+    description:"Nestled in the tranquil beauty of Bishoftu’s lakes, Kuriftu Resort offers a captivating backdrop for unforgettable celebrations, where nature’s serenity and Ethiopia’s rich heritage intertwine.",
     carouselImages: [
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event4.webp",
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event1.jpg",
@@ -201,10 +199,9 @@ export const EVENTS: Record<string, EventModal> = {
   },
 
   laketana: {
-    title: " Celebrations at Kuriftu Resort & Spa Lake Tana",
+    title: "Eternal Moments",
     subtitle: "KURIFTU RESORT & SPA LAKE TANA WEDDING AREA",
-    description:
-      "Whether it be a special anniversary, family reunion or milestone birthday, Kuriftu Bishoftu has the ability to facilitate any celebration through our many restaurants, experiences and activities in this scenic environment - The Kuriftu team is dedicated to crafting extraordinay shared experiences and nights to remember",
+    description:"Celebrate life’s most cherished moments in a place where time slows, whether marking a birthday, wedding, or simply the joy of being together.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/tana/1.webp",
       "https://kuriftu-public-media.s3.amazonaws.com/tana/2.webp",

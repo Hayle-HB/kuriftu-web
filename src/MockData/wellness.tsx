@@ -2,10 +2,9 @@ import { WellnessModal } from "../interfaces/wellnessModal";
 
 export const WELLNESS: Record<string, WellnessModal> = {
   entoto: {
-    title: "Wellness at Kuriftu Entoto Adventure Park",
+    title: "Forest Spa",
     subtitle: "Wellness at Kuriftu Entoto Adventure Park",
-    description:
-      "Kurfitu Entoto Forest Spa presents a variety of hollistic wellness practices. The Kuriftu brand's expertise in the wellness world has been present for nearly 20 years and has maintained a standard in the Ethiopian culture. Our hiring and training program focused on local communities capacity development in this sector allows us to transfer skills in the most impactful way. We aim to incorporate natural treatments, carefully curated massage experiences and many more opportunities for our team to showcase their enhanced skillset!",
+    description:"Beneath the eucalyptus canopy, stillness lingers. A spa shaped by nature’s rhythm invites breath, presence, and gentle return to earth, self, and silence.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto16.jpg",
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto19.jpg",
@@ -54,10 +53,9 @@ export const WELLNESS: Record<string, WellnessModal> = {
     ],
   },
   bishoftu: {
-    title: "Wellness at Kuriftu Resort & Spa Bishoftu",
-    subtitle: "Relax, Rebalance & Restore",
-    description:
-      "Our customers' wellness experience is integral to the Kuriftu Brand. By providing outlets for guests to rest, exert energy, and feast on clean and light dishes, we empower you to accomplish more! Venture into Bishoftu's natural landscape and nourish your body with mindful experiences.",
+    subtitle: "Wellness at Kuriftu Resort & Spa Bishoftu",
+    title: "Relax, Rebalance & Restore",
+    description:"Set by Bishoftu’s tranquil lakes, Kuriftu offers a serene escape where nature’s peaceful energy renews the spirit. Whether for family, business, or romance, each stay is unforgettable.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/14.JPG",
       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/5.jpg",
@@ -101,10 +99,9 @@ export const WELLNESS: Record<string, WellnessModal> = {
     ],
   },
   laketana: {
-    title: "Wellness at Kuriftu Resort & Spa Lake Tana",
-    subtitle: "Rejuvenation at the Heart of Lake Tana",
-    description:
-      "Kuriftu Resort & Spa Lake Tana offers a serene environment where relaxation and wellness are intertwined. Guests can immerse themselves in the tranquil surroundings, enjoying a range of services designed to rejuvenate the mind, body, and soul.",
+    title: "Restorative Sanctuary",
+    subtitle: "Wellness at Kuriftu Resort & Spa Lake Tana",
+    description:"A serene haven where tranquility and wellness intertwine; Kuriftu Resort & Spa Lake Tana is a place where you are invited to a deeper connection to your self and nature.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/tana/7.webp",
       "https://kuriftu-public-media.s3.amazonaws.com/tana/8.webp",

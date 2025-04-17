@@ -4,11 +4,10 @@ import { ResortDetailsModal } from "../interfaces/resortDetailModal";
 export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
   entoto: {
     name: "Kuriftu Resort & Spa Entoto",
-    region: "ENTOTO PARK, ADDIS ABABA",
+    region: "ENTOTO NATIONAL PARK, ADDIS ABABA",
     address: "321 Lake View Avenue, Bishoftu, Ethiopia",
-    description:
-      "Kuriftu Entoto Adventure Park offers an off the beaten path experience in the heart of the Entoto Mountain. With an abundance of eucalyptus trees, this dense forest is considered to be the lungs of Addis Ababa with significant cultural and historical relevance. Telling the story of the founding of Addis Ababa from the time of Emperor Menelik II. The Adventure Park captures the beauty of this sacred location by highlighting nature based adventure tourism activites that allow families and tourists alike to emmerse themselves within this ecosystem. From activities ranging from rock-climbing to horse back riding and seculded glamping accommodations, this destination is truly one of a kind!",
-    phone: "+251905061020",
+    description: "Cradled within the whispering eucalyptus of Entoto Mountain, Kuriftu Entoto reveals Ethiopia’s soul through elemental adventure. Here, where Emperor Menelik II once gazed upon the birth of Addis Ababa, guests traverse forested paths on horseback, scale ancient stone, and dwell beneath starlit skies in secluded tents. A sacred land of history and breath, inviting quiet wonder, familial connection, and communion with nature’s unspoken rhythm.",
+    phone: "+2519 05 061020, +2519 11 091185",
     latitude: 9.0846279,
     longitude: 38.7383589,
     location: "https://www.google.com/maps/place/Kuriftu+Entoto+Resort+and+Spa/@9.0782278,38.7401494,17z/data=!4m10!3m9!1s0x164b8fe9784c22b1:0xb585017862062bdb!5m3!1s2025-04-11!4m1!1i2!8m2!3d9.0782278!4d38.7427243!16s%2Fg%2F11jzfb8yfm?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D",
@@ -17,15 +16,16 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     cover_image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto23.jpg",
     cover_video: "https://kuriftu-public-media.s3.amazonaws.com/entoto/Entoto+720p.mp4",
     isIframe: false,
+    direction: "14.9 km from Addis Ababa Bole International Airport, Entoto Park, Ethiopia",
   },
   bishoftu: {
     isIframe: false,
     name: "Kuriftu Resort & Spa Bishoftu",
-    region: "LAKE KURIFTU, BISHOFTU",
+    region: "Bishoftu, Oromia",
     address: "",
-    description:
-      "Located on the northen tip of Bishoftu encompassing the smallest of the four lakes lies our flagship resort, Kuriftu Resort & Spa Bishoftu. Born from Mr. Tadiwos's vision to create luxury resort destinations in neighboring cities of the capital, this resort made its mark in 2007 as the first 5-star resort in the country. Kuriftu has redefined the meaning of service in Ethiopia, with an outstanding track record and dedicated loyalty program that keeps our guests more than satisfied, Kuriftu Bishoftu is a home away from home",
-    phone: "+251924949494",
+    direction:"53.8 km from Addis Ababa Bole International Airport, Lake Bishoftu, Ethiopia",
+    description: "Set against the tranquil shores of Bishoftu, Kuriftu Resort unfolds amidst the peaceful embrace of nature. Its elegant suites, nestled in harmony with the landscape, offer serene views of the lake’s reflective waters. A haven of calm, the resort invites you to wander beneath towering trees, where each moment feels suspended in time, and the essence of Ethiopia’s rich heritage gently weaves through every experience.",
+    phone: "+2519 24 949494,+2519 11 091185",
     latitude: 8.779961,
     longitude: 39.003129,
     location:
@@ -38,11 +38,11 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
   laketana: {
     isIframe: true,
     name: "Kuriftu Resort & Spa Lake Tana",
-    region: "LAKE TANA, BAHIRDAR",
+    region: "BAHIRDAR",
     address: "",
-    description:
-      "Located in the capital of the Amhara Region, Bahirdar, Kuriftu Resort & Spa Lake Tana represents the Kuriftu brands second resort venture. As we seek to expand across Ethiopia, Lake Tana with its historic and cultural value was the perfect choice for expansion. Paired with scenic views, wildlife excursions and religious routes - this destination offers a new adventure for our Kuriftu family!",
-    phone: "+251920959797",
+    direction: "491 km from Addis Ababa Bole International Airport Lake Tana, Ethiopia",
+    description:"Nestled in Bahir Dar, the heart of the Amhara Region, Kuriftu Resort & Spa Lake Tana marks a serene extension of our vision. Surrounded by timeless beauty, rich history, and sacred landscapes, this sanctuary invites guests to immerse in the essence of Ethiopia. With tranquil waters, wildlife encounters, and spiritual journeys, Lake Tana is a place of profound discovery, where nature and culture intertwine harmoniously.",
+    phone: "+2519 20 959797,+2519 11 091185",
     latitude: 11.598445,
     longitude: 37.383701,
     location:
@@ -106,9 +106,9 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
   boston: {
     isIframe: false,
     name: "Boston Day Spa",
-    region: "Addis Ababa, Ethiopia",
+    region: "Bole, Addis Ababa",
     address: "53.7 km from Addis Ababa Bole International Airport",
-    description:"Born as the heart of the Kuriftu brand, Boston Day Spa is more than a destination—it's a masterpiece. Built by the hands of local artisans trained by our visionary CEO, this sanctuary of wellness exudes unmatched care and craftsmanship. For over 15 years, our dedicated team has redefined indulgence, offering world-class spa services tailored to your every need. Beyond relaxation, Boston Day Spa is a living gallery—immerse yourself in a space where luxury, art, and heritage unite.",
+    description:"Boston Day Spa is where the Kuriftu brand was born, a testament to our commitment to community empowerment. It is here that the spirit of our team took shape—dedicated artisans who once built this sanctuary by hand now deliver exceptional wellness experiences. What began as a capacity-building project in Addis Ababa has transformed into a sanctuary of well-being, showcasing the work of celebrated Ethiopian artists like Merikokeb Berhanu.",
     phone: "+251 11 662 3808, +251 11 663 6557",
     latitude: 9.03,
     longitude: 38.74,

@@ -11,19 +11,17 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
         image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto27.jpg",
         accomdationId: 1,
         subtitle: "Forest View",
-        title: "Tented Camp",
+        title: "Glamping Tents",
         isLinked: true,
-        description:
-          "Join us and experience Addis's first glamping site in the heart of Entoto Mountain. As our brand shift towards becoming more sustainably concious by focusing on minimizing our impact in the forest, glamping provides a more sustainable approach as well as an alternative hospitality adventure!",
+        description:"Among Entoto’s quiet ridges, glamping invites stillness with the lightest touch, an intimate, low-impact retreat where nature is not escaped but respectfully embraced."
       },
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/acc/1.webp",
         accomdationId: 2,
         subtitle: "Forest View",
-        title: "The Cabin",
+        title: "Presidential Cabin",
         isLinked: true,
-        description:
-          "Join us and experience Addis's first glamping site in the heart of Entoto Mountain. As our brand shift towards becoming more sustainably concious by focusing on minimizing our impact in the forest, glamping provides a more sustainable approach as well as an alternative hospitality adventure!",
+        description:"Embraced by towering trees, the glass-clad Oasis cabin floats in silence, where fire-grilled meals and starlit skies unfold across a terrace suspended in stillness."
       },
     ],
   },
@@ -33,41 +31,36 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
       "Designed to enhance beauty of natural structures, Kuriftu Bishoftu accommodations provide a variety of rooms that showcase our ever growing woodwork craftsmanship and ability to experiment new styles with locally sourced materials, highlighting the rustic atmosphere that makes Kuriftu unique",
     accomodations: [
       {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/1.webp",
-        accomdationId: 1,
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/4.webp",
+        accomdationId: 4,
         subtitle: "ROOMS",
-        title: "Lake View",
+        title: "Royal Presidential Suite",
         isLinked: true,
-        description:
-          "Explore a variety of lake front rooms located in different sections of the resort - these rooms provide prime view of sun rise and sun set paired with the reflection of the lake",
+        description:"A sanctuary above Lake Bishoftu, where light dances across earthen textures. Floor-to-ceiling windows frame the water’s whispers while a fireplace softens dusk’s embrace, creating timeless moments."
       },
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/2.webp",
         accomdationId: 2,
         subtitle: "ROOMS",
-        title: "GARDEN VIEW",
+        title: "Gateway Retreat",
         isLinked: true,
-        description:
-          "Immerse yourself in colorful garden features that make up most of the natural landscape Kuriftu Bishoftu. Attracting birds of varying species, wake up to the mezmerizing sound of their songs in the early morning as the sun rises above the lakes horizon",
+        description:"Awaken to birdsong among flowering gardens, where native blooms and quiet waters cradle the soul in Bishoftu’s soft morning light beneath a sky slowly unfolding."
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/1.webp",
+        accomdationId: 1,
+        subtitle: "ROOMS",
+        title: "Lake Side",
+        isLinked: true,
+        description:"Lakefront rooms rest in quiet seclusion, where sunrise and sunset dance upon the water each view a tranquil encounter with the rhythms of Bishoftu’s serene light."
       },
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/3.webp",
         accomdationId: 3,
         subtitle: "ROOMS",
-        title: "VILLAGE",
+        title: "Splash View Suite",
         isLinked: true,
-        description:
-          "Experience our lofted rooms featuring Kurfitu's new contemporary interior design - with a play on colors and abstract art, contrasting screed flooring and high cielings for a luxurious effect, the Village rooms create a new approach to innovation in the resort",
-      },
-
-      {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/4.webp",
-        accomdationId: 4,
-        subtitle: "ROOMS",
-        title: "PRESIDENTIAL SUITE",
-        isLinked: true,
-        description:
-          "Take in the earthy environment curated by our woodwork and design team in this spacious room. Plan a romantic stay with your partner and experince exclusive offers in this space, including an in-room massage and luxury in-room dining experience. Our suites offer nothing less than the perfect blend of comfort and beauty",
+        description:"Lofted spaces blend abstract form with color, where high ceilings and polished stone meet village soul—Kuriftu’s serene harmony between tradition and modern elegance."
       },
     ],
   },
@@ -83,17 +76,7 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
         subtitle: "ROOMS",
         title: "Lake View",
         isLinked: true,
-        description:
-          "Explore a variety of lake front rooms with a perfect view of Lake Tana and all that surrounds it",
-      },
-      {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/3.webp",
-        accomdationId: 2,
-        subtitle: "ROOMS",
-        title: "GARDEN VIEW",
-        isLinked: true,
-        description:
-          "Immerse yourself in colorful garden features that make up most of the natural landscape Kuriftu Tana. Attracting birds of varying species, wake up to the mezmerizing sound of their songs in the early morning as the sun rises above the lakes horizon",
+        description:"Discover serene lakeside rooms where sweeping views of Lake Tana and its pristine surroundings invite quiet reflection, offering a rare sense of harmony with nature.",
       },
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/tana/9.webp",
@@ -101,8 +84,15 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
         subtitle: "ROOMS",
         title: "PRESIDETIAL SUITE",
         isLinked: true,
-        description:
-          "Experience our lofted rooms featuring Kurfitu's new contemporary interior design - with a play on colors and abstract art, contrasting screed flooring and high cielings for a luxurious effect, the Village rooms create a new approach to innovation in the resort",
+        description:"Immerse yourself in the serene embrace of natural wood, where intimate spaces invite restful connection. Indulge in curated luxury with bespoke dining and a rejuvenating in-room massage."
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/3.webp",
+        accomdationId: 2,
+        subtitle: "ROOMS",
+        title: "GARDEN VIEW",
+        isLinked: true,
+        description:"Awake to the symphony of birdsong as vibrant gardens embrace Kuriftu Tana’s tranquil landscape. The rising sun over the lake heralds a day steeped in serenity.",
       },
     ],
   },

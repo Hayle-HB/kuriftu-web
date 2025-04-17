@@ -11,5 +11,6 @@ export interface ResortDetailsModal {
   rating: number;
   cover_image: string;
   cover_video: string;
-  isIframe:boolean
+  isIframe:boolean;
+  direction?:string;
 }

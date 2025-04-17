@@ -14,7 +14,7 @@ const ResortFooter:React.FC<ResortFooterProps> = ({resort}) => {
         resort ?
         <Row className="footer-resort-landing">
           <Col md={4}>
-            <p>
+            <p className="footer-resort-landing-region">
                 {resort.region}
               </p>
             <h6 className="title-sans">{resort.name}</h6>
@@ -23,25 +23,29 @@ const ResortFooter:React.FC<ResortFooterProps> = ({resort}) => {
           
           <Col md={4}>
             <div className="contact-text">
-              
-              <p>
+              <h5>Contact Us</h5>
+              <p className="footer-resort-landing-phone">
                 <i className="bi bi-telephone"></i>
-                {" "}
-                {resort.phone}
+                {"   "}
+                <span>
+                {
+                  resort.phone.split(",").map((p,i)=>(
+                    <p key={i}>{p}</p>
+                  ))
+                }</span>
               </p>
               <p>
                 <i className="bi bi-envelope"></i>
-                {" "}
+                {"   "}
                 {resort.email}
               </p>
             </div>
           </Col>
-          <Col md={3}>
-            <p>
-                <i className="bi bi-geo-alt"></i>
-                {" "}
-                <a href={resort.location}>Get Direction</a>
-            </p>
+          <Col md={3}>                
+                <h5>Getting Here</h5>
+                <p><i className="bi bi-geo-alt"></i>
+                {"  "}{resort.direction}</p>
+                <p><i className="bi bi-map"></i>{'    '}<a href={resort.location}>Get Direction</a></p>
           </Col>
         
         </Row>:

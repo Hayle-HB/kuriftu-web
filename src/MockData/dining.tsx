@@ -2,10 +2,9 @@ import { DiningModal } from "../interfaces/diningModal";
 
 export const DINING: Record<string, DiningModal> = {
   entoto: {
-    title: "Dining at Kuriftu Entoto Adventure Park",
-    subtitle: "kuriftu resort & spa bishoftu dining",
-    description:
-      "Ethiopia's rich cultural tapestry offers an endless palate of flavors. At Kuriftu Entoto, we blend traditional injera with international dishes, all under one roof. Each restaurant, crafted by our Kuriftu Woodwork team, showcases natural materials like wood, rope, stone, brick, and bamboo, creating a unique dining ambiance.",
+    title: "Mountain Dining",
+    subtitle: "Kuriftu Resort & Spa Bishoftu Dining",
+    description:"In Entoto’s tranquil heights, five open-air kitchens grace the forest. Global and Ethiopian flavors meet moments of stillness; each bite is a pause in the adventure.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto24.jpg",
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
@@ -57,10 +56,9 @@ export const DINING: Record<string, DiningModal> = {
     diningExperiences: [],
   },
   bishoftu: {
-    title: "Dining at Kuriftu Resort & Spa Bishoftu",
+    title: "Dining at Bishoftu",
     subtitle: "Kuriftu Resort & Spa Bishoftu Dining",
-    description:
-      "Ethiopia's diverse culture offers a rich array of flavors. At Kuriftu Resort & Spa Bishoftu, we combine traditional injera with international dishes under one roof. Each restaurant, crafted by our Kuriftu Woodwork team, features natural materials like wood, rope, stone, brick, and bamboo, creating a distinctive dining atmosphere.",
+    description:"Savor a blend of traditional and Western cuisines thoughtfully prepared to delight your senses, all while immersing yourself in the tranquil beauty of the lake.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/1.webp",
       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/2.webp",
@@ -120,10 +118,9 @@ export const DINING: Record<string, DiningModal> = {
     ],
   },
   laketana: {
-    title: "Dining at Kuriftu Resort & Spa Lake Tana",
+    title: "Lakeside Essence",
     subtitle: "Kuriftu Resort & Spa Lake Tana Dining",
-    description:
-      "Simple yet elegant, the Tana Lakefront Restaurant caters to the culinary desires of all guests. This naturally structured restaurant appeals to nature enthusiasts seeking an organic aesthetic in every element.",
+    description:"Savor traditional and Western flavors, artfully crafted amidst the tranquil beauty of Lake Tana. The restaurant, framed by serene waters, offers intimate cabanas for a peaceful retreat.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/tana/dining/1.webp",
       "https://kuriftu-public-media.s3.amazonaws.com/tana/dining/2.webp",

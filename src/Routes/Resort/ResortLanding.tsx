@@ -1,5 +1,6 @@
 // src/pages/ResortDetails.tsx
 import React from "react";
+
 import { useParams, Link } from "react-router-dom";
 import {RESORTDETAILS} from "../../MockData/resortsDetails";
 import {Gallery} from "../../MockData/gallery";
@@ -11,7 +12,7 @@ import {ITEMS} from '../../MockData/items';
 import {EXPERIENCE} from '../../MockData/experiences';
 import {DINING} from '../../MockData/dining';
 import {WELLNESS} from '../../MockData/wellness';
-import {CELEBRATIONSANDEVENTS} from '../../MockData/celebrationsAndEvent';
+import {EVENTS} from '../../MockData/events';
 import ScrollingAnimation from '../../UI/AnimatedTiles/ExperianceSection';
 import VideoHero from "../../UI/Hero/VideoHero";
 import TextHero from "../../UI/Hero/TextHero";
@@ -29,12 +30,44 @@ const ResortDetails: React.FC = () => {
   const resortItems = ITEMS[slug];
   const dinning = DINING[slug];
   const wellness = WELLNESS[slug];
-  const celebrations = CELEBRATIONSANDEVENTS[slug];
+  const celebrations = EVENTS[slug];
 
   const experience = resortItems.some((item) => item.link === "exp") && EXPERIENCE[slug]?.items;
   const featuredExps = EXPERIENCE[slug]?.items;
-  
-  console.log(wellness);
+
+  let diningItem = {
+    image: "",
+    title: "",
+    description: "",
+    subtitle: ""}
+  let eventItem = {
+    image: "",
+    title: "",
+    description: "",
+    subtitle: ""}
+  let wellnessItem = {
+    image: "",
+    title: "",
+    description: "",
+    subtitle: ""}
+  if (dinning){
+    diningItem.image = dinning.carouselImages[0];
+    diningItem.title = dinning.title;
+    diningItem.description = dinning.description;
+    diningItem.subtitle = "DINING";
+  }
+  if (celebrations){
+    eventItem.image = celebrations.carouselImages[0];
+    eventItem.title = celebrations.title;
+    eventItem.description = celebrations.description;
+    eventItem.subtitle = "CELEBRATION";
+  }
+  if (wellness){
+    wellnessItem.image = wellness.carouselImages[0];
+    wellnessItem.title = wellness.title;
+    wellnessItem.description = wellness.description;
+    wellnessItem.subtitle = "WELLNESS";
+  }
   return (
     <div className="resort-details">
       {/* Hero Section */}
@@ -56,7 +89,7 @@ const ResortDetails: React.FC = () => {
       {accomidation && (
         <Row className="accomidation gx-2">
           {
-            accomidation.accomodations.map((item, index)=>(
+            accomidation.accomodations.slice(0, 2).map((item, index)=>(
               <Col md={6} sm={12} >
                 <BasicTile 
                   item={item} 
@@ -71,9 +104,50 @@ const ResortDetails: React.FC = () => {
               </Col>
             ))
           }
+          <Col xs={12} className="mb-5">
+            <Link to="acc">View all accommodation</Link>
+          </Col>
          
         </Row>
       )}
+      <Row>
+        {dinning && (
+          <Col md={4} sm={12} >
+                <BasicTile 
+                  item={diningItem} 
+                  index={0} 
+                  hasLinks={true}
+                  reveresed={false}
+                  linkText="Discover More"
+                  linkURL={`dining`}
+                />
+              </Col>
+        )}
+        {celebrations && (
+          <Col md={4} sm={12} >
+              <BasicTile 
+                item={eventItem} 
+                index={0} 
+                hasLinks={true}
+                reveresed={false}
+                linkText="Discover More"
+                linkURL={`event`}
+              />
+            </Col>
+        )}
+        {wellness && (
+          <Col md={4} sm={12} >
+              <BasicTile 
+                item={wellnessItem} 
+                index={0} 
+                hasLinks={true}
+                reveresed={false}
+                linkText="Discover More"
+                linkURL={`well`}
+              />
+            </Col>
+        )}
+      </Row>
       {experience && (
         <section>
           <h1 style={{textAlign: "center", marginBottom: "55px", marginTop:"68px"}}>Featured Experiences</h1>
@@ -97,52 +171,6 @@ const ResortDetails: React.FC = () => {
           </Row>
         </section>
       )}
-      {
-        dinning &&(
-          <Container fluid className="dining-tile-wrapper">
-              <Row className="dining-tile">
-                <Col className="dining-tile-text-wrapper" sm={12} md={6}>
-                    <h1>{dinning.title}</h1>
-                    <p>{dinning.description}</p>
-                </Col>
-                <Col className="dining-tile-image-wrapper" sm={12} md={6}>
-                    <img className="dining-tile-image" src={dinning.carouselImages[0]} />
-                </Col>
-              </Row>
-              <Row>
-                <Link to='dining'>Explore More</Link>
-              </Row>
-          </Container>
-        )
-      }
-      {wellness &&
-      <Container className="content-wrapper">
-          <Row className={`content`}>
-            <Col className="image" md={6}>
-              <img src={wellness.carouselImages[0]} alt={wellness.title} />
-            </Col>
-            <Col className="text" md={6}>
-              <h2 className="title-sans">{wellness.title}</h2>
-              <p>{wellness.description}</p>
-              <Link to='well'>Learn More</Link>
-            </Col>
-          </Row>
-      </Container>
-      }
-      {celebrations && 
-        <Container className="content-wrapper">
-          <Row className={`content content-reversed`}>
-            <Col className="image" md={6}>
-              <img src={celebrations.carouselImages[0]} alt={celebrations.title}/>
-            </Col>
-            <Col className="text" md={6}>
-              <h2 className="title-sans">{celebrations.title}</h2>
-              <p>{celebrations.description}</p>
-              <Link to='event'>Learn More</Link>
-            </Col>
-          </Row>
-      </Container>
-      }
 
       {/**
        * 
