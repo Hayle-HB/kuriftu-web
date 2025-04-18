@@ -13,17 +13,29 @@ const Dinnign: React.FC = () => {
         return <div>Resort not found</div>;
     }
     const dining = DINING[slug];
-    console.log(dining);
 
     return (
         <Container className="accomidation-page" fluid>
+            <Row>
+                <div className="hero-text" >
+                    <h1 
+                        style={{
+                            textAlign: 'center',
+                            fontSize: "1.75rem"
+                        }}
+                    >{dining.title}</h1>
+                </div>
+            </Row>
             <Row className="resorts-subpage-hero">
                 <Carousel classNames="hero-carousel" slides={dining.carouselImages} />
             </Row>
-            <Row>
-                <TextHero classNames=""  text={dining.description} />
-            </Row>
-
+            {
+                dining.detailDescription && (
+                    <Row>
+                        <TextHero classNames=""  text={dining.detailDescription} />
+                    </Row>
+                )
+            }
             <Row>
                 <Col>
                     <h1 className="text-center pt-5 fs-1">Dining Options</h1>
@@ -32,7 +44,7 @@ const Dinnign: React.FC = () => {
             <Row className="listing gx-2" >
                     {
                     dining.diningOptions.map((item, index) => (
-                        <Col md={6} sm={12} key={index} ><BasicTile item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={true} linkText="Explore Menu" linkURL={item.menuLink} third={true} /></Col>
+                        <Col md={6} sm={12} key={index} ><BasicTile item={item} index={index+1} reveresed={false} hasLinks={item.menuLink === "" ? false: true} linkText="Explore Menu" linkURL={item.menuLink} square={true} /></Col>
                     ))
             }
                 

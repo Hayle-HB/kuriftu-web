@@ -2010,7 +2010,7 @@ a:hover {
   }
 }
 .basic-tile-square {
-  aspect-ratio: 1.21 !important;
+  aspect-ratio: 1 !important;
   /* object-fit: cover; */
   display: flex;
   justify-content: center;

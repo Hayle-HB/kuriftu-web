@@ -2,6 +2,7 @@ export interface DiningModal {
   title: string;
   subtitle: string;
   description: string;
+  detailDescription?:string;
   carouselImages: string[];
   diningOptions: {
     title: string;
