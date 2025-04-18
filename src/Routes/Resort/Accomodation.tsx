@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Carousel from "../../UI/Carousel";
 import { ACCOMODATIONS } from "../../MockData/accomdations";
 import BasicTile from "../../UI/Card/BasicTiles/BasicTile";
+import ListHero from "../../UI/Hero/ListHero";
 
 
 const Accomidation: React.FC = () => {
@@ -18,14 +19,16 @@ const Accomidation: React.FC = () => {
 
     return (
         <Container className="accomidation-page" fluid>
-            <Row className="resorts-subpage-hero">
-                <div className="hero" style={{ backgroundImage: `url(${accomidation.accomodations[0].image})` }} >
-                    
-                </div>
-            </Row>
             <Row>
                 <div className="hero-text" >
-                    <h1 style={{textAlign: 'center', marginBottom: '2rem'}}>{accomidation.title}</h1>
+                    <h1 
+                        style={{
+                            textAlign: 'center',
+                            marginTop: "4.6428571429rem",
+                            marginBottom: "4.6428571429rem",
+                            fontSize: "1.75rem"
+                        }}
+                    >{accomidation.title}</h1>
                     <p>{accomidation.description}</p>
                 </div>
             </Row>
@@ -37,6 +40,7 @@ const Accomidation: React.FC = () => {
             }
             </Row>
             
+            {accomidation.includes && <ListHero classNames="" list={accomidation.includes} title="All stays include" column={3}/>}
             
             
         </Container>

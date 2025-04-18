@@ -3,9 +3,8 @@ import { AccommodationDetailModal } from "../interfaces/accomodationDetailModal"
 
 export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
   entoto: {
-  title: "Accomodation at kuriftu resort & spa Entoto",
-    description:
-      "With a backdrop of the distinct wild and lush Entoto Forest, our Kuriftu Entoto Adventure Park offers an alternative hospitality experience. With locally sourced materials used to construct and furnish our Presidential Cabin and the interior of our Glamping facilties, guests are placed in a natural setting to simply relax and savour the peace and quiet.",
+  title: "Accomodation at Kuriftu Resort & Spa Entoto",
+    description:"Perched amid whispering eucalyptus groves, our retreats blend wilderness and refinement. Glamping tents offer canvas sanctuaries with hammock-strung decks and firelit grills, where days unfold on mountain trails beneath endless skies. The glass-encased Presidential Cabin emerges as a forest jewel, its cantilevered terrace framing star-drenched nights, while floor-to-ceiling windows dissolve boundaries between luxury and nature. Here, adventure and serenity unite under Ethiopia's golden sun.",
     accomodations: [
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto27.jpg",
@@ -24,11 +23,19 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
         description:"Embraced by towering trees, the glass-clad Oasis cabin floats in silence, where fire-grilled meals and starlit skies unfold across a terrace suspended in stillness."
       },
     ],
+    includes: [
+        "Daily breakfast for two guests",
+        "Complimentary access to steam and sauna facilities",
+        "Shuttle service from the main gate to the resort",
+        "Use of bicycles for leisurely exploration",
+        "Yoga mat for personal wellness practice",
+        "Blankets are provided for added comfort and warmth"
+    ]
+
   },
   bishoftu: {
-    title: "Accomodation At Kuriftu Resort & Spa Bishoftu",
-    description:
-      "Designed to enhance beauty of natural structures, Kuriftu Bishoftu accommodations provide a variety of rooms that showcase our ever growing woodwork craftsmanship and ability to experiment new styles with locally sourced materials, highlighting the rustic atmosphere that makes Kuriftu unique",
+    title: "Accommodation at Kuriftu Resort & Spa Bishoftu",
+    description:"Crafted with reverence for nature, each room reflects Ethiopia’s soul, earth-toned textures, hand-carved wood, and local artistry framing serene views of Bishoftu’s timeless beauty.",
     accomodations: [
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/4.webp",
@@ -63,12 +70,22 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
         description:"Lofted spaces blend abstract form with color, where high ceilings and polished stone meet village soul—Kuriftu’s serene harmony between tradition and modern elegance."
       },
     ],
+    includes: [
+    "Daily breakfast for two guests in king-size rooms",
+    "Family accommodations include complimentary breakfast for up to four guests",
+    "Access to steam, sauna & jacuzzi facilities",
+    "One complimentary full-body massage per guest",
+    "Kayaking experience on the lake",
+    "Unlimited access to the waterpark",
+    "Daily cinema screenings",
+    "Full use of the fitness center",
+    "Access to the swimming pool"
+]
   },
 
   laketana: {
-    title: "Accomodation At Kuriftu Resort & Spa Tana",
-    description:
-      "With only 28 rooms, Kuriftu Tana lives in its very own eosystem of greenery. As a staple for our brand, the use of natural materials is key to creating this tranquil environment",
+    title: "Accommodation at Kuriftu Resort & Spa Lake Tana",
+    description:"Nestled in the heart of lush greenery, Kuriftu Tana offers 28 rooms that embrace the natural world. Here, the elements of earth and wood create a serene retreat where tranquility reigns. Each space is thoughtfully designed to blend effortlessly with its surroundings, inviting guests to disconnect from the world and reconnect with nature. A haven of calm where simplicity and luxury intertwine.",
     accomodations: [
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/tana/18.webp",
@@ -95,6 +112,12 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
         description:"Awake to the symphony of birdsong as vibrant gardens embrace Kuriftu Tana’s tranquil landscape. The rising sun over the lake heralds a day steeped in serenity.",
       },
     ],
+    includes: [
+      "Daily breakfast for two guests",
+      "Complimentary access to Swimming pool",
+      "One complimentary body massage or foot massage",
+      "Shuttle service from airport to the resort"
+    ]
   },
 
   awash: {

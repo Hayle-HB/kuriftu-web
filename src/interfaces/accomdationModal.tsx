@@ -11,4 +11,5 @@ export interface ResortAccommodationModal {
   title: string;
   description: string;
   accomodations: AccommodationDetail[];
+  includes?:string[];
 }
