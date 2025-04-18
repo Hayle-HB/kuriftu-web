@@ -1160,7 +1160,6 @@ a:hover {
 .resorts-subpage-hero {
   padding-right: 1.75rem;
   padding-left: 1.75rem;
-  margin-top: 4.64285714rem;
   margin-bottom: 4.64285714rem;
 }
 .landing {
@@ -2048,6 +2047,7 @@ a:hover {
 .basic-tile-text h3 {
   font-size: 1.4rem;
   line-height: 1.45;
+  margin-top: 0.5rem;
 }
 .basic-tile-text h5 {
   margin-top: 1.14285714rem;
@@ -2091,6 +2091,32 @@ a:hover {
 .basic-tile-link h3:hover,
 .basic-tile-link p:hover {
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .basic-tile-fullpage {
+    width: 100vw;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 3.33rem;
+  }
+  .basic-tile-fullpage .basic-tile-image {
+    width: 66%;
+  }
+  .basic-tile-fullpage .basic-tile-text {
+    width: 30%;
+  }
+  .basic-tile-fullpage .basic-tile-text h3 {
+    margin-top: 0;
+  }
+  .basic-tile-fullpage .basic-tile {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .basic-tile-fullpage .basic-tile-text {
+    border-bottom: 1px solid #b8b8bf;
+    padding-bottom: 4rem;
+  }
 }
 .accom-tile {
   text-align: left;

@@ -19,19 +19,20 @@ type BasicTileProps = {
     fourth?: boolean;
     square?: boolean;
     textLimit?:number;
+    fullPage?:boolean;
 
 }
 
-const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third, fourth, square, textLimit}) => {
+const BasicTile: React.FC<BasicTileProps> = ({item, index, reveresed, hasLinks, linkText, linkURL, half, third, fourth, square, textLimit, fullPage}) => {
     const sizeDown = half || third;
     return (
-        <Container className={`basic-tile-wrapper `}>
-            <Row className={`basic-tile`}>
+        <Container className={`basic-tile-wrapper ${fullPage && 'basic-tile-fullpage'}`}>
+            <Row className={`basic-tile `}>
                 <div className={`basic-tile-image ${square && 'basic-tile-square'}`}style={{backgroundImage: `url(${item.image})`}}>
                 </div>
 
                 <div className="basic-tile-text" >
-                    <h5>{item.subtitle}</h5>
+                    {item.subtitle && <h5>{item.subtitle}</h5>}
                     <h3 className="title-sans">{item.title}</h3>
                     <p>{textLimit ? item.description.slice(0,textLimit)+" ..." : item.description}</p>
                     {hasLinks && <Link to={`${linkURL}`}>{linkText}</Link>}

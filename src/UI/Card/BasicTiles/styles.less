@@ -79,6 +79,7 @@
         h3{
             font-size: 1.4rem;
             line-height: 1.45;
+            margin-top: .5rem;
         }
         h5{
             margin-top: 1.1428571429rem;
@@ -122,6 +123,35 @@
             &:hover{
                 text-decoration: none;
             }
+        }
+    }
+    &-fullpage{
+        
+        @media screen and (min-width: @md) {
+            width: 100vw;
+            padding: 0;
+            margin: 0 auto;
+            margin-top: 3.33rem;
+            .basic-tile-image {
+                width: 66%;
+            }
+        
+            .basic-tile-text {
+                width: 30%;
+                h3{
+                    margin-top: 0;
+                }
+            }
+            .basic-tile{
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            .basic-tile-text{
+                border-bottom: 1px solid @gray-light;
+                padding-bottom: 4rem;
+            }
+            
         }
     }
 }

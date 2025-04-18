@@ -3,10 +3,9 @@ import { ExperienceModal } from "../interfaces/experiencModal";
 
 export const EXPERIENCE: Record<string, ExperienceModal> = {
   entoto: {
-    title: "Experience at Kuriftu Entoto Adventure Park",
+    title: "Experiences at Kuriftu Resort & Spa Entoto",
     subtitle: "entoto national park",
-    description:
-      "Kuriftu Entoto Adventure Park provides one of the best nature based experiences as it is considered to be the first adventure park in the country! Catering to a vast variety of domestic and international tourists, we aim to please and excite!",
+    description:"Kuriftu Entoto rests where forest breathes and stories linger, Ethiopia’s first adventure park, shaped by earth and sky. Here, moments unfold among towering eucalyptus and sun-dappled trails, inviting quiet discovery and spirited ascent. A sanctuary for those who seek movement and meaning, where every path leads not only outward but inward, to awe, connection, and the quiet thrill of being fully present.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto2.jpg",
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto11.jpg",
@@ -23,19 +22,23 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     ],
 
     items: [
-      
+      {
+        title: "Horse Riding Picnic",
+        description:"Wander quietly on horseback through Entoto’s whispering forest, where sunlight weaves through eucalyptus, and time softens. Our Horse Ride & Picnic experience offers a private journey along hidden trails, ending in a serene clearing. There, a hand-prepared gourmet sinq, rooted in Ethiopian tradition awaits. A moment to pause, to taste, to share, wrapped in stillness and the gentle rhythm of the land.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto3.jpg",
+      },
+      {
+        title: "Forest Spa",
+        description:"Kuriftu Entoto Forest Spa is a quiet sanctuary where ancient rituals and global wisdom meet beneath a canopy of eucalyptus. Rooted in Ethiopia’s healing traditions, each treatment invites stillness and renewal, guided by nature’s rhythm, touched by sacred air. Here, wellness is not an escape but a return: to balance, to breathe, to the elemental grace of being fully, peacefully, alive.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto17.jpg",
+      },  
       {
     title: "Adventure Park",
     description:
       "Experience the thrill of high-flying adventures with our rope course, zipline, and rock climbing. Challenge yourself and enjoy breathtaking views as you climb, balance, and soar through the air.",
     image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto6.jpg",
   },
-  {
-    title: "Horse Riding",
-    description:
-      "Enjoy a scenic horseback ride along our dedicated trails. Whether you're a beginner or experienced rider, our guided horse riding experience offers a fun and relaxing way to explore the resort.",
-    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto3.jpg",
-  },
+  
   {
     title: "Go-Kart Racing",
     description:
@@ -84,7 +87,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     ],
   },
   bishoftu: {
-    title: "Experience At Kuriftu Resort & Spa Bishoftu",
+    title: "Experiences at Kuriftu Resort & Spa Bishoftu",
     subtitle: "LAKE KURIFTU",
     description:
       "Discover a world of adventure in Kuriftu Bishoftu - as the leaders of innovation in the hospitality industry in Ethiopia, we pride ourselves in curated unmatched experiences",
@@ -98,7 +101,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         isLink: false,
         title: "Waterpark",
         description:
-          "Make a splash as you slide into the freshwater surrounding the Kuriftu Waterpark! As the biggest waterpark in East Africa, we offer a range of activities from a variety of slides to a wave pool that fits up to 300 rafts at once!",
+          "A symphony of laughter and light, where crystalline waters meet boundless skies. Glide down serpentine slides, surrender to the rhythm of the wave pool, or simply linger weightless, sun-kissed, in East Africa’s most expansive aquatic sanctuary.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu26.webp",
       },
     ],
@@ -108,25 +111,30 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         title:"Water Park",
         description:"Make a splash at our exciting water park! Enjoy thrilling water slides, lazy rivers, and splash zones for all ages. Whether you're seeking adventure or relaxation, the water park offers the perfect escape under the sun."
       },
-      
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu21.webp",
+        title: "Kayaking",
+        description:"Silence, save for the dip of your paddle. The lake unfolds a mirror to the heavens, framed by emerald hills. Drift. Breathe. Discover the poetry of motion on water."
+      },
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/8.JPG",
         title: "Cinema",
         description:
-          "The cinema at our resort offers a comfortable experience with rows of cushions; whether it’s a date night or family fun, kick back and enjoy a night complete with popcorn, ice blasts, and delicious ice cream!",
+          "Beneath a blanket of stars, sink into plush cushions. The flicker of the screen, the whisper of shared stories. A night woven with the sweetness of homemade treats and unhurried joy.",
       },
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu15.jpg",
-        title: "Swimming Pool",
-        description: "Take a refreshing dip in our crystal-clear swimming pool. Whether you're swimming laps, lounging by the water, or enjoying a poolside drink, our pool offers the perfect setting for relaxation and fun."
+        title: "Swimming",
+        description: "Cool, crystalline refuge. The Village Pool shimmers under the sun while the waterpark thrills with endless play. Here, water is both a sanctuary and a celebration."
       },
-      /**
-       * {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu21.webp",
-        title: "Kayakiing",
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu10.jpg",
+        title: "Table Tennis",
         description:
-          "If you think the only view is within the resort then think again! Enjoy a wonderful kayak ride with friends and be mezermized by the luscious green landscape",
-      },
+          "Precision meets play. The crisp click of the ball, the arc of a well-placed spin. A spirited interlude, where time bends to the thrill of the game.",
+      }
+      /**
+       * 
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu22.webp",
         title: "Lequanda",
@@ -140,12 +148,7 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         description:
           "With an enchanting ecosystem and luxurious natural setting, Kuriftu Resorts & Spa ranks among the be...",
       },
-      {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu10.jpg",
-        title: "Table Tennis",
-        description:
-          "For our table tennis enthusiasts, add an exciting tournament to your itinerary Kuriftu Bishoftu",
-      }
+      
        */
     ],
 
@@ -153,10 +156,10 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
   },
 
   laketana: {
-    title: "Experience At Kuriftu Resort & Spa Tana",
+    title: "Experience At Kuriftu Resort & Spa Lake Tana",
     subtitle: "LAKE TANA",
     description:
-      "Discover a world of adventure in Kuriftu Tana - as the leaders of innovation in the hospitality industry in Ethiopia, we pride ourselves in curated unmatched experiences",
+      "At Kuriftu Lake Tana, adventure unfolds within a landscape of timeless beauty. As pioneers in Ethiopian hospitality, we offer bespoke experiences that invite you to connect, explore, and renew.",
     carouselImages: [
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/10.webp",
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/11.webp",
@@ -174,39 +177,36 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     items: [
       {
         image:
+          "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/10.webp",
+        title: "Boat Ride",
+        description:"Glide gently across the still waters of Lake Tana, where the rising or setting sun paints the sky in hushed gold. Each cruise invites quiet reflection, a communion with nature’s rhythm. Along the way, sacred islands appear like dreams, and if fate is kind, a hippo may surface—silent, ancient, and serene—offering a glimpse into the hidden soul of the lake"
+      },
+      {
+        image:
           "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/11.webp",
         title: "Monastry Visit",
-        description:
-          "Venture out to the holy monastries that make up the core of Bahirdar, these tours are sought after by those looking to learn a bit more about Ethiopian Orthodox Church and history, or for those on pilgrimages",
+        description:"Trace the sacred path across Lake Tana to time-worn monasteries veiled in forest and prayer. Here, the ancient rhythm of the Ethiopian Orthodox faith lingers in stone and chant. Pilgrims and seekers alike are drawn to these hallowed shores—where painted walls whisper centuries of devotion, and silence carries the weight of spiritual memory in a journey both reverent and deeply personal."
       },
       {
         image:
           "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/12.webp",
         title: "Cabana Dining",
-        description:
-          "Lounge along our cabanas overlooking the lake, enjoy the peace and quiet of the setting",
+        description:"Beneath woven cabanas that breathe with the breeze, time slows. The stillness of Lake Tana stretches before you—sunlight dancing gently across its mirrored surface. Here, the hush of water meets the rustle of leaves, offering a sanctuary for quiet thought, unhurried rest, and the luxury of simply being. Each moment lingers, cradled in the calm embrace of Ethiopia’s enduring soul."
       },
       {
         image:
-          "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/8.web",
+          "https://kuriftu-public-media.s3.amazonaws.com/tana/7.webp",
         title: "Swimming Pool",
-        description:
-          "Enjoy a morning swim or cool down after a long day of adventure in our swimming pool and cabana area",
+        description:"Begin the day with stillness or return from your wanderings to water’s quiet embrace. The pool at Kuriftu invites restoration beneath open skies, where sun-dappled ripples meet the soft hush of cabanas. Whether morning’s first breath or twilight’s return, each swim is a ritual of renewal—calm, cleansing, and deeply rooted in the serenity of Ethiopia’s timeless landscape."
       },
-      {
+      /**{
         image:
           "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/14.webp",
         title: "Bird watching",
         description:
           "With an enchanting ecosystem and luxurious natural setting, Kuriftu Resorts & Spa ranks among the be...",
-      },
-      {
-        image:
-          "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/tana/10.webp",
-        title: "Trip to the Falls",
-        description:
-          "Come and explore nature and wilderness with our Guided hiking and tours....",
-      },
+      },*/
+      
     ],
 
     featured: [],

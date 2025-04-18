@@ -19,15 +19,30 @@ const Experiences: React.FC = () => {
 
     return (
         <Container className="accomidation-page" fluid>
+            <Row>
+                <div className="hero-text" >
+                    <h1 
+                        style={{
+                            textAlign: 'center',
+                            fontSize: "1.75rem"
+                        }}
+                    >{experiences.title}</h1>
+                </div>
+            </Row>
             <Row className="resorts-subpage-hero">
                 <Carousel classNames="hero-carousel" slides={experiences.carouselImages} />
             </Row>
             <Row>
                 <TextHero classNames=""  text={experiences.description} />
             </Row>
+            <Row>
+                <Col sm={12} className="p-0">
+                        <BasicTile item={experiences.items[0]} index={1} reveresed={false} hasLinks={false} fullPage={true} square={true} />
+                </Col>
+            </Row>
             <Row className="listing gx-2" >
                     {
-                    experiences.items.map((item, index) => (
+                    experiences.items.slice(1,experiences.items.length).map((item, index) => (
                         <Col md={4} sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={false} hasLinks={false} third={true} /></Col>
                     ))
             }
