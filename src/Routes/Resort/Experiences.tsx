@@ -37,7 +37,7 @@ const Experiences: React.FC = () => {
             </Row>
             <Row>
                 <Col sm={12} className="p-0">
-                        <BasicTile item={experiences.items[0]} index={1} reveresed={false} hasLinks={false} fullPage={true} square={true} />
+                        <BasicTile item={experiences.items[0]} index={1} reveresed={false} hasLinks={false} fullPage={true} landscape={true} />
                 </Col>
             </Row>
             <Row className="listing gx-2" >

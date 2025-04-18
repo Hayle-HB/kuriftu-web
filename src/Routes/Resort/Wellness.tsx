@@ -45,7 +45,7 @@ const Wellness: React.FC = () => {
             <Row className="listing gx-2" >
                     {
                     wellness.wellness.map((item, index) => (
-                       <Col sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={false} reverese={index%2===0?true: false} hasLinks={false} square={true} fullPage={true} /></Col> 
+                       <Col sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={false} reverese={index%2===0?true: false} hasLinks={false} landscape={true} fullPage={true} /></Col> 
                     ))
             }
             </Row>

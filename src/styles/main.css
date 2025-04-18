@@ -2117,9 +2117,11 @@ a:hover {
     flex-direction: row;
   }
   .basic-tile-fullpage .basic-tile-text {
-    border-bottom: 1px solid #b8b8bf;
     padding-bottom: 4rem;
   }
+}
+.basic-tile-landscape {
+  aspect-ratio: 1.612 !important;
 }
 .accom-tile {
   text-align: left;
