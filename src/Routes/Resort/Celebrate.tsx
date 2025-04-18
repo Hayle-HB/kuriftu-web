@@ -17,24 +17,37 @@ const Celebrate: React.FC = () => {
 
     return (
         <Container className="accomidation-page" fluid>
-            <Row className="resorts-subpage-hero">
-                <Carousel classNames="hero-carousel" slides={events.carouselImages} />
-            </Row>
             <Row>
-                <TextHero classNames=""  text={events.description} />
+                <div className="hero-text" >
+                    <h1 
+                        style={{
+                            textAlign: 'center',
+                            fontSize: "1.75rem"
+                        }}
+                    >{events.title}</h1>
+                </div>
             </Row>
+            {
+                events.detailDescription && (
+                    <Row>
+                        <TextHero classNames=""  text={events.detailDescription} />
+                    </Row>
+                )
+            }
+            
 
             
             <Row className="listing gx-2" >
                     
                     {
                     events.events.map((item, index) => (
-                        <Col md={4} sm={12} key={index}><BasicTile key={index} item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} third={true} /></Col>
+                        <Col md={6} sm={12} key={index}><BasicTile key={index} item={item} index={index+1} reveresed={index % 2 === 0 ? true: false} hasLinks={!item.isEnquiryForm} linkText={item.linkText} linkURL={item.link} square={true} /></Col>
                     ))
             }
                
             </Row>
-            {
+            {/**
+             * {
                 events.venus.length > 0 && 
                 <><Row>
                     <Col>
@@ -49,6 +62,7 @@ const Celebrate: React.FC = () => {
                 }
                 </Row></>
             }
+             */}
             
             
         </Container>

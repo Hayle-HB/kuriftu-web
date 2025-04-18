@@ -2,9 +2,10 @@ import { EventModal } from "../interfaces/eventModal";
 
 export const EVENTS: Record<string, EventModal> = {
   entoto: {
-    title: "A Memorable Experience",
+    title: "Host the perfect event at Kuriftu Resort & Spa Entoto",
     subtitle: "Celebrations at Kuriftu Entoto Adventure Park",
     description:"Moments of joy unfold gently, be it a child’s laughter in Trampoline World, a gathering in Hammock Village, or vows exchanged beneath Entoto’s open sky.",
+    detailDescription: "Beneath the whispering canopy of Entoto, moments of meaning unfold. From intimate gatherings to joyous milestones, each celebration is gently woven through the forest air, warm hospitality, and curated rituals. With open-air dining, adventurous pursuits, and mountain serenity, Kuriftu crafts not an event but a memory—timeless, rooted in place, and held with care.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto26.jpg",
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/1.webp",
@@ -14,7 +15,7 @@ export const EVENTS: Record<string, EventModal> = {
       {
         title: "Weddings",
         description:
-          "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones.",
+          "Cradled in the quiet grace of nature, Kuriftu’s wedding venue offers a canvas for the sacred union. Beneath open skies and amidst curated beauty, buffets unfold, music lingers, and love is witnessed. Every detail, from floral gestures to flowing spaces, is shaped with intention—allowing the day to blossom effortlessly into memory, held gently by the land.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto26.jpg",
         link: "wed",
         isEnquiryForm: true,
@@ -23,14 +24,15 @@ export const EVENTS: Record<string, EventModal> = {
       {
         title: "Birthdays",
         description:
-          "Let us celebrate your life and future in a fun and special way with your loved ones. browse through our selection of birthday packages and more!",
+          "Celebrate the quiet beauty of becoming surrounded by those who know you best. At Kuriftu, birthdays unfold with elegance and ease, where curated packages offer more than festivity: they offer memory, meaning, and a sense of belonging. Each detail is considered, each moment held gently, so your special day becomes part of a story worth returning to.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/3.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
       },
 
-      {
+      /**
+       * {
         title: "Social Events",
         description:
           "Thinking of hosting an event? Give us a call and our team can help plan your very own get-together, anniversary, birthday party, family trip - basically anything!",
@@ -39,6 +41,7 @@ export const EVENTS: Record<string, EventModal> = {
         isEnquiryForm: true,
         linkText: "Make an enquiry",
       },
+       */
     ],
 
     venus: [
@@ -92,9 +95,10 @@ export const EVENTS: Record<string, EventModal> = {
     ],
   },
   bishoftu: {
-    title: "Celebrations at Bishoftu ",
+    title: "Host the perfect event at Kuriftu Resort & Spa Bishoftu",
     subtitle: "KURIFTU RESORT & SPA BISHOFTU WEDDING AREA",
     description:"Nestled in the tranquil beauty of Bishoftu’s lakes, Kuriftu Resort offers a captivating backdrop for unforgettable celebrations, where nature’s serenity and Ethiopia’s rich heritage intertwine.",
+    detailDescription: "In the serene expanse of Bishoftu, every celebration becomes a timeless gathering. With intimate spaces, exquisite dining, and curated experiences, our team crafts unforgettable moments amidst nature’s embrace, where memories are born.",
     carouselImages: [
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event4.webp",
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event1.jpg",
@@ -106,10 +110,10 @@ export const EVENTS: Record<string, EventModal> = {
       {
         title: "Weddings",
         description:
-          "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones.",
+          "In a setting where nature’s beauty meets timeless elegance, our exclusive venue invites intimate celebrations. From bespoke décor to curated experiences, each moment is designed to linger.",
         image: "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event2.webp",
-        link: "wed",
-        isEnquiryForm: false,
+        link: "",
+        isEnquiryForm: true,
         linkText: "Explore",
       },
 
@@ -122,7 +126,8 @@ export const EVENTS: Record<string, EventModal> = {
         isEnquiryForm: true,
         linkText: "Make an enquiry",
       },
-      {
+      /**
+       * {
         title: "Concerts",
         description:
           "Join us as we invite your favorite artisits, DJ's and performers for live outdoor experiences!",
@@ -141,6 +146,7 @@ export const EVENTS: Record<string, EventModal> = {
         isEnquiryForm: true,
         linkText: "Make an enquiry",
       },
+       */
     ],
 
     venus: [
@@ -171,6 +177,7 @@ export const EVENTS: Record<string, EventModal> = {
           "Slide into the cool and fresh water and celebrate the season with our resort's coolest property.",
       },
     ],
+
     personalizations: [
       {
         title: "Menu & Catering",
@@ -199,9 +206,10 @@ export const EVENTS: Record<string, EventModal> = {
   },
 
   laketana: {
-    title: "Eternal Moments",
+    title: "Host the perfect event at Kuriftu Resort & Spa Lake Tana ",
     subtitle: "KURIFTU RESORT & SPA LAKE TANA WEDDING AREA",
     description:"Celebrate life’s most cherished moments in a place where time slows, whether marking a birthday, wedding, or simply the joy of being together.",
+    detailDescription: "At Kuriftu, each moment is an invitation to celebrate life’s milestones in harmony with nature’s timeless beauty. Whether marking an anniversary, a reunion, or a special occasion, our serene surroundings offer the perfect canvas for meaningful gatherings. With curated experiences, exceptional dining, and heartfelt service, the Kuriftu team creates moments that linger, leaving you with memories as enduring as the landscapes that embrace you. ",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/tana/1.webp",
       "https://kuriftu-public-media.s3.amazonaws.com/tana/2.webp",
@@ -211,23 +219,24 @@ export const EVENTS: Record<string, EventModal> = {
       {
         title: "Weddings",
         description:
-          "Pave your future with your partner in this romantic setting, share the joy at its most natural state surrounded by loved ones",
+          "Beneath open skies and beside still waters, Kuriftu’s wedding venue offers an atmosphere of quiet grandeur—where every detail, from elegant adornments to curated feasts and evening revelry, is thoughtfully woven to honor your most sacred union.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/tana/16.webp",
         link: "wed",
-        isEnquiryForm: false,
+        isEnquiryForm: true,
         linkText: "Explore",
       },
 
       {
         title: "Birthdays",
         description:
-          "Let us celebrate your life and future in a fun and special way with your loved ones. browse through our selection of birthday packages and more!",
+          "Mark the passage of time with grace. Whether gathered beneath open skies or within intimate spaces, Kuriftu offers bespoke moments to honor your journey. From birthdays to personal milestones, each celebration is thoughtfully curated—infused with warmth, tradition, and the quiet beauty of togetherness. Let your story unfold where joy is both shared and remembered.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/tana/2.webp",
         link: "",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
       },
-      {
+      /**
+       * {
         title: "Social Events",
         description:
           "Thinking of hosting an event? Give us a call and our team can help plan your very own get-together, anniversary, birthday party, family trip - basically anything!",
@@ -236,6 +245,7 @@ export const EVENTS: Record<string, EventModal> = {
         isEnquiryForm: true,
         linkText: "Make an enquiry",
       },
+       */
     ],
 
     venus: [

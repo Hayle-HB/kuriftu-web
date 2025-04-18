@@ -23,6 +23,7 @@ export interface EventModal {
   title: string;
   subtitle: string;
   description: string;
+  detailDescription?: string;
   carouselImages: string[];
   events: EventItem[];
   venus: VenueDetail[];
