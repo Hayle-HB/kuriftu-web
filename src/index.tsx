@@ -56,6 +56,7 @@ import SuccessPageChapa from "./pages/successPageChapa";
 import BostonLanding from "./Routes/bostonLanding";
 import BostonPackage from "./Routes/bostonPackage";
 import Experience from "./Routes/experiences";
+import Adventure from "./Routes/Resort/Adventure";
 
 // const router = createBrowserRouter([
 //   {
@@ -162,7 +163,7 @@ const router = createBrowserRouter([
           },
           {
             path: "adv",
-            element: <ResortAdventure />,
+            element: <Adventure />,
           },
           {
             path: "corp",

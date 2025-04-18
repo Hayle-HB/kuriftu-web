@@ -32,7 +32,14 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
         description:"Kuriftu Entoto Forest Spa is a quiet sanctuary where ancient rituals and global wisdom meet beneath a canopy of eucalyptus. Rooted in Ethiopia’s healing traditions, each treatment invites stillness and renewal, guided by nature’s rhythm, touched by sacred air. Here, wellness is not an escape but a return: to balance, to breathe, to the elemental grace of being fully, peacefully, alive.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto17.jpg",
       },  
-      {
+      
+  /**{
+    title: "Pedal Kart Rides",
+    description:
+      "Enjoy a fun and eco-friendly ride around the resort with our pedal karts. Choose from single, double, or family-sized pedal karts for a relaxing adventure.",
+    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto4.jpg",
+  }, 
+  {
     title: "Adventure Park",
     description:
       "Experience the thrill of high-flying adventures with our rope course, zipline, and rock climbing. Challenge yourself and enjoy breathtaking views as you climb, balance, and soar through the air.",
@@ -45,18 +52,14 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
       "Get your adrenaline pumping with an exciting go-kart race! Compete with friends and family on our professional go-kart track and feel the rush of speed.",
     image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto5.jpg",
   },
-  /**{
-    title: "Pedal Kart Rides",
-    description:
-      "Enjoy a fun and eco-friendly ride around the resort with our pedal karts. Choose from single, double, or family-sized pedal karts for a relaxing adventure.",
-    image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto4.jpg",
-  }, */
   {
     title: "Cycling",
     description:
       "Cycle up and down the beautiful landscape, surrounded by lush greenery. A perfect activity to explore the resort at your own pace.",
     image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto29.webp",
   },
+  */
+  
   /**{
     title: "Archery & Dart Games",
     description:
@@ -68,13 +71,15 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     description:
       "Enjoy the thrill of paintball shooting with target practice or group battles. Whether you're a beginner or an experienced player, our paintball activities offer endless fun.",
     image: "https://kuriftu-public-media.s3.amazonaws.com/adventure/paintball.jpg",
-  }, */
+  },
   {
     title: "Trampoline Fun",
     description:
       "Jump, flip, and bounce on our large trampoline! A fun and energetic activity for both kids and adults looking to enjoy some air-time.",
     image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto9.jpg",
   },
+   */
+  
   /**{
     title: "Kids Playground",
     description:

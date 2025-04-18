@@ -11,9 +11,14 @@ export const ITEMS: Record<string, ItemModal[]> = {
       link: "exp",
     },
     {
+      title: "Adventure",
+      link: "adv",
+    },
+    {
       title: "Wellness",
       link: "well",
     },
+
     {
       title: "Dining",
       link: "dining",

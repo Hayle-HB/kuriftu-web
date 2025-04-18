@@ -2,9 +2,9 @@ import { AdventureModal } from "../interfaces/adventureModal";
 
 export const ADVENTURE: Record<string, AdventureModal> = {
   entoto: {
-    title: "Adventures at Kuriftu Resort & spa entoto",
+    title: "Adventure at Kuriftu Resort & Spa Entoto",
     description:
-      "Get ready adrenaline junkies and nature enthusiats for the ultimate adventureland in the country! With no comparison, Kuriftu Entoto Adventure Park showcases a variety of activities that trump anything of its kind in the country - from paintball shooting ranges to aerial experiences through ziplining and rope course, guests are guaranteed an unforgetable time",
+      "High above the city, where eucalyptus forests breathe and mist curls through the hills, Kuriftu Entoto Adventure Park offers a rare communion with thrill and nature. Glide between treetops, test your spirit in open-air arenas, and surrender to the pulse of elevation. Here, each moment invites exhilaration, refined by setting, elevated by silence, and shaped by Ethiopia’s storied highlands",
     carouselImages: [
       "https://kurifturesorts.com/_nuxt/img/1.2bb9fd7.webp",
       "https://kurifturesorts.com/_nuxt/img/6.609dbb9.webp",
@@ -15,22 +15,57 @@ export const ADVENTURE: Record<string, AdventureModal> = {
         subTitle: "ENTOTTO ADVENTURES",
         title: "Horse Riding",
         description:
-          "Take time to not only ride, but connect with our wonderful horses at the stable, these beauties have been trained to care for our guests as much as we do! ",
-        image: "https://kurifturesorts.com/_nuxt/img/hors.1e1048c.webp",
+          "In the quiet hush of the stables, connection unfolds gently, unspoken. Here, noble horses await not merely to be ridden but to be known. Trained with reverence and care, they carry the calm of the land and the spirit of Kuriftu. A moment beside them becomes more than a ride; it is a return to something deeply human and quietly profound.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto31.webp",
+      },
+      {
+        subTitle: "ENTOTTO ADVENTURES",
+        title: "Paintball group/ Target",
+        description:
+          "Beneath the forest canopy, strategy unfolds in silence and speed. Within Kuriftu Entoto’s secluded terrain, paintball becomes a study in focus and intuition, where swift decisions and unspoken alliances guide each movement. Whether honing precision through individual target practice or testing teamwork in group play, it is a realm where adrenaline meets discipline. Every vivid mark left behind is a fleeting echo of competition played in nature’s embrace.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto31.webp",
+      },
+      {
+        subTitle: "ENTOTTO ADVENTURES",
+        title: "Archery",
+        description:
+          "In the quiet hush of the highlands, a stillness settles as bow meets string. At targets spaced across 60 to 15 meters, focus becomes meditation. Ten arrows, each a breath held in grace, chart a path through silence. Here, precision is not conquest but communion, where the rhythm of aim and release invites presence, patience, and the quiet satisfaction of mastery.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto32.webp",
+      },
+      {
+        subTitle: "ENTOTTO ADVENTURES",
+        title: "Wall Climbing",
+        description:
+          "Carved in harmony with Entoto’s earthy grace, a 10-meter ascent invites quiet determination. Each stone, weathered by time, becomes a step inward into an intimate dialogue between strength and stillness. Here, amid whispering pines and mountain air, the climb is more than physical. It is a solitary journey of focus and resolve, where every hold brings you closer to the calm found only at the summit.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto6.jpg",
       },
       {
         subTitle: "ENTOTTO ADVENTURES",
         title: "Zipline",
         description:
-          " Fear of heights? Dare to take a chance with us - Picture yourself soaring through the sky in the middle of the forest overlooking Entoto's natural landscape over an 500 meter zipline tour - You'll find yourself tempted for more excitement ",
-        image: "https://kurifturesorts.com/_nuxt/img/zip.c6c6a45.webp",
+          "Above the canopy of Entoto, where the air turns still and the horizon stretches wide, a quiet courage is called forth. Suspended over 500 meters of forested terrain, the zipline invites not to thrill alone, but surrender to wind, to wonder, to weightlessness. In the hush between treetops, fear dissolves, replaced by awe and a desire to soar once more.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto33.webp",
       },
       {
         subTitle: "ENTOTTO ADVENTURES",
-        title: "Jungle Playground",
+        title: "Aerial Rope Course",
         description:
-          "A place just for kids and parents to spend quality time together in the Jungle Playground!",
-        image: "https://kurifturesorts.com/_nuxt/img/play.54f31e5.webp",
+          "Suspended five meters above the forest floor, a quiet test of balance and resolve awaits. Stretching 400 meters across 25 elevated stations, the Aerial Rope Course calls for presence and poise. Here, among rustling leaves and open skies, companions move together—step by step—through a journey both playful and profound, where laughter and focus meet in harmony above the earth.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto30.webp",
+      },
+      {
+        subTitle: "ENTOTTO ADVENTURES",
+        title: "Go-Kart/Pedal Kart",
+        description:
+          "Set against the whispering pines of Entoto, a 350-meter track curves through the forest—an ode to playful rivalry. Choose the pulse of a go-kart or the quiet rhythm of a pedal kart. Here, speed is not the goal, but the joy of the chase—moments shared, laughter echoing through the trees, and the simple delight of movement through time and space.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto5.jpg",
+      },
+      {
+        subTitle: "ENTOTTO ADVENTURES",
+        title: "Trampoline",
+        description:
+          "In a sun-dappled grove above Entoto, lightness takes form. Within the quiet canopy, children rise and fall in joyful rhythm—each leap a whisper of freedom, each landing a return to earth’s gentle embrace. Trampoline World is a sanctuary of laughter, where movement becomes memory and the carefree spirit of childhood dances beneath the Ethiopian sky.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto8.jpg",
       },
     ],
   },
