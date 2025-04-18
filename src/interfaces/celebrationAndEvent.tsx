@@ -27,4 +27,5 @@ export interface CelebrationAndEventModal {
   celebrations: CelebrationItem[];
   venus: VenueDetail[];
   personalizations: PersonalizationDetail[];
+  facilities?:string[];
 }

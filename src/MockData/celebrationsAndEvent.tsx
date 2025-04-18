@@ -2,10 +2,10 @@ import { CelebrationAndEventModal } from "../interfaces/celebrationAndEvent";
 
 export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
   entoto: {
-    title: "Corporate Experience at Kuriftu Entoto Adventure Park",
+    title: "Host your meeting at Kuriftu Resort & Spa Entoto",
     subtitle: "Corporate Experience at Kuriftu Entoto Adventure Park",
     description:
-      "Kuriftu Entoto Adventure Park is the perfect destination for our corpoate clients to take full advantage of their benefits. From nature based conferences to company wide retreats, our team places value on the needs of each individual, curating the ultimate getaway",
+      "Among the highland mists of Entoto, Kuriftu offers space for reflection, connection, and renewal. Designed for discerning corporate gatherings, our nature-steeped retreats and open-air conference spaces foster stillness, clarity, and shared purpose—each detail quietly shaped around your team’s well-being.",
     carouselImages: [
       
       "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto13.jpg",
@@ -51,7 +51,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/7.webp",
         description:
-          "In the middle of nature, a secluded meeting room is a perfect place for your meeting, training, or brainstorming session. With a capacity of 80 people (theatrical sitting) book your conference destination right here in the city yet away from the hustle and bustle.",
+          "Cradled by forest silence and the scent of eucalyptus, a secluded meeting space awaits—where minds gather in stillness and ideas take root. Just beyond the city’s edge yet worlds apart, this tranquil room accommodates up to 80 guests in theatre-style grace. Here, nature holds the pause, inviting thoughtful exchange beneath the canopy of Entoto’s timeless calm.",
       },
 
       {
@@ -59,7 +59,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
         description:
-          "At the end of a long day of treking uphill lies our Mountain Peak Restaurant, a spacious dining hall with mixed cuisine and a variety of seating stations that overlook the incredible landscape.",
+          "A space where dialogue flows as effortlessly as the surrounding breeze, this hall, both dining sanctuary and meeting haven, invites quiet focus and thoughtful exchange. Nestled within nature yet refined in form, it offers the warmth of shared meals and the clarity of collective purpose. Ideal for intimate gatherings or expansive discussions, it balances nourishment and nuance in a setting both grounded and elevated.",
       },
 
       {
@@ -67,7 +67,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
         description:
-          "Enjoy our specialty Chekla Tibs while overlooking the horse stable and its track at The Riders Ranch.",
+          "Riders Ranch, nestled in the heart of nature, offers an inspired setting for your next conference or retreat. With expansive views and serene surroundings, this venue encourages creativity and focused dialogue. Whether hosting intimate discussions or larger sessions, the space seamlessly blends functionality with the peaceful energy of the land. Embrace a transformative experience where work and nature coalesce in perfect harmony, fostering both productivity and reflection.",
       },
 
       {
@@ -75,7 +75,14 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/4.webp",
         description:
-          "Nestled in the forest you'll find our open air Castel Wine Bar & Grill with the Rope Course literally overhead, this experience is like no other!",
+          "Castel Bar & Grill offers an inviting atmosphere for gatherings, where sophistication meets relaxed charm. Surrounded by rich natural beauty, this venue provides a warm, intimate space for conferences, fostering connection and conversation. Whether enjoying a refined meal or engaging in a collaborative dialogue, the setting enhances every moment with an air of understated elegance. Let your meetings unfold in a space where comfort and inspiration intertwine effortlessly.",
+      },
+      {
+        title: "Pit Stop Bar & Grill / Refuel",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/4.webp",
+        description:
+          "Pit Stop Bar & Grill offers a vibrant yet laid-back setting for casual conferences and team-building events. Surrounded by a dynamic atmosphere, this venue strikes a perfect balance between comfort and energy, encouraging both focused discussions and relaxed camaraderie. Whether for a brainstorming session or a post-meeting gathering, the blend of good food and refreshing drinks creates a lively yet conducive space for connection and creativity.",
       },
     ],
     personalizations: [
@@ -102,13 +109,22 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
           "On your last day, Our resort provides a memorable ceremony to commemorate your time with us. ...",
       },
     ],
+    facilities:[
+        "Complimentary bottled water",
+        "Notepad and pen for each participant",
+        "Flip chart with markers",
+        "Whiteboard",
+        "Integrated sound system",
+        "High-speed Wi-Fi connectivity",
+        "LCD projector for presentations"
+    ]
+
   },
 
   bishoftu: {
-    title: "Celebration & Events At Kuriftu Resort & Spa Bishoftu",
+    title: "Host your meeting at Kuriftu Resort & Spa Bishoftu",
     subtitle: "CORPORATE AT KURIFTU RESORT & SPA BISHOFTU",
-    description:
-      "Kuriftu Bishoftu is the most sought after conference and retreat destination in the country. With the tranquil atmosphere that surrounds this resort and proximity to the capital, corporate clients are able to take full advantage of their benefits. Our team places value on the needs of each individual, curating the ultimate getaway",
+    description:"Cradled by lake and sky, Kuriftu Bishoftu is a sanctuary for retreat and renewal. Just beyond the hum of the capital, its tranquil atmosphere invites stillness and clarity. Thoughtfully designed for gatherings of purpose, each detail reflects a quiet reverence for space, comfort, and care. Here, time slows, allowing moments of insight, connection, and restoration to unfold with graceful ease.",
     carouselImages: [
       // "https://kurifturesorts.com/_nuxt/img/1.f82bde1.webp",
       // "https://kurifturesorts.com/_nuxt/img/2.cba8b20.webp",
@@ -157,28 +173,28 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
         title: "Balambaras Hall",
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp4.webp",
         description:
-          "The Balambaras hall is the biggest hall in our vicinity, and it has the capacity to hold 120 people at once.",
+          "Balambaras Hall, our largest and most gracious gathering space, welcomes up to 120 guests into its hushed elegance. Designed for meaningful connection and reflective celebration, the hall sits in quiet harmony with its natural surroundings an invitation to pause, convene, and share moments of purpose. Here, tradition and intention meet beneath vaulted ceilings and a gentle Ethiopian sky.",
       },
 
       {
         title: "Tiruwark Hall",
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp1.webp",
         description:
-          "Tiruwark Hall is our smallest hall, with the capacity of hollding 20 people at once.",
+          "Tiruwark Hall, an intimate haven for quiet exchange, holds space for up to 20 guests. Thoughtfully designed to embrace stillness and clarity, it is ideal for private gatherings, discreet meetings, or soulful conversations. Surrounded by the calm rhythms of nature, this refined sanctuary invites reflection and connection where every voice is heard and each moment lingers with quiet significance.",
       },
 
       {
         title: "Meantwab Hall",
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp3.webp",
         description:
-          "Named after one of Ethiopia's queens, Menatwab hall has the capacity to hold 35 people.",
+          "Named in quiet tribute to Queen Mentewab an enduring symbol of grace and wisdom this serene gathering space welcomes up to 35 guests. Within its softly lit walls, time slows, allowing ideas to unfold and connections to deepen. A hall not merely of meetings but of meaning where heritage whispers through elegant details and every gathering becomes part of Ethiopia’s living story.",
       },
 
       {
         title: "Girum Hall",
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp2.webp",
         description:
-          "Girum Hall is the second biggest hall, at our resort, with the capacity of serving 40 people at once.",
+          "Framed by stillness and softened light, Girum Hall offers an intimate sanctuary for thoughtful exchange. Accommodating up to 40 guests, it is Kuriftu’s second-largest gathering space, designed for moments of quiet focus and shared vision. Rooted in Ethiopian warmth and grace, the hall invites presence, where each conversation flows with purpose and every gathering becomes gently etched in memory.",
       },
     ],
     personalizations: [
@@ -203,13 +219,24 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
           "On your last day, Our resort provides a memorable ceremony to commemorate your time with us. ...",
       },
     ],
+    facilities:[
+        "Complimentary bottled water",
+        "Notepad and pen for each participant",
+        "Flip chart with markers",
+        "Whiteboard",
+        "Integrated sound system",
+        "High-speed Wi-Fi connectivity",
+        "Traditional Ethiopian coffee ceremony",
+        "LCD projector for presentations"
+    ]
+
   },
 
   laketana: {
-    title: "Celebration & Events At Kuriftu Resort & Spa Lake Tana",
+    title: "Host your meeting at Kuriftu Resort & Spa Lake Tana",
     subtitle: "CORPORATE AT KURIFTU RESORT & SPA LAKE TANA",
     description:
-      "With the tranquil atmosphere that surrounds this resort, corporate clients are able to take full advantage of their benefits. Our team places value on the needs of each individual, curating the ultimate getaway",
+      "In the hush of Lake Tana’s embrace, purpose finds clarity. Amidst still waters and open skies, corporate gatherings transcend routine. Thoughtfully attuned to individual needs, our team crafts experiences that restore focus and inspire connection—each moment unfolding with quiet intention. Here, productivity and peace coexist, guided by the serene rhythm of nature and the quiet luxury of presence.",
     carouselImages: [
       "https://kuriftu-public-media.s3.amazonaws.com/tana/5.webp",
       "https://kuriftu-public-media.s3.amazonaws.com/tana/dining/3.webp",
@@ -252,10 +279,16 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
 
     venus: [
       {
-        title: "Conference Hall",
+        title: "The Versatile Hall",
         image: "https://kuriftu-public-media.s3.amazonaws.com/tana/5.webp",
         description:
-          "Our conference hall accommodates up to 20 people - fostering a closer bond for those participating in any scheduled experince, whether it be a retreat or meeting.",
+          "Designed with understated elegance, this multi-purpose hall accommodates up to 200 guests, seamlessly transitioning from refined dining experiences to focused meetings. Surrounded by tranquil views, it offers a serene space for both corporate gatherings and intimate events. Curated with care, the environment fosters connection and purpose, allowing for a harmonious blend of productivity and enjoyment, where each moment is thoughtfully crafted.",
+      },
+      {
+        title: "The Council Chamber",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/tana/5.webp",
+        description:
+          "Intimate in scale, our conference hall welcomes up to 25 guests—an enclave designed for reflection, exchange, and connection. Whether gathering for a retreat or a purposeful dialogue, each experience unfolds in quiet harmony with the surrounding landscape, where the stillness of Lake Tana inspires clarity and presence. Here, meaningful encounters are nurtured in a space shaped by intention and serene elegance.",
       },
     ],
     personalizations: [
