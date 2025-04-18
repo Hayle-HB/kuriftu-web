@@ -23,7 +23,7 @@ export const ITEMS: Record<string, ItemModal[]> = {
       link: "corp",
     },
     {
-      title: "Celebration",
+      title: "Celebrations",
       link: "event",
     },
     {
@@ -46,11 +46,15 @@ export const ITEMS: Record<string, ItemModal[]> = {
       link: "dining",
     },
     {
+      title: "Wellness",
+      link: "well",
+    },
+    {
       title: "Corporate",
       link: "corp",
     },
     {
-      title: "Celebration & Events",
+      title: "Celebrations",
       link: "event",
     },
     {
@@ -83,7 +87,7 @@ export const ITEMS: Record<string, ItemModal[]> = {
       link: "corp",
     },
     {
-      title: "Celebration & Events",
+      title: "Celebrations",
       link: "event",
     },
     {
@@ -115,7 +119,7 @@ export const ITEMS: Record<string, ItemModal[]> = {
       link: "corp",
     },
     {
-      title: "Celebration & Events",
+      title: "Celebrations",
       link: "event",
     },
     {
@@ -151,7 +155,7 @@ export const ITEMS: Record<string, ItemModal[]> = {
       link: "corp",
     },
     {
-      title: "Celebration & Events",
+      title: "Celebrations",
       link: "event",
     },
      */

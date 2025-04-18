@@ -18,19 +18,34 @@ const Wellness: React.FC = () => {
 
     return (
         <Container className="accomidation-page" fluid>
+            <Row>
+                <div className="hero-text" >
+                    <h1 
+                        style={{
+                            textAlign: 'center',
+                            fontSize: "1.75rem"
+                        }}
+                    >{wellness.title}</h1>
+                </div>
+            </Row>
             <Row className="resorts-subpage-hero">
                 <Carousel classNames="hero-carousel" slides={wellness.carouselImages} />
             </Row>
-            <Row>
-                <TextHero classNames=""  text={wellness.description} />
-            </Row>
+            {
+                wellness.detailedDescription && (
+                    <Row>
+                        <TextHero classNames=""  text={wellness.detailedDescription} />
+                    </Row>
+                )
+            }
+            
 
-            <ListHero classNames="" list={wellness.facilities} title="Facilities" column={3}/>
+            <ListHero classNames="" list={wellness.facilities} title="Our Facilities" column={3}/>
             
             <Row className="listing gx-2" >
                     {
                     wellness.wellness.map((item, index) => (
-                       <Col md={4} sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={false} hasLinks={false} third={true}  /></Col> 
+                       <Col sm={12} key={index}><BasicTile item={item} index={index+1} reveresed={false} reverese={index%2===0?true: false} hasLinks={false} square={true} fullPage={true} /></Col> 
                     ))
             }
             </Row>

@@ -18,7 +18,6 @@ const ResortNavBar: React.FC=()=>{
     const { slug } = useParams<{ slug: string }>();
     // Get the items list based on the resort (slug)
     const itemsList = slug && ITEMS[slug] ? ITEMS[slug] : [];
-    console.log(itemsList);
     const itemsOptions = [
     {
       title: "Accomodation",
@@ -29,13 +28,18 @@ const ResortNavBar: React.FC=()=>{
       link: "exp",
     },
     {
-      title: "Wellness",
-      link: "well",
+      title: "Adventure",
+      link: "adv",
     },
     {
       title: "Dining",
       link: "dining",
     },
+    {
+      title: "Wellness",
+      link: "well",
+    },
+    
     {
       title: "Corporate",
       link: "corp",

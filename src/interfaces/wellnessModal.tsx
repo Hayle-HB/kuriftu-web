@@ -13,6 +13,7 @@ export interface WellnessModal {
   title: string;
   subtitle: string;
   description: string;
+  detailedDescription?: string;
   carouselImages: string[];
   wellness: WellnessItem[];
   gallery: string[];
