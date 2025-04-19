@@ -18,6 +18,7 @@ import VideoHero from "../../UI/Hero/VideoHero";
 import TextHero from "../../UI/Hero/TextHero";
 import BasicTile from "../../UI/Card/BasicTiles/BasicTile";
 import ResortFooter from "../../UI/Footer/ResortLandingFooter";
+import { bostonHomeData } from "../../MockData/bostonHomeData";
 const ResortDetails: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
 
@@ -204,6 +205,33 @@ const ResortDetails: React.FC = () => {
         ))}
       </Container>
        */}
+
+       {/**
+        * if boston page also show :
+        *     - Wellness thumbnails
+        *     - Dining thumbnails
+        */}
+        {
+          slug === "boston" && (
+            <Row style={{marginTop: '10rem'}}>
+              {
+              bostonHomeData.items.map((item, index)=>(
+                <Col sm={12} >
+                  <BasicTile 
+                    item={item} 
+                    index={index} 
+                    hasLinks={false}
+                    reveresed={false}
+                    landscape={true}
+                    fullPage={true} 
+                    reverese={index%2===0?true: false}
+                  />
+                </Col>
+              ))
+            }
+            </Row>
+          )
+        }
     </div>
   );
 };

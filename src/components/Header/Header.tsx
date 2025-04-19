@@ -15,7 +15,7 @@ const navBarMenus = [
   { id: "experiences", label: "Experiences", isLink: false },
   { id: "wellness", label: "Wellness", isLink: false },
   { id: "event", label: "Celebration & Events", isLink: true },
-  { id: "boston", label: "Boston Day Spa", isLink: true },
+  { id: "resorts/boston", label: "Boston Day Spa", isLink: true },
   { id: "reservation", label: "Reservation", isLink: true },
   { id: "about", label: "About Us", isLink: true },
   { id: "contact", label: "Contact Us", isLink: true },
@@ -91,7 +91,7 @@ const Header = () => {
         </div>
         <div className="header-btn-container">
           <Link
-            to={currentPath === "/boston" ? "/boston/Package": "/reservation"}
+            to={currentPath.includes("resorts/boston") ? "/boston/Package": "/reservation"}
             className="reserve-button"
           >
             Reserve
