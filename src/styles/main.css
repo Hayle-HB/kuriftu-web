@@ -1064,6 +1064,38 @@ a:hover {
 .resort-gallery-hero h1 {
   text-align: center;
 }
+.resort-gallery-slider .carousel-item div {
+  height: 80vh;
+}
+.resort-gallery-slider .carousel-indicators button {
+  width: 100px;
+  height: 1.2px;
+}
+.resort-gallery-control {
+  margin-bottom: 40px;
+}
+.resort-gallery-control button {
+  background: none;
+  color: #313131;
+  padding: 12px 23px;
+}
+.resort-gallery-control button:hover,
+.resort-gallery-control button:active,
+.resort-gallery-control button:focus,
+.resort-gallery-control button:focus-visible,
+.resort-gallery-control button:focus-within {
+  background: none;
+}
+.resort-gallery-control button:hover p,
+.resort-gallery-control button:active p,
+.resort-gallery-control button:focus p,
+.resort-gallery-control button:focus-visible p,
+.resort-gallery-control button:focus-within p {
+  border-bottom: solid 0.8px;
+}
+.resort-gallery-control .selected p {
+  border-bottom: solid 1.2px !important;
+}
 .dining-tile {
   padding-left: 15vw;
   padding-right: 15vw;

@@ -342,6 +342,39 @@
                 text-align: center;
             }
         }
+        &-slider{
+            .carousel-item{
+                div{
+                    height: 80vh;
+                }
+            }
+            .carousel-indicators{
+                button{
+                    width: 100px;
+                    height: 1.2px;
+                }
+            }
+        }
+
+        &-control{
+            button{
+                background: none;
+                color: @dark;
+                padding: 12px 23px;
+                &:hover, &:active, &:focus, &:focus-visible, &:focus-within{
+                    background: none;
+                    p{
+                        border-bottom: solid 0.8px;
+                    }
+                }
+            }
+            .selected{
+                p{
+                    border-bottom: solid 1.2px !important;
+                }
+            }
+            margin-bottom: 40px;
+        }
     }
 }
 
