@@ -39,7 +39,7 @@ export const landingData = {
     "description": "",
     "image": "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa22.jpg",
     "linkText": "Explore",
-    "link": "/resorts/africaVillage"
+    "linkURL": "/resorts/africaVillage"
   },
   {
     "category": "ENTOTO PARK, ADDIS ABABA",
@@ -48,7 +48,7 @@ export const landingData = {
     "description": "",
     "image": "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto23.jpg",
     "linkText": "Explore",
-    "link": "/resorts/entoto"
+    "linkURL": "/resorts/entoto"
   },
   
   {
@@ -58,7 +58,7 @@ export const landingData = {
     "description": "",
     "image": "https://kuriftu-public-media.s3.amazonaws.com/waterpark/waterpark3.jpg",
     "linkText": "Explore",
-    "link": "/resorts/waterpark"
+    "linkURL": "/resorts/waterpark"
   },
   {
     "category": "AWASH NATIONAL PARK",
@@ -67,7 +67,7 @@ export const landingData = {
     "description": "",
     "image": "https://kuriftu-public-media.s3.amazonaws.com/awash/awash3.webp",
     "linkText": "Explore",
-    "link": "/resorts/awash"
+    "linkURL": "/resorts/awash"
   },
   
   {
@@ -78,7 +78,7 @@ export const landingData = {
     "description": "",
     "image": "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu14.jpg",
     "linkText": "Explore",
-    "link": "/resorts/bishoftu"
+    "linkURL": "/resorts/bishoftu"
   },
 ],
   section3: [
