@@ -18,7 +18,7 @@ export const DINING: Record<string, DiningModal> = {
           "At the journey’s end, where forest meets sky, the Mountain Peak Restaurant offers quiet nourishment—its open terraces framing Ethiopia’s highland hush in every unhurried bite.",
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
-        menuLink: "https://kurifturesorts.com/Entoto%20Peak%20Restaurant.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/EntotoPeakRestaurantMenu.pdf",
       },
       {
         title: "The Riders Ranch",
@@ -26,7 +26,7 @@ export const DINING: Record<string, DiningModal> = {
           "Savor tender Chekla Tibs as horses drift past in silence—The Rider's Ranch invites stillness, where flame, earth, and movement meet beneath wide Ethiopian skies.",
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
-        menuLink: "https://kurifturesorts.com/RidersRanch2024.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/EntotoRidersRanchMenu.pdf",
       },
       {
         title: "Castel Bar & Grill",
@@ -34,7 +34,7 @@ export const DINING: Record<string, DiningModal> = {
           "Tucked within the forest’s embrace, the Castel Wine Bar & Grill offers a rare moment of stillness beneath the quiet suspension of the Rope Course overhead.",
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/4.webp",
-        menuLink: "https://kurifturesorts.com/CastleMenu2024.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/EntotoCastleMenu.pdf",
       },
       {
         title: "The Marksman Bar & Grill",
@@ -43,7 +43,7 @@ export const DINING: Record<string, DiningModal> = {
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/5.webp",
         menuLink:
-          "https://kurifturesorts.com/The%20Marksman%20Bar%20&%20Grill.pdf",
+          "https://kuriftu-public-media.s3.amazonaws.com/files/EntotoMarksmanBarAndGrillMenu.pdf",
       },
       {
         title: "Pit Stop Bar & Grill / Refuel",
@@ -51,7 +51,7 @@ export const DINING: Record<string, DiningModal> = {
           "Unwind at Pit Stop Bar & Grill, where camaraderie lingers over a quiet drink, the mountain air soothing after the day's spirited challenges.",
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/6.webp",
-        menuLink: "https://kurifturesorts.com/PitStopMenu2024.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/EntotoPitStopMenu.pdf",
       },
     ],
     diningExperiences: [],
@@ -75,7 +75,7 @@ export const DINING: Record<string, DiningModal> = {
         description:
           "Perched gracefully above Lake Kuriftu, our Lakefront Restaurant offers sweeping views, adorned with artful mosaics and serene reflections, an immersive experience where nature and culture blend seamlessly.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/2.webp",
-        menuLink: "https://kurifturesorts.com/a%20la%20carte%20menu.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/BishoftuLakefrontRestaurantMenu.pdf",
       },
       {
         title: "Cabana Restaurant",
@@ -83,14 +83,14 @@ export const DINING: Record<string, DiningModal> = {
           "Set within a lush sanctuary, The Cabana Restaurant & Bar offers a serene escape. Surrounded by a Japanese-inspired Koi pond, its peaceful setting invites tranquil dining by the lake.",
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/6.webp",
-        menuLink: "https://kurifturesorts.com/a%20la%20carte%20menu.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/BishoftuLakefrontRestaurantMenu.pdf",
       },
       {
         title: "Lequanda",
         description:
           "Savor the finest cuts of meat, from kitfo to tibs and kurt, each prepared with a traditional touch, offering an authentic taste of Ethiopia’s rich culinary heritage.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/3.webp",
-        menuLink: "https://kurifturesorts.com/a%20la%20carte%20menu.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/BishoftuLakefrontRestaurantMenu.pdf",
       },
       {
         title: "Waterpark Diner",
@@ -98,26 +98,10 @@ export const DINING: Record<string, DiningModal> = {
           "Savor fresh flavors in a waterside retreat, where the vibrant energy of the park blends with tranquil dining spaces, offering a memorable meal amidst the playful splash of the water.",
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/5.webp",
-        menuLink: "https://kurifturesorts.com/a%20la%20carte%20menu.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/BishoftuLakefrontRestaurantMenu.pdf",
       },
     ],
-    diningExperiences: [
-      {
-        title: "Waterpark Cabanas",
-        description:
-          "Lay back and relax in our perfectly shaded cabanas while watching your family and friends venture in...",
-        image:
-          "https://kurifturesorts.com/_nuxt/img/WaterparkCabanasO.a6a031a.webp",
-      },
-
-      {
-        title: "Kuriftu Buffet",
-        description:
-          "Serve yourself with our various types of buffets which you can enjoy at our resort...",
-        image:
-          "https://kurifturesorts.com/_nuxt/img/KuriftuBuffetO.ea5b225.webp",
-      },
-    ],
+    diningExperiences: [],
   },
   laketana: {
     title: "Dining at Kuriftu Resort & Spa Lake Tana",
@@ -186,7 +170,7 @@ export const DINING: Record<string, DiningModal> = {
           "Designed to highlight our unparalleled view of the park's waterfall, The Falls Restaurant & Bar is decorated with natural light flooding the space, colorful accents, stone structures, and brick elements, creating an organic vibrance for our guests to absorb. From top-brand liquor to signature cocktails and a set menu made up of locally sourced ingredients, our dining experience fully encompasses our guests' needs.",
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/awash/21.webp",
-        menuLink: "https://kurifturesorts.com/awashMenu.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/AwashMenu.pdf",
       },
       {
         title: "The Pool Bar & Grill",
@@ -194,7 +178,7 @@ export const DINING: Record<string, DiningModal> = {
           "We are excited to present our first Dipping Pool experience paired with our bar & grill on an elevated platform overlooking the waterfall. The perfect destination for a romantic getaway with picture-perfect views from sunrise to sunset.",
         image:
           "https://kuriftu-public-media.s3.amazonaws.com/awash/6.webp",
-        menuLink: "https://kurifturesorts.com/awashMenu.pdf",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/AwashMenu.pdf",
       },
     ],
     diningExperiences: [],
@@ -218,29 +202,9 @@ export const DINING: Record<string, DiningModal> = {
         description:
           "Dine at our food court beside the cool, fresh water and the fun rides at our water park.",
         image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/1.webp",
-        menuLink: "null",
+        menuLink: "",
       },
     ],
-    diningExperiences: [
-      {
-        title: "Kuriftu Buffet",
-        description:
-          "Serve yourself with our various types of buffets which you can enjoy at our resort.",
-        image: "https://kurifturesorts.com/_nuxt/img/KuriftuBuffet.ed0beaf.webp",
-      },
-      {
-        title: "Treat by the Porch",
-        description:
-          " A treat for the eyes and the stomach!",
-        image: "https://kurifturesorts.com/_nuxt/img/TreatByThePorch.df2143d.webp",
-      },
-      {
-        title: "Reserve A table",
-        description:
-          "Let us know beforehand so that we can save best sit in the house",
-        image: "https://kurifturesorts.com/_nuxt/img/ReserveATable.b368639.webp",
-      },
-    ],
-    
+    diningExperiences: [],
   },
 };
