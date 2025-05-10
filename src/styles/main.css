@@ -2124,6 +2124,10 @@ a:hover {
 .basic-tile-link p:hover {
   text-decoration: none;
 }
+.basic-tile .bi {
+  margin-left: 0.4rem;
+  font-size: 0.7rem;
+}
 @media screen and (min-width: 768px) {
   .basic-tile-fullpage {
     width: 100vw;

@@ -1,3 +1,4 @@
+import { link } from "fs";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -14,6 +15,7 @@ type BasicTileProps = {
     hasLinks: boolean;
     linkText?: string;
     linkURL?: string;
+    linkExternal?:boolean;
     half?: boolean;
     third?: boolean;
     fourth?: boolean;
@@ -22,9 +24,25 @@ type BasicTileProps = {
     fullPage?:boolean;
     reverese?: boolean;
     landscape?: boolean;
+
 }
 
-const BasicTile: React.FC<BasicTileProps> = ({item, index, reverese, hasLinks, linkText, linkURL, half, third, fourth, square, textLimit, fullPage, landscape}) => {
+const BasicTile: React.FC<BasicTileProps> = ({
+        item,
+        index,
+        reverese,
+        hasLinks,
+        linkText,
+        linkURL,
+        half,
+        third,
+        fourth,
+        square,
+        textLimit,
+        fullPage,
+        landscape,
+        linkExternal
+    }) => {
     const sizeDown = half || third;
     return (
         <Container className={`basic-tile-wrapper ${fullPage && 'basic-tile-fullpage'}`}>
@@ -36,7 +54,16 @@ const BasicTile: React.FC<BasicTileProps> = ({item, index, reverese, hasLinks, l
                     {item.subtitle && <h5>{item.subtitle}</h5>}
                     <h3 className="title-sans">{item.title}</h3>
                     <p>{textLimit ? item.description.slice(0,textLimit)+" ..." : item.description}</p>
-                    {hasLinks && <Link to={`${linkURL}`}>{linkText}</Link>}
+                    {hasLinks && linkURL &&(
+                    <Link
+                        to={linkURL}
+                        {...(linkExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    >
+                        {linkText}
+                        {"  "}
+                        {linkExternal && <i className="bi bi-box-arrow-up-right"></i>}
+                    </Link>
+                    )}
                 </div>
             </Row>
         </Container>

@@ -44,7 +44,18 @@ const Dinnign: React.FC = () => {
             <Row className="listing gx-2" >
                     {
                     dining.diningOptions.map((item, index) => (
-                        <Col md={6} sm={12} key={index} ><BasicTile item={item} index={index+1} reveresed={false} hasLinks={item.menuLink === "" ? false: true} linkText="Explore Menu" linkURL={item.menuLink} square={true} /></Col>
+                        <Col md={6} sm={12} key={index} >
+                            <BasicTile
+                                item={item}
+                                index={index+1}
+                                reveresed={false}
+                                hasLinks={item.menuLink === "" ? false: true}
+                                linkText="Explore Menu"
+                                linkURL={item.menuLink}
+                                square={true} 
+                                linkExternal={true}
+                            />
+                        </Col>
                     ))
             }
                 
