@@ -134,26 +134,21 @@ export const ITEMS: Record<string, ItemModal[]> = {
    
   ],
   africanVillage: [
-    /**
-      {
+    {
       title: "Accomodation",
       link: "acc",
-    },
-    {
-      title: "Adventure",
-      link: "adv",
     },
     {
       title: "Experiences",
       link: "exp",
     },
     {
-      title: "Wellness",
-      link: "well",
-    },
-    {
       title: "Dining",
       link: "dining",
+    },
+    {
+      title: "Wellness",
+      link: "well",
     },
     {
       title: "Corporate",
@@ -163,10 +158,10 @@ export const ITEMS: Record<string, ItemModal[]> = {
       title: "Celebrations",
       link: "event",
     },
-     */
-    { title: "Gallery",
-     link: "gallery" ,
-    }, 
+    {
+      title: "Gallery",
+      link: "gallery",
+    },
   ],
   waterpark: [
     {

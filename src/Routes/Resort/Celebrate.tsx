@@ -13,7 +13,6 @@ const Celebrate: React.FC = () => {
         return <div>Resort not found</div>;
     }
     const events = EVENTS[slug];
-    console.log(events);
 
     return (
         <Container className="accomidation-page" fluid>

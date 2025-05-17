@@ -14,7 +14,6 @@ const Wellness: React.FC = () => {
         return <div>Resort not found</div>;
     }
     const wellness = WELLNESS[slug];
-    console.log(wellness);
 
     return (
         <Container className="accomidation-page" fluid>

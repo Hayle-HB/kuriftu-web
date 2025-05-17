@@ -24,7 +24,6 @@ const navBarMenus = [
 const Header = () => {
   const location = useLocation();
   const currentPath = location.pathname;
-  console.log('path: ', currentPath);
   const [show, setShow] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState("");
   const [selectedDestination, setSelectedDestination] = useState("");

@@ -63,7 +63,7 @@ const ResortNavBar: React.FC=()=>{
 
     const handleActiveLink = (path: string, link: string, disabled: boolean) => {
         if (disabled) return;
-        if (slug === 'boston' || slug === 'africanVillage') {
+        if (slug === 'boston') {
             if (link === "gallery") {
                 setActiveLink(path);
                 navigate(path);
