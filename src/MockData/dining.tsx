@@ -207,4 +207,39 @@ export const DINING: Record<string, DiningModal> = {
     ],
     diningExperiences: [],
   },
+  africanVillage: {
+    title: "Dining at Kuriftu Resort & Spa African Village",
+    subtitle: "Kuriftu Resort & Spa African Village Dining",
+    description:"At Kuriftu, dining becomes an intimate journey, where each dish reflects a refined simplicity. Here, flavors blend with tranquility, creating a memorable experience for the senses.",
+    detailDescription: "Kuriftu African Village offers a culinary journey across the continent, with dishes inspired by every African nation. Visiting and local chefs collaborate to craft vibrant, authentic menus served in unique dining spaces overlooking breathtaking city views. Each meal is a celebration of African flavor, unity, and creativity—bringing together diverse traditions in a setting that honors both culture and cuisine.",
+    carouselImages: [
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto24.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/2.webp",
+    ],
+    diningOptions: [
+      {
+        title: "1963 Restaurant",
+        description:"A celebration of Africa’s unity, where each dish is a journey—seasonal flavors from across the continent woven with Ethiopian tradition, served beneath the soft glow of handcrafted amber light.",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/EntotoPeakRestaurantMenu.pdf",
+      },
+      {
+        title: "Summit Restaurant",
+        description:"Perched above Addis Ababa’s golden expanse, this sanctuary of fire and sky offers globally inspired plates, kissed by highland herbs and the quiet hum of distant horizons.",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/EntotoRidersRanchMenu.pdf",
+      },
+      {
+        title: "Lobby bar",
+        description:"A serene gathering place where time slows refined drinks, warm textures, and tranquil ambience welcome restful connection at the heart of the retreat.",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/4.webp",
+        menuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/EntotoCastleMenu.pdf",
+      },
+    ],
+    diningExperiences: [],
+  },
 };

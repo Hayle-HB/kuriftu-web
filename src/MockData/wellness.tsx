@@ -176,4 +176,74 @@ export const WELLNESS: Record<string, WellnessModal> = {
       "Scenic hiking trails to explore."
     ],
   },
+  africanVillage: {
+    title: "Wellness at Kuriftu Resort & Spa African Village",
+    subtitle: "Wellness at Kuriftu Resort & Spa African Village",
+    description:"A sanctuary for stillness and renewal, where gentle treatments, serene spaces, and ancient rhythms restore balance to body, mind, and breath.",
+    detailedDescription: "Rooted in Ethiopian tradition and the spirit of African wellness, Kuriftu Resort African Village invites guests to unwind through immersive experiences. Signature massages feature handcrafted oils blended from natural botanicals. The journey continues with Moroccan-inspired rituals, calming steam and sauna sessions, and detailed beauty care—from pedicures and manicures to full salon services. Every treatment is offered in serene, culturally inspired spaces designed to restore balance and inner calm.",
+    carouselImages: [
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto16.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto19.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto17.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto25.webp",
+    ],
+    wellness: [
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
+        title: "Massage",
+        description: "In the quiet embrace of Kuriftu’s sanctuary, hands guided by ancient wisdom trace the contours of tension, dissolving it into the ether. Ethiopian botanicals and rhythmic touch restore equilibrium, as if the highlands themselves whisper renewal. Here, time bends to stillness, and the body remembers its ease.",
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
+        title: "Steam & Sauna",
+        description: "Heat rises like the mist over Lake Tana, purifying skin and spirit. Cedar and eucalyptus weave through the air, a silent hymn to detoxification. In this cloistered warmth, the mind softens, the breath deepens, and the weight of the world slips away—cleansed by steam, reborn in silence.",
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
+        title: "Gym",
+        description: "Strength meets serenity beneath vaulted ceilings, where light spills like honey over polished stone. Ethiopian highland vistas stretch beyond floor-to-ceiling windows, turning movement into meditation. With each rep, the body aligns—honed, not hurried—in a space where discipline and grace converge.",
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
+        title: "Pedicure",
+        description: "Feet, weary from wandering, find solace in ritual. Warm water, fragrant with rosemary and salt, carries away the dust of distant paths. Hands, skilled and unhurried, sculpt nails into moonlit curves, while callouses yield to balms steeped in local honey. A pause, a polish—a return to lightness.",
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
+        title: "Manicure",
+        description: "Fingertips, brushed with gold dust or left unadorned, are tended like sacred art. Cuticles retreat under the press of warmed oil; buffed nails gleam like river stones. The ceremony unfolds in silence, a moment to reclaim grace in the glide of a file, the stroke of a brush.",
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
+        title: "Swimming Pool",
+        description: "Water, cradled by stone and crowned with sky, holds the stillness of a mountain tarn. Sunlight fractures across the surface, painting shifting mosaics on the tiles below. To swim here is to drift between earth and cloud, weightless, as the highland air hums against wet skin.",
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto20.jpg",
+        title: "Morocco Bath",
+        description: "Steeped in North African tradition, the ritual begins in a sanctuary of marble and soft light. Warmth envelops the body as black soap, rich with argan and eucalyptus, lifts away the outer world. A kessa glove glides in rhythmic circles, unveiling skin reborn. Then, rosewater rinses like a desert rain, leaving only silk and sunlight in its wake—a purification both ancient and sublime.",
+      },
+    ],
+    gallery: [
+      
+      
+      
+    ],
+
+    isLink: true,
+    spaMenuLink: "https://kuriftu-public-media.s3.amazonaws.com/files/entotoSpa.pdf",
+    items: [
+      
+    ],
+
+    facilities: [
+      "Massage",
+      "Steam andsauna",
+      "Gym",
+      "Pedicure and manicure",
+      "Morocco bath",
+      "Swimming pool"
+    ],
+    
+  },
 };

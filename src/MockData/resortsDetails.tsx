@@ -75,10 +75,9 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
   africanVillage: {
     isIframe: false,
     name: "Kuriftu Resort & Spa African Village",
-    region: "Addis Ababa",
-    address: "New Ambo RD, Addis Ababa 1000, Ethiopia",
-    description:
-      "With our devotion to connecting the African nation through unique experiments in the hospitality industry, the Kuriftu brand is proud to present Kuriftu Resort & Spa Africa Village. This project highlights 54 villas that showcase the individual beauty of each African country ranging from food, art, books, cultural artifacts, fabrics, flags, and so much more! We aim to embrace the mesh of culture in this extraordinary continent and encourage others to explore.",
+    region: "Melka Nuno, Sheger City",
+    address: "Melka Nuno, Sheger City, Oromia",
+    description:"A quiet homage to the continent’s soul—Kuriftu Resort & Spa African Village unveils 54 villas, each a tender reflection of a nation’s spirit. Within, traditions breathe through handwoven fabrics, ancestral art, and the scent of native cuisine. This is not simply a resort, but a journey across Africa’s cultural heartbeat—an invitation to dwell in her stories, her rhythms, her quiet, radiant grace.",
     phone: "+251924949494",
     latitude: 9.03,
     longitude: 38.74,
@@ -87,6 +86,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     rating: 0,
     cover_image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa22.jpg",
     cover_video: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/african_village720p.mp4",
+    direction:"20.7  km from Addis Ababa Bole International Airport, Melka Nuno Sheger City, Oromia"
   },
   waterpark: {
     isIframe: false,

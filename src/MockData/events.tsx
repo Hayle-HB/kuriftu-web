@@ -336,6 +336,88 @@ export const EVENTS: Record<string, EventModal> = {
     personalizations: [],
     venus: [],
   },
+  africanVillage: {
+    title: "Host the perfect event at Kuriftu Resort & Spa African Village",
+    subtitle: "Celebrations at Kuriftu African Village",
+    description:"At Kuriftu, every celebration is an intimate reflection of your journey. Here, moments are thoughtfully crafted, unfolding in serene settings that invite connection and timeless memories.",
+    detailDescription: "Under a canopy of sky and stars, celebrations unfold in soulful rhythm—where ancestral echoes meet curated elegance. At Kuriftu African Village, every gathering becomes a reverent expression of culture and connection, embraced by handcrafted architecture and the quiet hum of nature. From intimate unions to spirited feasts, each moment is elevated with grace, evoking a sense of belonging that lingers long after departure.",
+    carouselImages: [
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto26.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/1.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/2.webp",
+    ],
+    events: [
+      {
+        title: "Weddings",
+        description:
+          "Cradled in the quiet grace of nature, Kuriftu’s wedding venue offers a canvas for the sacred union. Beneath open skies and amidst curated beauty, buffets unfold, music lingers, and love is witnessed. Every detail, from floral gestures to flowing spaces, is shaped with intention—allowing the day to blossom effortlessly into memory, held gently by the land.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto26.jpg",
+        link: "wed",
+        isEnquiryForm: true,
+        linkText: "Make an enquiry",
+      },
+      {
+        title: "Birthdays",
+        description:
+          "Celebrate the quiet beauty of becoming surrounded by those who know you best. At Kuriftu, birthdays unfold with elegance and ease, where curated packages offer more than festivity: they offer memory, meaning, and a sense of belonging. Each detail is considered, each moment held gently, so your special day becomes part of a story worth returning to.",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/3.webp",
+        link: "",
+        isEnquiryForm: true,
+        linkText: "Make an enquiry",
+      },
+
+      /**
+       * {
+        title: "Social Events",
+        description:
+          "Thinking of hosting an event? Give us a call and our team can help plan your very own get-together, anniversary, birthday party, family trip - basically anything!",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/4.webp",
+        link: "",
+        isEnquiryForm: true,
+        linkText: "Make an enquiry",
+      },
+       */
+    ],
+
+    venus: [
+      {
+        title: "Wedding Venue",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/1.webp",
+        description:"Poised above the city in quiet grandeur, Kuriftu’s open-air wedding venue offers a panoramic embrace of sky and skyline. With space to host up to 2,000 guests, it invites ceremonies beneath wide horizons where vows are exchanged to the rhythm of wind and distant light, and each moment becomes a timeless offering to love, community, and the sacred beauty of place.",
+      },
+
+      {
+        title: "Birthday",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/5.webp",
+        description:"Marking time with beauty and intention, birthday celebrations at Kuriftu unfold in spaces where nature whispers and tradition lingers. Surrounded by artful design and quiet luxury, each gathering becomes a deeply personal ritual—honoring life with candlelight, laughter, and soulful connection. Whether intimate or grand, moments are woven with meaning, inviting guests to pause, reflect, and celebrate the quiet joy of simply being."
+      },
+    ],
+    personalizations: [
+      {
+        title: "Menu & Catering",
+        image:
+          "https://kurifturesorts.com/_nuxt/img/Menu&Catering.5e64bc6.webp",
+        description:
+          "Our resort caters to your choice of dishes and plates for your celebrations and gatherings - whether...",
+      },
+
+      {
+        title: "Event Consultation",
+        image:
+          "https://kurifturesorts.com/_nuxt/img/EventConsulting.9e5c587.webp",
+        description:
+          "Reach out to receive expert advice and consulting on your events provided by our Sales and Banquest ...",
+      },
+
+      {
+        title: "Entertainment",
+        image:
+          "https://kurifturesorts.com/_nuxt/img/Entertainment.30afcb1.webp",
+        description:
+          "Let us plan a way to make your celebrations fun and exciting....",
+      },
+    ],
+  },
 };
 
 export const EVENTSDETIAL = {

@@ -163,6 +163,40 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
       },
     ],
   },
+  africanVillage: {
+    title: "Accommodation at Kuriftu Resort & Spa African Village",
+    description:"Set among whispering gardens, 54 villas reflect the spirit of a continent—each an ode to place and heritage. Woven textures, ancestral art, and earth-warmed walls evoke quiet reverence. Family and double-bed sanctuaries offer space to exhale, where every curve and corner speaks of craftsmanship and care. Here, time slows, and the soul is gently drawn inward—toward stillness, meaning, and memory.",
+    accomodations: [
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/acc/1.webp",
+        accomdationId: 1,
+        subtitle: "King Size Bed",
+        title: "Kuriftu Deluxe  Suite",
+        isLinked: true,
+        description:"Tucked along lush garden pathways, 44 double-bed villas exude warmth with earth-toned interiors, handcrafted décor, and city views, offering an intimate retreat infused with African heritage.",
+      },
+      {
+        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/acc/2.webp",
+        accomdationId: 2,
+        subtitle: "Family Rooms",
+        title: "Kuriftu Deluxe Suite",
+        isLinked: true,
+        description:"Among serene landscapes, 10 family villas feature twin beds on an elevated level, spacious living areas, and curated artistry blending tradition and comfort for a shared African escape.",
+      },
+      
+     
+    ],
+    includes: [
+        "Daily breakfast for two, or for four in family villas",
+        "Access to steam and sauna for quiet restoration",
+        "A tranquil gym space for mindful movement",
+        "Seamless WiFi connection throughout",
+    ]
+
+
+ 
+
+  },
 };
 
 export const ACCOMODATIONDETAIL: AccommodationDetailModal = {

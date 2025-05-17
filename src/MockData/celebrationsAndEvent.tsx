@@ -384,4 +384,132 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
       },
     ],
   },
+  africanVillage: {
+    title: "Host your meeting at Kuriftu Resort & Spa African Village",
+    subtitle: "Corporate Experience at Kuriftu African Village",
+    description:
+      "In tranquil surrounds, where stillness inspires clarity, Kuriftu offers a sanctuary for thought and connection. Purposefully designed spaces host gatherings both intimate and grand—where ideas unfold beside serene waters and shaded gardens. Here, corporate retreats transcend the expected, blending quiet luxury with cultural soul, allowing vision to breathe and collaboration to flourish in settings shaped by nature, heritage, and quiet intention.",
+    carouselImages: [
+      
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto13.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/5.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/2.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
+      
+    ],
+    celebrations: [
+      {
+        title: "Corporate Rate Agreement",
+        description:
+          "Let us take care of your teams by rejuvinating and stregthening their relations with one another to optimize their level of efficiency by becoming corporate clients - having access to our extensive list of activities, destinations and experineces within the wellness space will help companies reap the benefits. Join the Kuriftu Family by making an enquiry with our Corporate Sales Team and we will customize your membership accordingly!",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto12.jpg",
+        link: "https://kurifturesorts.com/corporate_entoto.pdf",
+        isEnquiryForm: false,
+        linkText: "Entoto Corporate Package",
+      },
+      {
+        title: "Corporate Retreat",
+        description:
+          "Treat your team to a wild adventure at Kuriftu Entoto Adventure Park - our team can curate the perfect experience ranging from outdoor meetings in our Hammock Village, adventurous activities as ice breakers and orientation for new staff, rejuvinating spa services to relax the mind, and many more",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/5.webp",
+        link: "",
+        isEnquiryForm: true,
+        linkText: "Make an enquiry",
+      },
+
+      {
+        title: "Host A Meeting Or Conference",
+        description:
+          "Allow us to host your companies conference, meetings or events in our Mountain Peak Restaurant. Break out sessions can be facilitated in the surrounding cabanas for an alternative experience",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/7.webp",
+        link: "",
+        isEnquiryForm: true,
+        linkText: "Make an enquiry",
+      },
+    ],
+
+    venus: [
+      {
+        title: "Haile Selassie Hall",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/7.webp",
+        description:"Named in reverence of Haile Selassie, the visionary Ethiopian leader, this 165-square-meter hall is a sanctuary for thoughtful gatherings. Framed by quiet elegance and warm light, it evokes a sense of presence and purpose. Whether for dialogue, ceremony, or collaboration, the space invites connection—rooted in history, elevated in design, and attuned to the rhythms of reflection and exchange.",
+      },
+
+      {
+        title: "Kwame Nkrumah Hall",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
+        description:"Kwame Nkrumah, a guiding force of African unity, this hall with 156-square-meter space, embodies elegance and purpose. With its serene design and refined ambiance, it fosters connection and collaboration. Ideal for both intimate discussions and larger gatherings, the hall offers an inspiring backdrop where ideas flourish and meaningful conversations unfold. A space that invites focus, creativity, and the spirit of progress.",
+      },
+
+      {
+        title: "Jomo Kenyatta Hall",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+        description:"Jomo Kenyatta Hall, spanning 123 square meters, offers a harmonious setting for focused meetings and dynamic events. The space, infused with a quiet sophistication, fosters engagement and collaboration. Its intimate size ensures a personalized atmosphere, while its design facilitates seamless flow, allowing for both reflection and interaction. An ideal venue for those seeking an environment where productivity meets tranquility."
+      },
+
+      {
+        title: "Gemal Abdel Nasser Hall",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+        description:"Gemal Abdel Nasser Hall, spanning 95 square meters, provides a serene environment for meaningful exchanges and quiet reflection. With its understated elegance and warm, inviting atmosphere, the hall offers a peaceful backdrop for focused events. Its design promotes both intimacy and purpose, ensuring that each gathering unfolds with clarity and grace, making it the perfect space for moments of connection and collaboration."
+      },
+      {
+        title: "Julius Nyerere Hall",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+        description:"Julius Nyerere Hall, with an intimate 88 square meters, fosters an atmosphere of contemplation and meaningful connection. Its thoughtfully designed space offers a tranquil setting for private meetings and smaller gatherings. The hall’s serene ambiance, coupled with its refined simplicity, invites moments of collaboration and reflection, ensuring every event unfolds in a setting of quiet elegance and purpose."
+      },
+      {
+        title: "Modibo Keita Hall",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+        description:"Modibo Keita Hall, at 61 square meters, is an elegant space designed for intimate meetings and gatherings. Its refined ambiance encourages calm dialogue and creative exchanges, offering an ideal environment for productive collaboration. With subtle design details and a serene atmosphere, this hall invites guests to engage in meaningful conversations and leave inspired, enveloped in an atmosphere of tranquility and purpose."
+      },
+      {
+        title: "Pan-African Hal",
+        image:
+          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+        description:"Pan-African Hall, spanning 780 square meters, is a grand venue designed to host large-scale events with elegance and grace. Its expansive layout, adorned with refined details, creates a harmonious setting for distinguished gatherings. Offering ample space for collaboration, celebration, and reflection, this hall embodies the spirit of unity and cultural richness, making it the perfect backdrop for impactful events that resonate with a global audience."
+      },
+    ],
+    personalizations: [
+      {
+        title: "Menu & Catering",
+        image:
+          "https://kurifturesorts.com/_nuxt/img/Menu&Catering.5e64bc6.webp",
+        description:
+          "Our resort caters to your choice of dishes and plates for your celebrations and gatherings - whether...",
+      },
+
+      {
+        title: "Space organization",
+        image:
+          "https://kurifturesorts.com/_nuxt/img/SpaceOrganization.d5320f2.webp",
+        description:
+          "Based on your needs our resort provides different arrangements of space. ...",
+      },
+
+      {
+        title: "Closing event",
+        image: "https://kurifturesorts.com/_nuxt/img/ClosingEvent.dee1570.webp",
+        description:
+          "On your last day, Our resort provides a memorable ceremony to commemorate your time with us. ...",
+      },
+    ],
+    facilities:[
+        "Branded notebook with pen/pencil",
+        "Bottled water",
+        "Flip-chart",
+        "LCD Projector",
+        "Sound system with microphone",
+        "Business center services",
+        "WIFI", 
+        "Smart whiteboard",
+    ]
+
+  },
+
 };
