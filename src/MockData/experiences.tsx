@@ -267,45 +267,45 @@ export const EXPERIENCE: Record<string, ExperienceModal> = {
     subtitle: "Melka Nuno, Sheger City",
     description:"Description -At Kuriftu Resort & Spa African Village, tradition and tranquility meet in a setting inspired by Africa’s diverse heritage. Surrounded by hand-crafted architecture and lush gardens, the resort invites you to reconnect with culture, wellness, and art. From curated experiences to rejuvenating spa rituals, every corner celebrates the spirit of the continent in an atmosphere of warmth, creativity, and authentic African hospitality.",
     carouselImages: [
-      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu25.webp",
-      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu8.jpg",
-      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu21.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/gallery/1.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/gallery/2.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/gallery/3.jpg",
     ],
     experiences: [
       {
         isLink: false,
         title: "Scenic City Escape",
         description:"From the elevated grounds of African Village, guests are treated to sweeping 180-degree views of the surrounding cityscape. Whether at sunrise or sunset, the view offers a quiet moment of perspective—where urban energy meets natural stillness. Perfect for reflection, photography, or simply soaking in the scenery, it’s a vantage point that connects you to the rhythm of Ethiopia.",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu26.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa31.jpg",
       },
       {
         isLink: false,
         title: "Discover Africa in One Place",
         description:"Celebrate the spirit of Pan-Africanism at African Village, where each of the 54 rooms honors a different African nation through art, design, and storytelling. From textiles to architecture, every detail reflects the beauty and diversity of the continent. Guests are invited to journey across Africa without leaving the resort—immersed in a rich tapestry of heritage, unity, and cultural pride.",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu26.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa22.jpg",
       },
       {
         isLink: false,
         title: "Escape into Nature / Serenity in Every Corner",
         description:"Lush gardens, stone pathways, and traditional architecture come together to create a sanctuary of calm. Stroll through fragrant foliage, relax under acacia trees, or listen to birdsong at sunrise. The resort’s design honors nature while offering peaceful spaces for rest and reflection, inviting guests to slow down and reconnect with the natural world.",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu26.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa15.jpg",
       },
     ],
     items: [
       {
         title: "Scenic City Escape",
         description:"From the elevated grounds of African Village, guests are treated to sweeping 180-degree views of the surrounding cityscape. Whether at sunrise or sunset, the view offers a quiet moment of perspective—where urban energy meets natural stillness. Perfect for reflection, photography, or simply soaking in the scenery, it’s a vantage point that connects you to the rhythm of Ethiopia.",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu26.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa31.jpg",
       },
       {
         title: "Discover Africa in One Place",
         description:"Celebrate the spirit of Pan-Africanism at African Village, where each of the 54 rooms honors a different African nation through art, design, and storytelling. From textiles to architecture, every detail reflects the beauty and diversity of the continent. Guests are invited to journey across Africa without leaving the resort—immersed in a rich tapestry of heritage, unity, and cultural pride.",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu26.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa22.jpg",
       },
       {
         title: "Escape into Nature / Serenity in Every Corner",
         description:"Lush gardens, stone pathways, and traditional architecture come together to create a sanctuary of calm. Stroll through fragrant foliage, relax under acacia trees, or listen to birdsong at sunrise. The resort’s design honors nature while offering peaceful spaces for rest and reflection, inviting guests to slow down and reconnect with the natural world.",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/bishoftu26.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa15.jpg",
       },
     ],
 

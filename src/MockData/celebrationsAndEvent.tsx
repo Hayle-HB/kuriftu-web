@@ -390,12 +390,7 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
     description:
       "In tranquil surrounds, where stillness inspires clarity, Kuriftu offers a sanctuary for thought and connection. Purposefully designed spaces host gatherings both intimate and grand—where ideas unfold beside serene waters and shaded gardens. Here, corporate retreats transcend the expected, blending quiet luxury with cultural soul, allowing vision to breathe and collaboration to flourish in settings shaped by nature, heritage, and quiet intention.",
     carouselImages: [
-      
-      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto13.jpg",
-      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/5.webp",
-      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/2.webp",
-      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
-      
+      "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/corporate/1.jpg",
     ],
     celebrations: [
       {
@@ -432,46 +427,46 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
       {
         title: "Haile Selassie Hall",
         image:
-          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/7.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/corporate/1.jpg",
         description:"Named in reverence of Haile Selassie, the visionary Ethiopian leader, this 165-square-meter hall is a sanctuary for thoughtful gatherings. Framed by quiet elegance and warm light, it evokes a sense of presence and purpose. Whether for dialogue, ceremony, or collaboration, the space invites connection—rooted in history, elevated in design, and attuned to the rhythms of reflection and exchange.",
       },
 
       {
         title: "Kwame Nkrumah Hall",
         image:
-          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/1.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/corporate/1.jpg",
         description:"Kwame Nkrumah, a guiding force of African unity, this hall with 156-square-meter space, embodies elegance and purpose. With its serene design and refined ambiance, it fosters connection and collaboration. Ideal for both intimate discussions and larger gatherings, the hall offers an inspiring backdrop where ideas flourish and meaningful conversations unfold. A space that invites focus, creativity, and the spirit of progress.",
       },
 
       {
         title: "Jomo Kenyatta Hall",
         image:
-          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/corporate/1.jpg",
         description:"Jomo Kenyatta Hall, spanning 123 square meters, offers a harmonious setting for focused meetings and dynamic events. The space, infused with a quiet sophistication, fosters engagement and collaboration. Its intimate size ensures a personalized atmosphere, while its design facilitates seamless flow, allowing for both reflection and interaction. An ideal venue for those seeking an environment where productivity meets tranquility."
       },
 
       {
         title: "Gemal Abdel Nasser Hall",
         image:
-          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/corporate/1.jpg",
         description:"Gemal Abdel Nasser Hall, spanning 95 square meters, provides a serene environment for meaningful exchanges and quiet reflection. With its understated elegance and warm, inviting atmosphere, the hall offers a peaceful backdrop for focused events. Its design promotes both intimacy and purpose, ensuring that each gathering unfolds with clarity and grace, making it the perfect space for moments of connection and collaboration."
       },
       {
         title: "Julius Nyerere Hall",
         image:
-          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/corporate/1.jpg",
         description:"Julius Nyerere Hall, with an intimate 88 square meters, fosters an atmosphere of contemplation and meaningful connection. Its thoughtfully designed space offers a tranquil setting for private meetings and smaller gatherings. The hall’s serene ambiance, coupled with its refined simplicity, invites moments of collaboration and reflection, ensuring every event unfolds in a setting of quiet elegance and purpose."
       },
       {
         title: "Modibo Keita Hall",
         image:
-          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/corporate/1.jpg",
         description:"Modibo Keita Hall, at 61 square meters, is an elegant space designed for intimate meetings and gatherings. Its refined ambiance encourages calm dialogue and creative exchanges, offering an ideal environment for productive collaboration. With subtle design details and a serene atmosphere, this hall invites guests to engage in meaningful conversations and leave inspired, enveloped in an atmosphere of tranquility and purpose."
       },
       {
         title: "Pan-African Hal",
         image:
-          "https://kuriftu-public-media.s3.amazonaws.com/Entoto/dining/3.webp",
+          "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/corporate/1.jpg",
         description:"Pan-African Hall, spanning 780 square meters, is a grand venue designed to host large-scale events with elegance and grace. Its expansive layout, adorned with refined details, creates a harmonious setting for distinguished gatherings. Offering ample space for collaboration, celebration, and reflection, this hall embodies the spirit of unity and cultural richness, making it the perfect backdrop for impactful events that resonate with a global audience."
       },
     ],

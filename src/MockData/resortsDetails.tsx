@@ -57,10 +57,9 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     isIframe: true,
     name: "Kuriftu Resort & Spa Awash Falls",
     region: "AWASH NATIONAL PARK",
-    address: "",
-    description:
-      "Located on the Southern tip of Awash National Park, our one-of-a-kind boutique resort suspended over a waterfall places guests at an elevation that is unique to our property. With views of crocodiles on the river bank, the refreshing mist from the edge of the falls paired with unmatched scenery, we offer the ultimate experience to our visitors",
-    phone: "+251944448800",
+    address: "Awash park, Awash ethiopia",
+    description:"Suspended above the whispering rush of cascading water, Kuriftu Awash rests at the southern edge of Awash National Park an elevated sanctuary where mist lingers and wildlife watches in stillness. Crocodiles bask along the river’s curve, while each breath carries the scent of wilderness and stone. Here, time slows, and nature's quiet spectacle unfolds beyond your private perch.",
+    phone: "+251944448800, +2519 11 091185",
     latitude: 8.779961,
     longitude: 39.003129,
     location:
@@ -71,6 +70,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
       "https://kuriftu-public-media.s3.amazonaws.com/awash/awash3.webp",
     cover_video:
       "https://kuriftu-public-media.s3.amazonaws.com/awash/awash_720P.mp4",
+    direction: "220 km from Addis Ababa Bole International Airport",
   },
   africanVillage: {
     isIframe: false,
@@ -78,7 +78,7 @@ export const RESORTDETAILS: Record<string, ResortDetailsModal> = {
     region: "Melka Nuno, Sheger City",
     address: "Melka Nuno, Sheger City, Oromia",
     description:"A quiet homage to the continent’s soul—Kuriftu Resort & Spa African Village unveils 54 villas, each a tender reflection of a nation’s spirit. Within, traditions breathe through handwoven fabrics, ancestral art, and the scent of native cuisine. This is not simply a resort, but a journey across Africa’s cultural heartbeat—an invitation to dwell in her stories, her rhythms, her quiet, radiant grace.",
-    phone: "+251924949494",
+    phone: "+2519 80 565656, +2519 11 091185",
     latitude: 9.03,
     longitude: 38.74,
     location: "https://www.google.com/maps/place/Kuriftu+Resort+%26+Spa+African+Village/@9.0350944,38.6755992,17z/data=!3m1!4b1!4m9!3m8!1s0x164b87ea0f1d0525:0x4a24253e0a125b37!5m2!4m1!1i2!8m2!3d9.0350944!4d38.6781741!16s%2Fg%2F11sbh9b4y8?entry=ttu&g_ep=EgoyMDI1MDQwMi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D",

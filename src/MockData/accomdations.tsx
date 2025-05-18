@@ -121,9 +121,8 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
   },
 
   awash: {
-    title: "Accomodation at Kuriftu Resort Awash Falls",
-    description:
-      "Premiering Kuriftu's boutique resort chain, Kuriftu Resort Awash Falls invites guests into the extraordinary landscape of Awash National Park, offering privacy, uncomprimising comfort and service.",
+    title: "Accommodation at Kuriftu Resort & Spa Awash falls",
+    description:"Unveiled within the raw majesty of Awash National Park, Kuriftu Awash Falls is a quiet retreat where solitude and stillness meet. Perched above rushing waters, this boutique sanctuary offers a contemplative refuge where refined simplicity, heartfelt service, and elemental beauty converge. Here, each moment unfolds to the rhythm of the land, inviting guests into a world shaped by nature, culture, and quiet grace.",
     accomodations: [
       {
         image: "https://kuriftu-public-media.s3.amazonaws.com/awash/acc/1.webp",
@@ -168,7 +167,7 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
     description:"Set among whispering gardens, 54 villas reflect the spirit of a continent—each an ode to place and heritage. Woven textures, ancestral art, and earth-warmed walls evoke quiet reverence. Family and double-bed sanctuaries offer space to exhale, where every curve and corner speaks of craftsmanship and care. Here, time slows, and the soul is gently drawn inward—toward stillness, meaning, and memory.",
     accomodations: [
       {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/acc/1.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king1.jpg",
         accomdationId: 1,
         subtitle: "King Size Bed",
         title: "Kuriftu Deluxe  Suite",
@@ -176,7 +175,7 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
         description:"Tucked along lush garden pathways, 44 double-bed villas exude warmth with earth-toned interiors, handcrafted décor, and city views, offering an intimate retreat infused with African heritage.",
       },
       {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/awash/acc/2.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/family1.jpg",
         accomdationId: 2,
         subtitle: "Family Rooms",
         title: "Kuriftu Deluxe Suite",
@@ -857,6 +856,105 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
           title: "Executive",
           description:
             "  Enjoy this unique space with sunlight radiating from every direction - our Executive Suite is the pe...",
+        },
+      ],
+    },
+  },
+  africanVillage: {
+    1: {
+      title: "Kuriftu Deluxe Suite",
+      carouselImages: [
+        "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king2.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king3.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king5.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king7.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king4.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king6.jpg",
+
+
+
+      ],
+      amenities: [
+        "Spacious King Size Bed",
+        "Air Conditioning",
+        "Private Balcony or Terrace with Garden/City Views",
+        "En-suite Bathroom with Walk-in Shower",
+        "Handcrafted African-Inspired Décor",
+        "High-Speed Wi-Fi",
+        "Flat-Screen Television with Satellite Channels",
+        "Mini Bar / Mini Fridge",
+        "In-Room Safe",
+        "Complimentary Bottled Water",
+        "Coffee & Tea Making Facilities",
+        "Daily Housekeeping Service",
+        "Comfortable Seating Area",
+        "Work Desk",
+        "Bathrobes and Slippers",
+        "Luxury Toiletries",
+        "Hair Dryer",
+        "Room Service (Available on Request)"
+      ],
+      otherAccomodation: [
+        {
+          id: 2,
+          image:
+            "https://kuriftu-public-media.s3.amazonaws.com/Entoto/acc/1.webp",
+          title: "Kuriftu Deluxe Family Suite",
+          description:
+            "Among serene landscapes, 10 family villas feature twin beds on an elevated level, spacious living areas, and curated artistry blending tradition and comfort for a shared African escape.",
+        },
+      ],
+      booking: {
+        images: [
+           "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king8.jpg",
+           "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king9.jpg",
+        ],
+        description:
+          "Tucked along lush garden pathways, 44 double-bed villas exude warmth with earth-toned interiors, handcrafted décor, and city views, offering an intimate retreat infused with African heritage.",
+      },
+    },
+    2: {
+      title: "Kuriftu Deluxe Family Suite",
+      carouselImages: [
+        "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/family4.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/family2.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/family3.jpg",
+      ],
+      booking: {
+        images: [
+          "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/family5.jpg",
+          "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/family6.jpg",
+        ],
+        description:
+          "Among serene landscapes, 10 family villas feature twin beds on an elevated level, spacious living areas, and curated artistry blending tradition and comfort for a shared African escape.",
+      },
+      amenities: [
+        "Spacious King Size Bed and Twin Size Beds",
+        "Air Conditioning",
+        "Private Balcony or Terrace with Garden/City Views",
+        "En-suite Bathroom with Walk-in Shower",
+        "Handcrafted African-Inspired Décor",
+        "High-Speed Wi-Fi",
+        "Flat-Screen Television with Satellite Channels",
+        "Mini Bar / Mini Fridge",
+        "In-Room Safe",
+        "Complimentary Bottled Water",
+        "Coffee & Tea Making Facilities",
+        "Daily Housekeeping Service",
+        "Comfortable Seating Area",
+        "Work Desk",
+        "Bathrobes and Slippers",
+        "Luxury Toiletries",
+        "Hair Dryer",
+        "Room Service (Available on Request)"
+      ],
+      otherAccomodation: [
+        {
+          id: 1,
+          image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/accommodation/king2.jpg",
+          title: "Kuriftu Deluxe Suite",
+          description:
+            "Tucked along lush garden pathways, 44 double-bed villas exude warmth with earth-toned interiors, handcrafted décor, and city views, offering an intimate retreat infused with African heritage.",
         },
       ],
     },

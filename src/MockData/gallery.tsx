@@ -46,6 +46,11 @@ export const Gallery: Record<string, string[]> = {
     "https://kuriftu-public-media.s3.amazonaws.com/awash/6.webpp",
   ],
   africanVillage: [
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/gallery/1.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/gallery/2.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/gallery/3.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/gallery/5.jpg",
+    "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/gallery/4.jpg",
     "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa22.jpg",
     "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa23.jpg",
     "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/africa24.jpg",

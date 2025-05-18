@@ -342,16 +342,15 @@ export const EVENTS: Record<string, EventModal> = {
     description:"At Kuriftu, every celebration is an intimate reflection of your journey. Here, moments are thoughtfully crafted, unfolding in serene settings that invite connection and timeless memories.",
     detailDescription: "Under a canopy of sky and stars, celebrations unfold in soulful rhythm—where ancestral echoes meet curated elegance. At Kuriftu African Village, every gathering becomes a reverent expression of culture and connection, embraced by handcrafted architecture and the quiet hum of nature. From intimate unions to spirited feasts, each moment is elevated with grace, evoking a sense of belonging that lingers long after departure.",
     carouselImages: [
-      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto26.jpg",
-      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/1.webp",
-      "https://kuriftu-public-media.s3.amazonaws.com/Entoto/celebrate/2.webp",
+      "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/celebration/1.jpg",
+      "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/celebration/2.jpg",
     ],
     events: [
       {
         title: "Weddings",
         description:
           "Cradled in the quiet grace of nature, Kuriftu’s wedding venue offers a canvas for the sacred union. Beneath open skies and amidst curated beauty, buffets unfold, music lingers, and love is witnessed. Every detail, from floral gestures to flowing spaces, is shaped with intention—allowing the day to blossom effortlessly into memory, held gently by the land.",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/Entoto/entoto26.jpg",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/africanvillage/celebration/1.jpg",
         link: "wed",
         isEnquiryForm: true,
         linkText: "Make an enquiry",
