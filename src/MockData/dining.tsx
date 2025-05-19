@@ -62,6 +62,7 @@ export const DINING: Record<string, DiningModal> = {
     description: "Savor a blend of traditional and Western cuisines thoughtfully prepared to delight your senses, all while immersing yourself in the tranquil beauty of the lake.",
     detailDescription:"In a land where cultures converge, our dining experiences weave together the flavors of Ethiopia and the world. From traditional injera to global cuisines, each dish tells a story of culinary heritage. Designed by Kuriftu’s master craftsmen, our restaurants showcase an artful blend of natural materials, wood, rope, stone, brick, and bamboo, creating spaces where nature’s beauty and craftsmanship harmonize to nourish both body and spirit.",
     carouselImages: [
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/7.jpg",
       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/1.webp",
       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/2.webp",
       "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/dining/3.webp",

@@ -100,6 +100,7 @@ export const EVENTS: Record<string, EventModal> = {
     description:"Nestled in the tranquil beauty of Bishoftu’s lakes, Kuriftu Resort offers a captivating backdrop for unforgettable celebrations, where nature’s serenity and Ethiopia’s rich heritage intertwine.",
     detailDescription: "In the serene expanse of Bishoftu, every celebration becomes a timeless gathering. With intimate spaces, exquisite dining, and curated experiences, our team crafts unforgettable moments amidst nature’s embrace, where memories are born.",
     carouselImages: [
+      "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/event/1.jpg",
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event4.webp",
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/events/bsh_event1.jpg",
       "https://kuriftu-public-media.s3.us-east-1.amazonaws.com/bishoftu/12.JPG",

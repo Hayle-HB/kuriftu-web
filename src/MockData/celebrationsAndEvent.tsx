@@ -171,28 +171,28 @@ export const CELEBRATIONSANDEVENTS: Record<string, CelebrationAndEventModal> = {
     venus: [
       {
         title: "Balambaras Hall",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp4.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/1.jpg",
         description:
           "Balambaras Hall, our largest and most gracious gathering space, welcomes up to 120 guests into its hushed elegance. Designed for meaningful connection and reflective celebration, the hall sits in quiet harmony with its natural surroundings an invitation to pause, convene, and share moments of purpose. Here, tradition and intention meet beneath vaulted ceilings and a gentle Ethiopian sky.",
       },
 
       {
         title: "Tiruwark Hall",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp1.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/4.jpg",
         description:
           "Tiruwark Hall, an intimate haven for quiet exchange, holds space for up to 20 guests. Thoughtfully designed to embrace stillness and clarity, it is ideal for private gatherings, discreet meetings, or soulful conversations. Surrounded by the calm rhythms of nature, this refined sanctuary invites reflection and connection where every voice is heard and each moment lingers with quiet significance.",
       },
 
       {
         title: "Meantwab Hall",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp3.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/2.jpg",
         description:
           "Named in quiet tribute to Queen Mentewab an enduring symbol of grace and wisdom this serene gathering space welcomes up to 35 guests. Within its softly lit walls, time slows, allowing ideas to unfold and connections to deepen. A hall not merely of meetings but of meaning where heritage whispers through elegant details and every gathering becomes part of Ethiopia’s living story.",
       },
 
       {
         title: "Girum Hall",
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/bsh_corp2.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/corporate/3.jpg",
         description:
           "Framed by stillness and softened light, Girum Hall offers an intimate sanctuary for thoughtful exchange. Accommodating up to 40 guests, it is Kuriftu’s second-largest gathering space, designed for moments of quiet focus and shared vision. Rooted in Ethiopian warmth and grace, the hall invites presence, where each conversation flows with purpose and every gathering becomes gently etched in memory.",
       },

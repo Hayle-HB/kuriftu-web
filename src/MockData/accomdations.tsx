@@ -38,7 +38,7 @@ export const ACCOMODATIONS: Record<string, ResortAccommodationModal> = {
     description:"Crafted with reverence for nature, each room reflects Ethiopia’s soul, earth-toned textures, hand-carved wood, and local artistry framing serene views of Bishoftu’s timeless beauty.",
     accomodations: [
       {
-        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/4.webp",
+        image: "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/pres1.jpg",
         accomdationId: 4,
         subtitle: "ROOMS",
         title: "Royal Presidential Suite",
@@ -458,6 +458,8 @@ export const ACCOMODATIONDETAIL: AccommodationDetailModal = {
     4: {
       title: "Presidential Suite",
       carouselImages: [
+        "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/pres1.jpg",
+        "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/acc4/1.jpg",
         "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/16.webp",
         "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/17.webp",
         "https://kuriftu-public-media.s3.amazonaws.com/bishoftu/acc/18.webp",
