@@ -237,7 +237,7 @@ export const WELLNESS: Record<string, WellnessModal> = {
 
     facilities: [
       "Massage",
-      "Steam andsauna",
+      "Steam and Sauna",
       "Gym",
       "Pedicure and manicure",
       "Morocco bath",
