@@ -1,0 +1,205 @@
+.footer-wrapper {
+  background-color: #fdfcf5;
+  color: #222222;
+  padding: 36px 0 18px;
+  font-family: "LyonDisplay-Light-Web", "whitneybook", sans-serif;
+}
+
+.footer-content {
+  margin-bottom: 24px;
+}
+
+.footer-section {
+  margin-bottom: 18px;
+}
+
+.footer-section h6 {
+  font-size: 1.35rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+  letter-spacing: 1.2px;
+  font-family: "Playfair Display", serif;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  text-decoration: none !important;
+  font-size: 1.01rem !important;
+  transition: color 0.3s ease;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  text-decoration: underline !important;
+  color: #100f0e !important;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-size: 1.01rem;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.footer-subsection {
+  margin-bottom: 12px;
+}
+
+.subsection-title {
+  font-size: 1.01rem !important;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-link {
+  font-size: 1.45rem !important;
+  transition: color 0.3s ease;
+  text-decoration: none !important;
+}
+
+
+.social-link .fa-instagram:hover {
+  color: #e4405f !important;
+}
+.social-link .fa-twitter:hover {
+  color: #1da1f2 !important;
+}
+.social-link .fa-youtube:hover {
+  color: #ff0000 !important;
+}
+.social-link .fa-facebook:hover {
+  color: #1877f3 !important;
+}
+.social-link .fa-linkedin:hover {
+  color: #0077b5 !important;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e2c98f33;
+  padding-top: 14px;
+  margin-top: 10px;
+}
+
+.copyright {
+  color: #6d665c;
+  font-size: 0.93rem;
+  margin-bottom: 4px;
+  font-family: "Lato", sans-serif;
+}
+
+.powered-by {
+  font-size: 0.93rem;
+}
+
+.power-by-link {
+  text-decoration: none !important;
+  transition: color 0.3s ease;
+  font-weight: 700;
+}
+
+.power-by-link:hover {
+  color: #2d2a26 !important;
+}
+
+/* Resort Landing Footer Styles */
+.footer-resort-landing {
+  background-color: #f7f4e8;
+  padding: 18px;
+  margin: -36px -10px 18px;
+  border-bottom: 1px solid #e2c98f33;
+}
+
+.footer-resort-landing h5 {
+  font-size: 1.08rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
+.footer-resort-landing-region {
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  font-family: "Lato", sans-serif;
+}
+
+.footer-resort-landing-phone {
+  font-size: 1.01rem;
+}
+
+.footer-resort-landing-phone p {
+  margin-bottom: 3px;
+}
+
+.footer-resort-landing .bi {
+  margin-right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .footer-section {
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-wrapper {
+    padding: 18px 0 10px;
+  }
+  .footer-section {
+    margin-bottom: 18px;
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .footer-section {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 0 4px;
+  }
+  .footer-section:nth-child(2),
+  .footer-section:nth-child(3) {
+    flex: 1 1 50%;
+    display: inline-block;
+    min-width: 0;
+    margin-bottom: 10px;
+  }
+  .footer-section:nth-child(2) {
+    border-right: 1px solid #e2c98f33;
+    padding-right: 8px;
+  }
+  .footer-section:nth-child(3) {
+    padding-left: 8px;
+  }
+}
