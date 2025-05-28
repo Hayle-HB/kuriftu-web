@@ -1,25 +1,25 @@
-/* Modern, neutral, luxury footer redesign */
+/* Modern, neutral, compact luxury footer redesign */
 
 .footer-wrapper {
-  background: #f9f9f6;
+  background: #fcfaf3;
   color: #232323;
-  padding: 56px 0 28px;
+  padding: 32px 0 14px;
   font-family: "Inter", "Montserrat", Arial, sans-serif;
   border-top: 1.5px solid #e5e5e0;
 }
 
 .footer-content {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .footer-section {
-  margin-bottom: 32px;
+  margin-bottom: 18px;
 }
 
 .footer-section h6 {
   font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   letter-spacing: 1.1px;
   font-family: "Montserrat", "Inter", Arial, sans-serif;
   color: #232323;
@@ -33,7 +33,7 @@
 }
 
 .footer-links li {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .footer-link {
@@ -68,12 +68,12 @@
 }
 
 .footer-subsection {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .subsection-title {
   font-size: 1.08rem !important;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 700;
   font-family: "Montserrat", "Inter", Arial, sans-serif;
   letter-spacing: 0.5px;
@@ -82,8 +82,8 @@
 
 .social-links {
   display: flex;
-  gap: 18px;
-  margin-top: 14px;
+  gap: 14px;
+  margin-top: 8px;
 }
 
 .social-link {
@@ -118,8 +118,8 @@
 
 .footer-bottom {
   border-top: 1.5px solid #e5e5e0;
-  padding-top: 24px;
-  margin-top: 24px;
+  padding-top: 14px;
+  margin-top: 14px;
 }
 
 .copyright {
@@ -147,15 +147,15 @@
 
 /* Resort Landing Footer Styles */
 .footer-resort-landing {
-  background: #f5f5f2;
-  padding: 28px 18px 18px 18px;
-  margin: -56px -10px 32px;
+  background: #fcfaf3;
+  padding: 18px 18px 10px 18px;
+  margin: -36px -10px 18px;
   border-bottom: 1.5px solid #e5e5e0;
 }
 
 .footer-resort-landing h5 {
   font-size: 1.12rem;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 700;
   font-family: "Montserrat", "Inter", Arial, sans-serif;
   color: #232323;
@@ -164,7 +164,7 @@
 .footer-resort-landing-region {
   font-size: 0.92rem;
   letter-spacing: 2px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-family: "Inter", "Montserrat", Arial, sans-serif;
   color: #6b6b6b;
 }
@@ -175,7 +175,7 @@
 }
 
 .footer-resort-landing-phone p {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .footer-resort-landing .bi {
@@ -210,15 +210,15 @@
     flex-wrap: wrap;
   }
   .footer-section {
-    margin-bottom: 24px;
+    margin-bottom: 14px;
   }
 }
 @media (max-width: 768px) {
   .footer-wrapper {
-    padding: 24px 0 14px;
+    padding: 14px 0 8px;
   }
   .footer-section {
-    margin-bottom: 18px;
+    margin-bottom: 10px;
   }
   .footer-content {
     display: flex;
@@ -235,7 +235,7 @@
     flex: 1 1 50%;
     display: inline-block;
     min-width: 0;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
   .footer-section:nth-child(2) {
     border-right: 1.5px solid #e5e5e0;
