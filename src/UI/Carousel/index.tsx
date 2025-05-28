@@ -52,27 +52,25 @@ const Carousel: React.FC<CarouselProps> = ({ slides, classNames }) => {
 
   return (
     <Container className={classNames} ref={containerRef} fluid>
-      <BootstrapCarousel
-      controls={true}slick-dots
-      indicators={true}
-      
-    >
-      {slides.map((slide, index) => (
-        <BootstrapCarousel.Item key={index}>
-          <div
-            ref={(el) => {
-              if (el) slideRefs.current[index] = el;
-            }}
-            
-            style={{
-              backgroundImage: `url(${slide})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
-        </BootstrapCarousel.Item>
-      ))}
-    </BootstrapCarousel>
+      <BootstrapCarousel controls={true} slick-dots indicators={true}>
+        {slides.map((slide, index) => (
+          <BootstrapCarousel.Item key={index}>
+            <div
+              ref={(el) => {
+                if (el) slideRefs.current[index] = el;
+              }}
+              style={{
+                backgroundImage: `url(${slide})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                minHeight: "400px",
+                width: "100%",
+                borderRadius: "18px",
+              }}
+            ></div>
+          </BootstrapCarousel.Item>
+        ))}
+      </BootstrapCarousel>
     </Container>
   );
 };

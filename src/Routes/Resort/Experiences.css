@@ -1,0 +1,96 @@
+/* Modern, premium gallery grid for Experiences */
+
+.exp-gallery-card {
+  background: #f8f6f2;
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 420px;
+  border: 1px solid #eceae6;
+  cursor: pointer;
+}
+.exp-gallery-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.exp-gallery-img {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  transition: filter 0.22s, transform 0.22s, box-shadow 0.22s;
+  will-change: filter, transform, box-shadow;
+}
+.exp-gallery-card:hover .exp-gallery-img {
+  filter: brightness(1.04) saturate(1.12);
+  transform: scale(1.045) translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.13);
+  z-index: 2;
+}
+
+.exp-gallery-text {
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+.exp-gallery-text h3 {
+  font-family: "Montserrat", "Neue Helvetica Medium", Arial, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #232323;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+}
+.exp-gallery-text p {
+  font-family: "Inter", "Neue Helvetica Thin", Arial, sans-serif;
+  font-size: 1.08rem;
+  color: #444;
+  margin-bottom: 0;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* Responsive grid spacing */
+@media (max-width: 991px) {
+  .exp-gallery-img {
+    height: 200px;
+  }
+  .exp-gallery-card {
+    min-height: 360px;
+  }
+}
+@media (max-width: 767px) {
+  .exp-gallery-img {
+    height: 160px;
+  }
+  .exp-gallery-card {
+    min-height: 280px;
+  }
+  .exp-gallery-text {
+    padding: 1.25rem 1rem 1rem 1rem;
+  }
+  .exp-gallery-text h3 {
+    font-size: 1.08rem;
+  }
+  .exp-gallery-text p {
+    font-size: 0.98rem;
+  }
+}
+
+/* Remove default card background if present */
+.bg-card-custom {
+  background: transparent;
+}
+
+/* Add a little spacing between cards */
+.resort-exp-grid-section .row {
+  row-gap: 2.2rem;
+}

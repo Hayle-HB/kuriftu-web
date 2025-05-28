@@ -13,56 +13,103 @@ const ResortExperiences = () => {
     return <div>Resort not found</div>;
   }
   return (
-    <div className="px-3 py-4">
-      <h4 className=" accomdation-detail-title text-center pt-3 title-txt"
-      style={{fontFamily:'Neue Helvetica Medium'}}
+    <div className="resort-experiences-page px-0 py-0">
+      {/* Hero Title & Carousel */}
+      <section
+        className="resort-exp-hero-section py-5"
+        style={{ background: "#f7f5f1" }}
       >
-        {experience.title}
-      </h4>
-      <div>
-        <CarouselWithButtons
-          items={experience.carouselImages}
-          subTitle={experience.description}
-        />
-      </div>
-      {/* <p className=" exp-description" style={{fontFamily:'Neue Helvetica thin'}}>
-        {experience.description}
-      </p> */}
-      {experience.experiences.map((item, index) => (
-        <div className=" my-5 py-5">
-        <TwoColumnLayout
-          index={index}
-          description={item.description}
-          image={item.image}
-          title={item.title}
-          isEnquiryForm={false}
-          link={""}
-          linkText={"Explore"}
-        />
+        <h2
+          className="accomdation-detail-title text-center pt-3 title-txt mb-4"
+          style={{
+            fontFamily: "Neue Helvetica Medium",
+            fontSize: "2.5rem",
+            letterSpacing: "0.02em",
+          }}
+        >
+          {experience.title}
+        </h2>
+        <div
+          className="resort-exp-carousel-wrapper mx-auto"
+          style={{ maxWidth: 1200 }}
+        >
+          <CarouselWithButtons
+            items={experience.carouselImages}
+            subTitle={experience.description}
+          />
         </div>
-      ))}
-      <Row className="g-4 px-3 py-5">
-        {experience.items.map((item, index) => (
-          <Col key={index} xs={12} sm={12} md={4} >
-            <CommonCoverCard
-              description={item.description}
-              subTitle={""}
-              image={item.image}
-              title={item.title}
-              linkHref=""
-              linkText=""
-            />
-          </Col>
-        ))}
-      </Row>
+      </section>
 
-      {slug !== "entoto" && (
-        <Container fluid >
-          <Row className="">
-          <h5 className="text-center title-txt" style={{padding:'40px 0px ', fontFamily:'Neue Helvetica Medium'}}>Featured Experience</h5>
-          <HorizontalCardCarousel items={experience.featured} />
+      {/* Two Column Experience Sections */}
+      <section
+        className="resort-exp-twocol-section py-5"
+        style={{ background: "#fff" }}
+      >
+        <Container>
+          {experience.experiences.map((item, index) => (
+            <div className="my-5 py-4" key={index}>
+              <TwoColumnLayout
+                index={index}
+                description={item.description}
+                image={item.image}
+                title={item.title}
+                isEnquiryForm={false}
+                link={""}
+                linkText={"Explore"}
+              />
+            </div>
+          ))}
+        </Container>
+      </section>
+
+      {/* Experiences Grid Section */}
+      <section
+        className="resort-exp-grid-section py-5"
+        style={{ background: "#f7f5f1" }}
+      >
+        <Container>
+          <Row className="g-4 px-2 py-3">
+            {experience.items.map((item, index) => (
+              <Col key={index} xs={12} sm={12} md={4}>
+                <CommonCoverCard
+                  description={item.description}
+                  subTitle={""}
+                  image={item.image}
+                  title={item.title}
+                  linkHref=""
+                  linkText=""
+                />
+              </Col>
+            ))}
           </Row>
-        </Container >
+        </Container>
+      </section>
+
+      {/* Featured Experience Section */}
+      {slug !== "entoto" && (
+        <section
+          className="resort-exp-featured-section py-5"
+          style={{ background: "#fff" }}
+        >
+          <Container fluid>
+            <Row className="justify-content-center">
+              <h3
+                className="text-center title-txt mb-4"
+                style={{
+                  padding: "40px 0px 0px 0px ",
+                  fontFamily: "Neue Helvetica Medium",
+                  fontSize: "2rem",
+                  letterSpacing: "0.01em",
+                }}
+              >
+                Featured Experience
+              </h3>
+              <div style={{ width: "100%", maxWidth: 1200, margin: "0 auto" }}>
+                <HorizontalCardCarousel items={experience.featured} />
+              </div>
+            </Row>
+          </Container>
+        </section>
       )}
     </div>
   );

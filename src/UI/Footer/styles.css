@@ -1,28 +1,32 @@
+/* Luxury Resort Footer Redesign */
+
 .footer-wrapper {
-  background-color: #fdfcf5;
-  color: #222222;
-  padding: 36px 0 18px;
-  font-family: "LyonDisplay-Light-Web", "whitneybook", sans-serif;
+  background: #f7f4ed;
+  color: #2d2a26;
+  padding: 56px 0 28px;
+  font-family: "Lato", Arial, sans-serif;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  box-shadow: 0 -2px 24px rgba(60, 50, 30, 0.07);
+  border-top: 1.5px solid #e2c98f;
 }
 
 .footer-content {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .footer-section {
-  margin-bottom: 18px;
+  margin-bottom: 32px;
 }
 
 .footer-section h6 {
   font-size: 1.35rem;
-  font-weight: 900;
-  margin-bottom: 14px;
+  font-weight: 700;
+  margin-bottom: 18px;
   letter-spacing: 1.2px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Lora", serif;
+  color: #bfa76a;
   background: none;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
-  background-clip: unset;
 }
 
 .footer-links {
@@ -32,126 +36,143 @@
 }
 
 .footer-links li {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .footer-link {
   text-decoration: none !important;
-  font-size: 1.01rem !important;
+  font-size: 1.08rem !important;
   transition: color 0.3s ease;
   display: inline-block;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-weight: 500;
+  color: #2d2a26;
+  border-radius: 0.4rem;
+  padding: 2px 6px;
 }
 
 .footer-link:hover {
   text-decoration: underline !important;
-  color: #100f0e !important;
+  color: #bfa76a !important;
+  background: #f3e8d1;
 }
 
 .contact-info {
   display: flex;
   align-items: center;
-  font-size: 1.01rem;
+  font-size: 1.08rem;
+  color: #bfa76a;
+  font-weight: 500;
 }
 
 .contact-info i {
   margin-right: 8px;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: #bfa76a;
 }
 
 .footer-subsection {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 .subsection-title {
-  font-size: 1.01rem !important;
+  font-size: 1.08rem !important;
   margin-bottom: 8px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Lora", serif;
   letter-spacing: 0.5px;
+  color: #7a674a;
 }
 
 .social-links {
   display: flex;
-  gap: 12px;
-  margin-top: 10px;
+  gap: 18px;
+  margin-top: 14px;
 }
 
 .social-link {
-  font-size: 1.45rem !important;
-  transition: color 0.3s ease;
+  font-size: 1.7rem !important;
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s;
   text-decoration: none !important;
+  color: #bfa76a;
+  background: #f7f4ed;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(191, 167, 106, 0.07);
+  border: 1.5px solid #e2c98f;
+}
+.social-link:hover {
+  color: #fff !important;
+  background: #bfa76a;
+  box-shadow: 0 4px 16px rgba(191, 167, 106, 0.13);
 }
 
-
-.social-link .fa-instagram:hover {
-  color: #e4405f !important;
-}
-.social-link .fa-twitter:hover {
-  color: #1da1f2 !important;
-}
-.social-link .fa-youtube:hover {
-  color: #ff0000 !important;
-}
-.social-link .fa-facebook:hover {
-  color: #1877f3 !important;
-}
+.social-link .fa-instagram:hover,
+.social-link .fa-twitter:hover,
+.social-link .fa-youtube:hover,
+.social-link .fa-facebook:hover,
 .social-link .fa-linkedin:hover {
-  color: #0077b5 !important;
+  color: #fff !important;
 }
 
 .footer-bottom {
-  border-top: 1px solid #e2c98f33;
-  padding-top: 14px;
-  margin-top: 10px;
+  border-top: 1.5px solid #e2c98f;
+  padding-top: 24px;
+  margin-top: 24px;
 }
 
 .copyright {
-  color: #6d665c;
-  font-size: 0.93rem;
+  color: #7a674a;
+  font-size: 1.01rem;
   margin-bottom: 4px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 .powered-by {
-  font-size: 0.93rem;
+  font-size: 1.01rem;
+  color: #bfa76a;
 }
 
 .power-by-link {
   text-decoration: none !important;
   transition: color 0.3s ease;
   font-weight: 700;
+  color: #7a674a;
 }
 
 .power-by-link:hover {
-  color: #2d2a26 !important;
+  color: #bfa76a !important;
 }
 
 /* Resort Landing Footer Styles */
 .footer-resort-landing {
-  background-color: #f7f4e8;
-  padding: 18px;
-  margin: -36px -10px 18px;
-  border-bottom: 1px solid #e2c98f33;
+  background: #f3e8d1;
+  padding: 28px 18px 18px 18px;
+  margin: -56px -10px 32px;
+  border-bottom: 1.5px solid #e2c98f;
+  border-radius: 1.5rem 1.5rem 0 0;
+  box-shadow: 0 2px 12px rgba(191, 167, 106, 0.07);
 }
 
 .footer-resort-landing h5 {
-  font-size: 1.08rem;
+  font-size: 1.12rem;
   margin-bottom: 8px;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Lora", serif;
+  color: #bfa76a;
 }
 
 .footer-resort-landing-region {
-  font-size: 0.82rem;
+  font-size: 0.92rem;
   letter-spacing: 2px;
   margin-bottom: 6px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
+  color: #7a674a;
 }
 
 .footer-resort-landing-phone {
-  font-size: 1.01rem;
+  font-size: 1.08rem;
+  color: #bfa76a;
 }
 
 .footer-resort-landing-phone p {
@@ -160,6 +181,28 @@
 
 .footer-resort-landing .bi {
   margin-right: 8px;
+  color: #bfa76a;
+}
+
+.footer-resort-landing h6 {
+  color: #7a674a;
+  font-family: "Playfair Display", "Lora", serif;
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.footer-resort-landing .bi-geo-alt,
+.footer-resort-landing .bi-map {
+  color: #bfa76a;
+}
+
+.footer-resort-landing a {
+  color: #7a674a;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.footer-resort-landing a:hover {
+  color: #bfa76a;
 }
 
 /* Responsive Adjustments */
@@ -168,12 +211,14 @@
     flex-wrap: wrap;
   }
   .footer-section {
-    margin-bottom: 18px;
+    margin-bottom: 24px;
   }
 }
 @media (max-width: 768px) {
   .footer-wrapper {
-    padding: 18px 0 10px;
+    padding: 24px 0 14px;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
   }
   .footer-section {
     margin-bottom: 18px;
@@ -196,7 +241,7 @@
     margin-bottom: 10px;
   }
   .footer-section:nth-child(2) {
-    border-right: 1px solid #e2c98f33;
+    border-right: 1.5px solid #e2c98f;
     padding-right: 8px;
   }
   .footer-section:nth-child(3) {
